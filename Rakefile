@@ -8,7 +8,7 @@
 require 'rake'
 require 'date'
 require 'yaml'
-require 'html/proofer'
+# require 'html/proofer'
 
 CONFIG = YAML.load(File.read('_config.yml'))
 USERNAME = CONFIG["username"]
@@ -26,12 +26,12 @@ def check_destination
 end
 
 namespace :site do
-  desc "build and test website"
-  task :test do
-    check_destination
-    sh "bundle exec jekyll build"
-    HTML::Proofer.new("_site", {:href_ignore=> ['http://localhost:4000'], :verbose => true}).run
-  end
+  # desc "build and test website"
+  # task :test do
+  #   check_destination
+  #   sh "bundle exec jekyll build"
+  #   HTML::Proofer.new("_site", {:href_ignore=> ['http://localhost:4000'], :verbose => true}).run
+  # end
 
   desc "Generate the site"
   task :build do
