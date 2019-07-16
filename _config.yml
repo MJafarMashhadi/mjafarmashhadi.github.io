@@ -117,7 +117,7 @@ safe: False
 lsi: False
 username: mjafarmashhadi
 repo: mjafarmashhadi.github.io
-branch: gh-pages
+branch: master
 destination: ../mj-pages/
 production_url: https://mjafarmashhadi.github.io/
 source_url: github.com/MJafarMashhadi/mjafarmashhadi.github.io.git
