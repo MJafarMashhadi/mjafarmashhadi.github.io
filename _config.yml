@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+url: https://mjafar.me/
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -117,7 +117,7 @@ safe: False
 lsi: False
 username: mjafarmashhadi
 repo: mjafarmashhadi.github.io
-branch: master
+branch: gh-pages
 destination: ../mj-pages/
 production_url: https://mjafarmashhadi.github.io/
 source_url: github.com/MJafarMashhadi/mjafarmashhadi.github.io.git

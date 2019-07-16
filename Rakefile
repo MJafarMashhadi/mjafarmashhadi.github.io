@@ -15,7 +15,7 @@ USERNAME = CONFIG["username"]
 REPO = CONFIG["repo"]
 SOURCE_REPO = CONFIG["source_url"]
 SOURCE_BRANCH = CONFIG["branch"]
-DESTINATION_BRANCH = "gh-pages"
+DESTINATION_BRANCH = "master"
 CNAME = CONFIG["CNAME"]
 
 def check_destination
