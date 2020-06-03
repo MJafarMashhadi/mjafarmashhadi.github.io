@@ -1,0 +1,7 @@
+------
+------
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?mjafar\.me$
+RewriteRule ^blog/(.*)$ http://blog.mjafar.me/$1 [L,QSA,R=301]
