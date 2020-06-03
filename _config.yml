@@ -108,6 +108,6 @@ username: mjafarmashhadi
 repo: mjafarmashhadi.github.io
 branch: master
 destination: ../mj-pages/
-production_url: https://mjafarmashhadi.github.io/
+production_url: https://mjafar.me/
 source_url: github.com/MJafarMashhadi/mjafarmashhadi.github.io.git
 
