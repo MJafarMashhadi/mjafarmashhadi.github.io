@@ -3,14 +3,20 @@ layout: page
 title: Projects
 ---
 <section class="list">
-    {% for post in site.posts %}
-        {% if post.projects %}
-            <div class="item {% if post.star %}star{% endif %}">
-                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                    <h3 class="title">{{ post.title }}</h3>
-                </a>
+    {% for project in site.data.projects %}
+        <div class="item {% if project.my_favorite %}star{% endif %}">
+            {% if project.url %}<a class="url" href="{{ project.url }">{% endif %}
+                <aside><time datetime="{{ project.date | date:"%d-%m-%Y" }}">{{ project.date | date: "%b %d %Y" }}</time></aside>
+                <h3 class="title">{{ project.name }}</h3>
+            {% if project.url %}</a>{% endif %}
+            <span class="date"><time>{{ page.active }}</time></span>
+            <div class="post-tags">
+                {% for tag in project.tags %}
+                    <a class="item">{{ tag }}</a>
+                {% endfor %}
             </div>
-        {% endif %}
+            
+            {{ project.description }}
+        </div>
     {% endfor %}
 </section>
