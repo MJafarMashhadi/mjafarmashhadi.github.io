@@ -1,63 +1,82 @@
-Haplophysh:
-    name: Haplophysh
-    active: March 2020 - April 2020
-    source_code: https://github.com/MJafarMashhadi/Haplophysh
-    academic: true
-    commercial: false
-    my_favorite: true
-    url: https://github.com/MJafarMashhadi/Haplophysh
-    tags: 
-     - Python
-     - TensorFlow
-     - Keras
-     - NLP
-     - Deep Learning
-     - Machine Learning
-     - Course Project
-    description: >
-      I implemented and compared several deep neural networks architectures to see how well they can
-      detect phishing web pages. They were trained and evaluated on a combination of several datasets.
-NivadCloud:
-    name: Nivad Cloud (نیواد)
-    active: September 2015 - December 2017 full-time and part-time ever since
-    source_code: null
-    url: https://nivad.cloud/
-    academic: false
-    commercial: true
-    my_favorite: true
-    tags:
-     - Python
-     - Django
-     - Cloud
-     - Production
-     - Relational Databases
-     - NoSQL databases
-     - BaaS
-    description: >
-      <p>I co-founded Nivad Cloud startup as a BaaS solution offering secure in-app purchase as its first and 
-      most successful and innovative service. I learned and practiced a huge deal of soft skills while 
-      managing this project ranging from negotiations, to conflict resolution, to making engaging presentation, 
-      to customer, to basic financial management, and how NOT to wear too many hats (in a hard way). We sponsored
-      PyCon in Tehran as well as a nation-wide hackathon which I did the negotiations for. In addition, 
-      I made a great progress in my technical skills as well. I designed and developed the RESTful API up to 
-      best practices and the industry standards, created the front-end and backend of the management dashboard, 
-      designed the database, and deployed the service on the servers. I had an amazing journy from starting 
-      a hobby side project to growing it into a sucessful startup serving thousands of customers in production.</p>
-      
-      <p>From a technical view also I had an amazing learning experience in a variety of backend development and
-      maintenance as well. I learned how to set up an Nginx reverse proxy, keep services alive on docker,
-      and how to manage SSL certificates. I had to separate API and the users' dashboard separate to achieve a
-      higher availablity and a much higher performance for the API. I learned how to properly use redis key-value
-      store to lower the overheads on API calls to make them as fast as possible without losing any accounting data.
-      I also used it to cache the results of sluggish queries. I learned how to leverage Celery to run computationally
-      intensive tasks asynchronously as well as running periodic tasks such as issuing invoices and processing 
-      transactions in the end of the day. </p>
+- name: Haplophysh
+  active: Mar. 2020 - Apr. 2020
+  source_code: https://github.com/MJafarMashhadi/Haplophysh
+  my_favorite: true
+  url: https://github.com/MJafarMashhadi/Haplophysh
+  sorting_tags:
+    - Academic
+  tags: 
+    - Python
+    - TensorFlow
+    - Keras
+    - NLP
+    - Deep Learning
+    - Machine Learning
+    - Course Project
+  description: >
+    <p>I implemented and compared several deep neural networks architectures to see how well they can
+    detect phishing web pages. They were trained and evaluated on a combination of several datasets.</p>
 
-      <p>This is one of the most influencial projects on my professional path. I gained a great deal of technical 
-      skills and soft skills. But more importantly I expanded my network, came out of my bubble and communicated 
-      with people of quite different backgrounds (as customers, investors, job applicants, etc). I developed an 
-      strong entrepreneurial/business vision which even helped me to be successful in the stock market today. I 
-      got some of my experiences in Nivad in `the hard way' which might have hurt the business at the time, but
-      I came out of them stronger and wiser.</p>
+    <p>In this project I experimented with embeddings (word level and character level), RNNs using GRU cells,
+    and convolutions. The data came from multiple sources, so I developed a simple pipleline to merge
+    the data sets and perform the cleaning on the go. 
+    </p>
 
+    <p>More details are available in the repostory's readme and the 1-page extended abstract.</p>
+- name: Nivad Cloud (نیواد)
+  active: Sep. 2015 - Dec. 2017
+  source_code: null
+  url: https://nivad.cloud/
+  my_favorite: true
+  sorting_tags:
+    - Commercial
+  tags:
+    - Python
+    - Django
+    - Cloud
+    - Production
+    - Relational Databases
+    - NoSQL databases
+    - BaaS
+    - Java
+    - Android
+  description: >
+    <p>I co-founded Nivad Cloud startup as a BaaS solution offering secure in-app purchases as its first and 
+    most successful and innovative service. I learned and practiced a huge deal of soft skills while 
+    managing this project ranging from negotiations, to conflict resolution, to making engaging presentations, 
+    to customers, to basic financial management, and how to wear multiple hats but not too many. We sponsored
+    PyCon in Tehran as well as a nation-wide hackathon which I did the negotiations for. Also, 
+    I made great progress in my technical skills as well. I designed and developed the RESTful API up to 
+    best practices and the industry standards, created the front-end and backend of the management dashboard, 
+    designed the database, and deployed the service on the servers. I had an amazing journey from starting 
+    a hobby side project to growing it into a successful startup serving thousands of customers in production.</p>
     
+    <p>From a technical view I had an amazing learning experience in a variety of backend development and
+    maintenance as well. I learned how to set up an Nginx reverse proxy, keep services alive on docker,
+    and how to manage SSL certificates. I had to separate API and the users' dashboard separate to achieve
+    higher availability and much higher performance for the API. I learned how to properly use redis key-value
+    store to lower the overheads on API calls to make them as fast as possible without losing any accounting data.
+    I also used it to cache the results of sluggish queries. I learned how to leverage Celery to run computationally
+    intensive tasks asynchronously as well as running periodic tasks such as issuing invoices and processing 
+    transactions at the end of the day. </p>
+
+    <p>This is one of the most influential projects on my professional path. I gained plenty of technical 
+    skills and soft skills. But more importantly, I expanded my network, came out of my bubble and communicated 
+    with people of quite different backgrounds (as customers, investors, job applicants, etc). I developed a 
+    strong entrepreneurial/business vision which even helped me to be successful in the stock market today. I 
+    got some of my experiences in Nivad in `the hard way' which might have hurt the business at the time, but
+    I came out of them stronger and wiser.</p>
+- name: Tweeeeter
+  active: Sep. 2019
+  source_code: null
+  url: null
+  my_favorite: false
+  sorting_tags:
+    - hobby
+  tags:
+    - Python
+    - TensorFlow
+    - LSTM
+  description: >
+    <p>I trained an LSTM based recurrent neural network with character embeddings on the corpus of my own tweets
+    to generate new tweets in my writing style.</p>
