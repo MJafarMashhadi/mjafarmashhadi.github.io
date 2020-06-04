@@ -9,9 +9,12 @@
     - Python
     - TensorFlow
     - Keras
-    - NLP
     - Deep Learning
     - Machine Learning
+    - NLP
+    - Recurrent Neural Networks
+    - Convolutional Neural Networks
+    - Embeddings
     - Course Project
   description: >
     <p>I implemented and compared several deep neural networks architectures to see how well they can
@@ -33,11 +36,14 @@
   sorting_tags:
     - Academic
   tags:
+    - Python
     - TensorFlow
     - Keras
-    - Python
+    - Deep Learning
+    - Machine Learning
     - Time series
     - Recurrent Neural Networks
+    - Convolutional Neural Networks
   description: >
     <p>In collaboration with MicroPilot Inc, to generate a state model of their UAV auto-pilot software for 
     testing and verification. I created a deep neural network a hybrid of convolutional and recurrent layers,
@@ -74,8 +80,8 @@
     - Relational Databases
     - NoSQL databases
     - BaaS
-    - Java
     - Android
+    - Java
   description: >
     <p>I co-founded Nivad Cloud startup as a BaaS solution offering secure in-app purchases as its first and 
     most successful and innovative service. I learned and practiced a huge deal of soft skills while 
@@ -126,6 +132,7 @@
   tags:
     - Python
     - TensorFlow
+    - Keras
     - LSTM
   description: >
     <p>I trained an LSTM based recurrent neural network with character embeddings on the corpus of my own tweets
@@ -138,8 +145,8 @@
   sorting_tags:
     - Hackathon
   tags:
-    - AWS
     - Python
+    - AWS
     - Postgresql
     - Leadership
     - Startup
