@@ -19,11 +19,47 @@
 
     <p>In this project I experimented with embeddings (word level and character level), RNNs using GRU cells,
     and convolutions. The data came from multiple sources, so I developed a simple pipleline to merge
-    the data sets and perform the cleaning on the go. 
+    the data sets and perform the cleaning on the go. Keras's functional API played an important role in
+    these architectures' implementation.
     </p>
 
-    <p>More details are available in the repostory's readme and the 1-page extended abstract.</p>
-- name: Nivad Cloud (نیواد)
+    <p>More details are available in the repostory's <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/blob/master/README.md">readme</a> and
+    the 1-page <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/raw/master/ExtendedAbstract.pdf">extended abstract</a>.</p>
+- name: Inferring State Models from Black-box Software Using Hybrid Deep Neural Networks
+  active: May 2019 - Current
+  source_code: null
+  url: null
+  my_favorite: true
+  sorting_tags:
+    - Academic
+  tags:
+    - TensorFlow
+    - Keras
+    - Python
+    - Time series
+    - Recurrent Neural Networks
+  description: >
+    <p>In collaboration with MicroPilot Inc, to generate a state model of their UAV auto-pilot software for 
+    testing and verification. I created a deep neural network a hybrid of convolutional and recurrent layers,
+    that takes as input the values of auto-pilot's inputs and outputs (sensor readings and servo outputs) and 
+    predicts the state of the system. Although I had access to the 500k LOC code base of the auto-pilot, we
+    decided to develop this method as a more generalizable and more useful black-box method where access to 
+    the internals is not assumed. </p>
+
+    <p>This project was quite a journey, a hands-on learning opportunity for me. Data collection, data cleaning,
+    and storage made a major part of the project. It was an industry collaboration where standardized datasets
+    are not available. The architecture was inspired by several similar tasks such as human activity recognition
+    and image segmentation. The evaluation part was also a bit challenging and I had to implement a variation of
+    precision, recall, and F1 Score.</p>
+
+    <p>In the implementation part too I had a lot to learn. I learned how to compile tensorflow to use GPU on my
+    machine. I used a pipeline of python generators fed into TensorFlow's DataSet API to optimize for best memory
+    utilization and computational performance. I created a custom layer in keras to properly handle masking of 
+    the padding zeros. I also learned creating custom loss functions and custom validation metrics. </p>
+
+    <p>A conference paper with more details on this project's implementation and results is under review as of
+    now.</p>
+- name: Nivad Cloud
   active: Sep. 2015 - Dec. 2017
   source_code: null
   url: https://nivad.cloud/
@@ -75,6 +111,7 @@
     - Hackathon
   tags:
     - Android
+    - Kotlin
     - Leadership
     - Startup
   description: >
@@ -93,7 +130,6 @@
   description: >
     <p>I trained an LSTM based recurrent neural network with character embeddings on the corpus of my own tweets
     to generate new tweets in my writing style.</p>
-
 - name: Sequence 2 Script
   active: March. - May. 2019
   source_code: null
@@ -109,3 +145,18 @@
     - Startup
   description: >
     <p> TBA </p>
+# - name:
+#     active: 
+#     source_code: null
+#     url: null
+#     my_favorite: false
+#     sorting_tags:
+#       - Hackathon
+#     tags:
+#       - AWS
+#       - Python
+#       - Postgresql
+#       - Leadership
+#       - Startup
+#     description: >
+#       <p> TBA </p>
