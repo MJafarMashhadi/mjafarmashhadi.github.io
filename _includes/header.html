@@ -17,7 +17,9 @@
                 </span>
             {% endif %} 
 
-            <h1 class="title">{{ site.name }}</h1>
+            <!-- <h1 class="title"><span style="color: 90%;">{{site.name}}</span>{{ site.name }}</h1> -->
+            {% assign name_parts = site.name|split: " " %}
+            <h1 class="title"><span style="color: #444;">{{ name_parts | slice: 0,2 | join: " " }}</span> {{ name_parts |last|join: " " }}</h1>
             <h2 class="description">{{ site.bio }}</h2>
 
             {% include social-links.html %}
