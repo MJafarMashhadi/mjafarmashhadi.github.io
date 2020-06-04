@@ -3,6 +3,17 @@
 <head>
 
     
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52486083-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52486083-5');
+</script>
+
+    
 
     <meta charset="utf-8">
     <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
@@ -764,12 +775,19 @@ pre {
   width: 95%;
   margin: 0 auto; }
 .home > .list > .item > .url,
+.home > .list > .item > .date,
 .blog > .list > .item > .url,
-.projects > .list > .item > .url {
-  width: 100%;
-  display: block;
-  padding: 20px 0;
+.blog > .list > .item > .date,
+.projects > .list > .item > .url,
+.projects > .list > .item > .date {
+  display: inline-block;
+  padding: 20px 0 10px 0;
   text-decoration: none; }
+.home > .list > .item > .date,
+.blog > .list > .item > .date,
+.projects > .list > .item > .date {
+  float: right;
+  margin-bottom: 0; }
 .home > .list > .item > .url > .title,
 .blog > .list > .item > .url > .title,
 .projects > .list > .item > .url > .title {
@@ -830,14 +848,13 @@ pre {
     font-weight: 300;
     font-size: 1.4rem;
     text-transform: uppercase;
-    text-align: center;
-    display: block;
-    margin-bottom: 6rem;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility; }
   .post > .date {
     margin-bottom: 2rem; }
+  .post > .post-tags {
+    display: block; }
   .post > .post-tags > .item {
     padding: 2px 8px;
     border-radius: 3px;
@@ -872,27 +889,6 @@ pre {
       margin: 1em 0; }
     .post > .blog-navigation .next {
       text-align: right; }
-
-.tags {
-  margin-top: 125px; }
-  .tags > .list {
-    border-top: 1px solid #ededed;
-    margin-top: 30px;
-    padding-top: 40px;
-    position: relative; }
-    .tags > .list:before {
-      display: block;
-      content: " ";
-      width: 7px;
-      height: 7px;
-      border: #ededed 1px solid;
-      position: absolute;
-      top: -5px;
-      left: 50%;
-      margin-left: -5px;
-      background: #FFF;
-      box-shadow: #FFF 0 0 0 5px;
-      border-radius: 3px; }
 
 .tags > .list > .item {
   font-weight: 300;
@@ -1324,74 +1320,10 @@ pre {
             
 
 
-    <header class="header-home animated">
+    <header class="header-home animated ">
         
-            <span class="link">
-                <img class="selfie" alt="Mohammad Jafar Mashhadi" src="https://mjafar.me/assets/images/mj.jpg" />
-            </span>
+        <h1 class="title">Tags</h1>
         
-
-        <h1 class="title">Mohammad Jafar Mashhadi</h1>
-        <h2 class="description">An ordinary genius.</h2>
-
-        <div class="so-ci-al-links">
-    
-
-    
-        <a class="link" data-title="twitter.com/mashhadimj" href="http://twitter.com/mashhadimj" target="_blank">
-            <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="linkedin.com/in/mjmashhadiebrahim" href="http://linkedin.com/in/mjmashhadiebrahim" target="_blank">
-            <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="github.com/MJafarMashhadi" href="https://github.com/MJafarMashhadi" target="_blank">
-            <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-        </a>
-    
-
-    
-
-    
-        <a class="link" data-title="stackoverflow.com/users/1823497/mjafar-mash" href="http://stackoverflow.com/users/1823497/mjafar-mash" target="_blank">
-            <svg class="icon icon-stackoverflow"><use xlink:href="#icon-stackoverflow"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="me@mjafar.me" href="mailto:me@mjafar.me">
-            <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
-        </a>
-    
-</div>
-
     </header>
 
 
