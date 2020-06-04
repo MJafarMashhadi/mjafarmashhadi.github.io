@@ -66,6 +66,19 @@
     strong entrepreneurial/business vision which even helped me to be successful in the stock market today. I 
     got some of my experiences in Nivad in `the hard way' which might have hurt the business at the time, but
     I came out of them stronger and wiser.</p>
+- name: iHealth card
+  active: Oct. - Nov. 2019
+  source_code: null
+  url: null
+  my_favorite: false
+  sorting_tags:
+    - Hackathon
+  tags:
+    - Android
+    - Leadership
+    - Startup
+  description: >
+    <p> TBA </p>
 - name: Tweeeeter
   active: Sep. 2019
   source_code: null
@@ -80,3 +93,19 @@
   description: >
     <p>I trained an LSTM based recurrent neural network with character embeddings on the corpus of my own tweets
     to generate new tweets in my writing style.</p>
+
+- name: Sequence 2 Script
+  active: March. - May. 2019
+  source_code: null
+  url: null
+  my_favorite: false
+  sorting_tags:
+    - Hackathon
+  tags:
+    - AWS
+    - Python
+    - Postgresql
+    - Leadership
+    - Startup
+  description: >
+    <p> TBA </p>
