@@ -3,8 +3,18 @@ layout: page
 title: Projects
 ---
 <section class="list">
+    <p>
+        You can filter the projects to see me as:
+        <div class="btn-group project-sort">
+            <button class="btn active" data-tag="*">Show All</button>
+            <button class="btn" data-tag="tensorflow">Data Scientist</button>
+            <button class="btn" data-tag="python">Python Developer</button>
+            <button class="btn" data-tag="java">Java Developer</button>
+        </div>
+    </p>
+
     {% for project in site.data.projects %}
-        <div class="post item {% if project.my_favorite %}star{% endif %}{% for tag in project.sorting_tags %} tag_{{tag|slugify}}{% endfor %}">
+        <div class="post item project {% if project.my_favorite %}star{% endif %}{% for tag in project.sorting_tags %} tag_{{tag|slugify}}{% endfor %}">
             {% if project.url %}
             <a class="url" href="{{ project.url }}">
                 <h3 class="title">{% if project.my_favorite %}:star:{% endif %} {{ project.name }}</h3>

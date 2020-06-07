@@ -28,7 +28,29 @@ layout: compress
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
     {{ scss_sheet | scssify }}
     </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        jQuery(document).ready(function($) {
+            $('.btn-group').on('click', '.btn:not(.active)', function() {
+                var $newButton = $(this);
+                var $activeButton = $newButton.siblings('.active');
+                var tagToShow = $newButton.data('tag');
+                var tagToHide = $activeButton.data('tag');
 
+                function changeStyleCallback() {
+                    $activeButton.removeClass('active');
+                    $newButton.addClass('active');
+                }
+
+                if (tagToShow === '*') {
+                    $('.project.item').fadeIn(100, changeStyleCallback)
+                } else {
+                    $('.project.item.tag_' + tagToShow).fadeIn(100, changeStyleCallback)
+                    $('.project.item:not(.tag_'+ tagToShow + ')').fadeOut(100, function() {changeStyleCallback()})
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 
