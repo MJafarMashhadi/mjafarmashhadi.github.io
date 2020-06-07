@@ -20,16 +20,16 @@
     - Embeddings
     - Course Project
   description: >
-    <p>I implemented and compared several deep neural networks architectures to see how well they can
+    <p>I implemented and compared several deep neural network architectures to see how well they can
     detect phishing web pages. They were trained and evaluated on a combination of several datasets.</p>
 
-    <p>In this project I experimented with embeddings (word level and character level), RNNs using GRU cells,
-    and convolutions. The data came from multiple sources, so I developed a simple pipleline to merge
+    <p>In this project, I experimented with embeddings (word level and character level), RNNs using GRU cells,
+    and convolutions. The data came from multiple sources, so I developed a simple pipeline to merge
     the data sets and perform the cleaning on the go. Keras's functional API played an important role in
     these architectures' implementation.
     </p>
 
-    <p>More details are available in the repostory's <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/blob/master/README.md">readme</a> and
+    <p>More details are available in the repository's <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/blob/master/README.md">readme</a> and
     the 1-page <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/raw/master/ExtendedAbstract.pdf">extended abstract</a>.</p>
 - name: Inferring State Models from Black-box Software Using Hybrid Deep Neural Networks
   active: May 2019 - Current
@@ -64,10 +64,10 @@
     and image segmentation. The evaluation part was also a bit challenging and I had to implement a variation of
     precision, recall, and F1 Score.</p>
 
-    <p>In the implementation part too I had a lot to learn. I learned how to compile tensorflow to use GPU on my
+    <p>On the implementation side, I had a lot to learn too. I learned how to compile TensorFlow to use GPU on my
     machine. I used a pipeline of python generators fed into TensorFlow's DataSet API to optimize for best memory
-    utilization and computational performance. I created a custom layer in keras to properly handle masking of 
-    the padding zeros. I also learned creating custom loss functions and custom validation metrics. </p>
+    utilization and computational performance. I created a custom layer in Keras to properly handle masking of 
+    the padding zeros. I also learned to create custom loss functions and custom validation metrics.</p>
 
     <p>A conference paper with more details on this project's implementation and results is under review as of
     now.</p>
@@ -121,20 +121,20 @@
     - Leadership
     - Startup
   description: >
-    <p>This project started in March 2019 in NeuroNexus hackathon. I was in the team until May that year when the project
-    finished, afterwards I decided to leave the team for several personal reasons. We created a tool to assist laboratories 
+    <p>This project started in March 2019 in the Neuro Nexus hackathon. I was in the team until May that year when the project
+    finished, afterwards, I decided to leave the team for several reasons. We created a tool to assist laboratories 
     and clinicians with translating pharmacogenomic testing results into clinically useful recommendations. The recommendations
     are based on expert guidelines developed by the Clinical Pharmacogenetics Implementation Consortium (CPIC) and the Royal 
     Dutch Association for the Advancements of Pharmacy - Pharmacogenetics Working Group (DPWG). </p>
 
     <p>This project was my first Canadian leadership experience which boosted my confidence to work in a professional international
-    environment. In the first meeting we had I took the initiative, using my experience with Nivad Cloud, to lead a brainstorming
+    environment. In the first meeting we had, I took the initiative, using my experience with Nivad Cloud, to lead a brainstorming
     session to come up with a solution, set the goals and milestones, and assign tasks to team members. We decided to create an
     <a href="https://sequence2script.github.io/" target="_new">online tool</a> with an intuitive and simple interface for clinicians
     and laboratories to use. <a href="https://github.com/sequence2script/sequence2script.github.io">Masoud</a> and Patrick 
     designed and implemented the front-end and the report structure with input from the product owner (also called challenge champion),
     Dr. Chad Bousman. Patrick also designed the logo, pamphlets, the poster, and the demo day presentation given his designing experience. 
-    <a href="https://www.linkedin.com/in/nima-miryeganeh/" target="_blank">Nima</a> and I created the back-end 
+    <a href="https://www.linkedin.com/in/nima-miryeganeh/" target="_blank">Nima</a> and I created the backend 
     using Python. I deployed it as a lambda function with a serverless architecture on AWS. I taught Nicholas and Elzaane 
     some basics of working with Amazon RDS service as they were in charge of cleaning and transforming the data from the sources
     into a relational model for the backend to use.</p>
@@ -142,17 +142,17 @@
     <p>
     I created a positive atmosphere and a balance during the development of the project where every one felt useful, always having
     something meaningful to do while not being overwhelmed by the amount of work left. 
-    I made sure that every one had a freedom of decision making in their sub-team while having clear boundries for who should do what.
+    I made sure that everyone had freedom of decision making in their sub-team while having clear boundaries for who should do what.
     We managed to create a complete working prototype while perfectly meeting the deadline with not much pressure.
-    In the last night before the demo day I called for a last brainstoriming meeting to plan the presentation. We summarized 
+    On the last night before the demo day, I called for a last brainstoriming meeting to plan the presentation. We summarized 
     what is the problem we are solving and to reflect and enumerate the most important strengths of our solution. Patrick and 
-    Elzaane did a fantastic job in presenting the project to the judges and the general public on the demo day.
+    Elzaane did a fantastic job of presenting the project to the judges and the general public on the demo day.
     </p>
 
     <p>What I took from doing this project was much more about leadership and soft skills in general than experimenting and learning
     technical skills such as AWS.</p>
 
-    <p>P.S. I just noticed that the names of three team members (Nima, Masoud, and me) is removed from the development team
+    <p>P.S. I just noticed that the names of three team members (Nima, Masoud, and me) are removed from the development team
     list, basically not giving us credit for what we did for the project. It is quite immoral, isn't it? </p>
 - name: Nivad Cloud
   active: Sep. 2015 - Dec. 2017
@@ -171,7 +171,6 @@
     - Production
     - Relational Databases
     - NoSQL databases
-    - BaaS
     - Android
     - Java
   description: >
@@ -185,7 +184,7 @@
     designed the database, and deployed the service on the servers. I had an amazing journey from starting 
     a hobby side project to growing it into a successful startup serving thousands of customers in production.</p>
     
-    <p>From a technical view I had an amazing learning experience in a variety of backend development and
+    <p>From a technical view, I had an amazing learning experience in a variety of backend development and
     maintenance as well. I learned how to set up an Nginx reverse proxy, keep services alive on docker,
     and how to manage SSL certificates. I had to separate API and the users' dashboard separate to achieve
     higher availability and much higher performance for the API. I learned how to properly use redis key-value
@@ -196,9 +195,9 @@
 
     <p>This is one of the most influential projects on my professional path. I gained plenty of technical 
     skills and soft skills. But more importantly, I expanded my network, came out of my bubble and communicated 
-    with people of quite different backgrounds (as customers, investors, job applicants, etc). I developed a 
+    with people of quite different backgrounds (as customers, investors, job applicants, etc). I developed an 
     entrepreneurial/business vision which even helped me to be successful in the stock market today. Overall, 
-    despite all the mistakes and shortcomings I believe that this project made me stronger and wiser.</p>
+    despite all the mistakes and shortcomings, I believe that this project made me stronger and wiser.</p>
 # - name:
 #     active: 
 #     source_code: null
