@@ -5,6 +5,8 @@
   url: https://github.com/MJafarMashhadi/Haplophysh
   sorting_tags:
     - Academic
+    - python
+    - tensorflow
   tags: 
     - Python
     - TensorFlow
@@ -35,6 +37,8 @@
   my_favorite: true
   sorting_tags:
     - Academic
+    - python
+    - tensorflow
   tags:
     - Python
     - TensorFlow
@@ -72,6 +76,8 @@
   my_favorite: true
   sorting_tags:
     - Commercial
+    - python
+    - java
   tags:
     - Python
     - Django
@@ -105,9 +111,8 @@
     <p>This is one of the most influential projects on my professional path. I gained plenty of technical 
     skills and soft skills. But more importantly, I expanded my network, came out of my bubble and communicated 
     with people of quite different backgrounds (as customers, investors, job applicants, etc). I developed a 
-    strong entrepreneurial/business vision which even helped me to be successful in the stock market today. I 
-    got some of my experiences in Nivad in `the hard way' which might have hurt the business at the time, but
-    I came out of them stronger and wiser.</p>
+    entrepreneurial/business vision which even helped me to be successful in the stock market today. Overall, 
+    despite all the mistakes and shortcomings I believe that this project made me stronger and wiser.</p>
 - name: iHealth card
   active: Oct. - Nov. 2019
   source_code: null
@@ -115,6 +120,7 @@
   my_favorite: false
   sorting_tags:
     - Hackathon
+    - java
   tags:
     - Android
     - Kotlin
@@ -129,6 +135,8 @@
   my_favorite: false
   sorting_tags:
     - hobby
+    - python
+    - tensorflow
   tags:
     - Python
     - TensorFlow
@@ -144,6 +152,7 @@
   my_favorite: false
   sorting_tags:
     - Hackathon
+    - python
   tags:
     - Python
     - AWS
