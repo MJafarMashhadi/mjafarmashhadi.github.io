@@ -1350,10 +1350,10 @@ pre {
                 }
 
                 if (tagToShow === '*') {
-                    $('.project.item').fadeIn(100, changeStyleCallback)
+                    $('.project.item').fadeIn(100, changeStyleCallback);
                 } else {
-                    $('.project.item.tag_' + tagToShow).fadeIn(100, changeStyleCallback)
-                    $('.project.item:not(.tag_'+ tagToShow + ')').fadeOut(100, function() {changeStyleCallback()})
+                    $('.project.item.tag_' + tagToShow).fadeIn(100, changeStyleCallback);
+                    $('.project.item:not(.tag_'+ tagToShow + ')').fadeOut(100, changeStyleCallback);
                 }
             });
         });
