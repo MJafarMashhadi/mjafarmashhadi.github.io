@@ -22,16 +22,30 @@
         display: block
         // margin-bottom: 6rem
 
-    > .post-tags > .item
-        padding: 2px 8px
-        border-radius: 3px
-        font-size: 1.1rem
-        background: $epsilon
-        color: $alpha
-        letter-spacing: 1px
-        margin: 3px 1px
-        text-decoration: none
-        display: inline-block
+    > .post-tags 
+        & > .item
+            padding: 2px 8px
+            border-radius: 3px
+            font-size: 1.1rem
+            background: $epsilon
+            color: $alpha
+            letter-spacing: 1px
+            margin: 3px 1px
+            text-decoration: none
+            display: inline-block
+            
+            &.country
+                background: adjust-color($epsilon, $red: 200)
+                padding-right: 5px
+                padding-left: 5px
+                & > .emoji
+                    width: 1em
+                    height: 1em
+                    margin: 0
+                    opacity: 0.6
+                    position: relative
+                    top: 1px
+
 
     // general style
     > h2,
