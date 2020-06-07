@@ -774,31 +774,42 @@ pre {
   display: block;
   width: 95%;
   margin: 0 auto; }
-.home > .list > .item > .url,
-.home > .list > .item > .date,
-.blog > .list > .item > .url,
-.blog > .list > .item > .date,
-.projects > .list > .item > .url,
-.projects > .list > .item > .date {
-  display: inline-block;
-  padding: 20px 0 10px 0;
-  text-decoration: none; }
-.home > .list > .item > .date,
-.blog > .list > .item > .date,
-.projects > .list > .item > .date {
-  float: right;
-  margin-bottom: 0; }
-.home > .list > .item > .url > .title,
-.blog > .list > .item > .url > .title,
-.projects > .list > .item > .url > .title {
-  margin: 0;
-  width: 75%;
-  font-weight: 500;
-  transition: all ease-in-out 0.2s; }
-.home > .list > .item:hover > .url > .title,
-.blog > .list > .item:hover > .url > .title,
-.projects > .list > .item:hover > .url > .title {
-  color: #4b0082; }
+  .home > .list > .item > .url, .home > .list > .item > .date,
+  .blog > .list > .item > .url,
+  .blog > .list > .item > .date,
+  .projects > .list > .item > .url,
+  .projects > .list > .item > .date {
+    display: inline-block;
+    padding: 20px 0 10px 0;
+    text-decoration: none; }
+  .home > .list > .item > .date,
+  .blog > .list > .item > .date,
+  .projects > .list > .item > .date {
+    float: right;
+    margin-bottom: 0; }
+  .home > .list > .item .url > .title,
+  .blog > .list > .item .url > .title,
+  .projects > .list > .item .url > .title {
+    margin: 0;
+    width: 75%;
+    font-weight: 500;
+    transition: all ease-in-out 0.2s; }
+  .home > .list > .item :hover > .url > .title,
+  .blog > .list > .item :hover > .url > .title,
+  .projects > .list > .item :hover > .url > .title {
+    color: #4b0082; }
+.home > .list .country,
+.blog > .list .country,
+.projects > .list .country {
+  margin: 0 3px; }
+  .home > .list .country > .emoji,
+  .blog > .list .country > .emoji,
+  .projects > .list .country > .emoji {
+    width: 1em;
+    height: 1em;
+    margin: 0;
+    opacity: 0.5;
+    top: 0; }
 .home > .list aside,
 .blog > .list aside,
 .projects > .list aside {
