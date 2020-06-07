@@ -31,23 +31,33 @@
         width: 95%
         margin: 0 auto
 
-    > .item > .url,
-    > .item > .date 
-        display: inline-block
-        padding: 20px 0 10px 0
-        text-decoration: none
-    > .item > .date 
-        float: right
-        margin-bottom: 0
+        & > .url,
+        & > .date 
+            display: inline-block
+            padding: 20px 0 10px 0
+            text-decoration: none
+        & > .date
+            float: right
+            margin-bottom: 0
 
-    > .item > .url > .title
-        margin: 0
-        width: 75%
-        font-weight: 500
-        transition: all ease-in-out .2s
+        & .url > .title
+            margin: 0
+            width: 75%
+            font-weight: 500
+            transition: all ease-in-out .2s
 
-    > .item:hover > .url > .title
-        color: $delta
+        & :hover > .url > .title
+            color: $delta
+    .country 
+        margin: 0 3px
+
+        & > .emoji
+            width: 1em
+            height: 1em
+            margin: 0
+            opacity: 0.5
+            top: 0
+
 
     // maybe we can't nest html5 elements
     // can you help me?

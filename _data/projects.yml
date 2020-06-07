@@ -3,6 +3,7 @@
   source_code: https://github.com/MJafarMashhadi/Haplophysh
   my_favorite: true
   url: https://github.com/MJafarMashhadi/Haplophysh
+  country: canada
   sorting_tags:
     - Academic
     - python
@@ -35,6 +36,7 @@
   source_code: null
   url: null
   my_favorite: true
+  country: canada
   sorting_tags:
     - Academic
     - python
@@ -49,7 +51,7 @@
     - Recurrent Neural Networks
     - Convolutional Neural Networks
   description: >
-    <p>In collaboration with MicroPilot Inc, to generate a state model of their UAV auto-pilot software for 
+    <p>This is a project I did as my MSc project for <a href="https://www.micropilot.com/" target="_new" rel="nofollow">MicroPilot Inc</a>, to generate a state model of their UAV auto-pilot software for 
     testing and verification. I created a deep neural network a hybrid of convolutional and recurrent layers,
     that takes as input the values of auto-pilot's inputs and outputs (sensor readings and servo outputs) and 
     predicts the state of the system. Although I had access to the 500k LOC code base of the auto-pilot, we
@@ -69,11 +71,95 @@
 
     <p>A conference paper with more details on this project's implementation and results is under review as of
     now.</p>
+- name: iHealth card
+  active: Oct. - Nov. 2019
+  source_code: null
+  url: null
+  my_favorite: false
+  country: canada
+  sorting_tags:
+    - Hackathon
+    - java
+  tags:
+    - Android
+    - Kotlin
+    - Leadership
+    - Startup
+  description: >
+    <p>Will be added soon</p>
+- name: Tweeeeter
+  active: Sep. 2019
+  source_code: null
+  url: null
+  my_favorite: false
+  country: canada
+  sorting_tags:
+    - hobby
+    - python
+    - tensorflow
+  tags:
+    - Python
+    - TensorFlow
+    - Keras
+    - LSTM
+  description: >
+    <p>I trained an LSTM based recurrent neural network with character embeddings on the corpus of my own tweets
+    to generate new tweets in my writing style.</p>
+- name: Sequence 2 Script
+  active: March. - May. 2019
+  source_code: https://github.com/sequence2script/sequence2script.github.io
+  url: https://www.psychpgxlab.com/projects/sequence2script
+  my_favorite: true
+  country: canada
+  sorting_tags:
+    - Hackathon
+    - python
+  tags:
+    - Python
+    - AWS
+    - Postgresql
+    - Leadership
+    - Startup
+  description: >
+    <p>This project started in March 2019 in NeuroNexus hackathon. I was in the team until May that year when the project
+    finished, afterwards I decided to leave the team for several personal reasons. We created a tool to assist laboratories 
+    and clinicians with translating pharmacogenomic testing results into clinically useful recommendations. The recommendations
+    are based on expert guidelines developed by the Clinical Pharmacogenetics Implementation Consortium (CPIC) and the Royal 
+    Dutch Association for the Advancements of Pharmacy - Pharmacogenetics Working Group (DPWG). </p>
+
+    <p>This project was my first Canadian leadership experience which boosted my confidence to work in a professional international
+    environment. In the first meeting we had I took the initiative, using my experience with Nivad Cloud, to lead a brainstorming
+    session to come up with a solution, set the goals and milestones, and assign tasks to team members. We decided to create an
+    <a href="https://sequence2script.github.io/" target="_new">online tool</a> with an intuitive and simple interface for clinicians
+    and laboratories to use. <a href="https://github.com/sequence2script/sequence2script.github.io">Masoud</a> and Patrick 
+    designed and implemented the front-end and the report structure with input from the product owner (also called challenge champion),
+    Dr. Chad Bousman. Patrick also designed the logo, pamphlets, the poster, and the demo day presentation given his designing experience. 
+    <a href="https://www.linkedin.com/in/nima-miryeganeh/" target="_blank">Nima</a> and I created the back-end 
+    using Python. I deployed it as a lambda function with a serverless architecture on AWS. I taught Nicholas and Elzaane 
+    some basics of working with Amazon RDS service as they were in charge of cleaning and transforming the data from the sources
+    into a relational model for the backend to use.</p>
+
+    <p>
+    I created a positive atmosphere and a balance during the development of the project where every one felt useful, always having
+    something meaningful to do while not being overwhelmed by the amount of work left. 
+    I made sure that every one had a freedom of decision making in their sub-team while having clear boundries for who should do what.
+    We managed to create a complete working prototype while perfectly meeting the deadline with not much pressure.
+    In the last night before the demo day I called for a last brainstoriming meeting to plan the presentation. We summarized 
+    what is the problem we are solving and to reflect and enumerate the most important strengths of our solution. Patrick and 
+    Elzaane did a fantastic job in presenting the project to the judges and the general public on the demo day.
+    </p>
+
+    <p>What I took from doing this project was much more about leadership and soft skills in general than experimenting and learning
+    technical skills such as AWS.</p>
+
+    <p>P.S. I just noticed that the names of three team members (Nima, Masoud, and me) is removed from the development team
+    list, basically not giving us credit for what we did for the project. It is quite immoral, isn't it? </p>
 - name: Nivad Cloud
   active: Sep. 2015 - Dec. 2017
   source_code: null
   url: https://nivad.cloud/
   my_favorite: true
+  country: iran
   sorting_tags:
     - Commercial
     - python
@@ -113,54 +199,6 @@
     with people of quite different backgrounds (as customers, investors, job applicants, etc). I developed a 
     entrepreneurial/business vision which even helped me to be successful in the stock market today. Overall, 
     despite all the mistakes and shortcomings I believe that this project made me stronger and wiser.</p>
-- name: iHealth card
-  active: Oct. - Nov. 2019
-  source_code: null
-  url: null
-  my_favorite: false
-  sorting_tags:
-    - Hackathon
-    - java
-  tags:
-    - Android
-    - Kotlin
-    - Leadership
-    - Startup
-  description: >
-    <p> TBA </p>
-- name: Tweeeeter
-  active: Sep. 2019
-  source_code: null
-  url: null
-  my_favorite: false
-  sorting_tags:
-    - hobby
-    - python
-    - tensorflow
-  tags:
-    - Python
-    - TensorFlow
-    - Keras
-    - LSTM
-  description: >
-    <p>I trained an LSTM based recurrent neural network with character embeddings on the corpus of my own tweets
-    to generate new tweets in my writing style.</p>
-- name: Sequence 2 Script
-  active: March. - May. 2019
-  source_code: null
-  url: null
-  my_favorite: false
-  sorting_tags:
-    - Hackathon
-    - python
-  tags:
-    - Python
-    - AWS
-    - Postgresql
-    - Leadership
-    - Startup
-  description: >
-    <p> TBA </p>
 # - name:
 #     active: 
 #     source_code: null

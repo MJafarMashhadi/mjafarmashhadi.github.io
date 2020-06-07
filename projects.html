@@ -16,12 +16,12 @@ title: Projects
     {% for project in site.data.projects %}
         <div class="post item project {% if project.my_favorite %}star{% endif %}{% for tag in project.sorting_tags %} tag_{{tag|slugify}}{% endfor %}">
             {% if project.url %}
-            <a class="url" href="{{ project.url }}">
-                <h3 class="title">{% if project.my_favorite %}:star:{% endif %} {{ project.name }}</h3>
+            <a class="url" href="{{ project.url }}" target="_new">
+                <h3 class="title">{% if project.my_favorite %}:star:{% endif %} {{ project.name }}</h3><span class="country">:{{ project.country }}:</span>
             </a>
             {% else %}
-            <span class="url" href="{{ project.url }}">
-                <h3 class="title">{% if project.my_favorite %}:star:{% endif %} {{ project.name }}</h3>
+            <span class="url">
+                <h3 class="title">{% if project.my_favorite %}:star:{% endif %} {{ project.name }}</h3><span class="country">:{{ project.country }}:</span>
             </span>
             {% endif %}
             <span class="date"><time>{{ project.active }}</time></span>
