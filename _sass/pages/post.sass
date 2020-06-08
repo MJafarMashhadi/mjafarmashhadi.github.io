@@ -4,6 +4,9 @@
     > .title
         text-align: center
         margin-bottom: 3rem
+    
+    > p 
+        text-align: justify
 
     > .date,
     > .post-tags
@@ -38,13 +41,23 @@
                 background: adjust-color($epsilon, $red: 200)
                 padding-right: 5px
                 padding-left: 5px
-                & > .emoji
-                    width: 1em
-                    height: 1em
-                    margin: 0
+                > .emoji
                     opacity: 0.6
-                    position: relative
-                    top: 1px
+            &.academic 
+                background: #f4e7ff
+
+            &.production
+                background: #bcfda3
+            
+            &.commercial
+                background: #fff68f
+
+            > .emoji
+                width: 1em
+                height: 1em
+                margin: 0
+                position: relative
+                top: 1px
 
 
     // general style

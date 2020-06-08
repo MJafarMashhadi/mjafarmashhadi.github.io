@@ -28,6 +28,12 @@ title: Projects
 
             <div class="post-tags">
                 <a class="item country" href="#">:{{ project.country }}:</a>
+                {% if project.sorting_tags contains 'academic' %}
+                <a class="item academic" href="#">:mortar_board: Academic</a>
+                {% endif %}
+                {% if project.sorting_tags contains 'production' %}
+                <a class="item production" href="#">:rocket: In Production</a>
+                {% endif %}
                 {% for tag in project.tags %}
                     <a class="item" href="#">{{ tag }}</a>
                 {% endfor %}
