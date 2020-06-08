@@ -5,7 +5,7 @@
   url: https://github.com/MJafarMashhadi/Haplophysh
   country: canada
   sorting_tags:
-    - Academic
+    - academic
     - python
     - tensorflow
   tags: 
@@ -38,7 +38,7 @@
   my_favorite: true
   country: canada
   sorting_tags:
-    - Academic
+    - academic
     - python
     - tensorflow
   tags:
@@ -78,7 +78,7 @@
   my_favorite: false
   country: canada
   sorting_tags:
-    - Hackathon
+    - hackathon
     - java
   tags:
     - Android
@@ -112,8 +112,9 @@
   my_favorite: true
   country: canada
   sorting_tags:
-    - Hackathon
+    - hackathon
     - python
+    - production
   tags:
     - Python
     - AWS
@@ -135,7 +136,7 @@
     designed and implemented the front-end and the report structure with input from the product owner (also called challenge champion),
     Dr. Chad Bousman. Patrick also designed the logo, pamphlets, the poster, and the demo day presentation given his designing experience. 
     <a href="https://www.linkedin.com/in/nima-miryeganeh/" target="_blank">Nima</a> and I created the backend 
-    using Python. I deployed it as a lambda function with a serverless architecture on AWS. I taught Nicholas and Elzaane 
+    using Python. I deployed it as a lambda function with a serverless architecture on AWS. I taught <a href="https://www.linkedin.com/in/nicolas-mora-a54245105/" target="_new">Nicolas</a> and <a href="https://www.linkedin.com/in/elzanne-venter/" target="_new">Elzanne</a> 
     some basics of working with Amazon RDS service as they were in charge of cleaning and transforming the data from the sources
     into a relational model for the backend to use.</p>
 
@@ -146,11 +147,11 @@
     We managed to create a complete working prototype while perfectly meeting the deadline with not much pressure.
     On the last night before the demo day, I called for a last brainstoriming meeting to plan the presentation. We summarized 
     what is the problem we are solving and to reflect and enumerate the most important strengths of our solution. Patrick and 
-    Elzaane did a fantastic job of presenting the project to the judges and the general public on the demo day.
+    Elzanne did a fantastic job of presenting the project to the judges and the general public on the demo day.
     </p>
 
-    <p>What I took from doing this project was much more about leadership and soft skills in general than experimenting and learning
-    technical skills such as AWS.</p>
+    <p>What I took from doing this project was much more about leadership and soft skills in general, though I experimented 
+    and learned technical skills such as AWS as well.</p>
 
     <p>P.S. I just noticed that the names of three team members (Nima, Masoud, and me) are removed from the development team
     list, basically not giving us credit for what we did for the project. It is quite immoral, isn't it? </p>
@@ -161,14 +162,14 @@
   my_favorite: true
   country: iran
   sorting_tags:
-    - Commercial
+    - commercial
     - python
     - java
+    - production
   tags:
     - Python
     - Django
     - Cloud
-    - Production
     - Relational Databases
     - NoSQL databases
     - Android
@@ -203,6 +204,7 @@
 #     source_code: null
 #     url: null
 #     my_favorite: false
+#     country: iran
 #     sorting_tags:
 #       - Hackathon
 #     tags:
