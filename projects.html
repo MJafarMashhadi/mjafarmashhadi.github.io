@@ -35,7 +35,14 @@ title: Projects
                 <a class="item production" href="#">:rocket: In Production</a>
                 {% endif %}
                 {% for tag in project.tags %}
-                    <a class="item" href="#">{{ tag }}</a>
+                    <a class="item" href="#">
+                        {% if tag == 'Python' %}<img class="emoji" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg" />{% endif %}
+                        {% if tag == 'TensorFlow' %}<img class="emoji" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" />{% endif %}
+                        {% if tag == 'AWS' %}<img class="emoji" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/AWS_Simple_Icons_AWS_Cloud.svg" />{% endif %}
+                        {% if tag == 'Java' %}<img class="emoji" src="/assets/images/java.svg" />{% endif %}
+                        {% if tag == 'Android' %}<img class="emoji" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Android_logo_2019.svg" />{% endif %}
+                        {{ tag }}
+                    </a>
                 {% endfor %}
             </div>
             {{ project.description }}
