@@ -85,7 +85,11 @@
     - Leadership
     - Startup
   description: >
-    <p>Will be added soon</p>
+    <p>iHealth Card is a persoanl card-shaped USB stick that keeps the medical recordd of its owner in a 
+    distributed and encrypted manner. It is intended as an interim cost effective and scalable solution that 
+    is independent from the internet infrastructure targeted for use in developing countries. It is accompanied
+    with an android app for healthcare workers to access the data on the card. <a target="_blank" href="https://www.linkedin.com/in/karndeepdhami/">Karndeep</a>
+    and I were developing the Android app using java and Kotlin. </p>
 - name: Tweeeeter
   active: Sep. 2019
   source_code: null
