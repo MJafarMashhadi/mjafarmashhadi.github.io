@@ -220,15 +220,15 @@
     - Crowd Sourcing
     - Gamification
   description: >
-  <p>My BSc. capstone project was to collaborate with <a href="https://www.linkedin.com/in/sahar-badihi-28620a121" target="_new">Sahar</a>,
-  my supervisor's MSc. student at the time, in crowdsourcing a data collection task. I developed a website that users could use for
-  data labeling and peer-verification of the labels. The platform is equipped with multiple gamification elements. It rewards
-  the participants who had submitted more verified and correct labels with scores, award them achievement badges, and creates a 
-  competetive environment by showing them a leaderboard. I deployed this project on openshift and created a step-by-step tutorial
-  to be used later as my supervisor asked me.</p>
-  
-  <p>The website was live for a limited time and served labeled thousands of data, with peer verification, by hundreds of users.
-  Top 10 participants were later rewarded (in real world, not with game scores :smile:) for their help.</p>
+    <p>My BSc. capstone project was to collaborate with <a href="https://www.linkedin.com/in/sahar-badihi-28620a121" target="_new">Sahar</a>,
+    my supervisor's MSc. student at the time, in crowdsourcing a data collection task. I developed a website that users could use for
+    data labeling and peer-verification of the labels. The platform is equipped with multiple gamification elements. It rewards
+    the participants who had submitted more verified and correct labels with scores, award them achievement badges, and creates a 
+    competetive environment by showing them a leaderboard. I deployed this project on openshift and created a step-by-step tutorial
+    to be used later as my supervisor asked me.</p>
+    
+    <p>The website was live for a limited time and served labeled thousands of data, with peer verification, by hundreds of users.
+    Top 10 participants were later rewarded (in real world, not with game scores :smile:) for their help.</p>
 - name: Mini Google
   active: Dec. 2015 - Jan. 2016
   source_code: null
