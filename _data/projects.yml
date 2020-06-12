@@ -226,7 +226,7 @@
     indexes the title, author, and the abstract on an Elastic search back end. <a target="_blank" href="https://www.linkedin.com/in/mohammad-hosein-sharafi-20380063/">Mohammad Hossein</a>
     and I implemented this as the 3<sup>rd</sup> project for the modern information retrieval course. We performed
     clustering based on co-authorship, calculated page rank based on citations and showed them on the results page.</p>
-- name: Indexing Semantic Analysis on IMDb and MEDLINE
+- name: Inverted Indexing for query answering + Semantic classification on IMDb and MEDLINE
   active: Oct. - Nov. 2015 
   source_code: null
   url: null
