@@ -15,7 +15,7 @@
     - Keras
     - Deep Learning
     - Machine Learning
-    - NLP
+    - Natural Language Processing (NLP)
     - Recurrent Neural Networks
     - Convolutional Neural Networks
     - Embeddings
@@ -205,28 +205,52 @@
     entrepreneurial/business vision which even helped me to be successful in the stock market today. Overall, 
     despite all the mistakes and shortcomings, I believe that this project made me stronger and wiser.</p>
 - name: Mini Google
-    active: Dec. 2015 - Jan 2016
-    source_code: null
-    url: https://github.com/MJafarMashhadi/MiniGoogle/blob/master/settings.py
-    my_favorite: true
-    country: iran
-    sorting_tags:
-      - academic
-      - java
-      - python
-      - production
-      - datascience
-    tags:
-      - Java
-      - Information Retrieval
-      - Elastic Search
-      - Python
-      - Flask
-    description: >
-      <p> Mini Google is a search engine for academic papers. It crawls researchgate.com for academic papers and 
-      indexes the title, author, and the abstract on an Elastic search back end. <a target="_blank" href="https://www.linkedin.com/in/mohammad-hosein-sharafi-20380063/">Mohammad Hossein</a>
-      and I implemented this as the 3<sup>rd</sup> project for the modern information retrieval course. We performed
-      clustering based on co-authorship, calculated page rank based on citations and showed them on the results page.</p>
+  active: Dec. 2015 - Jan 2016
+  source_code: null
+  url: https://github.com/MJafarMashhadi/MiniGoogle/blob/master/settings.py
+  my_favorite: true
+  country: iran
+  sorting_tags:
+    - academic
+    - java
+    - python
+    - datascience
+  tags:
+    - Java
+    - Information Retrieval
+    - Elastic Search
+    - Python
+    - Flask
+  description: >
+    <p> Mini Google is a search engine for academic papers. It crawls researchgate.com for academic papers and 
+    indexes the title, author, and the abstract on an Elastic search back end. <a target="_blank" href="https://www.linkedin.com/in/mohammad-hosein-sharafi-20380063/">Mohammad Hossein</a>
+    and I implemented this as the 3<sup>rd</sup> project for the modern information retrieval course. We performed
+    clustering based on co-authorship, calculated page rank based on citations and showed them on the results page.</p>
+- name: Indexing Semantic Analysis on IMDb and MEDLINE
+  active: Oct. - Nov. 2015 
+  source_code: null
+  url: null
+  my_favorite: false
+  country: iran
+  sorting_tags:
+    - academic
+    - java
+    - datascience
+  tags:
+    - Java
+    - Information Retrieval
+    - Natural Language Processing (NLP)
+  description: >
+    <p>As the second project for modern information retrieval course, I evaluated the performance of two supervised binary
+    classification algorithms on the IMDb movie reviews dataset with a bag of words model. The classification algorithms 
+    are KNN and Naïve Bayes. In addition to that, I did the same on the MEDLINE medical prescriptions dataset as 
+    a multi-class classification task. Both were evaluated and compared using F1 score and area under ROC curve. Data 
+    cleaning, tokenization, vectorization, stemming, and the classification algorithms (KNN and Naive Bayes) were all 
+    implemented from scratch as a requirement for the course. </p>
+
+    <p>As the first course project, I implemented a inverse indexing and query engine. Tokenization, stemming, vectorization
+    with TF-IDF model, and processing queries were all implemented in Java from scratch. 
+    </p>
 
 # - name:
 #     active: 
