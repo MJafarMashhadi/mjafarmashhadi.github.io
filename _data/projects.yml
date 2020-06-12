@@ -204,8 +204,33 @@
     with people of quite different backgrounds (as customers, investors, job applicants, etc). I developed an 
     entrepreneurial/business vision which even helped me to be successful in the stock market today. Overall, 
     despite all the mistakes and shortcomings, I believe that this project made me stronger and wiser.</p>
+- name: Crowd Summarizer
+  active: Oct. 2015 - 
+  source_code: https://github.com/MJafarMashhadi/CodeDescriptionInformationCollector
+  url: null
+  my_favorite: false
+  country: iran
+  sorting_tags:
+    - academic
+    - python
+    - production
+  tags:
+    - Python
+    - Django
+    - Crowd Sourcing
+    - Gamification
+  description: >
+  <p>My BSc. capstone project was to collaborate with <a href="https://www.linkedin.com/in/sahar-badihi-28620a121" target="_new">Sahar</a>,
+  my supervisor's MSc. student at the time, in crowdsourcing a data collection task. I developed a website that users could use for
+  data labeling and peer-verification of the labels. The platform is equipped with multiple gamification elements. It rewards
+  the participants who had submitted more verified and correct labels with scores, award them achievement badges, and creates a 
+  competetive environment by showing them a leaderboard. I deployed this project on openshift and created a step-by-step tutorial
+  to be used later as my supervisor asked me.</p>
+  
+  <p>The website was live for a limited time and served labeled thousands of data, with peer verification, by hundreds of users.
+  Top 10 participants were later rewarded (in real world, not with game scores :smile:) for their help.</p>
 - name: Mini Google
-  active: Dec. 2015 - Jan 2016
+  active: Dec. 2015 - Jan. 2016
   source_code: null
   url: https://github.com/MJafarMashhadi/MiniGoogle/blob/master/settings.py
   my_favorite: true
@@ -270,7 +295,6 @@
     game two groups of gold seeking agents explore a map in search of hidden treasures and might occasionally engage in a 
     fight. We developed two versions with slightly different objectives as well as improvements for two rounds of the regional
     contest in 2014 and 2015.</p>
-
 
 # - name:
 #     active: 
