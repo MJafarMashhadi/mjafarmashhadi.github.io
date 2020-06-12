@@ -251,6 +251,26 @@
     <p>As the first course project, I implemented a inverse indexing and query engine. Tokenization, stemming, vectorization
     with TF-IDF model, and processing queries were all implemented in Java from scratch. 
     </p>
+- name: Gold Hunters AI challenges
+  active: Fall 2014 and 2015
+  source_code: https://bitbucket.org/acm-chall_teh-regional_14/gold-hunters/src/master/
+  url: http://icpc.sharif.edu/2014/challenge
+  my_favorite: false
+  country: iran
+  sorting_tags:
+    - production
+    - java
+  tags:
+    - Java
+    - Socket Programming
+    - Multi Agent
+  description: >
+    <p>I implemented all the socket and networking code and parts of the game logic in this project in Java. We created
+    a multi-agent game for ACM ICPC participants as an extra contest they could optionally sumbit codes to. In Gold Hunters 
+    game two groups of gold seeking agents explore a map in search of hidden treasures and might occasionally engage in a 
+    fight. We developed two versions with slightly different objectives as well as improvements for two rounds of the regional
+    contest in 2014 and 2015.</p>
+
 
 # - name:
 #     active: 

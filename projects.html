@@ -15,8 +15,8 @@ title: Projects
 
     {% for project in site.data.projects %}
         <div class="post item project {% if project.my_favorite %}star{% endif %}{% for tag in project.sorting_tags %} tag_{{tag|slugify}}{% endfor %}">
-            {% if project.url %}
-            <a class="url" href="{{ project.url }}" target="_new">
+            {% if project.url or project.source_code %}
+            <a class="url" href="{% if project.url %}{{ project.url }}{% elsif project.source_code %}{{ project.source_code }}{% endif %}" target="_new">
                 <h3 class="title">{% if project.my_favorite %}:star:{% endif %} {{ project.name }}</h3>
             </a>
             {% else %}
