@@ -23,13 +23,27 @@
             box-shadow: #FFF 0 0 0 5px
             border-radius: 3px
 
+.hide_timeline
+    content: " "
+    background: white
+    width: 5px
+    position: absolute
+    height: 3em
+    padding: 1px
+    display: block
+    margin: 0 0 0 -2.5px
+    padding: 1px
+    z-index: 8000
+
 .home > .list,
 .blog > .list,
 .projects > .list
     > .item
         display: block
-        width: 95%
-        margin: 0 auto
+        width: 100%
+        margin: 0 auto -2em auto
+        padding: 0 21px 2em 21px
+        border-left: 1px solid $epsilon
 
         & > .url,
         & > .date 
@@ -40,6 +54,20 @@
             float: right
             margin-bottom: 0
 
+        & .url::before
+            content: " "
+            border: 2px solid $epsilon
+            margin-left: -38px
+            margin-right: 6px
+            border-radius: 1000px
+            position: relative
+            top: -6px
+            overflow: hidden
+            padding: 14px
+            font-size: 0
+            background: white
+            z-index: 8100
+
         & .url > .title
             margin: 0
             width: 75%
@@ -48,6 +76,13 @@
 
         & :hover > .url > .title
             color: $delta
+        
+        & img[title=":star:"].emoji
+            position: relative
+            margin-left: -32px
+            margin-right: 7px
+            top: 3px
+            z-index: 8200
 
     // maybe we can't nest html5 elements
     // can you help me?

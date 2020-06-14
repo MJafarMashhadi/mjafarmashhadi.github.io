@@ -13,6 +13,7 @@ title: Projects
         </div>
     </p>
 
+    <div class="hide_timeline"></div>
     {% for project in site.data.projects %}
         <div class="post item project {% if project.my_favorite %}star{% endif %}{% for tag in project.sorting_tags %} tag_{{tag|slugify}}{% endfor %}">
             {% if project.url or project.source_code %}
@@ -49,4 +50,6 @@ title: Projects
 
         </div>
     {% endfor %}
+    <div class="hide_timeline"></div>
+
 </section>
