@@ -32,7 +32,7 @@
     <p>More details are available in the repository's <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/blob/master/README.md">readme</a> and
     the 1-page <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/raw/master/ExtendedAbstract.pdf">extended abstract</a>.</p>
 - name: Inferring State Models from Black-box Software Using Hybrid Deep Neural Networks
-  active: May 2019 - Current
+  active: May 2019 -
   source_code: null
   url: null
   my_favorite: true
@@ -87,7 +87,7 @@
     - Leadership
     - Startup
   description: >
-    <p>iHealth Card is a persoanl card-shaped USB stick that keeps the medical recordd of its owner in a 
+    <p>iHealth Card is a persoanl card-shaped USB stick that keeps the medical records of its owner in a 
     distributed and encrypted manner. It is intended as an interim cost effective and scalable solution that 
     is independent from the internet infrastructure targeted for use in developing countries. It is accompanied
     with an android app for healthcare workers to access the data on the card. <a target="_blank" href="https://www.linkedin.com/in/karndeepdhami/">Karndeep</a>
@@ -290,7 +290,7 @@
     - Socket Programming
     - Multi Agent
   description: >
-    <p>I implemented all the socket and networking code and parts of the game logic in this project in Java. We created
+    <p>I implemented all the socket and networking code and parts of the game UI in this project in Java. We created
     a multi-agent game for ACM ICPC participants as an extra contest they could optionally sumbit codes to. In Gold Hunters 
     game two groups of gold seeking agents explore a map in search of hidden treasures and might occasionally engage in a 
     fight. We developed two versions with slightly different objectives as well as improvements for two rounds of the regional
