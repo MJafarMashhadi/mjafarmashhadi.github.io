@@ -1,6 +1,7 @@
 - name: TweetFraming
   active: May 2020 - Aug. 2020
   source_code: https://github.com/MJafarMashhadi/Haplophysh
+  url: https://github.com/MJafarMashhadi/Haplophysh
   featured: true
   country: canada
   sorting_tags:
@@ -30,6 +31,7 @@
 - name: Paparzzi Tester
   active: June 2020 - Aug. 2020
   source_code: https://github.com/MJafarMashhadi/pprz_tester
+  url: https://github.com/MJafarMashhadi/pprz_tester
   featured: True
   country: canada
   sorting_tags:
@@ -40,7 +42,7 @@
     - Test Automation
     - Ivy
   description: >
-    <p>I developed a test generator, test executor, and flight data recorder tool that works with [Paparazzi](http://paparazziuav.org/)
+    <p>I developed a test generator, test executor, and flight data recorder tool that works with <a href="http://paparazziuav.org/" target="_blank" rel="nofollow">Paparazzi</a>
     autopilot. I created this tool as part of my thesis, as I needed realistic flight telemetry data from Paparazzi autopilot
     but there were not many system tests available in the project itself. 
     </p>  
@@ -118,10 +120,10 @@
     the padding zeros. I also learned to create custom loss functions and custom validation metrics.</p>
 
     <p>A conference paper with more details on this project's implementation and results has been published 
-    in ASE '20 conference, you can read it for free on [sea-lab's website](https://sea-lab.github.io/papers/2020-Hybrid.pdf).
+    in ASE '20 conference, you can read it for free on <a href="https://sea-lab.github.io/papers/2020-Hybrid.pdf" target="_blank" rel="nofollow">sea-lab's website</a>.
     I further extended this project with hyper-parameter optimization, replicating it on Paparazzi autopilot 
     (check out Paparzzi Tester prject above as well), and applying transfer learning to reduce training overhead.
-    Details are available in my thesis, which you can find [here](https://github.com/MJafarMashhadi/University-of-Calgary-Graduate-Thesis).
+    Details are available in my thesis, which you can find <a href="https://github.com/MJafarMashhadi/University-of-Calgary-Graduate-Thesis" target="_blank" rel="nofollow">here</a>.
     </p>
 - name: iHealth card
   active: Oct. - Nov. 2019
