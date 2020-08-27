@@ -17,7 +17,7 @@
     - Natural Language Processing (NLP)
     - Social Network Analysis
     - Embeddings
-    description: >
+  description: >
     <p>In collaboration with Dr. JC Boucher, from political sciences department, I started working on this
     tweet analysis project. I experimented with the state of the art and state of practice NLP algorithms
     to understand tweets and to categorize them based on how they are framing their issues about a particular
@@ -40,10 +40,10 @@
     - Test Automation
     - Ivy
   description: >
-  <p>I developed a test generator, test executor, and flight data recorder tool that works with [Paparazzi](http://paparazziuav.org/)
-  autopilot. I created this tool as part of my thesis, as I needed realistic flight telemetry data from Paparazzi autopilot
-  but there were not many system tests available in the project itself. 
-  </p>  
+    <p>I developed a test generator, test executor, and flight data recorder tool that works with [Paparazzi](http://paparazziuav.org/)
+    autopilot. I created this tool as part of my thesis, as I needed realistic flight telemetry data from Paparazzi autopilot
+    but there were not many system tests available in the project itself. 
+    </p>  
 - name: Haplophysh
   active: Mar. 2020 - Apr. 2020
   source_code: https://github.com/MJafarMashhadi/Haplophysh
