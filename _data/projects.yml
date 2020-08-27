@@ -1,3 +1,49 @@
+- name: TweetFraming
+  active: May 2020 - Aug. 2020
+  source_code: https://github.com/MJafarMashhadi/Haplophysh
+  featured: true
+  country: canada
+  sorting_tags:
+    - python
+    - tensorflow
+    - datascience
+    - academic
+  tags:
+    - Python
+    - TensorFlow
+    - Keras
+    - Deep Learning
+    - Machine Learning
+    - Natural Language Processing (NLP)
+    - Social Network Analysis
+    - Embeddings
+    description: >
+    <p>In collaboration with Dr. JC Boucher, from political sciences department, I started working on this
+    tweet analysis project. I experimented with the state of the art and state of practice NLP algorithms
+    to understand tweets and to categorize them based on how they are framing their issues about a particular
+    subject. GloVe, word mover distance measure, Spacy, and short-text clustering techniques to name a few. 
+    This will be used to monitor how campaigns are performing as well as which political views and narratives 
+    are more prevalent in Canadian communities. For example Alberta Health Services is launching an HPV 
+    vaccination campaign and they want to modify and optimize it based on how the public, proponents and 
+    opponents, are talking about it.
+    </p>
+- name: Paparzzi Tester
+  active: June 2020 - Aug. 2020
+  source_code: https://github.com/MJafarMashhadi/pprz_tester
+  featured: True
+  country: canada
+  sorting_tags:
+    - academic
+    - python
+  tags:
+    - Python
+    - Test Automation
+    - Ivy
+  description: >
+  <p>I developed a test generator, test executor, and flight data recorder tool that works with [Paparazzi](http://paparazziuav.org/)
+  autopilot. I created this tool as part of my thesis, as I needed realistic flight telemetry data from Paparazzi autopilot
+  but there were not many system tests available in the project itself. 
+  </p>  
 - name: Haplophysh
   active: Mar. 2020 - Apr. 2020
   source_code: https://github.com/MJafarMashhadi/Haplophysh
