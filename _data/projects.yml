@@ -1,7 +1,7 @@
-- name: TweetFraming
+- name: Natural Language Understanding for Twitter Campaign Monitoring
   active: May 2020 - Aug. 2020
-  source_code: https://github.com/MJafarMashhadi/Haplophysh
-  url: https://github.com/MJafarMashhadi/Haplophysh
+  source_code: https://github.com/MJafarMashhadi/TweetFraming
+  url: https://github.com/MJafarMashhadi/TweetFraming
   featured: true
   country: canada
   sorting_tags:
