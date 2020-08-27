@@ -1,7 +1,7 @@
 - name: Haplophysh
   active: Mar. 2020 - Apr. 2020
   source_code: https://github.com/MJafarMashhadi/Haplophysh
-  my_favorite: true
+  featured: true
   url: https://github.com/MJafarMashhadi/Haplophysh
   country: canada
   sorting_tags:
@@ -35,7 +35,7 @@
   active: May 2019 -
   source_code: null
   url: null
-  my_favorite: true
+  featured: true
   country: canada
   sorting_tags:
     - academic
@@ -76,7 +76,7 @@
   active: Oct. - Nov. 2019
   source_code: null
   url: null
-  my_favorite: false
+  featured: false
   country: canada
   sorting_tags:
     - hackathon
@@ -96,7 +96,7 @@
   active: Sep. 2019
   source_code: null
   url: null
-  my_favorite: false
+  featured: false
   country: canada
   sorting_tags:
     - hobby
@@ -115,7 +115,7 @@
   active: March. - May. 2019
   source_code: https://github.com/sequence2script/sequence2script.github.io
   url: https://www.psychpgxlab.com/projects/sequence2script
-  my_favorite: true
+  featured: true
   country: canada
   sorting_tags:
     - hackathon
@@ -165,7 +165,7 @@
   active: Sep. 2015 - Dec. 2017
   source_code: null
   url: https://nivad.cloud/
-  my_favorite: true
+  featured: true
   country: iran
   sorting_tags:
     - commercial
@@ -208,7 +208,7 @@
   active: Oct. 2015 - 
   source_code: https://github.com/MJafarMashhadi/CodeDescriptionInformationCollector
   url: null
-  my_favorite: false
+  featured: false
   country: iran
   sorting_tags:
     - academic
@@ -233,7 +233,7 @@
   active: Dec. 2015 - Jan. 2016
   source_code: null
   url: https://github.com/MJafarMashhadi/MiniGoogle/blob/master/settings.py
-  my_favorite: true
+  featured: true
   country: iran
   sorting_tags:
     - academic
@@ -255,7 +255,7 @@
   active: Oct. - Nov. 2015 
   source_code: null
   url: null
-  my_favorite: false
+  featured: false
   country: iran
   sorting_tags:
     - academic
@@ -280,7 +280,7 @@
   active: Fall 2014 and 2015
   source_code: https://bitbucket.org/acm-chall_teh-regional_14/gold-hunters/src/master/
   url: http://icpc.sharif.edu/2014/challenge
-  my_favorite: false
+  featured: false
   country: iran
   sorting_tags:
     - production
@@ -300,7 +300,7 @@
 #     active: 
 #     source_code: null
 #     url: null
-#     my_favorite: false
+#     featured: false
 #     country: iran
 #     sorting_tags:
 #       - Hackathon

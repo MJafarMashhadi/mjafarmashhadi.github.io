@@ -15,14 +15,14 @@ title: Projects
 
     <div class="hide_timeline"></div>
     {% for project in site.data.projects %}
-        <div class="post item project {% if project.my_favorite %}star{% endif %}{% for tag in project.sorting_tags %} tag_{{tag|slugify}}{% endfor %}">
+        <div class="post item project {% if project.featured %}star{% endif %}{% for tag in project.sorting_tags %} tag_{{tag|slugify}}{% endfor %}">
             {% if project.url or project.source_code %}
             <a class="url" href="{% if project.url %}{{ project.url }}{% elsif project.source_code %}{{ project.source_code }}{% endif %}" target="_new">
-                <h3 class="title">{% if project.my_favorite %}:star:{% endif %} {{ project.name }}</h3>
+                <h3 class="title">{% if project.featured %}:star:{% endif %} {{ project.name }}</h3>
             </a>
             {% else %}
             <span class="url">
-                <h3 class="title">{% if project.my_favorite %}:star:{% endif %} {{ project.name }}</h3>
+                <h3 class="title">{% if project.featured %}:star:{% endif %} {{ project.name }}</h3>
             </span>
             {% endif %}
             <span class="date"><time>{{ project.active }}</time></span>
