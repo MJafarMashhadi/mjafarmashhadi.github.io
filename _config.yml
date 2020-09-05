@@ -3,7 +3,7 @@ name: Mohammad Jafar Mashhadi
 bio: A Data Scientist and a Seasoned Software Engineer
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: My portfolio website I guess?
 
 # if it's an external image, update below for true
 # better with square images
@@ -33,7 +33,7 @@ twitter: mashhadimj
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: mjmashhadiebrahim
+linkedin: mjafarmashhadi
 # youtube: myyoutube
 # spotify: myspotify
 github: MJafarMashhadi
@@ -48,7 +48,7 @@ stackoverflow: 1823497/mjafar-mash
 email: me@mjafar.me
 
 authors:
-    johndoe:
+    mashhadimj:
         name: Mohammad Jafar Mashhadi
         bio: Your average genius.
         external-image: false
