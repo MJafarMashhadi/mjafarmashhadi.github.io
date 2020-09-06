@@ -14,6 +14,9 @@
         font-weight: 300
         font-size: 1.4rem
         text-transform: uppercase
+        text-align: center
+        display: block
+        margin-bottom: 6rem
         letter-spacing: 1px
         -webkit-font-smoothing: antialiased
         text-rendering: optimizeLegibility
@@ -21,44 +24,16 @@
     > .date
         margin-bottom: 2rem
 
-    > .post-tags
-        display: block
-        // margin-bottom: 6rem
-
-    > .post-tags 
-        & > .item
-            padding: 2px 8px
-            border-radius: 3px
-            font-size: 1.25rem
-            background: $epsilon
-            color: $alpha
-            letter-spacing: 1px
-            margin: 5px 1px
-            text-decoration: none
-            display: inline-block
-            
-            &.country
-                background: adjust-color($epsilon, $red: 200)
-                padding-right: 5px
-                padding-left: 5px
-                > .emoji
-                    opacity: 0.6
-            &.academic 
-                background: #f4e7ff
-
-            &.production
-                background: #bcfda3
-            
-            &.commercial
-                background: #fff68f
-
-            > .emoji
-                width: 14px
-                height: 14px
-                margin: -2px 0
-                position: relative
-                //top: 1px
-
+    > .post-tags > .item
+        padding: 2px 8px
+        border-radius: 3px
+        font-size: 1.1rem
+        background: $epsilon
+        color: $alpha
+        letter-spacing: 1px
+        margin: 3px 1px
+        text-decoration: none
+        display: inline-block
 
     // general style
     > h2,
@@ -86,3 +61,36 @@
             margin: 1em 0
         .next
             text-align: right
+
+
+.page.projects .post
+    > .post-tags
+        display: block
+        text-align: initial
+        margin-bottom: 0
+
+        & > .item
+            font-size: 1.25rem
+            margin: 5px 1px
+
+            &.country
+                background: adjust-color($epsilon, $red: 200)
+                padding-right: 5px
+                padding-left: 5px
+                > .emoji
+                    opacity: 0.6
+            &.academic
+                background: #f4e7ff
+
+            &.production
+                background: #bcfda3
+
+            &.commercial
+                background: #fff68f
+
+            > .emoji
+                width: 14px
+                height: 14px
+                margin: -2px 0
+                position: relative
+                //top: 1px
