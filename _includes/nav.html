@@ -17,6 +17,12 @@
         <li class="item">
             <a class="link" href="https://blog.mjafar.me">Blog</a>
         </li>
+
+        {% if page.title != "Publications" %}
+            <li class="item">
+                <a class="link" href="{{ site.url }}/publications">Publications</a>
+            </li>
+        {% endif %}
     
         {% if site.about == true %}
             {% if page.title != "About" %}

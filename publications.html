@@ -1,0 +1,19 @@
+---
+layout: page
+title: Publications
+---
+
+<section class="list">
+	{% if site.categories.publication.size == 0 %}
+		<p class="text-center">Nothing published yet!</p>
+	{% else %}
+        {% for paper in site.categories.publication %}
+            <div class="item {% if paper.star %}star{% endif %}">
+                <a class="url" href="{{ site.url }}{{ paper.url }}">
+                    <aside class="date"><time datetime="{{ paper.date | date:"%d-%m-%Y" }}">{{ paper.date | date: "%b %d %Y" }}</time></aside>
+                    <h3 class="title">{{ paper.title }}</h3>
+                </a>
+            </div>
+        {% endfor %}
+	{% endif %}
+</section>

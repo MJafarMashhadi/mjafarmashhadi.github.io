@@ -1,5 +1,6 @@
 .home,
 .blog,
+.publications,
 .projects
     margin-top: 125px
 
@@ -23,50 +24,20 @@
             box-shadow: #FFF 0 0 0 5px
             border-radius: 3px
 
-.hide_timeline
-    content: " "
-    background: white
-    width: 5px
-    position: absolute
-    height: 3em
-    padding: 1px
-    display: block
-    margin: 0 0 0 -2.5px
-    padding: 1px
-    z-index: 8000
-
 .home > .list,
 .blog > .list,
+.publications > .list,
 .projects > .list
     > .item
         display: block
-        width: 100%
-        margin: 0 auto -2em auto
-        padding: 0 21px 2em 21px
-        border-left: 1px solid $epsilon
+        width: 95%
+        margin: 0 auto
 
-        & > .url,
-        & > .date 
-            display: inline-block
-            padding: 20px 0 10px 0
+        & > .url
+            width: 100%
+            display: block
+            padding: 20px 0
             text-decoration: none
-        & > .date
-            float: right
-            margin-bottom: 0
-
-        & .url::before
-            content: " "
-            border: 2px solid $epsilon
-            margin-left: -38px
-            margin-right: 6px
-            border-radius: 1000px
-            position: relative
-            top: -6px
-            overflow: hidden
-            padding: 14px
-            font-size: 0
-            background: white
-            z-index: 8100
 
         & .url > .title
             margin: 0
@@ -76,13 +47,6 @@
 
         & :hover > .url > .title
             color: $delta
-        
-        & img[title=":star:"].emoji
-            position: relative
-            margin-left: -32px
-            margin-right: 7px
-            top: 3px
-            z-index: 8200
 
     // maybe we can't nest html5 elements
     // can you help me?
@@ -101,6 +65,7 @@
         color: $alpha
 
 .blog > .list > .item > .url,
+.publications > .list > .item > .url,
 .projects > .list > .item > .url
     > .title
         display: inline
@@ -110,3 +75,53 @@
         position: relative
         top: -4px
         margin-right: 10px
+
+.hide_timeline
+    content: " "
+    background: white
+    width: 5px
+    position: absolute
+    height: 3em
+    padding: 1px
+    display: block
+    margin: 0 0 0 -2.5px
+    padding: 1px
+    z-index: 8000
+
+.page.projects > .list
+        > .item
+            width: 100%
+            margin: 0 auto -2em auto
+            padding: 0 21px 2em 21px
+            border-left: 1px solid $epsilon
+            & > .url
+                width: initial
+                display: inline-block
+                padding: 20px 0 10px 0
+            & .url::before
+                content: " "
+                border: 2px solid $epsilon
+                margin-left: -38px
+                margin-right: 6px
+                border-radius: 1000px
+                position: relative
+                top: -6px
+                overflow: hidden
+                padding: 14px
+                font-size: 0
+                background: white
+                z-index: 8100
+
+            & > .date
+                display: inline-block
+                padding: 20px 0 10px 0
+                text-decoration: none
+                float: right
+                margin-bottom: 0
+
+            & img[title=":star:"].emoji
+                position: relative
+                margin-left: -32px
+                margin-right: 7px
+                top: 3px
+                z-index: 8200
