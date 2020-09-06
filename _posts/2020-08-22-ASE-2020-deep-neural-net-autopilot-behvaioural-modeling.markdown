@@ -2,6 +2,7 @@
 layout: paper
 title: "Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems"
 category: publication
+permalink: /publications/:title:output_ext
 tag:
 - publication
 - deep learning

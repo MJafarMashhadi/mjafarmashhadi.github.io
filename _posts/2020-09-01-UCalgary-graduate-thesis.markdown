@@ -2,6 +2,7 @@
 layout: paper
 title: "MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems"
 category: publication
+permalink: /publications/:title:output_ext
 tag:
 - publication
 - deep learning

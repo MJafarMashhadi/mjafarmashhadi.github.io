@@ -2,6 +2,7 @@
 layout: paper
 title: "Interactive semi-automated specification mining for debugging: An experience report"
 category: publication
+permalink: /publications/:title:output_ext
 tag:
 - publication
 - software engineering

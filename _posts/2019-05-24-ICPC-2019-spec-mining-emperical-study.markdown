@@ -2,6 +2,7 @@
 layout: paper
 title: "An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application"
 category: publication
+permalink: /publications/:title:output_ext
 tag:
 - publication
 - software engineering
