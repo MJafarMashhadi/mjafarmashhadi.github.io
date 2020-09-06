@@ -25,21 +25,21 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application | Mohammad Jafar Mashhadi</title>
+<title>Interactive semi-automated specification mining for debugging: An experience report | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application" />
+<meta property="og:title" content="Interactive semi-automated specification mining for debugging: An experience report" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Abstract Dynamic model inference techniques have been the center of many research projects recently. There are now multiple open source implementations of state-of-the-art algorithms, which provide basic abstraction and merging capabilities. Most of these tools and algorithms have been developed with one particular application in mind, which is program comprehension. The output models can abstract away the details of the program and represent the software behaviour in a concise and easy to understand form. However, one application context that is less studied is using such inferred models for debugging, where the behaviour to abstract is a faulty behaviour (e.g., a set of execution traces including a failed test case). We tried to apply some of the existing model inference techniques in a real-world industrial context to support program comprehension for debugging. Our initial experiments have shown many limitations both in terms of implementation as well as the algorithms. The paper will discuss the root cause of the failures and proposes ideas for future improvement." />
-<meta property="og:description" content="Abstract Dynamic model inference techniques have been the center of many research projects recently. There are now multiple open source implementations of state-of-the-art algorithms, which provide basic abstraction and merging capabilities. Most of these tools and algorithms have been developed with one particular application in mind, which is program comprehension. The output models can abstract away the details of the program and represent the software behaviour in a concise and easy to understand form. However, one application context that is less studied is using such inferred models for debugging, where the behaviour to abstract is a faulty behaviour (e.g., a set of execution traces including a failed test case). We tried to apply some of the existing model inference techniques in a real-world industrial context to support program comprehension for debugging. Our initial experiments have shown many limitations both in terms of implementation as well as the algorithms. The paper will discuss the root cause of the failures and proposes ideas for future improvement." />
-<link rel="canonical" href="https://mjafar.me/ICPC-2019-spec-mining-emperical-study/" />
-<meta property="og:url" content="https://mjafar.me/ICPC-2019-spec-mining-emperical-study/" />
+<meta name="description" content="Also presented at ASE 2019’s journal-first presentations track." />
+<meta property="og:description" content="Also presented at ASE 2019’s journal-first presentations track." />
+<link rel="canonical" href="https://mjafar.me/publications/IST-2019-interactive-debugging.html" />
+<meta property="og:url" content="https://mjafar.me/publications/IST-2019-interactive-debugging.html" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-05-24T17:10:00+00:00" />
+<meta property="article:published_time" content="2019-04-24T17:10:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application","dateModified":"2019-05-24T17:10:00+00:00","datePublished":"2019-05-24T17:10:00+00:00","url":"https://mjafar.me/ICPC-2019-spec-mining-emperical-study/","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/ICPC-2019-spec-mining-emperical-study/"},"description":"Abstract Dynamic model inference techniques have been the center of many research projects recently. There are now multiple open source implementations of state-of-the-art algorithms, which provide basic abstraction and merging capabilities. Most of these tools and algorithms have been developed with one particular application in mind, which is program comprehension. The output models can abstract away the details of the program and represent the software behaviour in a concise and easy to understand form. However, one application context that is less studied is using such inferred models for debugging, where the behaviour to abstract is a faulty behaviour (e.g., a set of execution traces including a failed test case). We tried to apply some of the existing model inference techniques in a real-world industrial context to support program comprehension for debugging. Our initial experiments have shown many limitations both in terms of implementation as well as the algorithms. The paper will discuss the root cause of the failures and proposes ideas for future improvement.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Interactive semi-automated specification mining for debugging: An experience report","dateModified":"2019-04-24T17:10:00+00:00","datePublished":"2019-04-24T17:10:00+00:00","url":"https://mjafar.me/publications/IST-2019-interactive-debugging.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/publications/IST-2019-interactive-debugging.html"},"description":"Also presented at ASE 2019’s journal-first presentations track.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -65,7 +65,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/ICPC-2019-spec-mining-emperical-study/">
+    <link rel="canonical" href="https://mjafar.me/publications/IST-2019-interactive-debugging.html">
 
     <style>
     
@@ -973,10 +973,10 @@ pre {
 
 .publication-info {
   background-color: #ededed;
+  border: 1px solid #e6e6e6;
   color: #666;
-  padding: 15px 12px;
-  margin-right: 15px;
-  margin-left: 15px; }
+  padding: 15px 20px;
+  border-radius: 5px; }
   .publication-info .paper-meta {
     clear: both; }
   .publication-info .paper-meta::before {
@@ -1512,10 +1512,10 @@ pre {
 
 
 
-<h1 class="title">An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application</h1>
+<h1 class="title">Interactive semi-automated specification mining for debugging: An experience report</h1>
 
 <span class="date">
-    <time datetime="24-05-2019">Friday. May 24, 2019</time>
+    <time datetime="24-04-2019">Wednesday. April 24, 2019</time>
 </span>
 
 
@@ -1529,27 +1529,42 @@ pre {
 
 
 <p class="publication-info">
-    <span class="paper-meta published-in">ICPC '19: Proceedings of the 27th International Conference on Program Comprehension</span>
-    <br><a class="paper-meta doi" href="https://doi.org/10.1109/ICPC.2019.00020" target="_blank">10.1109/ICPC.2019.00020</a>
-    <br><a class="paper-meta arxiv" href="https://arxiv.org/abs/1903.11242" target="_blank">1903.11242</a>
+    <span class="paper-meta published-in">Information and Software Technology Volume 113, September 2019, Pages 20-38</span>
+    <br><a class="paper-meta doi" href="https://doi.org/10.1016/j.infsof.2019.05.002" target="_blank">10.1016/j.infsof.2019.05.002</a>
+    <br><a class="paper-meta arxiv" href="https://arxiv.org/abs/1905.02245" target="_blank">1905.02245</a>
 </p>
 
-<h2 id="abstract">Abstract</h2>
-<p>Dynamic model inference techniques have been the center of many research projects recently. There are now multiple open 
-source implementations of state-of-the-art algorithms, which provide basic abstraction and merging capabilities. Most of 
-these tools and algorithms have been developed with one particular application in mind, which is program comprehension.
-The output models can abstract away the details of the program and represent the software behaviour in a concise and 
-easy to understand form. However, one application context that is less studied is using such inferred models for 
-debugging, where the behaviour to abstract is a faulty behaviour (e.g., a set of execution traces including a failed 
-test case). We tried to apply some of the existing model inference techniques in a real-world industrial context to 
-support program comprehension for debugging. Our initial experiments have shown many limitations both in terms of 
-implementation as well as the algorithms. The paper will discuss the root cause of the failures and proposes ideas for 
-future improvement.</p>
+<p><strong>Also presented at ASE 2019’s <a href="https://2019.ase-conferences.org/details/ase-2019-Journal-First-Presentations/13/Interactive-semi-automated-specification-mining-for-debugging-An-experience-report">journal-first presentations track</a>.</strong></p>
 
-<h2 id="presentation-slides">Presentation Slides</h2>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/z5hAbZ8HZfihvr" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
-<div style="margin-bottom:5px"> 
-</div>
+<h2 id="abstract">Abstract</h2>
+<h3 id="context">Context</h3>
+<p>Specification mining techniques are typically used to extract the specification of a software in the absence of 
+(up-to-date) specification documents. This is useful for program comprehension, testing, and anomaly detection. However, 
+specification mining can also potentially be used for debugging, where a faulty behavior is abstracted to give developers 
+a context about the bug and help them locating it.</p>
+
+<h3 id="objective">Objective</h3>
+<p>In this project, we investigate this idea in an industrial setting. We propose a very basic semi-automated specification 
+mining approach for debugging and apply that on real reported issues from an AutoPilot software system from our industry 
+partner, MicroPilot Inc. The objective is to assess the feasibility and usefulness of the approach in a real-world 
+setting.</p>
+
+<h3 id="method">Method</h3>
+<p>The approach is developed as a prototype tool, working on C code, which accept a set of relevant state fields and 
+functions, per issue, and generates an extended finite state machine that represents the faulty behavior, abstracted 
+with respect to the relevant context (the selected fields and functions).</p>
+
+<h3 id="results">Results</h3>
+<p>We qualitatively evaluate the approach by a set of interviews (including observational studies) with the company’s 
+developers on their real-world reported bugs. The results show that (a) our approach is feasible, (b) it can be
+automated to some extent, and (c) brings advantages over only using their code-level debugging tools. We also compared 
+this approach with traditional fully automated state-merging algorithms and reported several issues when applying those 
+techniques on a real-world debugging context.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>The main conclusion of this study is that the idea of an “interactive” specification mining rather than a fully 
+automated mining tool is NOT impractical and indeed is useful for the debugging use case.</p>
+
 
 
 

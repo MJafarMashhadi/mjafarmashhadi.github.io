@@ -25,21 +25,21 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Interactive semi-automated specification mining for debugging: An experience report | Mohammad Jafar Mashhadi</title>
+<title>MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Interactive semi-automated specification mining for debugging: An experience report" />
+<meta property="og:title" content="MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Also presented at ASE 2019’s journal-first presentations track." />
-<meta property="og:description" content="Also presented at ASE 2019’s journal-first presentations track." />
-<link rel="canonical" href="https://mjafar.me/IST-2019-interactive-debugging/" />
-<meta property="og:url" content="https://mjafar.me/IST-2019-interactive-debugging/" />
+<meta name="description" content="Abstract Inferring behavior model of a running software system is quite useful for several automated software engineering tasks, such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are white-box, i.e., they require source code to be instrumented to get run-time traces. However, in many systems, instrumenting the entire source code is not possible (e.g., when using black-box third-party libraries) or might be very costly. %One useful scenario for automated black-box behavior inference is in software control units (such as autopilots), where the software system’s reactions over time changes based on the inputs. Run-time state models of such systems are very powerful means for anomaly detection and debugging. Unfortunately, most black-box techniques that detect states over time are either univariate, or make assumptions on the data distribution, or have limited power for learning over a long period of past behavior. To overcome the above issues, in this thesis, I proposed a hybrid deep neural network that accepts as input a set of time series, one per input/output signal of the system, and applies a set of convolutional and recurrent layers to learn the non-linear correlations between signals and the patterns, over time. I have applied this approach on two real UAV autopilot case studies: one from our industry partner, MicroPilot (MP in short), with half a million lines of C code, and one widely used open source solution: Paparazzi. I ran more than 1200 system-level tests in total (to generate the input data) and inferred the system’s internal state, over time. In case of Paparazzi, as it did not include system tests like MP, I created a tool that generates and executes meaningful test scenarios. Comparison with several traditional time series change point detection techniques showed that this approach improves their performance by up to 102\% in MP’s case and 94\% in Paparazzi’s, in terms of finding state change points, measured by F1 score. I also showed that this state classification algorithm provides on average 90.45\% F1 score for MP and 82.23\% for Paparazzi, which improves traditional classification algorithms by up to 17\% in MP’s case and 20\% in Paparazzi’s." />
+<meta property="og:description" content="Abstract Inferring behavior model of a running software system is quite useful for several automated software engineering tasks, such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are white-box, i.e., they require source code to be instrumented to get run-time traces. However, in many systems, instrumenting the entire source code is not possible (e.g., when using black-box third-party libraries) or might be very costly. %One useful scenario for automated black-box behavior inference is in software control units (such as autopilots), where the software system’s reactions over time changes based on the inputs. Run-time state models of such systems are very powerful means for anomaly detection and debugging. Unfortunately, most black-box techniques that detect states over time are either univariate, or make assumptions on the data distribution, or have limited power for learning over a long period of past behavior. To overcome the above issues, in this thesis, I proposed a hybrid deep neural network that accepts as input a set of time series, one per input/output signal of the system, and applies a set of convolutional and recurrent layers to learn the non-linear correlations between signals and the patterns, over time. I have applied this approach on two real UAV autopilot case studies: one from our industry partner, MicroPilot (MP in short), with half a million lines of C code, and one widely used open source solution: Paparazzi. I ran more than 1200 system-level tests in total (to generate the input data) and inferred the system’s internal state, over time. In case of Paparazzi, as it did not include system tests like MP, I created a tool that generates and executes meaningful test scenarios. Comparison with several traditional time series change point detection techniques showed that this approach improves their performance by up to 102\% in MP’s case and 94\% in Paparazzi’s, in terms of finding state change points, measured by F1 score. I also showed that this state classification algorithm provides on average 90.45\% F1 score for MP and 82.23\% for Paparazzi, which improves traditional classification algorithms by up to 17\% in MP’s case and 20\% in Paparazzi’s." />
+<link rel="canonical" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html" />
+<meta property="og:url" content="https://mjafar.me/publications/UCalgary-graduate-thesis.html" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-04-24T17:10:00+00:00" />
+<meta property="article:published_time" content="2020-09-01T17:10:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Interactive semi-automated specification mining for debugging: An experience report","dateModified":"2019-04-24T17:10:00+00:00","datePublished":"2019-04-24T17:10:00+00:00","url":"https://mjafar.me/IST-2019-interactive-debugging/","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/IST-2019-interactive-debugging/"},"description":"Also presented at ASE 2019’s journal-first presentations track.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","headline":"MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems","dateModified":"2020-09-01T17:10:00+00:00","datePublished":"2020-09-01T17:10:00+00:00","url":"https://mjafar.me/publications/UCalgary-graduate-thesis.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/publications/UCalgary-graduate-thesis.html"},"description":"Abstract Inferring behavior model of a running software system is quite useful for several automated software engineering tasks, such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are white-box, i.e., they require source code to be instrumented to get run-time traces. However, in many systems, instrumenting the entire source code is not possible (e.g., when using black-box third-party libraries) or might be very costly. %One useful scenario for automated black-box behavior inference is in software control units (such as autopilots), where the software system’s reactions over time changes based on the inputs. Run-time state models of such systems are very powerful means for anomaly detection and debugging. Unfortunately, most black-box techniques that detect states over time are either univariate, or make assumptions on the data distribution, or have limited power for learning over a long period of past behavior. To overcome the above issues, in this thesis, I proposed a hybrid deep neural network that accepts as input a set of time series, one per input/output signal of the system, and applies a set of convolutional and recurrent layers to learn the non-linear correlations between signals and the patterns, over time. I have applied this approach on two real UAV autopilot case studies: one from our industry partner, MicroPilot (MP in short), with half a million lines of C code, and one widely used open source solution: Paparazzi. I ran more than 1200 system-level tests in total (to generate the input data) and inferred the system’s internal state, over time. In case of Paparazzi, as it did not include system tests like MP, I created a tool that generates and executes meaningful test scenarios. Comparison with several traditional time series change point detection techniques showed that this approach improves their performance by up to 102\\% in MP’s case and 94\\% in Paparazzi’s, in terms of finding state change points, measured by F1 score. I also showed that this state classification algorithm provides on average 90.45\\% F1 score for MP and 82.23\\% for Paparazzi, which improves traditional classification algorithms by up to 17\\% in MP’s case and 20\\% in Paparazzi’s.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -65,7 +65,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/IST-2019-interactive-debugging/">
+    <link rel="canonical" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
 
     <style>
     
@@ -973,10 +973,10 @@ pre {
 
 .publication-info {
   background-color: #ededed;
+  border: 1px solid #e6e6e6;
   color: #666;
-  padding: 15px 12px;
-  margin-right: 15px;
-  margin-left: 15px; }
+  padding: 15px 20px;
+  border-radius: 5px; }
   .publication-info .paper-meta {
     clear: both; }
   .publication-info .paper-meta::before {
@@ -1512,10 +1512,10 @@ pre {
 
 
 
-<h1 class="title">Interactive semi-automated specification mining for debugging: An experience report</h1>
+<h1 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h1>
 
 <span class="date">
-    <time datetime="24-04-2019">Wednesday. April 24, 2019</time>
+    <time datetime="01-09-2020">Tuesday. September 01, 2020</time>
 </span>
 
 
@@ -1523,48 +1523,52 @@ pre {
         
             <a class="item" href="https://mjafar.me/tags/#publication">publication</a>
         
+            <a class="item" href="https://mjafar.me/tags/#deep-learning">deep learning</a>
+        
             <a class="item" href="https://mjafar.me/tags/#software-engineering">software engineering</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#thesis">thesis</a>
         
     </div>
 
 
 <p class="publication-info">
-    <span class="paper-meta published-in">Information and Software Technology Volume 113, September 2019, Pages 20-38</span>
-    <br><a class="paper-meta doi" href="https://doi.org/10.1016/j.infsof.2019.05.002" target="_blank">10.1016/j.infsof.2019.05.002</a>
-    <br><a class="paper-meta arxiv" href="https://arxiv.org/abs/1905.02245" target="_blank">1905.02245</a>
+    <span class="paper-meta published-in">University of Calgary Vault</span>
+    
+    
 </p>
 
-<p><strong>Also presented at ASE 2019’s <a href="https://2019.ase-conferences.org/details/ase-2019-Journal-First-Presentations/13/Interactive-semi-automated-specification-mining-for-debugging-An-experience-report">journal-first presentations track</a>.</strong></p>
-
 <h2 id="abstract">Abstract</h2>
-<h3 id="context">Context</h3>
-<p>Specification mining techniques are typically used to extract the specification of a software in the absence of 
-(up-to-date) specification documents. This is useful for program comprehension, testing, and anomaly detection. However, 
-specification mining can also potentially be used for debugging, where a faulty behavior is abstracted to give developers 
-a context about the bug and help them locating it.</p>
+<p>Inferring behavior model of a running software system is quite useful for several automated software engineering tasks, such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are white-box, i.e., they require source code to be instrumented to get run-time traces. However, in many systems, instrumenting the entire source code is not possible (e.g., when using black-box third-party libraries) or might be very costly. %One useful scenario for automated black-box behavior inference is in software control units (such as autopilots), where the software system’s reactions over time changes based on the inputs. Run-time state models of such systems are very powerful means for anomaly detection and debugging. 
+Unfortunately, most black-box techniques that detect states over time are either univariate, or make assumptions on the data distribution, or have limited power for learning over a long period of past behavior. 
+To overcome the above issues, in this thesis, I proposed a hybrid deep neural network that accepts as input a set of time series, one per input/output signal of the system, and applies a set of convolutional and recurrent layers to learn the non-linear correlations between signals and the patterns, over time. 
+I have applied this approach on two real UAV autopilot case studies: one from our industry partner, MicroPilot (MP in short), with half a million lines of C code, and one widely used open source solution: Paparazzi. 
+I ran more than 1200 system-level tests in total (to generate the input data) and inferred the system’s internal state, over time.
+In case of Paparazzi, as it did not include system tests like MP, I created a tool that generates and executes meaningful test scenarios.
+Comparison with several traditional time series change point detection techniques showed that this approach improves their performance by up to 102\% in MP’s case and 94\% in Paparazzi’s, in terms of finding state change points, measured by F1 score. I also showed that this state classification algorithm provides on average 90.45\% F1 score for MP and 82.23\% for Paparazzi, which improves traditional classification algorithms by up to 17\% in MP’s case and 20\% in Paparazzi’s.</p>
 
-<h3 id="objective">Objective</h3>
-<p>In this project, we investigate this idea in an industrial setting. We propose a very basic semi-automated specification 
-mining approach for debugging and apply that on real reported issues from an AutoPilot software system from our industry 
-partner, MicroPilot Inc. The objective is to assess the feasibility and usefulness of the approach in a real-world 
-setting.</p>
+<p>In addition, by creating a hyper-parameter tuning pipeline using grid search technique, despite having a way smaller training set in the second case study (7 times smaller compared to the first one), I managed to get a better performance, up to 48\% better, out of the neural network model as measured by 8 metrics.
+The tuning performance is compared to using the same hyper-parameters that worked for MP’s case, for Paparazzi.%  As a result, in addition to confirming that the technique is applicable on other software, I.</p>
 
-<h3 id="method">Method</h3>
-<p>The approach is developed as a prototype tool, working on C code, which accept a set of relevant state fields and 
-functions, per issue, and generates an extended finite state machine that represents the faulty behavior, abstracted 
-with respect to the relevant context (the selected fields and functions).</p>
+<h2 id="related-projects">Related Projects</h2>
+<h3 id="hybrid-net">Hybrid-net</h3>
+<p>The main repository containing the whole learning pipeline. The code is in Python using Keras on Tensor Flow.
+<a href="https://github.com/sea-lab/hybrid-net">repository</a></p>
 
-<h3 id="results">Results</h3>
-<p>We qualitatively evaluate the approach by a set of interviews (including observational studies) with the company’s 
-developers on their real-world reported bugs. The results show that (a) our approach is feasible, (b) it can be
-automated to some extent, and (c) brings advantages over only using their code-level debugging tools. We also compared 
-this approach with traditional fully automated state-merging algorithms and reported several issues when applying those 
-techniques on a real-world debugging context.</p>
+<h3 id="paparzzi-tester">Paparzzi Tester</h3>
+<p><img class="emoji" title=":airplane:" alt=":airplane:" src="https://github.githubassets.com/images/icons/emoji/unicode/2708.png" height="20" width="20">️ A fuzz testing tool for generating and performing system tests for Paparazzi auto pilot
+<a href="https://github.com/MJafarMashhadi/pprz_tester">repository</a></p>
 
-<h3 id="conclusion">Conclusion</h3>
-<p>The main conclusion of this study is that the idea of an “interactive” specification mining rather than a fully 
-automated mining tool is NOT impractical and indeed is useful for the debugging use case.</p>
+<h3 id="paparazzi">Paparazzi</h3>
+<p>I contributed code to Paparazzi autopilot: a free and open-source hardware and software project for unmanned (air) vehicles.
+<a href="https://github.com/MJafarMashhadi/paparazzi">repository</a></p>
 
+<h3 id="pprzlink">pprzlink</h3>
+<p>I contributed code and documentation to pprzlink: Message and communication library for the Paparazzi UAV system
+<a href="https://github.com/MJafarMashhadi/pprzlink">repository</a></p>
+
+<h2 id="presentation-slides">Presentation Slides</h2>
+<p>To be added later when finalized</p>
 
 
 
