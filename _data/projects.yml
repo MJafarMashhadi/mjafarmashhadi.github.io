@@ -1,5 +1,5 @@
 - name: Natural Language Understanding for Twitter Campaign Monitoring
-  active: May 2020 - Aug. 2020
+  active: May - Aug. 2020
   source_code: https://github.com/MJafarMashhadi/TweetFraming
   url: https://github.com/MJafarMashhadi/TweetFraming
   featured: true
@@ -31,7 +31,7 @@
     opponents, are talking about it.
     </p>
 - name: Paparzzi Tester
-  active: June 2020 - Aug. 2020
+  active: June - Aug. 2020
   source_code: https://github.com/MJafarMashhadi/pprz_tester
   url: https://github.com/MJafarMashhadi/pprz_tester
   featured: True
@@ -48,7 +48,7 @@
     but there were not many system tests available in the project itself. 
     </p>  
 - name: Haplophysh
-  active: Mar. 2020 - Apr. 2020
+  active: Mar. - Apr. 2020
   source_code: https://github.com/MJafarMashhadi/Haplophysh
   featured: true
   url: https://github.com/MJafarMashhadi/Haplophysh
@@ -259,7 +259,7 @@
     entrepreneurial/business vision which even helped me to be successful in the stock market today. Overall, 
     despite all the mistakes and shortcomings, I believe that this project made me stronger and wiser.</p>
 - name: Crowd Summarizer
-  active: Oct. 2015 - 
+  active: Oct. 2015 - May 2016
   source_code: https://github.com/MJafarMashhadi/CodeDescriptionInformationCollector
   url: null
   featured: false
