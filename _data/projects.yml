@@ -9,6 +9,8 @@
     - tensorflow
     - datascience
     - academic
+    - commercial
+    - production
   tags:
     - Python
     - TensorFlow
@@ -40,7 +42,6 @@
   tags:
     - Python
     - Test Automation
-    - Ivy
   description: >
     <p>I developed a test generator, test executor, and flight data recorder tool that works with <a href="http://paparazziuav.org/" target="_blank" rel="nofollow">Paparazzi</a>
     autopilot. I created this tool as part of my thesis, as I needed realistic flight telemetry data from Paparazzi autopilot
