@@ -8,7 +8,7 @@ tag:
 - deep learning
 - software engineering
 - thesis
-date: 2020-09-01 17:10
+date: 2020-09-10 15:00
 doi: null
 arxiv: null
 poster: null
@@ -28,11 +28,11 @@ In addition, by creating a hyper-parameter tuning pipeline using grid search tec
 The tuning performance is compared to using the same hyper-parameters that worked for MP's case, for Paparazzi.
 
 ## Related Projects
-### Hybrid-net
+### [Hybrid-net](/projects/#inferring-state-models-from-black-box-software-using-hybrid-deep-neural-networks)
 The main repository containing the whole learning pipeline. The code is in Python using Keras on Tensor Flow.
 [repository](https://github.com/sea-lab/hybrid-net)
 
-### Paparzzi Tester
+### [Paparzzi Tester](/projects/#paparzzi-tester)
 :airplane:️ A fuzz testing tool for generating and performing system tests for Paparazzi auto pilot
 [repository](https://github.com/MJafarMashhadi/pprz_tester)
 
@@ -45,4 +45,5 @@ I contributed code and documentation to pprzlink: Message and communication libr
 [repository](https://github.com/MJafarMashhadi/pprzlink)
 
 ## Presentation Slides
-To be added later when finalized
+
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/KYetgcTa9ummEU" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/secret/KYetgcTa9ummEU" title="Black-box Behavioral Model Inference for Autopilot Software Systems" target="_blank">Black-box Behavioral Model Inference for Autopilot Software Systems</a> </strong> from <strong><a href="https://www.slideshare.net/MohammadJafarMashhad" target="_blank">Mohammad Jafar Mashhadi</a></strong> </div>
