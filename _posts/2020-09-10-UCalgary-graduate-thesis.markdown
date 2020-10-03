@@ -45,5 +45,4 @@ I contributed code and documentation to pprzlink: Message and communication libr
 [repository](https://github.com/MJafarMashhadi/pprzlink)
 
 ## Presentation Slides
-
-<iframe src="https://www.slideshare.net/slideshow/embed_code/key/KYetgcTa9ummEU" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/secret/KYetgcTa9ummEU" title="Black-box Behavioral Model Inference for Autopilot Software Systems" target="_blank">Black-box Behavioral Model Inference for Autopilot Software Systems</a> </strong> from <strong><a href="https://www.slideshare.net/MohammadJafarMashhad" target="_blank">Mohammad Jafar Mashhadi</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/KYetgcTa9ummEU" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
