@@ -1,5 +1,6 @@
 ---
 layout: page
+comments: true
 ---
 
 {% if page.categories contains 'Persian' %}
@@ -51,4 +52,6 @@ li {
 {% if site.show-author %}
     {% include author.html %}
 {% endif %}
+
+{% include disqus.html %}
 

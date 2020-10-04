@@ -27,6 +27,9 @@ analytics-google: 'UA-52486083-5'
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
 
+disqus:
+  shortname: mashhadimj # enter this from your disqus account
+
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
 twitter: mashhadimj
