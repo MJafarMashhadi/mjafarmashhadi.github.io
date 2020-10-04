@@ -8,21 +8,10 @@ guid: http://mjafar.me/blog/?p=235
 permalink: /blog/:year/:month/uber-clones-in-iran/
 image: /assets/images/2017/02/C5gg3wMWYAA0M0W.jpg
 categories:
+  - Persian
+tag:
   - 'Bussiness &amp; Startups'
   - Social
-  - Persian
-tags:
-  - Lyft
-  - Snapp
-  - Tap30
-  - Uber
-  - آلودگی‌هوا
-  - اسنپ
-  - اوبر
-  - تخفیف
-  - ترافیک
-  - تپسی
-  - لیفت
 ---
 ## به روز رسانی 
 چند سال از انتشار این مطلب می‌گذرد و در طی این سال‌ها بعضی مشکلاتی که اشاره شده رفع شدند، بعضی مشکلات و مسائل جدید به وجود آمده‌اند، اگر الان این مطلب را مطالعه می‌کنید به قول انگلیسی زبان‌ها take it with a grain of salt!

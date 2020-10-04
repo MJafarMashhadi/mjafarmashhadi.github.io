@@ -7,8 +7,9 @@ layout: post
 guid: http://mjafar.me/blog/?p=257
 permalink: /blog/:year/:month/is-time-money/
 categories:
-  - General
   - Persian
+tag:
+  - General
   
 ---
 وقتتان را "صرف" چه چیزی می‌کنید؟

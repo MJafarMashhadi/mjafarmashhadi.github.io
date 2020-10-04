@@ -7,22 +7,11 @@ layout: post
 guid: http://mjafar.me/blog/?p=57
 permalink: /blog/:year/:month/how-to-use-git/
 categories:
+  - Persian
+tag:
   - GNU/Linux
   - Programming
   - Tools
-  - Persian
-tags:
-  - amend commit
-  - clone
-  - commit
-  - conflict
-  - git
-  - git applications
-  - git configuration
-  - merge
-  - pull
-  - push
-  - resolving conflicts
 ---
 ### گیت چیه؟ 
 

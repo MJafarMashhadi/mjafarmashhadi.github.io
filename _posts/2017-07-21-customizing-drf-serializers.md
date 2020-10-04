@@ -8,15 +8,10 @@ guid: http://mjafar.me/blog/?p=280
 permalink: /blog/:year/:month/customizing-drf-serializers/
 image: /assets/images/2017/07/rest.png
 categories:
+  - Persian
+tag:
   - Django
   - Programming
-  - Persian
-tags:
-  - customization
-  - django
-  - django rest frameword
-  - drf
-  - serializers
 ---
 
 برای ساخت یک API مبتنی بر استانداردهای REST در Django دو راه‌حل [زندهٔ] معروف به نام‌های <a href="https://django-tastypie.readthedocs.io/" target="_blank">Tastypie</a> و <a href="http://www.django-rest-framework.org" target="_blank">Django Rest Framework</a> ساخته شده‌اند که هر یک نکات مثبت و منفی‌شان را دارند و در مجموع استفاده از DRF علیرغم ضعف مستنداتش فراگیرتر است.

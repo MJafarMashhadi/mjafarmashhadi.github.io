@@ -7,14 +7,10 @@ layout: post
 guid: http://mjafar.me/blog/?p=142
 permalink: /blog/:year/:month/ssh-public-key-what-how-why/
 categories:
+  - Persian
+tag:
   - GNU/Linux
   - Tools
-  - Persian
-tags:
-  - cryptography
-  - git
-  - public key
-  - ssh
 ---
 ##کلید عمومی چیه؟ 
 

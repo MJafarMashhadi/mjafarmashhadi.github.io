@@ -6,7 +6,7 @@ author: mashhadimj
 layout: post
 guid: http://mjafar.me/blog/?p=33
 permalink: /blog/:year/:month/telegram-launcher/
-categories:
+tag:
   - GNU/Linux
 ---
 [Telegram](https://telegram.org/) is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, *Telegram* and *Updater.* There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell.

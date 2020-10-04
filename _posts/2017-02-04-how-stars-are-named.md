@@ -7,8 +7,9 @@ layout: post
 guid: http://mjafar.me/blog/?p=231
 permalink: /blog/:year/:month/how-stars-are-named/
 categories:
-  - Astronomy
   - Persian
+tag:
+  - Astronomy
 ---
 <figure><a href="https://astronomynow.com/2015/04/28/iau-contest-enables-public-to-name-47-exoplanets-and-stars/" target="_blank">
 <img src="http://astronomynow.com/wp-content/uploads/2015/04/iau1505a_1280x640.jpg" border="0" />

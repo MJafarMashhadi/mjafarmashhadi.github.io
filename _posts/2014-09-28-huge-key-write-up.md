@@ -6,7 +6,7 @@ author: mashhadimj
 layout: post
 guid: http://mjafar.me/blog/?p=24
 permalink: /blog/:year/:month/huge-key-write-up/
-categories:
+tag:
   - CTF Writeup
 ---
 

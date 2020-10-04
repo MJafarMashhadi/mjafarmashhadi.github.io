@@ -7,16 +7,11 @@ layout: post
 guid: http://mjafar.me/blog/?p=190
 permalink: /blog/:year/:month/simple-deploy-on-push/
 categories:
+  - Persian
+tag:
   - GNU/Linux
   - Programming
   - Tools
-  - Persian
-tags:
-  - git
-  - git hooks
-  - push to deploy
-  - دیپلوی اتوماتیک
-  - دیپلوی خودکار
 ---
 در آخر این نوشته قراره یک وب سایت کوچیک (مثل <a href="http://mjafar.me/awat/" target="_blank">تجربه‌ی ئاوات</a>) داشته باشیم که با پوش کردن روی git به صورت خودکار آپدیت میشه و لازم نیست فایل‌هاش رو با ssh یا ftp به سرور منتقل کنیم.
 

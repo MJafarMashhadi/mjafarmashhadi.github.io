@@ -7,18 +7,10 @@ layout: post
 guid: http://mjafar.me/blog/?p=101
 permalink: /blog/:year/:month/mastering-android-adb/
 categories:
+  - Persian
+tag:
   - Android
   - Tools
-  - Persian
-tags:
-  - adb
-  - Android
-  - database
-  - forcestop
-  - install
-  - root
-  - shell
-  - sqlite
 ---
 در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه.
 ### اضافه کردن adb به PATH

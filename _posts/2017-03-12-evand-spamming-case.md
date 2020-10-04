@@ -8,15 +8,9 @@ guid: http://mjafar.me/blog/?p=261
 permalink: /blog/:year/:month/evand-spamming-case/
 image: /assets/images/2017/03/evand-spam.png
 categories:
-  - 'Bussiness &amp; Startups'
   - Persian
-tags:
-  - evand
-  - myevent
-  - spam
-  - اسپم
-  - ایوند
-  - مای ایونت
+tag:
+  - 'Bussiness &amp; Startups'
 ---
 آیا بدترین اتفاقی که ممکن است یک برند آنلاین را تخریب کند لو دادن عمدی یا سهوی اطلاعات کاربرانش است؟
 

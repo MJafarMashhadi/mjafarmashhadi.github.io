@@ -6,7 +6,7 @@ author: mashhadimj
 layout: post
 guid: http://mjafar.me/blog/?p=19
 permalink: /blog/:year/:month/our-bank-is-yours-write-up/
-categories:
+tag:
   - CTF Writeup
 ---
 The police have arrested a cyber criminal but they don't have a good witness. Just a short capture of his network traffic is available. Is it helpful?

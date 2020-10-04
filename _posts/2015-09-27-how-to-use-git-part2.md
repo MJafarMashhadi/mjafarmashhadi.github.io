@@ -7,10 +7,11 @@ layout: post
 guid: http://mjafar.me/blog/?p=78
 permalink: /blog/:year/:month/how-to-use-git-part2/
 categories:
+  - Persian
+tag:
   - GNU/Linux
   - Programming
   - Tools
-  - Persian
 ---
 این مطلب در ادامه‌ی <a href="/blog/2015/08/how-to-use-git/" target="_blank">چگونه از git استفاده کنیم</a> نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.
 

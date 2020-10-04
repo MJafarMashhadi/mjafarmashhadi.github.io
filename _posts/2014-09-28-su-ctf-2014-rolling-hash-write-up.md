@@ -6,7 +6,7 @@ author: mashhadimj
 layout: post
 guid: http://mjafar.me/blog/?p=13
 permalink: /blog/:year/:month/su-ctf-2014-rolling-hash-write-up/
-categories:
+tag:
   - CTF Writeup
 ---
 ```python
