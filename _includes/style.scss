@@ -20,4 +20,17 @@
 @import "components/side-by-side";
 @import "components/social-links";
 @import "components/spoiler";
-@import "components/buttons"
+@import "components/buttons";
+
+@font-face {
+    font-family: Vazir;
+    src: url('{{ site.url }}/assets/font/Vazir.eot');
+    src: url('{{ site.url }}/assets/font/Vazir.eot?#iefix') format('embedded-opentype'), url('/assets/font/Vazir.woff') format('woff'), url('/assets/font/Vazir.ttf') format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('{{ site.url }}/assets/font/Vazir-Bold.eot');
+    src: url('{{ site.url }}/assets/font/Vazir-Bold.eot?#iefix') format('embedded-opentype'), url('/assets/font/Vazir-Bold.woff') format('woff'), url('/assets/font/Vazir-Bold.ttf') format("truetype");
+    font-weight: bold;
+}
