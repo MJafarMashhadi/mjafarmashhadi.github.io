@@ -6,7 +6,7 @@ author: mashhadimj
 layout: post
 guid: http://mjafar.me/blog/?p=280
 permalink: /blog/:year/:month/customizing-drf-serializers/
-image: /wp-content/uploads/2017/07/rest.png
+image: /assets/images/2017/07/rest.png
 categories:
   - Django
   - Programming
