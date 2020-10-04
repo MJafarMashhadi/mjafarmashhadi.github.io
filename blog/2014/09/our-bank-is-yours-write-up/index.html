@@ -717,11 +717,10 @@ pre {
 .wrapper-large {
   max-width: 810px; }
 
-.persian {
-  content: "{{ site.url }}";
+.persian, .persian p, .persian h1, .persian h2, .persian h3, .persian h4, .persian h5, .persian h6, .persian span {
   direction: rtl;
   text-align: right;
-  font: Vazir, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: Vazir, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* general helpers
  */
@@ -1483,9 +1482,7 @@ pre {
 
     <div class="wrapper-large">
         
-            
-                <div class="page su ctf 2014 – our bank is yours write up">
-            
+            <div class="post">
         
 
             
@@ -1542,6 +1539,8 @@ pre {
 
 
     <div class="post-tags">
+        
+            <a class="item" href="https://mjafar.me/tags/#ctf-writeup">CTF Writeup</a>
         
     </div>
 
@@ -1605,6 +1604,29 @@ This line of javascript (using jQuery) code may be helpful:</p>
         <h4 class="name">Mohammad Jafar Mashhadi</h4>
         <p class="bio">Your average genius.</p>
     </div>
+</section>
+
+
+
+<section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+
+        var disqus_config = function () {
+            this.page.url = 'https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/';
+            this.page.identifier = '/blog/2014/09/our-bank-is-yours-write-up';
+        };
+        var disqus_shortname = 'mashhadimj';
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </section>
 
 

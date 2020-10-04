@@ -25,23 +25,23 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>زیر و بم ADB اندروید | Mohammad Jafar Mashhadi</title>
+<title>deploy کردن خودکار بعد از push در مخزن git | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="زیر و بم ADB اندروید" />
+<meta property="og:title" content="deploy کردن خودکار بعد از push در مخزن git" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید." />
-<meta property="og:description" content="در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید." />
-<link rel="canonical" href="https://mjafar.me/blog/2015/11/mastering-android-adb/" />
-<meta property="og:url" content="https://mjafar.me/blog/2015/11/mastering-android-adb/" />
+<meta name="description" content="در آخر این نوشته قراره یک وب سایت کوچیک (مثل تجربه‌ی ئاوات) داشته باشیم که با پوش کردن روی git به صورت خودکار آپدیت میشه و لازم نیست فایل‌هاش رو با ssh یا ftp به سرور منتقل کنیم." />
+<meta property="og:description" content="در آخر این نوشته قراره یک وب سایت کوچیک (مثل تجربه‌ی ئاوات) داشته باشیم که با پوش کردن روی git به صورت خودکار آپدیت میشه و لازم نیست فایل‌هاش رو با ssh یا ftp به سرور منتقل کنیم." />
+<link rel="canonical" href="https://mjafar.me/blog/2016/02/simple-deploy-on-push/" />
+<meta property="og:url" content="https://mjafar.me/blog/2016/02/simple-deploy-on-push/" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2015-11-13T12:59:32+00:00" />
+<meta property="article:published_time" content="2016-02-03T16:08:19+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://mjafar.me/blog/2015/11/mastering-android-adb/","headline":"زیر و بم ADB اندروید","dateModified":"2015-11-13T12:59:32+00:00","datePublished":"2015-11-13T12:59:32+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/11/mastering-android-adb/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://mjafar.me/blog/2016/02/simple-deploy-on-push/","headline":"deploy کردن خودکار بعد از push در مخزن git","dateModified":"2016-02-03T16:08:19+00:00","datePublished":"2016-02-03T16:08:19+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2016/02/simple-deploy-on-push/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"در آخر این نوشته قراره یک وب سایت کوچیک (مثل تجربه‌ی ئاوات) داشته باشیم که با پوش کردن روی git به صورت خودکار آپدیت میشه و لازم نیست فایل‌هاش رو با ssh یا ftp به سرور منتقل کنیم.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -67,7 +67,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/blog/2015/11/mastering-android-adb/">
+    <link rel="canonical" href="https://mjafar.me/blog/2016/02/simple-deploy-on-push/">
 
     <style>
     
@@ -1541,204 +1541,82 @@ li {
 
 
 
-<h1 class="title">زیر و بم ADB اندروید</h1>
+<h1 class="title">deploy کردن خودکار بعد از push در مخزن git</h1>
 
 <span class="date">
-    <time datetime="13-11-2015">Friday. November 13, 2015</time>
+    <time datetime="03-02-2016">Wednesday. February 03, 2016</time>
 </span>
 
 
     <div class="post-tags">
         
-            <a class="item" href="https://mjafar.me/tags/#android">Android</a>
+            <a class="item" href="https://mjafar.me/tags/#gnu-linux">GNU/Linux</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#programming">Programming</a>
         
             <a class="item" href="https://mjafar.me/tags/#tools">Tools</a>
         
     </div>
 
 
-<p>در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه.</p>
-<h3 id="اضافه-کردن-adb-به-path">اضافه کردن adb به PATH</h3>
-<p>برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎<span style="direction: ltr;">‎adb ‎‎(platform-tools)‎</span> رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.</p>
+<p>در آخر این نوشته قراره یک وب سایت کوچیک (مثل <a href="http://mjafar.me/awat/" target="_blank">تجربه‌ی ئاوات</a>) داشته باشیم که با پوش کردن روی git به صورت خودکار آپدیت میشه و لازم نیست فایل‌هاش رو با ssh یا ftp به سرور منتقل کنیم.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/path/to/android-sdk/platform-tools/
+<p>git ویژگی‌ای به اسم <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" target="_blank">hook</a> داره که باهاش میشه شِل اسکریپت‌های دلخواهمون رو وقتی که اتفاقات خاصی میفتن (مثل وقتی که کامیت می‌کنیم، یا بعد از push کردن) اجرا کنیم. روندی که قراره طی کنیم اینه که باید یک مخزن git سمت سرور بسازیم، hook مناسبی رو انتخاب کنیم و شل اسکریپت مربوط به دیپلوی کردن رو در اون هوک بنویسیم.</p>
+<h2 id="گام-۱-ساخت-مخزن-git">گام ۱. ساخت مخزن git</h2>
+<p>روال معمول استفاده از git اینطور هست که یک مخزن git روی کامپیوتر خودمون داریم، یک مخزن هم روی گیت‌هاب یا گیت‌لب یا… میسازیم و آدرس مخزن گیت‌هاب رو با git remote به مخزن لوکال میدیم. تفاوتی که الان وجود داره اینه که قراره کاری که گیت‌هاب انجام میده رو خودمون انجام بدیم.</p>
+
+<p>بعد از ssh کردن به سرور، یک پوشه به اسم git درست کنید و داخل اون پوشه با استفاده از git init مخزن گیت رو بسازید.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir git <span class="o">&amp;&amp;</span> <span class="nb">cd </span>git
+git init <span class="nt">--bare</span> awat.git
 </code></pre></div></div>
 
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/windows_add_path.png" alt="image" width="803" height="471" border="0"></p>
+<p>بعد از این دستور پوشه‌ای به اسم<code class="highlighter-rouge">awat.git</code> ساخته میشه. اگر محتویات این پوشه رو نگاه کنید با بقیه‌ی مخزن‌های git متفاوت هست. این مخزن شامل کدها نمیشه و فقط فایل‌های کنترلی خود مخزن git رو داره. آپشن ‎–bare باعث به وجود آمدن این ویژگی هست.</p>
 
-<h3 id="بخش-اول-شروع-کار-با-adb">بخش اول: شروع کار با adb</h3>
-<p>در ترمینال یا Power Shell اسم adb رو بنویسید و enter بزنید. باید نسخه و لیستی ازکامندهای adb رو ببینید؛ اگر اینطور نیست تنظیمات PATH یا نصب Android SDK ممکنه مشکل داشته باشه.</p>
+<p>روی کامپیوتر خودتون طبق روال عادی <a href="http://mjafar.me/blog/2015/08/how-to-use-git/" target="_blank">مخزن گیت رو بسازید</a> و فایل‌ها رو اضافه کنید. وقتی قراره remote رو به مخزن لوکال معرفی کنید آدرس رو با چنین قالبی وارد کنید:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb devices
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@host:path/to/awat.git
+<span class="c"># Example:</span>
+mjafar@ssh.mjafar.me:/home/mjafar/git/awat.git
 </code></pre></div></div>
 
-<p>لیست دستگاه‌هایی (و امولاتورهای فعال) که USB Debuggingشون روشنه و با کابل به کامپیوترتون وصل شدند رو نشون می‌ده.</p>
+<p>برای مطمئن شدن از آدرس فولدر awat.git می‌تونید روی سرور به اون پوشه cd کنید و دستور <code class="highlighter-rouge">pwd</code> رو وارد کنید.</p>
 
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/adb_devices_usb.png" alt="image" width="397" height="143" border="0"></p>
+<h2 id="گام-۲-پیدا-کردن-hook-مناسب">گام ۲. پیدا کردن hook مناسب</h2>
 
-<p>بعضی اوقات در لینوکس ممکنه سریال دستگاه به صورت ؟؟؟؟؟؟؟ نشون داده بشه، در این مواقع باید adb رو restart کنید و با sudo اجرا کنید. این کار رو با دوتا دستور زیر میشه انجام داد:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb kill-server
-<span class="nb">sudo </span>adb start-server
-</code></pre></div></div>
-<h3 id="بخش-دوم-اتصال-به-دستگاه-از-طریق-wi-fi-">بخش دوم: اتصال به دستگاه از طریق Wi-Fi <a href="http://developer.android.com/tools/help/adb.html#wireless" target="_blank">+</a>
-</h3>
-<p>adb بدون کابل USB هم می‌تونه به دستگاه وصل شه. برای دولوپر‌ها و QAهایی که تعداد زیادی دستگاه برای تست دارند ولی به اون اندازه پورت خالی USB ندارن میتونه خیلی کاربردی باشه. با دستور tcpip باید دستگاه رو وارد حالت wifi کرد. بعد از اجرای موفق این دستور می‌تونید کابل رو از دستگاه جدا کنید و با adb connect به دستگاه وصل شید. برای فهمیدن آدرس IP دستگاه می‌تونید وارد بخش Settings &gt; About Phone &gt; Network بشید یا قبل از جدا کردن کابل usb از دستور adb shell ntcfg استفاده کنید.</p>
+<p>کاری که قراره انجام شه سمت سرور هست و تو مخزن لوکال قرار نیست تغییر خاصی به  وجود بیاد. برای همین باید از hookهای سمت سرور استفاده کنیم. سه hook سمت سرور وجود داره: <code class="highlighter-rouge">pre-receive</code> قبل از وارد کردن کامیت‌های push شده به مخزن اجرا میشه. <code class="highlighter-rouge">update</code> هم مثل  <code class="highlighter-rouge">pre-receive</code> هست با این تفاوت که اگر چند شاخه به صورت همزمان push بشن، به ازای هر شاخه یک بار اجرا میشه. <code class="highlighter-rouge">post-receive</code> بعد از اتمام push اجرا میشه و برای دیپلوی کردن گزینه‌ی مناسبیه.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb tcpip 5555
-adb shell netcfg
-<span class="c"># Disconnect phone from USB cable</span>
-adb connect <span class="o">[</span>ip]:5555 
-</code></pre></div></div>
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/adb_device_wifi.png" alt="image" width="335" height="142" border="0"></p>
+<p>برای استفاده از این hook باید داخل پوشه‌ی hooks یک فایل به همین اسم ایجاد کنیم و داخل فایل shell script مورد نیاز برای دیپلوی شدن سایت رو بنویسیم.</p>
 
-<p>برای دستگاه‌هایی که با Wi-Fi وصل شدند تو خروجی adb devices بجای سریال نامبر گوشی آدرس IP و پورت ۵۵۵۵ دیده می‌شه.</p>
-<h3 id="بخش-سوم">بخش سوم</h3>
-<h4 id="انتقال-فایل">انتقال فایل</h4>
-<p>با دستورهای push و pull می‌تونید بین دستگاه اندرویدی و رایانه‌تون فایل انتقال بدید.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb push <span class="o">[</span>Local Path] <span class="o">[</span>Device Path] <span class="c"># Copy file to device</span>
-adb pull <span class="o">[</span>Device Path] <span class="o">[</span>Local Path] <span class="c"># Copy file from device</span>
-</code></pre></div></div>
-<h4 id="نصب-و-مدیریت-اپلیکیشنها">نصب و مدیریت اپلیکیشن‌ها</h4>
-<p>نصب یک اپلیکیشن از روی فایل apk:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install my-application.apk
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/git/awat.git/hooks
+touch post-receive
+chmod +x post-receive
+vim post-receive
 </code></pre></div></div>
 
-<p>نصب همزمان چند اپلیکیشن</p>
+<h2 id="گام-۳-نوشتن-hook">گام ۳. نوشتن hook</h2>
+<p>ساده ترین اسکریپتی که میشه برای دیپلوی استفاده کرد کپی کردن فایل‌ها در پوشه‌ی سایت (مثل www) هست. با یک checkout ساده این کار انجام شدنیه. با متغیر  محیطی (Environment variable)‏ <code class="highlighter-rouge">GIT_WORK_TREE</code> میشه پوشه‌ای که checkout توش انجام میشه رو مشخص کرد.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install-multiple app1.apk app2.apk ...
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">GIT_WORK_TREE</span><span class="o">=</span>/home/mjafar/mjafar.me/awat git checkout <span class="nt">-f</span>
 </code></pre></div></div>
 
-<p>نصب روی SDCard:</p>
+<p>بخش tricky کار دو گام اول بودند. وقتی hook درستی داشته باشیم، نوشتن محتویات hook خیلی روتین و ساده‌ست. با توجه به پروژه میشه کارهای دیگه‌ای هم بعد از جایگزینی فایل‌های جدید انجام داد. مثلا برای یک پروژه‌ی Django میشه بعد از فعال کردن virtual environment‏، dependency های جدید رو با pip نصب کرد و دیتابیس رو migrate کرد. یا اگر پروژه از Jekyll و jade و sass و… استفاده می‌کنه، کامپایل این فایل‌ها رو میشه در همین مرحله انجام داد.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-s</span> my-application.apk
+<h2 id="توضیحات-تکمیلی-پراکنده">توضیحات تکمیلی (پراکنده!)</h2>
+
+<p>~ لزومی نداره که اسکریپت با shell نوشته شده باشه. میشه از پایتون یا ruby هم استفاده کرد. اول فایل از <a href="https://bash.cyberciti.biz/guide/Shebang" target="_blank">shebang</a> استفاده کنید.</p>
+
+<p>~ وقتی اسکریپت post-receive اجرا میشه از طریق خوندن stdin میشه متوجه شد که آخرین کامیت قبل و بعد از push چی بوده و push روی چه شاخه‌ای داره انجام میشه. مقدار hash این دو کامیت و اسم شاخه به ترتیب روی stdin نوشته میشن. اسم شاخه به طور خاص می‌تونه توی نوشتن hook خیلی به درد خور باشه.</p>
+
+<p>~ هرچیزی که با echo یا print و… در خروجی استاندارد hook ها نوشته شه رو کاربری که داره push می‌کنه روی کامپیوتر خودش می‌بینه. اول هر خط از خروجی عبارت ‎‎remote:‎ اضافه میشه.</p>
+
+<p>~ خط checkout رو میشه به این شکل هم نوشت:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nt">--work-tree</span><span class="o">=</span>/home/mjafar/mjafar.me/awat <span class="nt">--git-dir</span><span class="o">=</span>/home/mjafar/git/awat.git checkout <span class="nt">-f</span>
 </code></pre></div></div>
 
-<p>نصب یک نسخه‌ی به‌روز تر از برنامه‌ای که روی دستگاه نصب شده:</p>
+<p>~ <a href="https://github.com/mislav/git-deploy" target="_blank">این کد</a> که با ruby نوشته شده هم از hook استفاده می‌کنه و push-to-deploy تمیز و خوبی رو میتونه براتون راه بندازه. (شخصاً استفاده نکردم)</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> my-application.apk
-</code></pre></div></div>
-
-<p>نصب نسخه‌ی قدیمی‌تر نسبت به نسخه‌ای که روی دستگاه نصب شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> <span class="nt">-d</span> my-application.apk 
-</code></pre></div></div>
-
-<p>حذف برنامه با اسم پکیج وارد شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb uninstall <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>حذف، بدون پاک شدن دیتا:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb uninstall <span class="nt">-k</span> <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>فهرست برنامه‌های نصب شده روی گوشی:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm list packages
-</code></pre></div></div>
-
-<p>حذف تمام اطلاعات برنامه، معادل دکمه‌ی Clear Data در Settings:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm clear <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>توقف و از بین بردن تمام مؤلفه‌های (اکتیویتی، سرویس، …) یک اپلیکیشن در حال اجرا از حافظه. معادل دکمه‌ی Force Stop در Settings:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell am force-stop <span class="o">[</span>Package Name]
-</code></pre></div></div>
-<h4 id="چند-دستور-متفرقه">چند دستور متفرقه</h4>
-<p>ریبوت دستگاه به صورت عادی یا حالت safe:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb reboot
-adb reboot recovery
-adb reboot bootloader
-</code></pre></div></div>
-
-<p>با دستور زیر به خروجی logcat دسترسی پیدا می‌کنید. برای مثال به عنوان کاربرد مفیدش می‌تونید این خروجی رو در فایل ذخیره کنید یا به grep ارسال کنید.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb logcat
-adb logcat <span class="nt">-f</span> logs.txt
-adb logcat <span class="nt">-t</span> 20
-adb logcat <span class="k">*</span>:e
-</code></pre></div></div>
-
-<p>خط اول فراخوانی و نمایش log دستگاه به صورت عادی است.
-خط دوم محتویات log را در فایلی به اسم logs.txt ذخیره می‌کند.
-خط سوم فقط 20 مورد آخر logها را نمایش می‌دهد.
-خط چهارم فقط مواردی را نشان می‌دهد که در سطح Error یا وخیم تر باشند. levelهای دیگر قابل استفاده:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>level</th>
-      <th>meaning</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>v</td>
-      <td>verbose - همه‌چیز</td>
-    </tr>
-    <tr>
-      <td>d</td>
-      <td>debug</td>
-    </tr>
-    <tr>
-      <td>i</td>
-      <td>info</td>
-    </tr>
-    <tr>
-      <td>w</td>
-      <td>warning</td>
-    </tr>
-    <tr>
-      <td>e</td>
-      <td>error</td>
-    </tr>
-    <tr>
-      <td>f</td>
-      <td>fatal</td>
-    </tr>
-    <tr>
-      <td>s</td>
-      <td>silent - هیچ‌چیز</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>با این دستور <em>در اندروید ۴ به بالا</em> می‌تونید از یک یا چند اپلیکیشن فایل backup تهیه کنید و بعدا restore کنید. این فایل backup شامل دیتای اپلیکیشن مورد نظر هست. اگر مثل خط دوم و سوم از آپشن ‎<code class="highlighter-rouge">-apk</code> استفاده کنید فایل‌های apk برنامه‌ها هم در فایل بکاپ وجود خواهند داشت. با استفاده از کدی که <a href="https://gist.github.com/MJafarMashhadi/f6ecb978ddc031c17cbccdc3faafd4be" target="_blank">روی گیتهاب</a> به اشتراک گذاشتم می‌تونید فایل بکاپ اندروید رو تبدیل به یک فایل tar کنید که به راحتی فایل‌های داخلش قابل مشاهده و extract کردن هست.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb backup <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
-adb backup <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
-abd backup <span class="nt">-all</span> <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab <span class="c"># پشتیبان گیری از تمام اپلیکیشن‌ها همراه با فایل نصب</span>
-adb restore backup-file.ab
-</code></pre></div></div>
-
-<h3 id="بخش-چهارم-shell">بخش چهارم: Shell</h3>
-<p>دستور ‎<tt style="direction: ltr;">adb shell ‎[‎command]‎<code class="highlighter-rouge"> برای اجرای یک دستور شل روی دستگاه کاربرد دارد؛ بالاتر برای clear data و force stop کردن برنامه‌ها دو نمونه استفاده از این دستور را دیدید. اگر دستور </code>adb shell` را بدون وارد کردن دستور خاصی وارد کنید، وارد یک shell روی دستگاه می‌شود، درست مثل اینکه به دستگاه با ssh وصل شده باشید.</tt></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>mjafar@mjafar-VAIO]<span class="nv">$ </span>adb shell
-shell@g2:/ <span class="err">$</span>
-</code></pre></div></div>
-
-<p>از این شل می‌تونید دستورات مختلفی مثل <a href="http://developer.android.com/tools/help/shell.html#pm" target="_blank">pm (Package Manager)‎</a> برای مدیریت اپلیکیشن‌ها، <a href="http://developer.android.com/tools/help/shell.html#am" target="_blank">am (Activity Manager)‎</a> برای باز و بسته کردن و از بین بردن … اکتیویتی‌های برنامه‌ها، bmgr (Backup Manager)‎ برای تنظیمات پشتیبان گیری و بازگردانی گوشی، netcfg برای تنظیمات شبکه دستگاه رو خیلی راحت اجرا کنید. ابزار <a href="http://developer.android.com/tools/help/monkey.html">monkey</a> که برای تست اپلیکیشن‌ها کاربرد داره هم تو این شل قابل استفاده‌ست.</p>
-
-<p>شل از نوع sh و خیلی مینیمال هست اما به اندازه‌ی خیلی خوبی کار راه انداز. یکی از مهم ترین دستوراتی که تو این شل می‌تونید ازش استفاده کنید <code class="highlighter-rouge">run-as</code> هست. این دستور user فعلی رو به user مربوط به اپلیکیشنی که وارد کردید تغییر میده و وارد پوشه‌ی dataی اون اپ میشه. بعد از این می‌تونید دیتای اپلیکیشن رو بخونید یا دست کاری کنید به طوری که انگار خود اپلیکیشن این تغییرات رو انجام داده.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell@g2:/ <span class="nv">$ </span>run-as com.example.myapp
-com.example.myapp@g2:/data/data/com.example.myapp <span class="err">$</span>
-</code></pre></div></div>
-
-<p>مثلا می‌شه مقادیر ذخیره شده در shared preferences اپلیکیشن رو که به صورت xml ذخیره شدند بخونید. دستور sqlite3 برای خواندن و تغییر محتویات دیتابیس اپلیکیشن قابل استفاده است.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span><span class="nb">ls </span>shared_prefs
-com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqlite3 databases/main.sqlite
-</code></pre></div></div>
-
-<p>امیدوارم این پست براتون مفید بوده باشه :-)</p>
 
 
 
@@ -1763,8 +1641,8 @@ com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqli
     <script type="text/javascript">
 
         var disqus_config = function () {
-            this.page.url = 'https://mjafar.me/blog/2015/11/mastering-android-adb/';
-            this.page.identifier = '/blog/2015/11/mastering-android-adb';
+            this.page.url = 'https://mjafar.me/blog/2016/02/simple-deploy-on-push/';
+            this.page.identifier = '/blog/2016/02/simple-deploy-on-push';
         };
         var disqus_shortname = 'mashhadimj';
         var disqus_developer = 0;

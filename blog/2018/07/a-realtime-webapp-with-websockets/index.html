@@ -25,23 +25,23 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>زیر و بم ADB اندروید | Mohammad Jafar Mashhadi</title>
+<title>تجربهٔ یک وب‌اپ real time با websocket | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="زیر و بم ADB اندروید" />
+<meta property="og:title" content="تجربهٔ یک وب‌اپ real time با websocket" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید." />
-<meta property="og:description" content="در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید." />
-<link rel="canonical" href="https://mjafar.me/blog/2015/11/mastering-android-adb/" />
-<meta property="og:url" content="https://mjafar.me/blog/2015/11/mastering-android-adb/" />
+<meta name="description" content="قرار بود این نوشته را سه ماه پیش اینجا منتشر کنم اما نیمه‌کاره رهایش کردم چون روی تازگی مطالب وبلاگ کمی وسواس دارم و دوست دارم حرف جدیدی داشته باشد، نه صرفاً یک tutorial. این پیش نویس فراموشم شده بود تا اینکه شرکت از ما خواست که هر ماه یک مطلب فنی مرتبط روی وبلاگ شرکت منتشر کنیم؛ چون این وسواس روی وبلاگ شرکت برایم مطرح نبود سریعاً شروع به نوشتن کردم. الان متوجه شدم که وبلاگ شرکت از دسترس خارج شده و چون اجازهٔ انتشار مطلب در وبلاگ شخصی هم داشتیم مطلبی که نوشته بودم را با پیش‌نویسی که اینجا داشتم ترکیب و منتشر می‌کنم. پیشاپیش از تغییر لحن‌هاینnbsp;(رسمی و عامیانه) احتمالی متن معذرت می‌خوام که نتیجهٔ همین ترکیب شدن متن‌هاست." />
+<meta property="og:description" content="قرار بود این نوشته را سه ماه پیش اینجا منتشر کنم اما نیمه‌کاره رهایش کردم چون روی تازگی مطالب وبلاگ کمی وسواس دارم و دوست دارم حرف جدیدی داشته باشد، نه صرفاً یک tutorial. این پیش نویس فراموشم شده بود تا اینکه شرکت از ما خواست که هر ماه یک مطلب فنی مرتبط روی وبلاگ شرکت منتشر کنیم؛ چون این وسواس روی وبلاگ شرکت برایم مطرح نبود سریعاً شروع به نوشتن کردم. الان متوجه شدم که وبلاگ شرکت از دسترس خارج شده و چون اجازهٔ انتشار مطلب در وبلاگ شخصی هم داشتیم مطلبی که نوشته بودم را با پیش‌نویسی که اینجا داشتم ترکیب و منتشر می‌کنم. پیشاپیش از تغییر لحن‌هاینnbsp;(رسمی و عامیانه) احتمالی متن معذرت می‌خوام که نتیجهٔ همین ترکیب شدن متن‌هاست." />
+<link rel="canonical" href="https://mjafar.me/blog/2018/07/a-realtime-webapp-with-websockets/" />
+<meta property="og:url" content="https://mjafar.me/blog/2018/07/a-realtime-webapp-with-websockets/" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2015-11-13T12:59:32+00:00" />
+<meta property="article:published_time" content="2018-07-10T11:03:13+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://mjafar.me/blog/2015/11/mastering-android-adb/","headline":"زیر و بم ADB اندروید","dateModified":"2015-11-13T12:59:32+00:00","datePublished":"2015-11-13T12:59:32+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/11/mastering-android-adb/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://mjafar.me/blog/2018/07/a-realtime-webapp-with-websockets/","headline":"تجربهٔ یک وب‌اپ real time با websocket","dateModified":"2018-07-10T11:03:13+00:00","datePublished":"2018-07-10T11:03:13+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2018/07/a-realtime-webapp-with-websockets/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"قرار بود این نوشته را سه ماه پیش اینجا منتشر کنم اما نیمه‌کاره رهایش کردم چون روی تازگی مطالب وبلاگ کمی وسواس دارم و دوست دارم حرف جدیدی داشته باشد، نه صرفاً یک tutorial. این پیش نویس فراموشم شده بود تا اینکه شرکت از ما خواست که هر ماه یک مطلب فنی مرتبط روی وبلاگ شرکت منتشر کنیم؛ چون این وسواس روی وبلاگ شرکت برایم مطرح نبود سریعاً شروع به نوشتن کردم. الان متوجه شدم که وبلاگ شرکت از دسترس خارج شده و چون اجازهٔ انتشار مطلب در وبلاگ شخصی هم داشتیم مطلبی که نوشته بودم را با پیش‌نویسی که اینجا داشتم ترکیب و منتشر می‌کنم. پیشاپیش از تغییر لحن‌هاینnbsp;(رسمی و عامیانه) احتمالی متن معذرت می‌خوام که نتیجهٔ همین ترکیب شدن متن‌هاست.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -67,7 +67,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/blog/2015/11/mastering-android-adb/">
+    <link rel="canonical" href="https://mjafar.me/blog/2018/07/a-realtime-webapp-with-websockets/">
 
     <style>
     
@@ -1541,204 +1541,220 @@ li {
 
 
 
-<h1 class="title">زیر و بم ADB اندروید</h1>
+<h1 class="title">تجربهٔ یک وب‌اپ real time با websocket</h1>
 
 <span class="date">
-    <time datetime="13-11-2015">Friday. November 13, 2015</time>
+    <time datetime="10-07-2018">Tuesday. July 10, 2018</time>
 </span>
 
 
     <div class="post-tags">
         
-            <a class="item" href="https://mjafar.me/tags/#android">Android</a>
+            <a class="item" href="https://mjafar.me/tags/#django">Django</a>
         
-            <a class="item" href="https://mjafar.me/tags/#tools">Tools</a>
+            <a class="item" href="https://mjafar.me/tags/#programming">Programming</a>
         
     </div>
 
 
-<p>در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه.</p>
-<h3 id="اضافه-کردن-adb-به-path">اضافه کردن adb به PATH</h3>
-<p>برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎<span style="direction: ltr;">‎adb ‎‎(platform-tools)‎</span> رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.</p>
+<p>قرار بود این نوشته را سه ماه پیش اینجا منتشر کنم اما نیمه‌کاره رهایش کردم چون روی تازگی مطالب وبلاگ کمی وسواس دارم و دوست دارم حرف جدیدی داشته باشد، نه صرفاً یک tutorial. این پیش نویس فراموشم شده بود تا اینکه شرکت از ما خواست که هر ماه یک مطلب فنی مرتبط روی <a href="http://blog.adak.io/">وبلاگ شرکت</a> منتشر کنیم؛ چون این وسواس روی وبلاگ شرکت برایم مطرح نبود سریعاً شروع به نوشتن کردم. الان متوجه شدم که وبلاگ شرکت از دسترس خارج شده و چون اجازهٔ انتشار مطلب در وبلاگ شخصی هم داشتیم مطلبی که نوشته بودم را با پیش‌نویسی که اینجا داشتم ترکیب و منتشر می‌کنم. پیشاپیش از تغییر لحن‌هاینnbsp;(رسمی و عامیانه) احتمالی متن معذرت می‌خوام که نتیجهٔ همین ترکیب شدن متن‌هاست.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/path/to/android-sdk/platform-tools/
+<p>یکی از نیازمندی‌های پنل مدیریتی فروشگاه اینترنتی پادوکس امکان نمایش برخط مکان پیک‌های حامل سفارش‌ها است. پنل مدیریت فروشگاه تحت وب طراحی شده است لذا برای پیاده‌سازی این قابلیت راه‌حل خوبی که به ذهن می‌رسد استفاده از websocket است.</p>
+
+<p>سوکت یکی از ساده‌ترین راه‌های ارتباطی دو طرفه بین دو پردازه (در یک سیستم یا بین دو سیستم) است. ارتباط از طریق سوکت را می‌توان به چهار عمل اصلیِ اتصال، قطع اتصال، ارسال و دریافت خلاصه کرد. در <a href="https://www.webnots.com/what-is-http/">پروتکل HTTP</a> همیشه آغازگر ارتباط، مشتری (مرورگر و اپ و…) است و سوکتِ بین مشتری و سرور بلافاصله بعد از اتمام ارتباط بسته می‌شود. اگر در زمانی پس از بسته شدن سوکت لازم شود سرور اطلاعاتی را به کاربر بفرستد راهی برای این کار ندارد؛ بنابراین برای برقراری ارتباطِ همزمان (real time) نیاز به سوکتی داریم که باز بماند، پروتکل وب‌سوکت این قابلیت را در مرورگر و سوار شده بر بستر HTTP فراهم می‌کند.</p>
+
+<p>در این مطلب بررسی کوتاهی بر نحوهٔ پیاده‌سازی و ابزارهای استفاده شده خواهیم داشت.</p>
+
+<h2 id="اجزای-سامانه">اجزای سامانه</h2>
+<h3 id="api-پیکها">API پیک‌ها</h3>
+<p>پیک‌ها برای ارسال مختصات جغرافیایی‌شان و سایر اطلاعات مرتبط با ارسال سفارش‌هایشان از طریق یک Rest API با وب‌سرور لجستیک پادوکس در ارتباط هستند. برای پیاده‌سازی این API از ابزار <a href="http://www.django-rest-framework.org/">Django REST framework</a> استفاده کردیم. ارسال موقعیت مکانی از طرف اپلیکیشن پیک‌ها به صورت خودکار انجام می‌شود و فاصلهٔ زمانی دو آپدیت متوالی را سرور به اپ اطلاع می‌دهد. در این جا چون داده‌ای از طرف سرور به اپلیکیشن push نمی‌شود نیازی به استفاده از وب‌سوکت نداشتیم.</p>
+<h3 id="پنل-مدیریتی--نقشه">پنل مدیریتی – نقشه</h3>
+<p>برای نمایش نقشه از <a href="https://developers.google.com/maps/documentation/javascript/adding-a-google-map">API گوگل‌مپ</a> استفاده کردیم. امکان نمایش تعداد زیادی نشانگر (Marker) روی نقشه و به روز رسانی محل آن‌ها به همراه امکان <a href="https://developers.google.com/maps/documentation/javascript/marker-clustering">تجمیع نشانگرها</a>ی نزدیک به هم در بزرگنمایی‌های کم و در نتیجه خلوت‌کردن صفحهٔ نقشه (<a href="https://developers.google.com/maps/documentation/javascript/marker-clustering">Marker Clustering</a>) از امکانات خوبی است که گوگل‌مپ در اختیار ما گذاشته است.</p>
+<h3 id="کارگزار-وب-سوکت">کارگزار وب سوکت</h3>
+<p>برای برقراری ارتباط دو طرفه بین پنل و وب سرور نیازمند یک برنامه کارگزار ساده و سریع هستیم. برای پیاده‌سازی این کارگزار با توجه به این‌که می‌تواند (و در آیندهٔ نزدیک باید) به صورت مستقل از سرویس لجستیک اجرا شود دستمان باز بود که از هر تکنولوژی دلخواهی استفاده کنیم. در نسخهٔ فعلی از زبان پایتون و ابزار <a href="https://aiohttp.readthedocs.io/en/stable/">aiohttp</a> استفاده کردیم.</p>
+<h3 id="کانال-ارتباطی--message-broker">کانال ارتباطی – Message Broker</h3>
+<p>کارگزار وب سوکت و API پیک‌ها در دو اپلیکیشن مجزا اجرا می‌شوند. ذات یکی async و دیگری sync است، برای ارتباط بین این دو بخش سامانه تصمیم گرفتیم که از redis به عنوان یک broker ساده و سریع استفاده کنیم. گزینه‌های دیگر پیش رو استفاده از RabbitMQ یا Kafka بود که بیش از نیازمان بزرگ هستند. گزینهٔ دیگر هم استفاده از یک API مبتنی بر HTTP بود.</p>
+
+<p>استفاده از HTTP مزیت خاصی از نظر سادگی اشکال‌زدایی (debugging) به redis ندارد. تعداد کامپوننت‌های بیشتری دارد و در هنگام استقرار روی سرور دردسر بیشتری به تیم DevOps وارد می‌کند. علاوه‌بر آن با باز کردن پورت جدید هم باعث شلوغی پورت‌های سرور می‌شود هم احتمال سهل انگاری (در تنظیمات firewall و…) و ایجاد مشکل امنیتی را بیشتر می‌کند. در مجموع قابلیت Pub/Sub تعبیه شده در redis یک گزینهٔ بسیار مناسب برای رفع این نیاز در پادوکس است.</p>
+
+<p>برای اطلاعات بیشتر در رابطه با Pub/Sub ردیس می‌توانید به <a href="https://redis.io/topics/pubsub">مستندات آن</a> مراجعه کنید؛ اما به صورت خلاصه ردیس می‌تواند تعدادی کانال ارتباطی داشته باشد که هریک یک نام یکتا دارند. پردازه‌های متفاوتی می‌توانند اطلاعاتی را روی یک کانال منتشر کنند و پردازه‌های دیگری که مشترک کانال شده‌اند آن اطلاعات را دریافت می‌کنند. در مورد سرویس ما تنها یک پردازه — API پیک — نقش منتشر کننده را دارد و پردازهٔ کارگزار وب‌سوکت هم نقش مشترکِ (subscriber) کانال را دارد.</p>
+
+<p>این معماری decoupling خوبی بین این دو پردازه ایجاد می‌کند. برای موارد تست یا اشکال‌زدایی می‌توانیم با استفاده از ابزارهای جانبی روی کانال پیام‌هایی را ارسال کنیم یا پیام‌های روی کانال را دریافت و بررسی کنیم. علاوه بر این با گسترش سرویس و نیازمندی‌ها منتشرکننده‌های بیشتری می‌توانند روی این کانال پیام ارسال کنند. پردازهٔ منتشر کننده و پردازهٔ مشترک می‌توانند روی سرورهای مجزایی استقرار یابند و با زبان‌های برنامه نویسی متفاوتی پیاده سازی شوند.</p>
+<h2 id="نمونهٔ-پیادهسازی">نمونهٔ پیاده‌سازی</h2>
+<h3 id="api-پیکها-1">API پیک‌ها</h3>
+<p>در این نمونه کد جهت سادگی مختصاتی که پیک‌ها ارسال می‌کنند ذخیره یا پردازش نمی‌شود و مستقیم به redis پاس داده می‌شوند. لطفاً دقت کنید که نام کانال redis را dlchannel گذاشتیم.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># settings.py</span>
+<span class="n">CACHES</span><span class="p">[</span><span class="s">'broker'</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"BACKEND"</span><span class="p">:</span> <span class="s">"django_redis.cache.RedisCache"</span><span class="p">,</span>
+    <span class="s">"LOCATION"</span><span class="p">:</span> <span class="s">"redis://127.0.0.1:6379/1"</span><span class="p">,</span>
+    <span class="s">"OPTIONS"</span><span class="p">:</span> <span class="p">{</span><span class="s">"CLIENT_CLASS"</span><span class="p">:</span> <span class="s">"django_redis.client.DefaultClient"</span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/windows_add_path.png" alt="image" width="803" height="471" border="0"></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># api.py</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">django_redis</span> <span class="kn">import</span> <span class="n">get_redis_connection</span>
+<span class="kn">from</span> <span class="nn">rest_framework</span> <span class="kn">import</span> <span class="n">serializers</span><span class="p">,</span> <span class="n">viewsets</span><span class="p">,</span> <span class="n">mixins</span>
 
-<h3 id="بخش-اول-شروع-کار-با-adb">بخش اول: شروع کار با adb</h3>
-<p>در ترمینال یا Power Shell اسم adb رو بنویسید و enter بزنید. باید نسخه و لیستی ازکامندهای adb رو ببینید؛ اگر اینطور نیست تنظیمات PATH یا نصب Android SDK ممکنه مشکل داشته باشه.</p>
+<span class="k">class</span> <span class="nc">DriverLocationSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">Serializer</span><span class="p">):</span>
+    <span class="n">latitude</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">DecimalField</span><span class="p">(</span><span class="n">max_digits</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">decimal_places</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+    <span class="n">longitude</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">DecimalField</span><span class="p">(</span><span class="n">max_digits</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">decimal_places</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">SimpleUserSerializer</span><span class="p">(</span><span class="n">read_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb devices
+<span class="k">class</span> <span class="nc">DriverLocationEndpoint</span><span class="p">(</span><span class="n">mixins</span><span class="o">.</span><span class="n">CreateModelMixin</span><span class="p">,</span> <span class="n">viewsets</span><span class="o">.</span><span class="n">GenericViewSet</span><span class="p">):</span>
+    <span class="n">serializer_class</span> <span class="o">=</span> <span class="n">DriverLocationSerializer</span>
+
+    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="c"># Validate data</span>
+        <span class="n">partial</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s">'partial'</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+        <span class="n">serializer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_serializer</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">partial</span><span class="o">=</span><span class="n">partial</span><span class="p">)</span>
+        <span class="n">serializer</span><span class="o">.</span><span class="n">is_valid</span><span class="p">(</span><span class="n">raise_exception</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        
+        <span class="c"># Publish to redis</span>
+        <span class="n">redis</span> <span class="o">=</span> <span class="n">get_redis_connection</span><span class="p">(</span><span class="s">'broker'</span><span class="p">)</span>
+        <span class="n">publish_data</span> <span class="o">=</span> <span class="p">{</span><span class="s">'user'</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">}</span>
+        <span class="n">publish_data</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">serializer</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">redis</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s">'dlchannel'</span><span class="p">,</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_serializer</span><span class="p">(</span><span class="n">publish_data</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">Response</span><span class="p">({</span>
+            <span class="s">'update_interval'</span><span class="p">:</span> <span class="s">'1/m'</span>
+        <span class="p">})</span>
 </code></pre></div></div>
-
-<p>لیست دستگاه‌هایی (و امولاتورهای فعال) که USB Debuggingشون روشنه و با کابل به کامپیوترتون وصل شدند رو نشون می‌ده.</p>
-
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/adb_devices_usb.png" alt="image" width="397" height="143" border="0"></p>
-
-<p>بعضی اوقات در لینوکس ممکنه سریال دستگاه به صورت ؟؟؟؟؟؟؟ نشون داده بشه، در این مواقع باید adb رو restart کنید و با sudo اجرا کنید. این کار رو با دوتا دستور زیر میشه انجام داد:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb kill-server
-<span class="nb">sudo </span>adb start-server
+<p>برای تست عملکرد درست این بخش از کامند subscribe ردیس می‌توانیم استفاده کنیم. پس از ارسال اطلاعات به API باید داده‌های مورد نظر در کانال dlchannel ردیس منتشر شوند. یک نمونه انتشار و دریافت موفق را در زیر می‌بینید:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>redis-cli subscribe dlchannel
+Reading messages... <span class="o">(</span>press Ctrl-C to quit<span class="o">)</span>
+۱<span class="o">)</span> <span class="s2">"subscribe"</span>
+۲<span class="o">)</span> <span class="s2">"dlchannel"</span>
+۳<span class="o">)</span> <span class="o">(</span>integer<span class="o">)</span> 1
+۱<span class="o">)</span> <span class="s2">"message"</span>
+۲<span class="o">)</span> <span class="s2">"dlchannel"</span>
+۳<span class="o">)</span> <span class="s2">"{</span><span class="se">\"</span><span class="s2">latitude</span><span class="se">\"</span><span class="s2">: 35.0001, </span><span class="se">\"</span><span class="s2">longitude</span><span class="se">\"</span><span class="s2">: 53.12111, </span><span class="se">\"</span><span class="s2">user</span><span class="se">\"</span><span class="s2">: {</span><span class="se">\"</span><span class="s2">id</span><span class="se">\"</span><span class="s2">: 10, </span><span class="se">\"</span><span class="s2">username</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">test_driver1</span><span class="se">\"</span><span class="s2">}}"</span>
 </code></pre></div></div>
-<h3 id="بخش-دوم-اتصال-به-دستگاه-از-طریق-wi-fi-">بخش دوم: اتصال به دستگاه از طریق Wi-Fi <a href="http://developer.android.com/tools/help/adb.html#wireless" target="_blank">+</a>
-</h3>
-<p>adb بدون کابل USB هم می‌تونه به دستگاه وصل شه. برای دولوپر‌ها و QAهایی که تعداد زیادی دستگاه برای تست دارند ولی به اون اندازه پورت خالی USB ندارن میتونه خیلی کاربردی باشه. با دستور tcpip باید دستگاه رو وارد حالت wifi کرد. بعد از اجرای موفق این دستور می‌تونید کابل رو از دستگاه جدا کنید و با adb connect به دستگاه وصل شید. برای فهمیدن آدرس IP دستگاه می‌تونید وارد بخش Settings &gt; About Phone &gt; Network بشید یا قبل از جدا کردن کابل usb از دستور adb shell ntcfg استفاده کنید.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb tcpip 5555
-adb shell netcfg
-<span class="c"># Disconnect phone from USB cable</span>
-adb connect <span class="o">[</span>ip]:5555 
+<h3 id="پنل-مدیریتی">پنل مدیریتی</h3>
+<p>برای پیاده سازی نقشه می‌توانید به مستندات گوگل‌مپ مراجعه کنید. ما در پادوکس از <a href="https://github.com/joewalnes/reconnecting-websocket">reconnecting websocket</a> استفاده کردیم تا اگر ارتباط پنل با کارگزار قطع شد به صورت خودکار اتصال مجدد برقرار شود. کد کلاینت بسیار ساده و خلاصه است. در زمان بارگذاری نقشه تابع setUpWebsocket فراخوانی می‌شود.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">setUpWebsocket</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">wsc</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ReconnectingWebSocket</span><span class="p">(</span><span class="s1">'ws://127.0.0.1:8082/ws'</span><span class="p">);</span>
+    <span class="nx">wsc</span><span class="p">.</span><span class="nx">onopen</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="p">};</span>
+    <span class="nx">wsc</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'WebSocket Error '</span> <span class="o">+</span> <span class="nx">error</span><span class="p">);</span>
+    <span class="p">};</span>
+    <span class="nx">wsc</span><span class="p">.</span><span class="nx">onmessage</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">updateOnePoint</span><span class="p">(</span><span class="nx">jQuery</span><span class="p">.</span><span class="nx">parseJSON</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">data</span><span class="p">));</span>
+    <span class="p">};</span>
+<span class="p">}</span>
 </code></pre></div></div>
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/adb_device_wifi.png" alt="image" width="335" height="142" border="0"></p>
+<p>در تابع updateOnePoint نشانگر (Marker) روی نقشه با توجه به jsonی که از طرف وب‌سوکت دریافت شده جا به جا می‌شود.</p>
+<h3 id="کارگزار-وبسوکت">کارگزار وب‌سوکت</h3>
+<p>در اینجا از یک dictionary استفاده می‌کنیم تا بتوانیم متغیر وب‌سوکت هر کاربر را پیدا کنیم. این دیکشنری در <span class="lang:default decode:true crayon-inline ">self[‘sockets’]</span>‎ ذخیره می‌شود. وب سوکت را در آدرس <span class="lang:default decode:true crayon-inline ">/ws</span>‎ قرار می‌دهیم. لذا URL کامل وب سوکت همانطور که در کد جاوااسکریپت بالا دیدید <span class="lang:default decode:true crayon-inline ">ws://127.0.0.1:8082/ws</span>‎ خواهد شد.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">asyncio</span><span class="p">,</span> <span class="n">aiohttp</span>
+<span class="kn">import</span> <span class="nn">logging</span>
 
-<p>برای دستگاه‌هایی که با Wi-Fi وصل شدند تو خروجی adb devices بجای سریال نامبر گوشی آدرس IP و پورت ۵۵۵۵ دیده می‌شه.</p>
-<h3 id="بخش-سوم">بخش سوم</h3>
-<h4 id="انتقال-فایل">انتقال فایل</h4>
-<p>با دستورهای push و pull می‌تونید بین دستگاه اندرویدی و رایانه‌تون فایل انتقال بدید.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb push <span class="o">[</span>Local Path] <span class="o">[</span>Device Path] <span class="c"># Copy file to device</span>
-adb pull <span class="o">[</span>Device Path] <span class="o">[</span>Local Path] <span class="c"># Copy file from device</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">App</span><span class="p">(</span><span class="n">aiohttp</span><span class="o">.</span><span class="n">web</span><span class="o">.</span><span class="n">Application</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s">'sockets'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">router</span><span class="o">.</span><span class="n">add_get</span><span class="p">(</span><span class="s">'/ws'</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">websocket_handler</span><span class="p">)</span>
+
+    <span class="n">async</span> <span class="k">def</span> <span class="nf">websocket_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+        <span class="n">ws</span> <span class="o">=</span> <span class="n">web</span><span class="o">.</span><span class="n">WebSocketResponse</span><span class="p">(</span><span class="n">protocols</span><span class="o">=</span><span class="p">(</span><span class="s">'echo-protocol'</span><span class="p">,))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">'New websocket connection'</span><span class="p">)</span>
+        <span class="n">await</span> <span class="n">ws</span><span class="o">.</span><span class="n">prepare</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s">'sockets'</span><span class="p">][</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">]</span> <span class="o">=</span> <span class="n">ws</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">'Connection established user='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">))</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">App</span><span class="p">()</span>
+<span class="n">aiohttp</span><span class="o">.</span><span class="n">web</span><span class="o">.</span><span class="n">run_app</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s">'127.0.0.1'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8082</span><span class="p">)</span>
 </code></pre></div></div>
-<h4 id="نصب-و-مدیریت-اپلیکیشنها">نصب و مدیریت اپلیکیشن‌ها</h4>
-<p>نصب یک اپلیکیشن از روی فایل apk:</p>
+<p>درخواست ایجاد ارتباط وب سوکت در دو مرحله انجام می‌شود. در مرحلهٔ اول (handshake) ابتدا یک درخواست HTTP عادی به کارگزار فرستاده می‌شود که شامل سرایند <span class="lang:default decode:true crayon-inline ">Connection: Upgrade</span>‎ است. اگر کارگزار امکان برقراری ارتباط وب‌سوکتی را داشته باشد و درخواست از طرف کاربر مجاز باشد مرحلهٔ دوم که ساخت اتصال اصلی سوکت و تبادل داده است انجام می‌شود. در این مثال هیچ authenticationی انجام نمی‌شود. برای اعتبار سنجی کاربر در مرحلهٔ handshake باید درخواست را بررسی کنیم و اگر کاربر مجاز به برقراری ارتباط نبود با پاسخ‌های مناسب (مانند۴۰۱ یا ۴۰۳) جلوی ادامهٔ عملیات را بگیریم. فراخوانی تابع <span class="lang:default decode:true crayon-inline ">ws.prepare</span> به معنی پایان handshake و آغاز ارتباط وب سوکت است، بنابراین هرگونه authentication ای باید قبل از فراخوانی این تابع انجام شود. تا زمانی که این متد فراخوانی نشده باشد ارتباط هنوز یک ارتباط HTTP ساده است و تمام response codeها و قوانین حاکم بر پروتکل HTTP در آن قابل استفاده است.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install my-application.apk
+<p>در این مثال از یک کد ساده و عملا بی مصرف در تابع authenticate استفاده می‌کنیم. در کاربردهای واقعی باید منطق مورد نظرتان من جمله session یا token را در آن پیاده سازی کنید.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">ws</span><span class="p">):</span>
+    <span class="c"># Your authentication logic</span>
+    <span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_id</span><span class="p">,</span> <span class="n">username</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="nb">id</span> <span class="o">=</span> <span class="n">_id</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+    <span class="n">request</span><span class="o">.</span><span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'panel_admin'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="bp">True</span>
+
+<span class="c"># in websocker_handler method, before calling 'ws.prepare'</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">ws</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">web</span><span class="o">.</span><span class="n">HTTPUnauthorized</span><span class="p">()</span>
 </code></pre></div></div>
+<p>پس از برقراری ارتباط موفق به کمک یک حلقهٔ for می‌توانیم پیام‌هایی که از طرف مرورگر به سرور ارسال می‌شوند را دریافت کنیم. در پنل پادوکس پیامی از طرف مرورگر به سرور ارسال نمی‌شود بنابراین یک حلقهٔ ساده درست می‌کنیم که در انتها وقتی کاربر ارتباط وب‌سوکت را قطع کند آن سوکت را از دیکشنری sockets حذف کند.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">async</span> <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">ws</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="nb">type</span> <span class="o">==</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">WSMsgType</span><span class="o">.</span><span class="n">ERROR</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">'Connection error. user=</span><span class="si">%</span><span class="s">s exception=</span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span>
+                        <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">),</span> <span class="n">ws</span><span class="o">.</span><span class="n">exception</span><span class="p">()))</span>
+    <span class="k">elif</span> <span class="n">msg</span><span class="o">.</span><span class="nb">type</span> <span class="o">==</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">WSMsgType</span><span class="o">.</span><span class="n">CLOSE</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">'Request connection closure. user='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">))</span>
+        <span class="n">await</span> <span class="n">ws</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<p>نصب همزمان چند اپلیکیشن</p>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">'websocket connection closed. user='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">))</span>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install-multiple app1.apk app2.apk ...
+<span class="k">del</span> <span class="bp">self</span><span class="p">[</span><span class="s">'sockets'</span><span class="p">][</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">]</span>
 </code></pre></div></div>
+<p>تا اینجا کدی داریم که ارتباط وب‌سوکت را با مرورگر برقرار می‌کند، پیام‌های دریافت شده را پردازش می‌کند و در آخر سوکت را می‌بندد.
+حالا باید کدی بنویسیم که در یک looper جدا به پیام‌هایی که از طرف redis دریافت می‌شوند را به تمام کاربران وب‌سوکت ارسال کند. کلاس PubSub کلاس کمکی‌ای است که مشترک کانال dlchannel می‌شود و پیام‌های دریافت شده را به وب‌سوکت‌ها ارسال می‌کند.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">PubSub</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">channel</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">redis</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mpsc</span> <span class="o">=</span> <span class="n">Receiver</span><span class="p">()</span>
 
-<p>نصب روی SDCard:</p>
+    <span class="n">async</span> <span class="k">def</span> <span class="nf">set_up</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">:</span> <span class="n">web</span><span class="o">.</span><span class="n">Application</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">redis</span> <span class="o">=</span> <span class="n">await</span> <span class="n">aioredis</span><span class="o">.</span><span class="n">create_redis</span><span class="p">((</span><span class="s">'127.0.0.1'</span><span class="p">,</span> <span class="mi">6379</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">channel</span> <span class="o">=</span> <span class="n">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">subscribe_to_channel</span><span class="p">(</span><span class="s">'dlchannel'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">read_messages</span><span class="p">(</span><span class="n">app</span><span class="p">))</span>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-s</span> my-application.apk
+    <span class="n">async</span> <span class="k">def</span> <span class="nf">read_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">:</span> <span class="n">web</span><span class="o">.</span><span class="n">Application</span><span class="p">):</span>
+        <span class="k">while</span> <span class="n">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">mpsc</span><span class="o">.</span><span class="n">wait_message</span><span class="p">():</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">sender</span><span class="p">,</span> <span class="n">message</span> <span class="o">=</span> <span class="n">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">mpsc</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s">"Got message {message} from {sender.name}"</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">send_message_to_observers</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
+            <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">'Error getting message from redis'</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+    <span class="n">async</span> <span class="k">def</span> <span class="nf">subscribe_to_channel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">redis</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mpsc</span><span class="o">.</span><span class="n">channel</span><span class="p">(</span><span class="n">channel_name</span><span class="p">))</span>
+
+    <span class="n">async</span> <span class="k">def</span> <span class="nf">send_message_to_observers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">:</span> <span class="n">web</span><span class="o">.</span><span class="n">Application</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">promises</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">ws</span> <span class="ow">in</span> <span class="n">app</span><span class="p">[</span><span class="s">'sockets'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+            <span class="n">promises</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ws</span><span class="o">.</span><span class="n">send_str</span><span class="p">(</span><span class="n">message</span><span class="p">))</span>
+
+        <span class="n">resolved_promises</span> <span class="o">=</span> <span class="n">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">promises</span><span class="p">,</span> <span class="n">return_exceptions</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">resolved_promises</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="nb">Exception</span><span class="p">):</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">f</span><span class="s">'Failed to send message to one of subscribers {r}'</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">'Successfully published the update'</span><span class="p">)</span>
 </code></pre></div></div>
+<p>کد نوشته شده در این کلاس سرراست و ساده است و نیازی به توضیح بیشتری ندارد.</p>
 
-<p>نصب یک نسخه‌ی به‌روز تر از برنامه‌ای که روی دستگاه نصب شده:</p>
+<p>زمانی که کارگزار آماده به کار می‌شود باید یک نسخه از این کلاس ساخته شود و متد set_up آن فراخوانی شود. بنابراین این دو خط را به انتهای متد <span class="lang:default decode:true crayon-inline "><strong>init</strong></span> کلاس <span class="lang:default decode:true crayon-inline ">App</span> اضافه می‌کنیم:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> my-application.apk
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">self</span><span class="p">[</span><span class="s">'subscriber'</span><span class="p">]</span> <span class="o">=</span> <span class="n">PubSub</span><span class="p">()</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">on_startup</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="s">'subscriber'</span><span class="p">]</span><span class="o">.</span><span class="n">set_up</span><span class="p">)</span>
 </code></pre></div></div>
-
-<p>نصب نسخه‌ی قدیمی‌تر نسبت به نسخه‌ای که روی دستگاه نصب شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> <span class="nt">-d</span> my-application.apk 
-</code></pre></div></div>
-
-<p>حذف برنامه با اسم پکیج وارد شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb uninstall <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>حذف، بدون پاک شدن دیتا:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb uninstall <span class="nt">-k</span> <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>فهرست برنامه‌های نصب شده روی گوشی:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm list packages
-</code></pre></div></div>
-
-<p>حذف تمام اطلاعات برنامه، معادل دکمه‌ی Clear Data در Settings:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm clear <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>توقف و از بین بردن تمام مؤلفه‌های (اکتیویتی، سرویس، …) یک اپلیکیشن در حال اجرا از حافظه. معادل دکمه‌ی Force Stop در Settings:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell am force-stop <span class="o">[</span>Package Name]
-</code></pre></div></div>
-<h4 id="چند-دستور-متفرقه">چند دستور متفرقه</h4>
-<p>ریبوت دستگاه به صورت عادی یا حالت safe:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb reboot
-adb reboot recovery
-adb reboot bootloader
-</code></pre></div></div>
-
-<p>با دستور زیر به خروجی logcat دسترسی پیدا می‌کنید. برای مثال به عنوان کاربرد مفیدش می‌تونید این خروجی رو در فایل ذخیره کنید یا به grep ارسال کنید.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb logcat
-adb logcat <span class="nt">-f</span> logs.txt
-adb logcat <span class="nt">-t</span> 20
-adb logcat <span class="k">*</span>:e
-</code></pre></div></div>
-
-<p>خط اول فراخوانی و نمایش log دستگاه به صورت عادی است.
-خط دوم محتویات log را در فایلی به اسم logs.txt ذخیره می‌کند.
-خط سوم فقط 20 مورد آخر logها را نمایش می‌دهد.
-خط چهارم فقط مواردی را نشان می‌دهد که در سطح Error یا وخیم تر باشند. levelهای دیگر قابل استفاده:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>level</th>
-      <th>meaning</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>v</td>
-      <td>verbose - همه‌چیز</td>
-    </tr>
-    <tr>
-      <td>d</td>
-      <td>debug</td>
-    </tr>
-    <tr>
-      <td>i</td>
-      <td>info</td>
-    </tr>
-    <tr>
-      <td>w</td>
-      <td>warning</td>
-    </tr>
-    <tr>
-      <td>e</td>
-      <td>error</td>
-    </tr>
-    <tr>
-      <td>f</td>
-      <td>fatal</td>
-    </tr>
-    <tr>
-      <td>s</td>
-      <td>silent - هیچ‌چیز</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>با این دستور <em>در اندروید ۴ به بالا</em> می‌تونید از یک یا چند اپلیکیشن فایل backup تهیه کنید و بعدا restore کنید. این فایل backup شامل دیتای اپلیکیشن مورد نظر هست. اگر مثل خط دوم و سوم از آپشن ‎<code class="highlighter-rouge">-apk</code> استفاده کنید فایل‌های apk برنامه‌ها هم در فایل بکاپ وجود خواهند داشت. با استفاده از کدی که <a href="https://gist.github.com/MJafarMashhadi/f6ecb978ddc031c17cbccdc3faafd4be" target="_blank">روی گیتهاب</a> به اشتراک گذاشتم می‌تونید فایل بکاپ اندروید رو تبدیل به یک فایل tar کنید که به راحتی فایل‌های داخلش قابل مشاهده و extract کردن هست.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb backup <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
-adb backup <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
-abd backup <span class="nt">-all</span> <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab <span class="c"># پشتیبان گیری از تمام اپلیکیشن‌ها همراه با فایل نصب</span>
-adb restore backup-file.ab
-</code></pre></div></div>
-
-<h3 id="بخش-چهارم-shell">بخش چهارم: Shell</h3>
-<p>دستور ‎<tt style="direction: ltr;">adb shell ‎[‎command]‎<code class="highlighter-rouge"> برای اجرای یک دستور شل روی دستگاه کاربرد دارد؛ بالاتر برای clear data و force stop کردن برنامه‌ها دو نمونه استفاده از این دستور را دیدید. اگر دستور </code>adb shell` را بدون وارد کردن دستور خاصی وارد کنید، وارد یک shell روی دستگاه می‌شود، درست مثل اینکه به دستگاه با ssh وصل شده باشید.</tt></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>mjafar@mjafar-VAIO]<span class="nv">$ </span>adb shell
-shell@g2:/ <span class="err">$</span>
-</code></pre></div></div>
-
-<p>از این شل می‌تونید دستورات مختلفی مثل <a href="http://developer.android.com/tools/help/shell.html#pm" target="_blank">pm (Package Manager)‎</a> برای مدیریت اپلیکیشن‌ها، <a href="http://developer.android.com/tools/help/shell.html#am" target="_blank">am (Activity Manager)‎</a> برای باز و بسته کردن و از بین بردن … اکتیویتی‌های برنامه‌ها، bmgr (Backup Manager)‎ برای تنظیمات پشتیبان گیری و بازگردانی گوشی، netcfg برای تنظیمات شبکه دستگاه رو خیلی راحت اجرا کنید. ابزار <a href="http://developer.android.com/tools/help/monkey.html">monkey</a> که برای تست اپلیکیشن‌ها کاربرد داره هم تو این شل قابل استفاده‌ست.</p>
-
-<p>شل از نوع sh و خیلی مینیمال هست اما به اندازه‌ی خیلی خوبی کار راه انداز. یکی از مهم ترین دستوراتی که تو این شل می‌تونید ازش استفاده کنید <code class="highlighter-rouge">run-as</code> هست. این دستور user فعلی رو به user مربوط به اپلیکیشنی که وارد کردید تغییر میده و وارد پوشه‌ی dataی اون اپ میشه. بعد از این می‌تونید دیتای اپلیکیشن رو بخونید یا دست کاری کنید به طوری که انگار خود اپلیکیشن این تغییرات رو انجام داده.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell@g2:/ <span class="nv">$ </span>run-as com.example.myapp
-com.example.myapp@g2:/data/data/com.example.myapp <span class="err">$</span>
-</code></pre></div></div>
-
-<p>مثلا می‌شه مقادیر ذخیره شده در shared preferences اپلیکیشن رو که به صورت xml ذخیره شدند بخونید. دستور sqlite3 برای خواندن و تغییر محتویات دیتابیس اپلیکیشن قابل استفاده است.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span><span class="nb">ls </span>shared_prefs
-com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqlite3 databases/main.sqlite
-</code></pre></div></div>
-
-<p>امیدوارم این پست براتون مفید بوده باشه :-)</p>
+<h2 id="بهبودهای-آینده">بهبودهای آینده</h2>
+<ul>
+ 	<li>با قرار گرفتن کارگزار وب‌سوکت پشت یک API Gateway بخش authentication به صورت کامل می‌تواند حذف و واگذار به Gateway شود. در این حالت کلیدهای دیکشنری sockets بجای آبجکت User می‌تواند یک رشتهٔ متنی حاوی username باشد که از headerها به راحتی دریافت می‌شود.</li>
+ 	<li>استفاده از کتابخانهٔ [django-websocket-redis](https://django-websocket-redis.readthedocs.io/en/latest/) و قابلیت [Channels](https://blog.heroku.com/in_deep_with_django_channels_the_future_of_real_time_apps_in_django) که به جننگو اضافه شده ممکن است در بهبود کد کمک کننده باشد.</li>
+ 	<li>بجای broadcast کردن پیام‌های دریافت شده از کانال ردیس، پیام فقط به کاربرانی ارسال شوند که نیاز و اجازهٔ دسترسی به آن اطلاعات دارند.</li>
+ 	<li>بازنویسی کارگزار با زبان برنامه‌نویسی و/یا فریم‌ورکی سریعتر و سبک‌تر.</li>
+ 	<li>بهبود کارگزار و نحوهٔ انتشار پیام‌ها در redis جهت Load Balance کردن ترافیک وب‌سوکت‌ها.</li>
+ 	<li>باز کردن دسترسی کاربران عادی سیستم جهت مشاهدهٔ سفارششان در نقشه.</li>
+ 	<li>استفاده از <a href="https://www.cedarmaps.com/" target="_blank" rel="noopener">نقشهٔ سیدار</a>
+</li>
+</ul>
 
 
 
@@ -1763,8 +1779,8 @@ com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqli
     <script type="text/javascript">
 
         var disqus_config = function () {
-            this.page.url = 'https://mjafar.me/blog/2015/11/mastering-android-adb/';
-            this.page.identifier = '/blog/2015/11/mastering-android-adb';
+            this.page.url = 'https://mjafar.me/blog/2018/07/a-realtime-webapp-with-websockets/';
+            this.page.identifier = '/blog/2018/07/a-realtime-webapp-with-websockets';
         };
         var disqus_shortname = 'mashhadimj';
         var disqus_developer = 0;

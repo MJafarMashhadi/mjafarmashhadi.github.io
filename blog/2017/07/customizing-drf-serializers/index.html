@@ -25,23 +25,24 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>زیر و بم ADB اندروید | Mohammad Jafar Mashhadi</title>
+<title>جراحی Serializerهای Django Rest Framework | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="زیر و بم ADB اندروید" />
+<meta property="og:title" content="جراحی Serializerهای Django Rest Framework" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید." />
-<meta property="og:description" content="در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید." />
-<link rel="canonical" href="https://mjafar.me/blog/2015/11/mastering-android-adb/" />
-<meta property="og:url" content="https://mjafar.me/blog/2015/11/mastering-android-adb/" />
+<meta name="description" content="برای ساخت یک API مبتنی بر استانداردهای REST در Django دو راه‌حل [زندهٔ] معروف به نام‌های Tastypie و Django Rest Framework ساخته شده‌اند که هر یک نکات مثبت و منفی‌شان را دارند و در مجموع استفاده از DRF علیرغم ضعف مستنداتش فراگیرتر است." />
+<meta property="og:description" content="برای ساخت یک API مبتنی بر استانداردهای REST در Django دو راه‌حل [زندهٔ] معروف به نام‌های Tastypie و Django Rest Framework ساخته شده‌اند که هر یک نکات مثبت و منفی‌شان را دارند و در مجموع استفاده از DRF علیرغم ضعف مستنداتش فراگیرتر است." />
+<link rel="canonical" href="https://mjafar.me/blog/2017/07/customizing-drf-serializers/" />
+<meta property="og:url" content="https://mjafar.me/blog/2017/07/customizing-drf-serializers/" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
+<meta property="og:image" content="https://mjafar.me/assets/images/2017/07/rest.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2015-11-13T12:59:32+00:00" />
-<meta name="twitter:card" content="summary" />
+<meta property="article:published_time" content="2017-07-21T16:15:38+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://mjafar.me/blog/2015/11/mastering-android-adb/","headline":"زیر و بم ADB اندروید","dateModified":"2015-11-13T12:59:32+00:00","datePublished":"2015-11-13T12:59:32+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/11/mastering-android-adb/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://mjafar.me/blog/2017/07/customizing-drf-serializers/","image":"https://mjafar.me/assets/images/2017/07/rest.png","headline":"جراحی Serializerهای Django Rest Framework","dateModified":"2017-07-21T16:15:38+00:00","datePublished":"2017-07-21T16:15:38+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2017/07/customizing-drf-serializers/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"برای ساخت یک API مبتنی بر استانداردهای REST در Django دو راه‌حل [زندهٔ] معروف به نام‌های Tastypie و Django Rest Framework ساخته شده‌اند که هر یک نکات مثبت و منفی‌شان را دارند و در مجموع استفاده از DRF علیرغم ضعف مستنداتش فراگیرتر است.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -67,7 +68,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/blog/2015/11/mastering-android-adb/">
+    <link rel="canonical" href="https://mjafar.me/blog/2017/07/customizing-drf-serializers/">
 
     <style>
     
@@ -1541,204 +1542,219 @@ li {
 
 
 
-<h1 class="title">زیر و بم ADB اندروید</h1>
+<h1 class="title">جراحی Serializerهای Django Rest Framework</h1>
 
 <span class="date">
-    <time datetime="13-11-2015">Friday. November 13, 2015</time>
+    <time datetime="21-07-2017">Friday. July 21, 2017</time>
 </span>
 
 
     <div class="post-tags">
         
-            <a class="item" href="https://mjafar.me/tags/#android">Android</a>
+            <a class="item" href="https://mjafar.me/tags/#django">Django</a>
         
-            <a class="item" href="https://mjafar.me/tags/#tools">Tools</a>
+            <a class="item" href="https://mjafar.me/tags/#programming">Programming</a>
         
     </div>
 
 
-<p>در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه.</p>
-<h3 id="اضافه-کردن-adb-به-path">اضافه کردن adb به PATH</h3>
-<p>برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎<span style="direction: ltr;">‎adb ‎‎(platform-tools)‎</span> رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.</p>
+<p>برای ساخت یک API مبتنی بر استانداردهای REST در Django دو راه‌حل [زندهٔ] معروف به نام‌های <a href="https://django-tastypie.readthedocs.io/" target="_blank">Tastypie</a> و <a href="http://www.django-rest-framework.org" target="_blank">Django Rest Framework</a> ساخته شده‌اند که هر یک نکات مثبت و منفی‌شان را دارند و در مجموع استفاده از DRF علیرغم ضعف مستنداتش فراگیرتر است.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/path/to/android-sdk/platform-tools/
+<p>در DRF کلاس‌هایی به نام <code class="highlighter-rouge">Serializer</code>  وجود دارند که وظیفهٔ تبدیل داده‌ها به فرمت JSON یا XML یا… برای ارسال به مصرف‌کننده (Consumer) به علاوه وظیفهٔ validation و تبدیل داده‌های ارسال شده از طرف مصرف کننده به کلاس‌های مورد استفاده در پروژه را دارند. وظیفهٔ دوم بسیار شبیه به وظیفهٔ <code class="highlighter-rouge">Form</code> های جنگو است.</p>
+
+<p>DRF این امکان را فراهم می‌کند که با ارث بری از کلاس <code class="highlighter-rouge">Serializer</code> ، سریالایزرهای کاملاً شخصی شده و متناسب با نیازتان را بنویسید، البته چون در خیلی از موارد endpointهایی که برای مصرف‌کننده expose می‌کنید رابطهٔ تنگاتنگی با مدل‌های پایگاه‌داده دارند، شبیه به <code class="highlighter-rouge">ModelForm</code>  کلاسی به اسم <code class="highlighter-rouge">ModelSerializer</code>  در DRF تعبیه شده. در کاربردهای خیلی ساده با مدل‌های ساده بدون Foreign Keyهای خاص و روابط پیچیده این کلاس کاملا کار راه انداز و سریع است ولی وقتی کار اندکی پیچیده‌تر بشود نیاز به customizationهای مختلفی به وجود می‌آید که متأسفانه اغلب به خوبی مستند نشده‌اند.</p>
+
+<p>در بعضی موارد شاید مجبور شوید کدهای DRF را بخوانید و از نحوهٔ کار آن مطلع شوید تا بتوانید ساده‌ترین تغییرات را اعمال کنید. در ادامه چند مورد که ممکن است مفید باشد را بررسی می‌کنم.</p>
+<h2 id="مقداردهی-دستی-fkها">مقداردهی دستی FKها</h2>
+<p>یکی از مواردی که مقداردهی FK لازم می‌شود ذخیرهٔ کاربر login شده در مدل است. مثلاً در یک شبکه اجتماعی فرضی برای ارسال کامنت یک FK به کاربری که کامنت را نوشته ذخیره می‌کنید. بدیهی است که دریافت username یا id کاربر از طرف client و اعتماد به آن اشتباه است. کد زیر به دو شیوهٔ استفاده از <code class="highlighter-rouge">ModelForm</code>  جنگو و <code class="highlighter-rouge">ModelSerializer</code>  تعبیه شده در DRF نوشته شده تا بتوانید مقایسه و معادل سازی کنید:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Django forms:</span>
+<span class="c"># https://docs.djangoproject.com/en/1.11/topics/forms/modelforms/#the-save-method</span>
+<span class="k">if</span> <span class="n">comment_form</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment_form</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">commit</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">comment</span><span class="o">.</span><span class="n">commenter</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span>
+    <span class="n">comment</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+
+<span class="c"># DRF Serializers:</span>
+<span class="k">if</span> <span class="n">comment_serizlier</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment_serizlier</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">commenter</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/windows_add_path.png" alt="image" width="803" height="471" border="0"></p>
+<p>فیلد Foreign Key در مثال بالا <code class="highlighter-rouge">commenter</code>  است که با کلاس <code class="highlighter-rouge">User</code>  ارتباط ایجاد می‌کند.</p>
 
-<h3 id="بخش-اول-شروع-کار-با-adb">بخش اول: شروع کار با adb</h3>
-<p>در ترمینال یا Power Shell اسم adb رو بنویسید و enter بزنید. باید نسخه و لیستی ازکامندهای adb رو ببینید؛ اگر اینطور نیست تنظیمات PATH یا نصب Android SDK ممکنه مشکل داشته باشه.</p>
+<p>البته برای مثال خاص <code class="highlighter-rouge">request.user</code> <a href="http://www.django-rest-framework.org/api-guide/validators/#currentuserdefault" target="_blank">یک راه ساده‌تر</a> برای مقداردهی وجود دارد اما کاربرد مقداردهی دستی FKها طبیعتاً محدود به این مورد نیست.</p>
+<h2 id="تغییر-در-مقدار-فیلدها-و-اجرای-validationهای-خاص">تغییر در مقدار فیلدها و اجرای validationهای خاص</h2>
+<p>در <code class="highlighter-rouge">ModelSerializer</code>  تابع <code class="highlighter-rouge">validate</code> و به ازای هر فیلدی <code class="highlighter-rouge">‎validate_&amp;lt;field name&amp;gt;</code>‎‎  وجود دارد که کارکرد مشابه با <code class="highlighter-rouge">clean</code> در <code class="highlighter-rouge">ModelForm</code>  دارند. وقتی داده‌ای از طرف مصرف کننده به API فرستاده می‌شود و متد <code class="highlighter-rouge">is_valid</code> روی سریالایزر اجرا می‌شود علاوه بر validationها و تبدیلات پیش فرض تعریف شده، در صورت وجود متد  <code class="highlighter-rouge">‎validate_&amp;lt;field name&amp;gt;</code>‎‎ هم اجرا می‌شود که مقدار دریافت شده را در آرگومان دریافت می‌کند و یا یک <code class="highlighter-rouge">serializers.ValidationError</code> را raise می‌کند یا مقدار validate شده را return. متد <code class="highlighter-rouge">validate</code>  در پایان اجرای validationهای مختص فیلدها اجرا می‌شود و روابط بین فیلدها را بررسی می‌کند. (مثلا در یک اندپوینت ثبت‌نام می‌تواند چک کند که password و confirm password حاوی مقادیر یکسان باشند)</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb devices
+<p>یک <code class="highlighter-rouge">ModelSerializer</code> برای ارسال کامنت زیر پست‌های شبکه اجتماعی فرضی‌مان درست می‌کنیم و متدهای validator مناسب را به آن اضافه می‌کنیم:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Comment</span>
+        <span class="n">fields</span> <span class="o">=</span> <span class="p">[</span><span class="s">'user'</span><span class="p">,</span> <span class="s">'comment_text'</span><span class="p">,</span> <span class="s">'reply_to'</span><span class="p">,</span> <span class="s">'post'</span><span class="p">]</span>
+</code></pre></div></div>
+<p>متد <code class="highlighter-rouge">validate_comment_text</code> چک می‌کند که در متن کامنت الفاظ نامناسب استفاده نشده باشد.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate_comment_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">contains_profanity</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Please be polite!'</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">text</span>
 </code></pre></div></div>
 
-<p>لیست دستگاه‌هایی (و امولاتورهای فعال) که USB Debuggingشون روشنه و با کابل به کامپیوترتون وصل شدند رو نشون می‌ده.</p>
+<p>حاصل <code class="highlighter-rouge">ValidationError</code> چنین خروجی‌ای خواهد بود:</p>
 
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/adb_devices_usb.png" alt="image" width="397" height="143" border="0"></p>
-
-<p>بعضی اوقات در لینوکس ممکنه سریال دستگاه به صورت ؟؟؟؟؟؟؟ نشون داده بشه، در این مواقع باید adb رو restart کنید و با sudo اجرا کنید. این کار رو با دوتا دستور زیر میشه انجام داد:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb kill-server
-<span class="nb">sudo </span>adb start-server
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+    <span class="s2">"comment_text"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">"Please be polite!"</span>
+    <span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div></div>
-<h3 id="بخش-دوم-اتصال-به-دستگاه-از-طریق-wi-fi-">بخش دوم: اتصال به دستگاه از طریق Wi-Fi <a href="http://developer.android.com/tools/help/adb.html#wireless" target="_blank">+</a>
+<p>متد <code class="highlighter-rouge">validate_user</code> کاری به مقدار ورودی ندارد و همیشه یک مقدار ثابت که کاربر login شدهٔ فعلی است را بر می‌گرداند. یکی از (و نه لزوما بهترین) راه‌های read only کردن یک فیلد همین کار است.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate_user</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">):</span>
+    <span class="c"># Ignore the value that is sent by the API consumer</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s">'request'</span><span class="p">]</span><span class="o">.</span><span class="n">user</span>
+</code></pre></div></div>
+
+<p>متد <code class="highlighter-rouge">validate_reply_to</code> از ورودی ID کامنتی که به آن پاسخ می‌دهد را می‌گیرد. این فیلد اختیاری است (یک کامنت می‌تواند مستقیماً زیر پست نوشته شود و پاسخ به کامنت دیگری نباشد) اما اگر در آن مقداری وجود داشت چک می‌کند که ID معتبر باشد و شیٔ کامنت مرتبط به آن را از پایگاه‌داده دریافت می‌کند و بر می‌گرداند. این متد مثالی از کاربرد تغییر کلی ماهیت داده در حین validation است. (البته راه تمیزتر آن تعریف یک <code class="highlighter-rouge">Field</code>  جدید و override کردن متد <code class="highlighter-rouge">to_internal_value</code>  است)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate_reply_to</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pk</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">pk</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">None</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">parent_comment</span> <span class="o">=</span> <span class="n">Comment</span><span class="o">.</span><span class="nb">object</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">pk</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">Comment</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The comment you</span><span class="se">\'</span><span class="s">re replying to does not exist. It</span><span class="se">\'</span><span class="s">s probably deleted.'</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">parent_comment</span>
+</code></pre></div></div>
+
+<p>متد <code class="highlighter-rouge">validate_post</code> هم مشابه متد بالاست با این تفاوت که علاوه بر معتبر بودن ID دریافت شده چک می‌کند که پست امکان دریافت کامنت را دارد یا خیر. (شبیه به فیچر allow comments در گوگل پلاس و یوتیوب)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate_post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">post</span> <span class="o">=</span> <span class="n">Post</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">Post</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The post you</span><span class="se">\'</span><span class="s">re commenting on does not exist.'</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="o">.</span><span class="n">commentable</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Cannot comment on this post.'</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">post</span>
+</code></pre></div></div>
+
+<p>متد <code class="highlighter-rouge">validate</code> هم برای چک کردن دو مورد که بیش از یک فیلد در آن درگیر هستند استفاده شده:</p>
+
+<ol>
+  <li>کاربر اجازهٔ دیدن و کامنت گذاشتن روی آن پست را داشته باشد</li>
+  <li>اگر فیلد <code class="highlighter-rouge">reply_to</code>  مقدار دارد؛ کامنتی که به آن پاسخ می‌دهد متعلق به همان پست باشد</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'user'</span><span class="p">)</span>
+    <span class="n">post</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'post'</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="o">.</span><span class="n">user_has_permission</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="p">[</span><span class="s">'view'</span><span class="p">,</span> <span class="s">'comment'</span><span class="p">]):</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'You are not allowed to comment on this post.'</span><span class="p">)</span>
+    
+    <span class="n">reply_to</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'reply_to'</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">reply_to</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">reply_to</span><span class="o">.</span><span class="n">post_id</span> <span class="o">!=</span> <span class="n">post</span><span class="o">.</span><span class="n">pk</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Gotcha! Are you tampering with the data? The comment that you</span><span class="se">\'</span><span class="s">re replying to does not belong to the post.'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="to_representation-و-to_internal_value-برای-فیلدها">to_representation و to_internal_value برای فیلدها</h2>
+<p>در مثال قبلی در متدهای validation تغییراتی روی ماهیت داده‌ها دادیم که به کار “validate” کردن اطلاعات ارتباط چندانی نداشت؛ علاوه‌ بر این، این تغییرات فقط در یک جهت بودند –تبدیل داده‌های دریافت شده از طرف کاربر به مدل‌ها. در ضمن اگر validationهای مشابهی در جای دیگر لازم باشد راه‌حل خیلی reusableای نیست (البته با استفاده از mixinها و factory methodها می‌توان workaroundای درست کرد)</p>
+
+<p>راه بهتر ایجاد یک فیلد است که با متدهای <code class="highlighter-rouge">to_representation</code>  و <code class="highlighter-rouge">to_internal_value</code>  هر دو جهت تبدیل اطلاعات را انجام می‌دهد. متد <code class="highlighter-rouge">to_representation</code>  داده‌های دلخواه ما را به نوع داده‌ای که در خروجی API مشاهده می‌شود تبدیل می‌کند و <code class="highlighter-rouge">to_internal_value</code>  اطلاعاتی که از مصرف‌کنندهٔ API دریافت شده را به اطلاعات مورد نظر سایر بخش‌های اپ تبدیل می‌کند. برای مثال برای <code class="highlighter-rouge">Post</code>  در نمونه کد بالا یک فیلد درست می‌کنیم:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">PostField</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">Field</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">to_representation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pk</span>
+
+    <span class="k">def</span> <span class="nf">to_internal_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">post</span> <span class="o">=</span> <span class="n">Post</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">Post</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The post does not exist.'</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">post</span>
+
+
+<span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+    <span class="n">post</span> <span class="o">=</span> <span class="n">PostField</span><span class="p">()</span>
+    <span class="o">...</span>
+     <span class="k">def</span> <span class="nf">validate_post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">post</span><span class="p">):</span>
+         <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="o">.</span><span class="n">commentable</span><span class="p">:</span>
+             <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Cannot comment on this post.'</span><span class="p">)</span>
+         <span class="k">else</span><span class="p">:</span>
+             <span class="k">return</span> <span class="n">post</span>
+    <span class="o">...</span>
+</code></pre></div></div>
+<p>ذکر دو نکته خالی از لطف نیست:</p>
+
+<ol>
+  <li>کد مربوط به چک کردن commentable بودن پست هنوز در متد validate هستند؛ چون در جاهای دیگری که از <code class="highlighter-rouge">PostField</code>  استفاده می‌شود لزوما commentable بودن آن مدنظر نیست. متن ارور هم با توجه به این موضوع تغییر کرده.
+2.در متد <code class="highlighter-rouge">vaidate_post</code> آرگومانی که پاس داده شده دیگر id پست نیست و خود شیٔ <code class="highlighter-rouge">Post</code> است که متد <code class="highlighter-rouge">to_internal_value</code> برگردانده.</li>
+</ol>
+
+<p>توجه کنید که این دو متد با تعریف و کارکردی مشابه برای <code class="highlighter-rouge">Serializer</code>ها هم قابل override کردن هستند.</p>
+
+<h2 id="مشخص-کردن-منبع-دریافت-اطلاعات-یک-فیلد">مشخص کردن منبع دریافت اطلاعات یک فیلد</h2>
+<p>یک محدودیت که <code class="highlighter-rouge">ModelSerializer</code> تحمیل می‌کند همنام بودن و نگاشت یک‌به‌یک فیلدهای <code class="highlighter-rouge">Serializer</code> با فیلدهای مدل مربوط به آن است. برای رفع این مشکل دو راه‌حل وجود دارد که هرکدام اثرات جانبی مثبت و منفی خود را دارند.</p>
+
+<h3 id="استفاده-ازserializermethodfield">استفاده از <code class="highlighter-rouge">SerializerMethodField</code>
 </h3>
-<p>adb بدون کابل USB هم می‌تونه به دستگاه وصل شه. برای دولوپر‌ها و QAهایی که تعداد زیادی دستگاه برای تست دارند ولی به اون اندازه پورت خالی USB ندارن میتونه خیلی کاربردی باشه. با دستور tcpip باید دستگاه رو وارد حالت wifi کرد. بعد از اجرای موفق این دستور می‌تونید کابل رو از دستگاه جدا کنید و با adb connect به دستگاه وصل شید. برای فهمیدن آدرس IP دستگاه می‌تونید وارد بخش Settings &gt; About Phone &gt; Network بشید یا قبل از جدا کردن کابل usb از دستور adb shell ntcfg استفاده کنید.</p>
+<p>به کمک این فیلد می‌توان مقداری که در خروجی به یک فیلد نسبت داده می‌شود را بجای اینکه مستقیماً از attribute همنام آن در شیٔ مدل دریافت کنید از یک متد در <code class="highlighter-rouge">Serializer</code> دریافت کنید. ماهیتاً فیلدی که با این روش مقداردهی می‌شود read only می‌شود.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb tcpip 5555
-adb shell netcfg
-<span class="c"># Disconnect phone from USB cable</span>
-adb connect <span class="o">[</span>ip]:5555 
-</code></pre></div></div>
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/adb_device_wifi.png" alt="image" width="335" height="142" border="0"></p>
-
-<p>برای دستگاه‌هایی که با Wi-Fi وصل شدند تو خروجی adb devices بجای سریال نامبر گوشی آدرس IP و پورت ۵۵۵۵ دیده می‌شه.</p>
-<h3 id="بخش-سوم">بخش سوم</h3>
-<h4 id="انتقال-فایل">انتقال فایل</h4>
-<p>با دستورهای push و pull می‌تونید بین دستگاه اندرویدی و رایانه‌تون فایل انتقال بدید.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb push <span class="o">[</span>Local Path] <span class="o">[</span>Device Path] <span class="c"># Copy file to device</span>
-adb pull <span class="o">[</span>Device Path] <span class="o">[</span>Local Path] <span class="c"># Copy file from device</span>
-</code></pre></div></div>
-<h4 id="نصب-و-مدیریت-اپلیکیشنها">نصب و مدیریت اپلیکیشن‌ها</h4>
-<p>نصب یک اپلیکیشن از روی فایل apk:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install my-application.apk
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+   <span class="n">days_past</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">SerializerMethodField</span><span class="p">(</span><span class="n">read_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+   <span class="o">...</span>
+   <span class="k">def</span> <span class="nf">get_days_past</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">):</span>
+       <span class="n">n</span> <span class="o">=</span> <span class="p">(</span><span class="n">timezone</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">instance</span><span class="o">.</span><span class="n">created</span><span class="p">)</span><span class="o">.</span><span class="n">days</span>
+       <span class="k">return</span> <span class="p">{</span>
+          <span class="mi">0</span><span class="p">:</span> <span class="s">'Zero days'</span><span class="p">,</span>
+          <span class="mi">1</span><span class="p">:</span> <span class="s">'A day'</span><span class="p">,</span>
+       <span class="p">}</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s">'</span><span class="si">%</span><span class="s">d days'</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
+   <span class="o">...</span>
 </code></pre></div></div>
 
-<p>نصب همزمان چند اپلیکیشن</p>
+<p>نام متد همان نام فیلد است که در ابتدای آن ‎‎‎<code class="highlighter-rouge">‎get_</code>‎ اضافه شده. اگر می‌خواهید از متد دیگری استفاده کنید نام آن را در قالب یک رشته به عنوان آرگومان اول به <code class="highlighter-rouge">SerializerMethodField</code> پاس دهید.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install-multiple app1.apk app2.apk ...
+<h3 id="پارامترهایsource-و-extra_kwargs">پارامترهای <code class="highlighter-rouge">source</code> و <code class="highlighter-rouge">extra_kwargs</code>
+</h3>
+<p>با پاس دادن این پارامتر به فیلدها منبع دریافت دیتا را می‌توان تغییر داد. مقدار پارامتر می‌تواند اسم یک فیلد، یک متد یا حتا شامل <code class="highlighter-rouge">.</code>  باشد. اگر مقدار پارامتر برابر <code class="highlighter-rouge">'*'</code>  باشد کل instance مدل پاس داده می‌شود.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Comment</span><span class="p">(</span><span class="n">TimeStampedModel</span><span class="p">):</span>
+    <span class="o">...</span>
+    <span class="k">def</span> <span class="nf">get_replies</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Comment</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">reply_to_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pk</span><span class="p">)</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span>
+
+
+<span class="k">class</span> <span class="nc">CommentWORepliesSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Comment</span>
+        <span class="n">fields</span> <span class="o">=</span> <span class="p">(</span><span class="s">'user'</span><span class="p">,</span> <span class="s">'comment_text'</span><span class="p">,</span> <span class="s">'post'</span><span class="p">,</span> <span class="s">'time'</span><span class="p">)</span>
+        <span class="n">read_only_fields</span> <span class="o">=</span> <span class="n">fields</span>
+        <span class="n">extra_kwargs</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s">'time'</span><span class="p">:</span> <span class="p">{</span><span class="s">'source'</span><span class="p">:</span> <span class="s">'created'</span><span class="p">}</span>
+            <span class="s">'user'</span><span class="p">:</span> <span class="p">{</span><span class="s">'source'</span><span class="p">:</span> <span class="s">'user.get_full_name'</span><span class="p">,</span> <span class="s">'read_only'</span><span class="p">:</span> <span class="bp">True</span><span class="p">}</span>
+        <span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">CommentWORepliesSerializer</span><span class="p">):</span>
+    <span class="n">replies</span> <span class="o">=</span> <span class="n">CommentWORepliesSerializer</span><span class="p">(</span>
+                   <span class="n">source</span><span class="o">=</span><span class="s">'get_replies'</span><span class="p">,</span> 
+                   <span class="n">many</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> 
+                   <span class="n">read_only</span><span class="o">=</span><span class="bp">True</span>
+              <span class="p">)</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">(</span><span class="n">CommentWORepliesSerializer</span><span class="o">.</span><span class="n">Meta</span><span class="p">):</span>
+         <span class="n">fields</span> <span class="o">=</span> <span class="n">CommentWORepliesSerializer</span><span class="o">.</span><span class="n">Meta</span><span class="o">.</span><span class="n">fields</span> <span class="o">+</span> <span class="p">(</span><span class="s">'replies'</span><span class="p">,</span> <span class="p">)</span>
+         <span class="n">read_only_fields</span> <span class="o">=</span> <span class="n">CommentWORepliesSerializer</span><span class="o">.</span><span class="n">Meta</span><span class="o">.</span><span class="n">read_only_fields</span> <span class="o">+</span> <span class="p">(</span><span class="s">'replies'</span><span class="p">,</span> <span class="p">)</span>
 </code></pre></div></div>
 
-<p>نصب روی SDCard:</p>
+<p>در مثال بالا به کاربرد <code class="highlighter-rouge">extra_kwargs</code> برای پاس دادن پارامترهای اضافه به فیلدهایی که صریحاً نوع آن‌ها را مشخص نمی‌کنیم توجه کنید.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-s</span> my-application.apk
-</code></pre></div></div>
-
-<p>نصب یک نسخه‌ی به‌روز تر از برنامه‌ای که روی دستگاه نصب شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> my-application.apk
-</code></pre></div></div>
-
-<p>نصب نسخه‌ی قدیمی‌تر نسبت به نسخه‌ای که روی دستگاه نصب شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> <span class="nt">-d</span> my-application.apk 
-</code></pre></div></div>
-
-<p>حذف برنامه با اسم پکیج وارد شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb uninstall <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>حذف، بدون پاک شدن دیتا:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb uninstall <span class="nt">-k</span> <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>فهرست برنامه‌های نصب شده روی گوشی:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm list packages
-</code></pre></div></div>
-
-<p>حذف تمام اطلاعات برنامه، معادل دکمه‌ی Clear Data در Settings:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm clear <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>توقف و از بین بردن تمام مؤلفه‌های (اکتیویتی، سرویس، …) یک اپلیکیشن در حال اجرا از حافظه. معادل دکمه‌ی Force Stop در Settings:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell am force-stop <span class="o">[</span>Package Name]
-</code></pre></div></div>
-<h4 id="چند-دستور-متفرقه">چند دستور متفرقه</h4>
-<p>ریبوت دستگاه به صورت عادی یا حالت safe:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb reboot
-adb reboot recovery
-adb reboot bootloader
-</code></pre></div></div>
-
-<p>با دستور زیر به خروجی logcat دسترسی پیدا می‌کنید. برای مثال به عنوان کاربرد مفیدش می‌تونید این خروجی رو در فایل ذخیره کنید یا به grep ارسال کنید.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb logcat
-adb logcat <span class="nt">-f</span> logs.txt
-adb logcat <span class="nt">-t</span> 20
-adb logcat <span class="k">*</span>:e
-</code></pre></div></div>
-
-<p>خط اول فراخوانی و نمایش log دستگاه به صورت عادی است.
-خط دوم محتویات log را در فایلی به اسم logs.txt ذخیره می‌کند.
-خط سوم فقط 20 مورد آخر logها را نمایش می‌دهد.
-خط چهارم فقط مواردی را نشان می‌دهد که در سطح Error یا وخیم تر باشند. levelهای دیگر قابل استفاده:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>level</th>
-      <th>meaning</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>v</td>
-      <td>verbose - همه‌چیز</td>
-    </tr>
-    <tr>
-      <td>d</td>
-      <td>debug</td>
-    </tr>
-    <tr>
-      <td>i</td>
-      <td>info</td>
-    </tr>
-    <tr>
-      <td>w</td>
-      <td>warning</td>
-    </tr>
-    <tr>
-      <td>e</td>
-      <td>error</td>
-    </tr>
-    <tr>
-      <td>f</td>
-      <td>fatal</td>
-    </tr>
-    <tr>
-      <td>s</td>
-      <td>silent - هیچ‌چیز</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>با این دستور <em>در اندروید ۴ به بالا</em> می‌تونید از یک یا چند اپلیکیشن فایل backup تهیه کنید و بعدا restore کنید. این فایل backup شامل دیتای اپلیکیشن مورد نظر هست. اگر مثل خط دوم و سوم از آپشن ‎<code class="highlighter-rouge">-apk</code> استفاده کنید فایل‌های apk برنامه‌ها هم در فایل بکاپ وجود خواهند داشت. با استفاده از کدی که <a href="https://gist.github.com/MJafarMashhadi/f6ecb978ddc031c17cbccdc3faafd4be" target="_blank">روی گیتهاب</a> به اشتراک گذاشتم می‌تونید فایل بکاپ اندروید رو تبدیل به یک فایل tar کنید که به راحتی فایل‌های داخلش قابل مشاهده و extract کردن هست.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb backup <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
-adb backup <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
-abd backup <span class="nt">-all</span> <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab <span class="c"># پشتیبان گیری از تمام اپلیکیشن‌ها همراه با فایل نصب</span>
-adb restore backup-file.ab
-</code></pre></div></div>
-
-<h3 id="بخش-چهارم-shell">بخش چهارم: Shell</h3>
-<p>دستور ‎<tt style="direction: ltr;">adb shell ‎[‎command]‎<code class="highlighter-rouge"> برای اجرای یک دستور شل روی دستگاه کاربرد دارد؛ بالاتر برای clear data و force stop کردن برنامه‌ها دو نمونه استفاده از این دستور را دیدید. اگر دستور </code>adb shell` را بدون وارد کردن دستور خاصی وارد کنید، وارد یک shell روی دستگاه می‌شود، درست مثل اینکه به دستگاه با ssh وصل شده باشید.</tt></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>mjafar@mjafar-VAIO]<span class="nv">$ </span>adb shell
-shell@g2:/ <span class="err">$</span>
-</code></pre></div></div>
-
-<p>از این شل می‌تونید دستورات مختلفی مثل <a href="http://developer.android.com/tools/help/shell.html#pm" target="_blank">pm (Package Manager)‎</a> برای مدیریت اپلیکیشن‌ها، <a href="http://developer.android.com/tools/help/shell.html#am" target="_blank">am (Activity Manager)‎</a> برای باز و بسته کردن و از بین بردن … اکتیویتی‌های برنامه‌ها، bmgr (Backup Manager)‎ برای تنظیمات پشتیبان گیری و بازگردانی گوشی، netcfg برای تنظیمات شبکه دستگاه رو خیلی راحت اجرا کنید. ابزار <a href="http://developer.android.com/tools/help/monkey.html">monkey</a> که برای تست اپلیکیشن‌ها کاربرد داره هم تو این شل قابل استفاده‌ست.</p>
-
-<p>شل از نوع sh و خیلی مینیمال هست اما به اندازه‌ی خیلی خوبی کار راه انداز. یکی از مهم ترین دستوراتی که تو این شل می‌تونید ازش استفاده کنید <code class="highlighter-rouge">run-as</code> هست. این دستور user فعلی رو به user مربوط به اپلیکیشنی که وارد کردید تغییر میده و وارد پوشه‌ی dataی اون اپ میشه. بعد از این می‌تونید دیتای اپلیکیشن رو بخونید یا دست کاری کنید به طوری که انگار خود اپلیکیشن این تغییرات رو انجام داده.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell@g2:/ <span class="nv">$ </span>run-as com.example.myapp
-com.example.myapp@g2:/data/data/com.example.myapp <span class="err">$</span>
-</code></pre></div></div>
-
-<p>مثلا می‌شه مقادیر ذخیره شده در shared preferences اپلیکیشن رو که به صورت xml ذخیره شدند بخونید. دستور sqlite3 برای خواندن و تغییر محتویات دیتابیس اپلیکیشن قابل استفاده است.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span><span class="nb">ls </span>shared_prefs
-com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqlite3 databases/main.sqlite
-</code></pre></div></div>
-
-<p>امیدوارم این پست براتون مفید بوده باشه :-)</p>
+<p>اتفاقی که برای فیلد <code class="highlighter-rouge">time</code> افتاده عملاً تغییر نام فیلد <code class="highlighter-rouge">created</code> است.</p>
 
 
 
@@ -1763,8 +1779,8 @@ com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqli
     <script type="text/javascript">
 
         var disqus_config = function () {
-            this.page.url = 'https://mjafar.me/blog/2015/11/mastering-android-adb/';
-            this.page.identifier = '/blog/2015/11/mastering-android-adb';
+            this.page.url = 'https://mjafar.me/blog/2017/07/customizing-drf-serializers/';
+            this.page.identifier = '/blog/2017/07/customizing-drf-serializers';
         };
         var disqus_shortname = 'mashhadimj';
         var disqus_developer = 0;

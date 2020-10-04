@@ -25,23 +25,23 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>زیر و بم ADB اندروید | Mohammad Jafar Mashhadi</title>
+<title>SSH Public key چیه؟ به چه دردی می‌خوره؟ چطوری بسازم؟ | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="زیر و بم ADB اندروید" />
+<meta property="og:title" content="SSH Public key چیه؟ به چه دردی می‌خوره؟ چطوری بسازم؟" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید." />
-<meta property="og:description" content="در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید." />
-<link rel="canonical" href="https://mjafar.me/blog/2015/11/mastering-android-adb/" />
-<meta property="og:url" content="https://mjafar.me/blog/2015/11/mastering-android-adb/" />
+<meta name="description" content="##کلید عمومی چیه؟" />
+<meta property="og:description" content="##کلید عمومی چیه؟" />
+<link rel="canonical" href="https://mjafar.me/blog/2015/12/ssh-public-key-what-how-why/" />
+<meta property="og:url" content="https://mjafar.me/blog/2015/12/ssh-public-key-what-how-why/" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2015-11-13T12:59:32+00:00" />
+<meta property="article:published_time" content="2015-12-09T16:30:33+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://mjafar.me/blog/2015/11/mastering-android-adb/","headline":"زیر و بم ADB اندروید","dateModified":"2015-11-13T12:59:32+00:00","datePublished":"2015-11-13T12:59:32+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/11/mastering-android-adb/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://mjafar.me/blog/2015/12/ssh-public-key-what-how-why/","headline":"SSH Public key چیه؟ به چه دردی می‌خوره؟ چطوری بسازم؟","dateModified":"2015-12-09T16:30:33+00:00","datePublished":"2015-12-09T16:30:33+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/12/ssh-public-key-what-how-why/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"##کلید عمومی چیه؟","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -67,7 +67,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/blog/2015/11/mastering-android-adb/">
+    <link rel="canonical" href="https://mjafar.me/blog/2015/12/ssh-public-key-what-how-why/">
 
     <style>
     
@@ -1541,204 +1541,67 @@ li {
 
 
 
-<h1 class="title">زیر و بم ADB اندروید</h1>
+<h1 class="title">SSH Public key چیه؟ به چه دردی می‌خوره؟ چطوری بسازم؟</h1>
 
 <span class="date">
-    <time datetime="13-11-2015">Friday. November 13, 2015</time>
+    <time datetime="09-12-2015">Wednesday. December 09, 2015</time>
 </span>
 
 
     <div class="post-tags">
         
-            <a class="item" href="https://mjafar.me/tags/#android">Android</a>
+            <a class="item" href="https://mjafar.me/tags/#gnu-linux">GNU/Linux</a>
         
             <a class="item" href="https://mjafar.me/tags/#tools">Tools</a>
         
     </div>
 
 
-<p>در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه.</p>
-<h3 id="اضافه-کردن-adb-به-path">اضافه کردن adb به PATH</h3>
-<p>برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎<span style="direction: ltr;">‎adb ‎‎(platform-tools)‎</span> رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.</p>
+<p>##کلید عمومی چیه؟</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/path/to/android-sdk/platform-tools/
+<p>public key یا کلید عمومی در <a href="https://fa.wikipedia.org/wiki/%D8%B1%D9%85%D8%B2%D9%86%DA%AF%D8%A7%D8%B1%DB%8C_%DA%A9%D9%84%DB%8C%D8%AF_%D8%B9%D9%85%D9%88%D9%85%DB%8C" target="_blank">رمزنگاری نامتقارن</a> کلیدی هست که باهاش میشه یه پیامی رو رمزنگاری کرد به طوری که فقط صاحب اون کلید بتونه رمزش رو باز کنه. کلید عمومی مثل یک صندوقه که می‌تونید خیلی راحت به هر کسی (حتا یه هکر) بدید تا توش براتون یه چیزی بزاره و وقتی درش رو بست هیچ‌کسی بجز شما نتونه اونو باز کنه. کلید عمومی همیشه در کنار یک کلید خصوصی هست که حکم کلید اون صندوق رو داره. طبیعتاً کلید عمومی رو میشه با خیال راحت به همه داد مادامی که کلید خصوصی متناظر باهاش مخفی و امن باقی بمونه.</p>
+
+<p>##کلید عمومی چه کاربردهایی داره؟</p>
+
+<p>در اکثر مواقع کاربرد زوج کلید به این صورته که شما کلید عمومی رو به دوستتون میدید، اون هم پیام مخفیش رو با اون کلید رمز می‌کنه و به شما بر می‌گردونه و شما هم با کلید خصوصیتون رمزگشایی رو انجام می‌دید و پیام دوستتون رو می‌خونید. اما این زوج کلید به شکل دیگه‌ای هم میتونن استفاده شن. فرض کنید شما یک پیام رو می‌خواید به دوستاتون بفرستید (لزومی نداره این پیام حتما یک پیام سری باشه) و قراره یک مکانیزمی تعبیه کنید که بقیه بتونن متوجه شن که این پیام رو ۱. قطعا خودتون نوشتید و ۲. متن پیام هم در مسیر تغییر نکرده. اینجا میشه پیامتون رو با کلید خصوصی رمز کنید و متن پیام رو به همراه کلید عمومی و متن رمز شده به مخاطب‌ها بفرستید. اون‌ها هم میتونن متن رمز شده رو با کلید عمومیتون رمزگشایی کنن و با متن عادی (plain text) پیامتون مقایسه کنن. اینطوری به هر دو تا هدف رسیدین. به این کار «<a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%85%D8%B6%D8%A7%DB%8C_%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84" target="_blank">امضا‌ی دیجیتال</a>» پیام میگن.</p>
+
+<p> با این وصف احتمالا حدس زدید که این زوج کلید کاندیدای خوبی برای احراز هویت هستند. این امکان وجود داره که برای ssh کردن به یک سرور بجای وارد کردن username و password، کلید عمومیتون رو به سرور بدید و هر وقت که می‌خواید به سرور وصل شید از کلید عمومی برای احراز هویتتون استفاده شه. روند کار <em>به طور ساده شده</em> به این شکله که:</p>
+
+<ol>
+  <li>سرور یک عبارت رندوم تولید می‌کنه و با کلید عمومی شما رمزش می‌کنه و براتون میفرسته</li>
+  <li>شما اون عبارت رو با کلید خصوصیتون رمز گشایی می‌کنید و برای سرور می‌فرستید</li>
+  <li>سرور عبارتی که شما براش فرستادید رو با عبارتی که تولید کرده بود مقایسه می‌کنه. اگر با هم یکسان بودن به شما دسترسی میده</li>
+</ol>
+
+<p>و تمام این مراحل به طور خودکار بدون اینکه لازم باشه پسوردی تایپ کنید انجام میشه :-) خیلی خوبه نه؟
+##من‌هم کلید عمومی دارم؟ چطوری بسازم؟</p>
+
+<p>زوج کلید شما معمولا توی آدرس زیر ذخیره شدن</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.ssh/ <span class="c"># Unix/Linux</span>
+%USERPROFILE%<span class="se">\.</span>ssh<span class="se">\ </span><span class="c"># Windows</span>
 </code></pre></div></div>
 
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/windows_add_path.png" alt="image" width="803" height="471" border="0"></p>
-
-<h3 id="بخش-اول-شروع-کار-با-adb">بخش اول: شروع کار با adb</h3>
-<p>در ترمینال یا Power Shell اسم adb رو بنویسید و enter بزنید. باید نسخه و لیستی ازکامندهای adb رو ببینید؛ اگر اینطور نیست تنظیمات PATH یا نصب Android SDK ممکنه مشکل داشته باشه.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb devices
+<p>فایل <code class="highlighter-rouge">id_rsa</code> کلید خصوصی و فایل <code class="highlighter-rouge">id_rsa.pub</code> حاوی کلید عمومی‌تون هست. اگر این فایل‌ها یا این فولدر وجود ندارند می‌تونید برای خودتون یک جفت کلید با دستور زیر بسازید:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-C</span> <span class="s2">"youremail@example.com"</span>
 </code></pre></div></div>
 
-<p>لیست دستگاه‌هایی (و امولاتورهای فعال) که USB Debuggingشون روشنه و با کابل به کامپیوترتون وصل شدند رو نشون می‌ده.</p>
-
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/adb_devices_usb.png" alt="image" width="397" height="143" border="0"></p>
-
-<p>بعضی اوقات در لینوکس ممکنه سریال دستگاه به صورت ؟؟؟؟؟؟؟ نشون داده بشه، در این مواقع باید adb رو restart کنید و با sudo اجرا کنید. این کار رو با دوتا دستور زیر میشه انجام داد:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb kill-server
-<span class="nb">sudo </span>adb start-server
+<p>این دستور ازتون می‌پرسه که کلید‌ها رو توی چه فولدری ذخیره کنه و اینکه آیا می‌خواید روی کلیدها رمز هم قرار بدید یا نه. می‌تونید بدون جواب دادن به سوالاتش enter بزنید تا از مقادیر دیفالت استفاده شه. بعد از ساخت کلید باید کلید خصوصیتون رو به ssh معرفی کنید:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add ~/.ssh/id_rsa
 </code></pre></div></div>
-<h3 id="بخش-دوم-اتصال-به-دستگاه-از-طریق-wi-fi-">بخش دوم: اتصال به دستگاه از طریق Wi-Fi <a href="http://developer.android.com/tools/help/adb.html#wireless" target="_blank">+</a>
-</h3>
-<p>adb بدون کابل USB هم می‌تونه به دستگاه وصل شه. برای دولوپر‌ها و QAهایی که تعداد زیادی دستگاه برای تست دارند ولی به اون اندازه پورت خالی USB ندارن میتونه خیلی کاربردی باشه. با دستور tcpip باید دستگاه رو وارد حالت wifi کرد. بعد از اجرای موفق این دستور می‌تونید کابل رو از دستگاه جدا کنید و با adb connect به دستگاه وصل شید. برای فهمیدن آدرس IP دستگاه می‌تونید وارد بخش Settings &gt; About Phone &gt; Network بشید یا قبل از جدا کردن کابل usb از دستور adb shell ntcfg استفاده کنید.</p>
+<p>حالا می‌تونید کلید عمومیتون رو به سرورهای مختلفی که ازشون استفاده می‌کنید معرفی کنید تا از این به بعد بجای یوزنیم و پسورد پرسیدن، از طریق کلیدتون شما رو بشناسن! به عنوان چند نمونه در ادامه‌ی پست نحوه‌ی اضافه کردن کلید عمومی به github، bitbucket و gitlab رو می‌تونید مشاهده کنید.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb tcpip 5555
-adb shell netcfg
-<span class="c"># Disconnect phone from USB cable</span>
-adb connect <span class="o">[</span>ip]:5555 
-</code></pre></div></div>
-<p><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/assets/images/2015/11/adb_device_wifi.png" alt="image" width="335" height="142" border="0"></p>
+<h3 id="github">Github</h3>
+<p>وارد حسابتون بشید، روی عکس پروفایلتون کلیک کنید و وارد settings بشید و بعد وارد <a href="https://github.com/settings/ssh" target="_blank">بخش ssh keys</a> بشید. دکمه‌ی Add SSH Key رو بزنید. در کادر Title یک اسم برای کلیدتون وارد کنید. مثلا «کلید عمومی مک بوک ایر» این اسم بعدا به این درد می‌خوره که اگر مثلا لپ تاپتون رو دزدیدن بدونید کدوم کلید عمومی مربوط به اون لپ تاپه که بتونید حذفش کنید. در کادر key هم محتویات فایل کلید عمومی رو کپی و پیست کنید.
+بعد از اضافه کردن کلید عمومی برای پوش و پول پروژه‌هایی که با لینک sshشون کلون کردید ازتون پسورد نمی‌پرسه و احرازهویتتون از طریق کلید عمومی انجام میشه.</p>
 
-<p>برای دستگاه‌هایی که با Wi-Fi وصل شدند تو خروجی adb devices بجای سریال نامبر گوشی آدرس IP و پورت ۵۵۵۵ دیده می‌شه.</p>
-<h3 id="بخش-سوم">بخش سوم</h3>
-<h4 id="انتقال-فایل">انتقال فایل</h4>
-<p>با دستورهای push و pull می‌تونید بین دستگاه اندرویدی و رایانه‌تون فایل انتقال بدید.</p>
+<h3 id="bitbucket">Bitbucket</h3>
+<p>خیلی شبیه به github هست؛ بعد از اینکه وارد حسابتون شدید، روی عکس پروفایلتون کلیک کنید و وارد settings بشید و بعد وارد بخش ssh keys بشید. دکمه‌ی Add Key رو بزنید. توضیحات <code class="highlighter-rouge">Label</code> و <code class="highlighter-rouge">Key</code> مشابه توضیحات <code class="highlighter-rouge">Title</code> و <code class="highlighter-rouge">Key</code> در گیتهاب است.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb push <span class="o">[</span>Local Path] <span class="o">[</span>Device Path] <span class="c"># Copy file to device</span>
-adb pull <span class="o">[</span>Device Path] <span class="o">[</span>Local Path] <span class="c"># Copy file from device</span>
-</code></pre></div></div>
-<h4 id="نصب-و-مدیریت-اپلیکیشنها">نصب و مدیریت اپلیکیشن‌ها</h4>
-<p>نصب یک اپلیکیشن از روی فایل apk:</p>
+<h3 id="gitlab">Gitlab</h3>
+<p>بعد از وارد شدن به حساب کاربریتون وارد بخش Profile Settings و بعد از اون <a href="https://gitlab.com/profile/keys" target="_blank">SSH Keys</a> بشید. ادامه‌ی توضیحات کاملا مشابه Github است.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install my-application.apk
-</code></pre></div></div>
-
-<p>نصب همزمان چند اپلیکیشن</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install-multiple app1.apk app2.apk ...
-</code></pre></div></div>
-
-<p>نصب روی SDCard:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-s</span> my-application.apk
-</code></pre></div></div>
-
-<p>نصب یک نسخه‌ی به‌روز تر از برنامه‌ای که روی دستگاه نصب شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> my-application.apk
-</code></pre></div></div>
-
-<p>نصب نسخه‌ی قدیمی‌تر نسبت به نسخه‌ای که روی دستگاه نصب شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> <span class="nt">-d</span> my-application.apk 
-</code></pre></div></div>
-
-<p>حذف برنامه با اسم پکیج وارد شده:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb uninstall <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>حذف، بدون پاک شدن دیتا:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb uninstall <span class="nt">-k</span> <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>فهرست برنامه‌های نصب شده روی گوشی:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm list packages
-</code></pre></div></div>
-
-<p>حذف تمام اطلاعات برنامه، معادل دکمه‌ی Clear Data در Settings:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm clear <span class="o">[</span>Package Name]
-</code></pre></div></div>
-
-<p>توقف و از بین بردن تمام مؤلفه‌های (اکتیویتی، سرویس، …) یک اپلیکیشن در حال اجرا از حافظه. معادل دکمه‌ی Force Stop در Settings:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell am force-stop <span class="o">[</span>Package Name]
-</code></pre></div></div>
-<h4 id="چند-دستور-متفرقه">چند دستور متفرقه</h4>
-<p>ریبوت دستگاه به صورت عادی یا حالت safe:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb reboot
-adb reboot recovery
-adb reboot bootloader
-</code></pre></div></div>
-
-<p>با دستور زیر به خروجی logcat دسترسی پیدا می‌کنید. برای مثال به عنوان کاربرد مفیدش می‌تونید این خروجی رو در فایل ذخیره کنید یا به grep ارسال کنید.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb logcat
-adb logcat <span class="nt">-f</span> logs.txt
-adb logcat <span class="nt">-t</span> 20
-adb logcat <span class="k">*</span>:e
-</code></pre></div></div>
-
-<p>خط اول فراخوانی و نمایش log دستگاه به صورت عادی است.
-خط دوم محتویات log را در فایلی به اسم logs.txt ذخیره می‌کند.
-خط سوم فقط 20 مورد آخر logها را نمایش می‌دهد.
-خط چهارم فقط مواردی را نشان می‌دهد که در سطح Error یا وخیم تر باشند. levelهای دیگر قابل استفاده:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>level</th>
-      <th>meaning</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>v</td>
-      <td>verbose - همه‌چیز</td>
-    </tr>
-    <tr>
-      <td>d</td>
-      <td>debug</td>
-    </tr>
-    <tr>
-      <td>i</td>
-      <td>info</td>
-    </tr>
-    <tr>
-      <td>w</td>
-      <td>warning</td>
-    </tr>
-    <tr>
-      <td>e</td>
-      <td>error</td>
-    </tr>
-    <tr>
-      <td>f</td>
-      <td>fatal</td>
-    </tr>
-    <tr>
-      <td>s</td>
-      <td>silent - هیچ‌چیز</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>با این دستور <em>در اندروید ۴ به بالا</em> می‌تونید از یک یا چند اپلیکیشن فایل backup تهیه کنید و بعدا restore کنید. این فایل backup شامل دیتای اپلیکیشن مورد نظر هست. اگر مثل خط دوم و سوم از آپشن ‎<code class="highlighter-rouge">-apk</code> استفاده کنید فایل‌های apk برنامه‌ها هم در فایل بکاپ وجود خواهند داشت. با استفاده از کدی که <a href="https://gist.github.com/MJafarMashhadi/f6ecb978ddc031c17cbccdc3faafd4be" target="_blank">روی گیتهاب</a> به اشتراک گذاشتم می‌تونید فایل بکاپ اندروید رو تبدیل به یک فایل tar کنید که به راحتی فایل‌های داخلش قابل مشاهده و extract کردن هست.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb backup <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
-adb backup <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
-abd backup <span class="nt">-all</span> <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab <span class="c"># پشتیبان گیری از تمام اپلیکیشن‌ها همراه با فایل نصب</span>
-adb restore backup-file.ab
-</code></pre></div></div>
-
-<h3 id="بخش-چهارم-shell">بخش چهارم: Shell</h3>
-<p>دستور ‎<tt style="direction: ltr;">adb shell ‎[‎command]‎<code class="highlighter-rouge"> برای اجرای یک دستور شل روی دستگاه کاربرد دارد؛ بالاتر برای clear data و force stop کردن برنامه‌ها دو نمونه استفاده از این دستور را دیدید. اگر دستور </code>adb shell` را بدون وارد کردن دستور خاصی وارد کنید، وارد یک shell روی دستگاه می‌شود، درست مثل اینکه به دستگاه با ssh وصل شده باشید.</tt></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>mjafar@mjafar-VAIO]<span class="nv">$ </span>adb shell
-shell@g2:/ <span class="err">$</span>
-</code></pre></div></div>
-
-<p>از این شل می‌تونید دستورات مختلفی مثل <a href="http://developer.android.com/tools/help/shell.html#pm" target="_blank">pm (Package Manager)‎</a> برای مدیریت اپلیکیشن‌ها، <a href="http://developer.android.com/tools/help/shell.html#am" target="_blank">am (Activity Manager)‎</a> برای باز و بسته کردن و از بین بردن … اکتیویتی‌های برنامه‌ها، bmgr (Backup Manager)‎ برای تنظیمات پشتیبان گیری و بازگردانی گوشی، netcfg برای تنظیمات شبکه دستگاه رو خیلی راحت اجرا کنید. ابزار <a href="http://developer.android.com/tools/help/monkey.html">monkey</a> که برای تست اپلیکیشن‌ها کاربرد داره هم تو این شل قابل استفاده‌ست.</p>
-
-<p>شل از نوع sh و خیلی مینیمال هست اما به اندازه‌ی خیلی خوبی کار راه انداز. یکی از مهم ترین دستوراتی که تو این شل می‌تونید ازش استفاده کنید <code class="highlighter-rouge">run-as</code> هست. این دستور user فعلی رو به user مربوط به اپلیکیشنی که وارد کردید تغییر میده و وارد پوشه‌ی dataی اون اپ میشه. بعد از این می‌تونید دیتای اپلیکیشن رو بخونید یا دست کاری کنید به طوری که انگار خود اپلیکیشن این تغییرات رو انجام داده.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell@g2:/ <span class="nv">$ </span>run-as com.example.myapp
-com.example.myapp@g2:/data/data/com.example.myapp <span class="err">$</span>
-</code></pre></div></div>
-
-<p>مثلا می‌شه مقادیر ذخیره شده در shared preferences اپلیکیشن رو که به صورت xml ذخیره شدند بخونید. دستور sqlite3 برای خواندن و تغییر محتویات دیتابیس اپلیکیشن قابل استفاده است.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span><span class="nb">ls </span>shared_prefs
-com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqlite3 databases/main.sqlite
-</code></pre></div></div>
-
-<p>امیدوارم این پست براتون مفید بوده باشه :-)</p>
+<p>امیدوارم این مطلب به دردتون خورده باشه. :-)</p>
 
 
 
@@ -1763,8 +1626,8 @@ com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqli
     <script type="text/javascript">
 
         var disqus_config = function () {
-            this.page.url = 'https://mjafar.me/blog/2015/11/mastering-android-adb/';
-            this.page.identifier = '/blog/2015/11/mastering-android-adb';
+            this.page.url = 'https://mjafar.me/blog/2015/12/ssh-public-key-what-how-why/';
+            this.page.identifier = '/blog/2015/12/ssh-public-key-what-how-why';
         };
         var disqus_shortname = 'mashhadimj';
         var disqus_developer = 0;
