@@ -25,19 +25,23 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Tags | Mohammad Jafar Mashhadi</title>
+<title>Add Telegram messenger launcher to Gnome applications list | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="Add Telegram messenger launcher to Gnome applications list" />
+<meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My portfolio website I guess?" />
-<meta property="og:description" content="My portfolio website I guess?" />
-<link rel="canonical" href="https://mjafar.me/tags/" />
-<meta property="og:url" content="https://mjafar.me/tags/" />
+<meta name="description" content="Telegram is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, Telegram and Updater. There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell." />
+<meta property="og:description" content="Telegram is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, Telegram and Updater. There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell." />
+<link rel="canonical" href="https://mjafar.me/blog/2014/10/telegram-launcher/" />
+<meta property="og:url" content="https://mjafar.me/blog/2014/10/telegram-launcher/" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-10-05T13:41:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://mjafar.me/tags/","headline":"Tags","description":"My portfolio website I guess?","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://mjafar.me/blog/2014/10/telegram-launcher/","headline":"Add Telegram messenger launcher to Gnome applications list","dateModified":"2014-10-05T13:41:00+00:00","datePublished":"2014-10-05T13:41:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/10/telegram-launcher/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"Telegram is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, Telegram and Updater. There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -63,7 +67,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/tags/">
+    <link rel="canonical" href="https://mjafar.me/blog/2014/10/telegram-launcher/">
 
     <style>
     
@@ -1480,18 +1484,12 @@ pre {
     <div class="wrapper-large">
         
             
-                <div class="page tags">
+                <div class="page add telegram messenger launcher to gnome applications list">
             
         
 
             
 
-
-    <header class="header-home animated ">
-        
-        <h1 class="title">Tags</h1>
-        
-    </header>
 
 
 <nav class="nav">
@@ -1532,460 +1530,56 @@ pre {
 
 
 
-<section class="list">
-    <h1 class="title">Tags</h1>
 
-    
 
-    
-        
-            <a class="item" href="#amend-commit">amend commit</a>
-        
-            <a class="item" href="#clone">clone</a>
-        
-            <a class="item" href="#commit">commit</a>
-        
-            <a class="item" href="#conflict">conflict</a>
-        
-            <a class="item" href="#git">git</a>
-        
-            <a class="item" href="#git-applications">git applications</a>
-        
-            <a class="item" href="#git-configuration">git configuration</a>
-        
-            <a class="item" href="#merge">merge</a>
-        
-            <a class="item" href="#pull">pull</a>
-        
-            <a class="item" href="#push">push</a>
-        
-            <a class="item" href="#resolving-conflicts">resolving conflicts</a>
-        
-            <a class="item" href="#publication">publication</a>
-        
-            <a class="item" href="#software-engineering">software engineering</a>
-        
-            <a class="item" href="#deep-learning">deep learning</a>
-        
-            <a class="item" href="#thesis">thesis</a>
-        
-    
 
-    
+
+<h1 class="title">Add Telegram messenger launcher to Gnome applications list</h1>
+
+<span class="date">
+    <time datetime="05-10-2014">Sunday. October 05, 2014</time>
+</span>
+
+
+    <div class="post-tags">
+        
+    </div>
+
+
+<p><a href="https://telegram.org/">Telegram</a> is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, <em>Telegram</em> and <em>Updater.</em> There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell.</p>
+
+<p>Here’s where <em>desktop</em> files come in handy! Desktop files are standard way to <em>register</em> an application in desktop manager so they can be launched from the applications list, menus and whatever launcher the desktop uses. We build a desktop file for telegram and then put it in <code class="highlighter-rouge">/usr/share/applications</code> or <code class="highlighter-rouge">~/.local/applications</code>. If you put the file in first directory it will be accessible for all users (also you need root privileges to be able to add a file to that directory) but if you put the file in the second one, the file is accessible only for you.</p>
+
+<p>Download <a href="https://telegram.org/img/t_logo.png">telegram logo</a> to be used as an icon for launcher. Create a file named <code class="highlighter-rouge">telegtam.desktop</code> with following contents in <code class="highlighter-rouge">/usr/share/applications</code> (or <code class="highlighter-rouge">~/.local/applications</code> as mentioned above). You may change ‘Exec’ and ‘Icon’ lines based on your own configurations and directories.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
+Version=1.0
+Name=Telegram
+Exec=/path/to/telegram/executable/Telegram
+Icon=/path/to/telegram/logo/t_logo.png
+Terminal=false
+Type=Application
+Categories=Network;Internet
+</code></pre></div></div>
+<p>Learn more about <em>desktop entry</em> files <a href="https://developer.gnome.org/integration-guide/stable/desktop-files.html.en">here</a> 
+and start using Telegram <a href="https://telegram.org/dl/webogram">now</a> if you haven’t already!</p>
+
+
+
+
+
+
+    <section class="author">
+    <div class="toleft">
+        <img class="selfie" src="https://mjafar.me/assets/images/mj.jpg" alt="Mohammad Jafar Mashhadi">
+    </div>
+
+    <div class="toright">
+        <h4 class="name">Mohammad Jafar Mashhadi</h4>
+        <p class="bio">Your average genius.</p>
+    </div>
 </section>
 
-<hr>
 
-<section class="tag-list">
-    
-    <h2 class="title" id="amend-commit">#amend commit</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="clone">#clone</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="commit">#commit</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="conflict">#conflict</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git">#git</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git-applications">#git applications</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git-configuration">#git configuration</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="merge">#merge</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="pull">#pull</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="push">#push</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="resolving-conflicts">#resolving conflicts</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="publication">#publication</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/IST-2019-interactive-debugging.html">
-                            <aside class="date"><time datetime="24-04-2019">Apr 24 2019</time></aside>
-                            <h3 class="title">Interactive semi-automated specification mining for debugging: An experience report</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ICPC-2019-spec-mining-emperical-study.html">
-                            <aside class="date"><time datetime="24-05-2019">May 24 2019</time></aside>
-                            <h3 class="title">An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="software-engineering">#software engineering</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/IST-2019-interactive-debugging.html">
-                            <aside class="date"><time datetime="24-04-2019">Apr 24 2019</time></aside>
-                            <h3 class="title">Interactive semi-automated specification mining for debugging: An experience report</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ICPC-2019-spec-mining-emperical-study.html">
-                            <aside class="date"><time datetime="24-05-2019">May 24 2019</time></aside>
-                            <h3 class="title">An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="deep-learning">#deep learning</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="thesis">#thesis</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-</section>
 
 
 <footer class="footer-main">

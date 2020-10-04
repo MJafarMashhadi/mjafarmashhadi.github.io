@@ -25,19 +25,23 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Tags | Mohammad Jafar Mashhadi</title>
+<title>چگونه از git استفاده کنیم | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="چگونه از git استفاده کنیم" />
+<meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My portfolio website I guess?" />
-<meta property="og:description" content="My portfolio website I guess?" />
-<link rel="canonical" href="https://mjafar.me/tags/" />
-<meta property="og:url" content="https://mjafar.me/tags/" />
+<meta name="description" content="گیت چیه؟" />
+<meta property="og:description" content="گیت چیه؟" />
+<link rel="canonical" href="https://mjafar.me/blog/2015/08/how-to-use-git/" />
+<meta property="og:url" content="https://mjafar.me/blog/2015/08/how-to-use-git/" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-08-04T14:14:16+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://mjafar.me/tags/","headline":"Tags","description":"My portfolio website I guess?","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://mjafar.me/blog/2015/08/how-to-use-git/","headline":"چگونه از git استفاده کنیم","dateModified":"2015-08-04T14:14:16+00:00","datePublished":"2015-08-04T14:14:16+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/08/how-to-use-git/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"گیت چیه؟","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -63,7 +67,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/tags/">
+    <link rel="canonical" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
 
     <style>
     
@@ -1480,18 +1484,12 @@ pre {
     <div class="wrapper-large">
         
             
-                <div class="page tags">
+                <div class="page چگونه از git استفاده کنیم">
             
         
 
             
 
-
-    <header class="header-home animated ">
-        
-        <h1 class="title">Tags</h1>
-        
-    </header>
 
 
 <nav class="nav">
@@ -1532,460 +1530,226 @@ pre {
 
 
 
-<section class="list">
-    <h1 class="title">Tags</h1>
 
-    
+<style>
+h1, h2, h3, h4, h5, h6, span, p, li {
+    direction: rtl;
+    font-family: Vazir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+li {
+    text-align: right;
+}
+</style>
 
-    
-        
-            <a class="item" href="#amend-commit">amend commit</a>
-        
-            <a class="item" href="#clone">clone</a>
-        
-            <a class="item" href="#commit">commit</a>
-        
-            <a class="item" href="#conflict">conflict</a>
-        
-            <a class="item" href="#git">git</a>
-        
-            <a class="item" href="#git-applications">git applications</a>
-        
-            <a class="item" href="#git-configuration">git configuration</a>
-        
-            <a class="item" href="#merge">merge</a>
-        
-            <a class="item" href="#pull">pull</a>
-        
-            <a class="item" href="#push">push</a>
-        
-            <a class="item" href="#resolving-conflicts">resolving conflicts</a>
-        
-            <a class="item" href="#publication">publication</a>
-        
-            <a class="item" href="#software-engineering">software engineering</a>
-        
-            <a class="item" href="#deep-learning">deep learning</a>
-        
-            <a class="item" href="#thesis">thesis</a>
-        
-    
 
-    
+
+
+<h1 class="title">چگونه از git استفاده کنیم</h1>
+
+<span class="date">
+    <time datetime="04-08-2015">Tuesday. August 04, 2015</time>
+</span>
+
+
+    <div class="post-tags">
+        
+            <a class="item" href="https://mjafar.me/tags/#amend-commit">amend commit</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#clone">clone</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#commit">commit</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#conflict">conflict</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#git">git</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#git-applications">git applications</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#git-configuration">git configuration</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#merge">merge</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#pull">pull</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#push">push</a>
+        
+            <a class="item" href="https://mjafar.me/tags/#resolving-conflicts">resolving conflicts</a>
+        
+    </div>
+
+
+<h3 id="گیت-چیه">گیت چیه؟</h3>
+
+<p>گیت یک نرم‌افزار مدیریت نسخه است. تاریخچه و پدید آورندگانش به نظر من خیلی اهمیتی نداره ولی اگه کنجکاوید میتونید از <a href="https://en.wikipedia.org/wiki/Git_(software)" target="_blank">ویکی‌پدیا</a> بخونید. (گیت اسم یک روستا در خراسان جنوبی هم هست: <a href="https://fa.wikipedia.org/wiki/%DA%AF%DB%8C%D8%AA_(%D8%B4%D9%87%D8%B1%D8%B3%D8%AA%D8%A7%D9%86_%D8%AF%D8%B1%D9%85%DB%8C%D8%A7%D9%86)" target="_blank">+</a> :) )</p>
+
+<h3 id="مدیریت-نسخه-یعنی-چی">مدیریت نسخه یعنی چی؟</h3>
+<p>بله! گیت یک پوشه (که معمولا حاوی کد منبع یک نرم‌افزاره) رو تحت نظر می‌گیره و تمام تغییرات فایل‌های داخلش رو ثبت می‌کنه. بدون اینکه با کپی/پیست بخوایم از اون پوشه نسخه پشتیبان تهیه کنیم گیت تاریخچه‌ی تغییرات رو ذخیره می‌کنه. چون گیت فقط تغییرات رو ذخیره می‌کنه (و نه نسخه‌های مختلف پروژه در زمان‌های مختلف) حجم سرباری که به فایل‌ها اضافه می‌شه خیلی کم و معقوله. این تاریخچه خیلی خوب و کامل ذخیره می‌شه به طوری که بعداً میشه نسخه‌های قدیمی‌تر هر فایل رو دید، اونا رو با هم مقایسه کرد یا نسخه‌های قدیمی رو برگردوند. با گیت حتا میشه فهمید هر خط از فایل آخرین بار کی تغییر کرده و چه کسی تغییرش داده.</p>
+
+<h3 id="چه-جالب-دیگه-چه-کارهایی-میکنه">چه جالب! دیگه چه کارهایی می‌کنه؟</h3>
+<p>با گیت میشه به راحتی روی یک مجموعه فایل به صورت گروهی کار کرد. دیگه لازم نیست فایل‌ها رو روی دراپ‌باکس و paste bin و غیره بزارید یا برای هم با ایمیل بفرستید و تغییرات رو دستی با هم ترکیب کنید، گیت این کارو براتون انجام میده.</p>
+
+<p>چون گیت بر اساس ذخیره کردن تغییرات کار می‌کنه (و نه کپی گرفتن از کل فایل‌ها) در جاهایی که حجم انتقال یا ذخیره سازی اطلاعات برامون هزینه بره می‌تونه کمک کنه. مثلا میشه یک وب‌سایت رو روی گیت قرار داد و وقتی خواستیم تغییری تو سایت ایجاد کنیم اون رو با گیت آپلود کنیم که بجای کل فایل‌های سایت فقط فایل‌هایی که تغییرکردن آپلود شن.</p>
+
+<h3 id="چطوری-نصب-میشه">چطوری نصب میشه؟</h3>
+<p>اگه از گنو/لینوکس استفاده می‌کنید احتمالا از قبل روی دستگاهتون نصب هست. با وارد کردن <code class="highlighter-rouge">git --version</code> در ترمینال می‌تونید چک کنید که نصب شده یا نه. اگر نصب نشده بود بسته‌ی <code class="highlighter-rouge">git</code> رو با package manager سیستم‌عاملتون نصب کنید (همون apt-get یا yum و pacman و…) .</p>
+
+<p>اگر از ویندوز استفاده می‌کنید پیشنهاد من و ماکروسافت 
+<a href="https://msysgit.github.io/">Git for windows</a>
+ هست. 
+ <a href="http://sourceforge.net/projects/gitextensions/">Git extensions</a>
+  هم ابزار خوبیه که هم ویندوزی‌ها و هم گنو/لینوکسی ها هم میتونن ازش استفاده کنن و برای کار با گیت یک محیط گرافیکی فراهم می‌کنه.</p>
+
+<p>گیت به طور کلی یک ابزار تحت خط فرمانه و دستوراتی که در ادامه معرفی می‌کنم رو باید داخل ترمینال (گنو/لینوکس و مک دارها) یا Git bash (ویندوزی‌ها) وارد کنید.</p>
+
+<h3 id="تنظیمات-اولیه">تنظیمات اولیه</h3>
+<p>گیت تنظیمات زیادی داره که در حالت عادی خیلی‌هاشون رو لازم نیست دست بزنیم. تنها چیزی که دفعه‌ی اول نصب مهمه اینه که خودمون رو به گیت معرفی کنیم! این مرحله برای انجام کار گروهی اهمیت بیشتری داره.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"Mohammad Jafar Mashhadi"</span>
+git config <span class="nt">--global</span> user.email <span class="s2">"me@mjafar.me"</span>
+</code></pre></div></div>
+<p>و اگه افرادی که روی فایل‌ها کار می‌کنن سیستم‌عامل‌های مختلفی دارن (که معمولا اینطور هست):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> core.autocrlf <span class="nb">true</span>
+</code></pre></div></div>
+<p>علت نیاز به این دستور اینه که توی ویندوز آخر خط‌ها با دو نویسه‌ی ‎\r و ‎\n پشت سرهم مشخص میشه (CR LF) ولی تو سیستم‌عامل‌های دیگه فقط با یک ‎\n ‎  (LF). وقتی‌ به صورت گروهی روی یه سری فایل تغییر ایجاد می‌کنید آخر خط‌های این فایل‌ها بسته به سیستم‌عامل ممکنه CRLF یا LF باشن. ما برای اینکه به گیت بگیم بین LF و CRLF تفاوت قائل نشه و این مورد رو به عنوان «تغییر در محتوای فایل» در نظر نگیره باید این گزینه رو فعال کنیم.</p>
+
+<h3 id="از-کجا-شروع-کنیم">از کجا شروع کنیم؟</h3>
+<p>همونطور که گفتم گیت یک پوشه و فایل‌های داخلش رو تحت نظر می‌گیره، باید به git بگید که کدوم پوشه رو بررسی کنه. با cd وارد پوشه‌ای بشید که می‌خواید git روش نظارت کنه و دستور زیر رو وارد کنید.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a git repository</span>
+git init 
+</code></pre></div></div>
+<p>فرقی نداره که پوشه خالی باشه یا از قبل حاوی تعدادی فایل باشه. از الان به بعد git حواسش به تغییرات فایل‌های این پوشه (از این به بعد بهش مخزن (repository) هم گفته می‌شه) هست. اگر ls –a وارد کنید میتونید پوشه‌ی مخفی‌ای به اسم ‎.git که تازه ساخته شده رو ببینید. داخل این پوشه اطلاعات مربوط به گیت نگه‌داری می‌شن. اگر پاکش کنید گیت دیگه کاری به اون پوشه نداره و مثه بقیه‌ی پوشه‌های عادی سیستم باهاش برخورد میشه.</p>
+
+<h3 id="بعد-چطور-طور-خاصی-باید-کد-بنویسم">بعد چطور؟ طور خاصی باید کد بنویسم؟</h3>
+<p>از الان میتونید تغییراتتون رو شروع کنید. فایل‌ها رو اضافه و حذف کنید و محتویاتشون رو عوض کنید. با وارد کردن دستور زیر گیت بهتون نشون می‌ده که چه فایل‌هایی تغییر کردن.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+</code></pre></div></div>
+
+<p>بعد از اینکه کارتون تموم شد باید مجموعه تغییراتی که ایجاد کردید رو به عنوان یه نسخه ثبت (commit) کنید.
+برای کامیت باید اول به گیت بگید که کدوم فایل‌ها رو می‌خواید داخل کامیتتون داشته باشید. اول یک بار <code class="highlighter-rouge">git status</code> بزنید تا یادتون بیاد چه فایل‌هایی تغییر کردند و بعد با <code class="highlighter-rouge">git add</code> فایل‌ها رو به کامیت اضافه کنید.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add /path/to/file <span class="c"># Add one file to commit</span>
+git add /a/directory/
+git add <span class="nb">.</span> <span class="c"># Add all modified and new files to commit</span>
+</code></pre></div></div>
+
+<p>برای اضافه کردن یک تک فایل از دستور اول استفاده کنید، اگر همه‌ی فایل‌های داخل یک پوشه رو میخواید اضافه کنید از دستور دوم و اگر همه‌ی فایل‌هایی که تغییر کردند رو می‌خواید وارد کامیت کنید از دستور سوم استفاده کنید.
+اگر فایلی رو حذف کردید و می‌خواید این عمل حذف وارد کامیت بشه بجای <code class="highlighter-rouge">git add</code> از <code class="highlighter-rouge">git rm</code> استفاده کنید.
+اگر فایلی رو اشتباهی به کامیت اضافه کردید از دستور زیر استفاده کنید تا از کامیت خارج شه:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rm <span class="nt">--cached</span> /path/to/file
+</code></pre></div></div>
+<p>بعد از اینکه همه‌ی فایل‌ها رو اضافه کردید با دستور زیر کامیت رو تموم کنید.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"توضیحات مربوط به این کامیت، چه چیزی رو اضافه کردید؟ چه چیزی رو اصلاح کردید؟ تو یه خط توضیح بدید"</span>
+</code></pre></div></div>
+<p>اگر توضیحاتتون توی یه خط جا نمی‌شه فقط بنویسید <code class="highlighter-rouge">git commit .</code> یک ادیتور (معمولا vi) باز می‌شه که میتونید توضیحات چندخطی رو داخلش وارد کنید.</p>
+
+<p>هر کامیت یه رشته‌ی یکتایی به اسم hash داره که به طور خودکار ساخته میشه و برای ارجاع دادن به اون کامیت استفاده میشه. معمولا ۷ حرف اول  hash هر کامیت برای ارجاع دادن کافیه.</p>
+
+<p><img src="/assets/images/2015/08/telegram-git-log.png" alt="Git log on Telegram Android" border="0"></p>
+
+<p>توی این شکل خروجی دستور <code class="highlighter-rouge">git log</code> روی <a href="https://github.com/drklo/telegram" target="_blank">سورس کد پیام رسان تلگرام</a> رو می‌بینید. عبارت زرد رنگی که جلوی کلمه‌ی commit نوشته شده hash کامیت است. در ادامه مشخصات فرد کامیت کننده، تاریخ کامیت کردن و توضیح کامیت (commit message) رو می‌بینید.</p>
+
+<h3 id="چطوری-قراره-گروهی-کد-زدن-با-گیت-راحت-تر-بشه">چطوری قراره گروهی کد زدن با گیت راحت تر بشه؟</h3>
+<p>تا اینجا هر کاری که کردیم به صورت محلی روی رایانه‌ی خودمون ذخیره شد. می‌شه تا انتهای پروژه هم همین روند رو پیش گرفت و هیچ ارتباطی هم با اینترنت نداشت. تمام قابلیت‌های مدیریت نسخه‌ی گیت همچنان قابل دسترسن. ولی اگر قصد داشته باشیم که به صورت گروهی (دو نفر به بالا) روی یک مجموعه فایل کار کنیم باید کامیت‌هامون رو یک جای قابل دسترس برای هم‌گروهی‌هامون (مثلا سایت <a href="http://github.com/" target="_blank">گیت‌هاب</a>) قرار بدیم تا بتونن اونا رو دانلود کنن و روی فایل‌هاشون اعمال کنن. همچنین اونا هم کامیت‌هاشون رو از این طریق به ما بدن و در نهایت به یک مجموعه کد یکسان که حاصل ترکیب کامیت‌های همه‌ی اعضای گروهه برسیم.</p>
+
+<h3 id="فایلها-رو-باید-کجا-بزارم-که-برای-بقیهی-اعضای-پروژه-قابل-دسترس-باشه">فایل‌ها رو باید کجا بزارم که برای بقیه‌ی اعضای پروژه قابل دسترس باشه؟</h3>
+<p>سایت‌های github، gitlab و bitbucket رو پیشنهاد می‌کنم. اگر سرور شخصی دارید می‌تونید با یه مقدار تلاش و وقت گذاشتن روی سرور شخصیتون هم کار کنید. اگر می‌خواید کدها توسط عموم قابل دیدن نباشه باید از گیت‌لب یا بیت‌باکت استفاده کنید. روند اینطور هست که باید توی یکی از این سایت‌ها عضو شید و یک مخزن (repository) خالی درست کنید. بعد از ایجاد موفق یک مخزن خود این سایت‌ها بهتون دستورات لازم برای ارتباط پیدا کردن مخزن محلی و مخزن روی سرور (remote) رو نشون میدن. اصل کاری بین دستورات متعددی که توی سایت می‌بینید دو خطی هستن که شبیه این‌ها هستند:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin ...
+git push origin master
+</code></pre></div></div>
+<p>خط اول مخزن روی سرور رو به مخزن محلی معرفی می‌کنه؛ آدرسش رو می‌ده و براش یه اسم میزاره (origin). خط دوم هم فایل‌ها رو روی مخزن remote ای به اسم origin آپلود می‌کنه. (بله، میشه یک مخزن محلی بیش از یک remote داشته باشه!)</p>
+
+<p class="r" align="center"><img src="http://assets.dockstreetmedia.com/uploads/2012/10/git_bash_5-600x360.jpg" alt=""></p>
+<p>اگر صحنه‌ای شبیه عکس بالا دیدید یعنی push موفق بوده. برای مطمئن شدن می‌تونید دستور ‎<code class="highlighter-rouge">echo‎ ‎$?‎</code> رو وارد کنید و اگر عدد 0 نوشته شد یعنی push موفق بوده. اگر پوش به ارور بخوره ممکنه مشکل از قطع بودن اینترنت باشه ولی مشکل (؟) معروف‌تری که معمولا با اون مواجه می‌شید ارور non fast-forward هست و عبارت fetch first در متن ارورها قابل مشاهده‌س. اگر به non fast-forward برخورد کردید نگران نباشید، معنیش اینه که افراد دیگه‌ای کامیت‌هاشون رو روی سرور push کردند و شما اون‌ها رو ندارید. همونطور که احتمالا حدس زدید باید کامیت‌های بقیه رو از سرور دریافت کنیم (fetch)، با کامیت‌های خودمون ترکیب کنیم(merge) و دوباره سعی کنیم push کنیم.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch
+git merge
+</code></pre></div></div>
+<p>چون <code class="highlighter-rouge">fetch</code> و <code class="highlighter-rouge">merge</code> زیاد پشت سر هم استفاده می‌شن دستور دیگه‌ای تعبیه شده که کارش دقیقا ترکیب این دو تا دستوره. <code class="highlighter-rouge">git pull.</code></p>
+
+<h3 id="pull-کردم-و-به-conflict-خوردم-بعضی-از-فایلها-خراب-شدن-باید-چه-کنم">pull کردم و به conflict خوردم، بعضی از فایل‌ها خراب شدن، باید چه کنم؟</h3>
+<p>گیت تا جایی که ممکنه تغییرات همه رو با هم ترکیب می‌کنه اما یه جاهایی هست که چند نفر همزمان روی یک خط تغییر ایجاد کردن و گیت بین این تغییرات اولویتی قائل نیست. فکر کنم نیازی به توضیح نیست که چرا اولویت زمانی درست نیست (یعنی نمیشه کامیت جدیدتر رو به کامیت قدیمی‌تر ترجیح داد) به این شرایط می‌گن conflict و خروج از این شرایط باید به صورت دستی انجام شه. بعد از <code class="highlighter-rouge">merge</code> با <code class="highlighter-rouge">git status</code> می‌تونید چک کنید که آیا conflict به وجود اومده و اگر اومده کدوم فایل‌ها به conflict برخوردند. ابزارهایی مثل Meld یا git extensions برای رفع conflict وجود دارند. شخصا چون معمولا از IDE های <a href="http://jetbrains.org" target="_blank">JetBrains</a> استفاده می‌کنم از ابزار رفع کانفلیکت خود IDE استفاده می‌کنم و واقعا راضیم! بعد از رفع کانفلیکت باید فایل‌هایی که مشکل داشتن رو با git add علامت‌گذاری و کامیت کنید. کامیت‌های مربوط به رفع Conflict کامیت‌های خاصی هستن که لازم نیست براشون Commit message تعریف کنید، گیت به طور خودکار messageشون رو ایجاد می‌کنه.</p>
+
+<h3 id="خلاصهای-از-مراحل-آپلود-کامیتها">خلاصه‌ای از مراحل آپلود کامیت‌ها</h3>
+
+<ol>
+  <li>push</li>
+  <li>اگر ارور نخورد -&gt; پایان</li>
+  <li>اگر ارور non fast-forward خورد: pull</li>
+  <li>برو به 1</li>
+  <li>پایان</li>
+</ol>
+
+<h3 id="سوالات-متدوال">سوالات متدوال</h3>
+<h4 id="اگر-بخوایم-یه-کدی-رو-از-یه-مخزن-remote-مثلا-گیتهاب-دانلود-کنیم-و-روش-کار-کنیم-باید-چه-کار-کنیم-سعی-کردم-pull-و-fetch-کنم-ولی-نشد">اگر بخوایم یه کدی رو از یه مخزن remote، مثلا گیت‌هاب، دانلود کنیم و روش کار کنیم باید چه کار کنیم؟ سعی کردم pull و fetch کنم ولی نشد!</h4>
+
+<p>برای دانلود اولیه باید از دستور <code class="highlighter-rouge">clone</code> استفاده کنید. مثلاً:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/MJafarMashhadi/AndroidDrawableFactory
+</code></pre></div></div>
+<h4 id="من-یه-کامیت-کردم-بعد-git-status-زدم-دیدم-یه-فایل-رو-جا-انداختم-چی-کار-کنم">من یه کامیت کردم بعد <code class="highlighter-rouge">git status</code> زدم دیدم یه فایل رو جا انداختم چی کار کنم؟</h4>
+
+<p>اگر کامیت رو پوش کردید کاری نمیشه کرد. باید این فایل رو در یک کامیت جدا اضافه کنید وگرنه با آپشن ‎<code class="highlighter-rouge">--amend</code> میشه یه فایل رو به آخرین کامیت اضافه کرد.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add /path/to/the/forgotten/file
+git commit —-amend
+</code></pre></div></div>
+
+<h4 id="من-یه-کامیت-کردم-بعد-متوجه-شدم-message-رو-اشتباه-نوشتم-میخوام-ویرایش-کنم-میشه">من یه کامیت کردم، بعد متوجه شدم message رو اشتباه نوشتم، میخوام ویرایش کنم. میشه؟</h4>
+<p>اگر هنوز push نکردید بله.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">--amend</span>
+</code></pre></div></div>
+<h4 id="من-یه-کامیت-کردم-مسیجش-رو-عوض-کنم-ولی-کامیتش-خخیلی-قدیمیه-amend-فقط-رو-کامیت-آخر-کار-میکنه">من یه کامیت کردم مسیجش رو عوض کنم ولی کامیتش خخیلی قدیمیه، ‎–amend‎ فقط رو کامیت آخر کار می‌کنه؟</h4>
+
+<p>بله فقط رو کامیت آخر کار می‌کنه. کامیت‌هایی که رو سرور push شدن اصلا قابل تغییر نیستن ولی اگه هنوز پوش نشده ممکنه بشه یه کارایی کرد (مثلا با rebase). سرچ کنید</p>
+
+<p>(ویرایش: درسته که کامیت‌های push شده رو نمی‌شه تغییر داد اما با rebase و force push می‌شه تاریخچه رو بازنویسی کرد و بعضی کامیت‌ها رو حذف/ویرایش کرد، صرفاً یه کمی بیشتر کار و دقت و سطح دسترسی لازم داره!)</p>
+
+<h4 id="من-یه-تعداد-فایل-و-پوشه-دارم-که-نمیخوام-git-اونا-رو-تحت-نظر-بگیره-چه-کار-کنم">من یه تعداد فایل و پوشه دارم که نمی‌خوام git اونا رو تحت نظر بگیره. چه کار کنم؟</h4>
+
+<p>فایل‌های کامپایل شده و فایل‌های مربوط به IDE نمونه‌های این فایل‌ها هستند. این‌ها اگه وارد git بشن با فایل‌های مشابه بقیه هم گروهی‌ها قاطی می‌شن و اون‌ها دیگه نمی‌تونن  پروژه رو باز کنن. یا مثلا آپلود فایل‌های کامپایل شده کار بیهوده‌ای هست چون از روی سورس‌ها قابل ساخته شدن هستند و حجم مخرن گیت رو بالا می‌برند.</p>
+
+<p>باید فایلی بسازید به اسم <code class="highlighter-rouge">.gitignore</code> توی این فایل اسم فایل و پوشه‌هایی که میخواید گیت تغییراتشون رو در نظر نگیره اضافه می‌کنین. مثلاً برای یک پروژه‌ی جاوا احتمالاً می‌نویسید:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*.class
+*.jar
+</code></pre></div></div>
+
+<h4 id="باید-gitignore-رو-دستی-درست-کنم-آمادهش-نیست">باید gitignore رو دستی درست کنم؟ آماده‌ش نیست؟</h4>
+
+<p>چرا هست! سایت <a href="http://gitignore.io">gitignore.io</a> این کار رو می‌کنه. توش کلمات کلیدی پروژه (مثلا Python Django Pycharm) رو وارد کنید، یه git ignore کامل درست می‌کنه. منظور از کلمات کلیدی اسم IDE و زبان برنامه نویسی و اسم فریم ورک‌ها و…س.</p>
+
+<h4 id="گیت-فقط-برای-سورس-کد-و-کارهای-برنامه-نویسی-استفاده-میشه">گیت فقط برای سورس کد و کار‌های برنامه نویسی استفاده می‌شه؟</h4>
+
+<p>نه. همونطور که اول مطلب گفتم گیت هر نوع فایلی رو میتونه در نظر بگیره و اصلا وابسته به این نیست که فایل‌ها حاوی کد هستند یا چیز دیگه. میشه با گیت ویراست‌های یک کتاب رو ذخیره کرد (به خصوص اگر کتاب با TeX حروف‌چینی شده باشه)؛ میشه فایل‌های config یک سیستم رو با گیت ذخیره کرد و از تغییراتشون با خبر شد و اگر چیزی اشتباه config شده بود با یک خط دستور git به تنظیمات گذشته برگشت؛ میشه مستندات یک سیستم رو با گیت مدیریت کرد و خیلی کاربردهای دیگه.</p>
+
+<h4 id="باز-هم-ادامه-داره-من-هنوز-سوال-دارم">باز هم ادامه داره؟ من هنوز سوال دارم!</h4>
+
+<p>بله :) <a href="/blog/2015/09/how-to-use-git-part2">قسمت دوم</a> رو مطالعه کنید.</p>
+
+
+
+
+
+
+
+    <section class="author">
+    <div class="toleft">
+        <img class="selfie" src="https://mjafar.me/assets/images/mj.jpg" alt="Mohammad Jafar Mashhadi">
+    </div>
+
+    <div class="toright">
+        <h4 class="name">Mohammad Jafar Mashhadi</h4>
+        <p class="bio">Your average genius.</p>
+    </div>
 </section>
 
-<hr>
 
-<section class="tag-list">
-    
-    <h2 class="title" id="amend-commit">#amend commit</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="clone">#clone</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="commit">#commit</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="conflict">#conflict</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git">#git</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git-applications">#git applications</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git-configuration">#git configuration</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="merge">#merge</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="pull">#pull</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="push">#push</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="resolving-conflicts">#resolving conflicts</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="publication">#publication</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/IST-2019-interactive-debugging.html">
-                            <aside class="date"><time datetime="24-04-2019">Apr 24 2019</time></aside>
-                            <h3 class="title">Interactive semi-automated specification mining for debugging: An experience report</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ICPC-2019-spec-mining-emperical-study.html">
-                            <aside class="date"><time datetime="24-05-2019">May 24 2019</time></aside>
-                            <h3 class="title">An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="software-engineering">#software engineering</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/IST-2019-interactive-debugging.html">
-                            <aside class="date"><time datetime="24-04-2019">Apr 24 2019</time></aside>
-                            <h3 class="title">Interactive semi-automated specification mining for debugging: An experience report</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ICPC-2019-spec-mining-emperical-study.html">
-                            <aside class="date"><time datetime="24-05-2019">May 24 2019</time></aside>
-                            <h3 class="title">An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="deep-learning">#deep learning</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="thesis">#thesis</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-</section>
 
 
 <footer class="footer-main">

@@ -37,7 +37,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Publications","url":"https://mjafar.me/publications/","description":"My portfolio website I guess?","@context":"http://schema.org"}</script>
+{"@type":"WebPage","url":"https://mjafar.me/publications/","headline":"Publications","description":"My portfolio website I guess?","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -678,7 +678,6 @@ tt {
   font-size: 12px;
   line-height: 20px;
   background: #fff;
-  border-radius: 2px;
   border-radius: 2px; }
 
 pre {
@@ -713,6 +712,12 @@ pre {
 
 .wrapper-large {
   max-width: 810px; }
+
+.persian {
+  content: "{{ site.url }}";
+  direction: rtl;
+  text-align: right;
+  font: Vazir, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* general helpers
  */
@@ -1434,6 +1439,17 @@ pre {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px; }
 
+@font-face {
+  font-family: Vazir;
+  src: url("https://mjafar.me/assets/font/Vazir.eot");
+  src: url("https://mjafar.me/assets/font/Vazir.eot?#iefix") format("embedded-opentype"), url("/assets/font/Vazir.woff") format("woff"), url("/assets/font/Vazir.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: Vazir;
+  src: url("https://mjafar.me/assets/font/Vazir-Bold.eot");
+  src: url("https://mjafar.me/assets/font/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/font/Vazir-Bold.woff") format("woff"), url("/assets/font/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold; }
+
     </style>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script type="application/javascript">
@@ -1495,7 +1511,7 @@ pre {
         
 
         <li class="item">
-            <a class="link" href="https://blog.mjafar.me">Blog</a>
+            <a class="link" href="/blog">Blog</a>
         </li>
 
         

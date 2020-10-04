@@ -25,19 +25,23 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Tags | Mohammad Jafar Mashhadi</title>
+<title>چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase | Mohammad Jafar Mashhadi</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase" />
+<meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My portfolio website I guess?" />
-<meta property="og:description" content="My portfolio website I guess?" />
-<link rel="canonical" href="https://mjafar.me/tags/" />
-<meta property="og:url" content="https://mjafar.me/tags/" />
+<meta name="description" content="این مطلب در ادامه‌ی چگونه از git استفاده کنیم نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست." />
+<meta property="og:description" content="این مطلب در ادامه‌ی چگونه از git استفاده کنیم نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست." />
+<link rel="canonical" href="https://mjafar.me/blog/2015/09/how-to-use-git-part2/" />
+<meta property="og:url" content="https://mjafar.me/blog/2015/09/how-to-use-git-part2/" />
 <meta property="og:site_name" content="Mohammad Jafar Mashhadi" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-09-27T00:15:49+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://mjafar.me/tags/","headline":"Tags","description":"My portfolio website I guess?","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://mjafar.me/blog/2015/09/how-to-use-git-part2/","headline":"چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase","dateModified":"2015-09-27T00:15:49+00:00","datePublished":"2015-09-27T00:15:49+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/09/how-to-use-git-part2/"},"author":{"@type":"Person","name":"mashhadimj"},"description":"این مطلب در ادامه‌ی چگونه از git استفاده کنیم نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -63,7 +67,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://mjafar.me/tags/">
+    <link rel="canonical" href="https://mjafar.me/blog/2015/09/how-to-use-git-part2/">
 
     <style>
     
@@ -1480,18 +1484,12 @@ pre {
     <div class="wrapper-large">
         
             
-                <div class="page tags">
+                <div class="page چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase">
             
         
 
             
 
-
-    <header class="header-home animated ">
-        
-        <h1 class="title">Tags</h1>
-        
-    </header>
 
 
 <nav class="nav">
@@ -1532,460 +1530,161 @@ pre {
 
 
 
-<section class="list">
-    <h1 class="title">Tags</h1>
 
-    
+<style>
+h1, h2, h3, h4, h5, h6, span, p, li {
+    direction: rtl;
+    font-family: Vazir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+li {
+    text-align: right;
+}
+</style>
 
-    
-        
-            <a class="item" href="#amend-commit">amend commit</a>
-        
-            <a class="item" href="#clone">clone</a>
-        
-            <a class="item" href="#commit">commit</a>
-        
-            <a class="item" href="#conflict">conflict</a>
-        
-            <a class="item" href="#git">git</a>
-        
-            <a class="item" href="#git-applications">git applications</a>
-        
-            <a class="item" href="#git-configuration">git configuration</a>
-        
-            <a class="item" href="#merge">merge</a>
-        
-            <a class="item" href="#pull">pull</a>
-        
-            <a class="item" href="#push">push</a>
-        
-            <a class="item" href="#resolving-conflicts">resolving conflicts</a>
-        
-            <a class="item" href="#publication">publication</a>
-        
-            <a class="item" href="#software-engineering">software engineering</a>
-        
-            <a class="item" href="#deep-learning">deep learning</a>
-        
-            <a class="item" href="#thesis">thesis</a>
-        
-    
 
-    
+
+
+<h1 class="title">چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase</h1>
+
+<span class="date">
+    <time datetime="27-09-2015">Sunday. September 27, 2015</time>
+</span>
+
+
+    <div class="post-tags">
+        
+    </div>
+
+
+<p>این مطلب در ادامه‌ی <a href="/blog/2015/08/how-to-use-git/" target="_blank">چگونه از git استفاده کنیم</a> نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.</p>
+
+<h3 id="شاخه-یا-branch">شاخه یا branch</h3>
+<p>در فرایند توسعه‌ی نرم‌افزار خیلی وقت‌ها پیش میاد که لازم باشه تغییرات گسترده‌ای در کد ایجاد شه، فیچری اضافه بشه، کدی به صورت تست به برنامه اضافه بشه و… که تا مدتی (مثل چند روز یا چند ماه) ناپایداره یا مشخص نیست که قرار هست به کد اصلی اضافه بشه یا نه. برای همین نیاز داریم که یه تعداد کامیت انجام بدیم بدون اینکه به کد پایدار برنامه خللی وارد شه و توی کار بقیه دخالتی انجام شه. اولین راهی که به ذهن می‌رسه اینه که یک کپی از مخزن ایجاد کنیم و کامیت‌ها رو روی اون ببریم جلو تا وقتی که کد به حالت پایدار برسه و بشه این کامیت‌ها رو روی کد اصلی هم اعمال کرد.</p>
+
+<p>گیت برای همچین شرایطی راه حل ساده تری در اختیارمون گذاشته به اسم branch (شاخه). در این شرایط بجای کپی گرفتن از مخزن کافیه که یک شاخه‌ی جدید درست کنیم و روی اون شاخه کار کنیم. کامیت‌هایی که روی شاخه‌ی جداگانه انجام می‌شن ایزوله هستند و تا زمانی که نخوایم با کد اصلی ترکیب نمی‌شن. هر مخزن gitای که ایجاد میشه به صورت پیش‌فرض شاخه‌ای به اسم master داره و کامیت‌هامون روی master به صورت خطی، جلو می‌رن. اگر تاریخچه‌ی git رو مثل یک درخت در نظر بگیریم شاخه‌ی master مثل تنه‌ی درخت می‌مونه.</p>
+
+<p><img style="background-image: none; padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" src="https://git-scm.com/book/en/v2/book/03-git-branching/images/basic-branching-6.png" alt="Work continues on `iss53`." width="640" height="305" border="0"></p>
+
+<p>توی این تصویر شاخه‌ای به اسم iss53 از شاخه‌ی master در کامیت C2 جدا شده و کار روی هر دو برنچ بدون دخالت در کد همدیگه جلو رفته (<a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging" target="_blank">منبع عکس</a>). کامیت‌های C3 و C5 از تغییراتی که در C4 اعمال شده خبردار نیستند و برعکس.</p>
+
+<p>برای ساخت یک شاخه‌ی جدید:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch gholi
+</code></pre></div></div>
+<p>این دستور یک شاخه‌ی جدید به اسم قُلی از کامیتی که الان روش هستیم جدا می‌کنه اما وارد اون شاخه نمی‌شه. برای اینکه بریم روی اون شاخه و کار رو ادامه بدیم، به اصطلاح باید checkout کنیم. با این دستور:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout gholi
+</code></pre></div></div>
+<p>راه میانبری هم برای ساخت شاخه و بلافاصله checkout کردن روش هست (با اندکی تفاوت):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> gholi
+</code></pre></div></div>
+<p>برای حذف یک شاخه می‌تونیم از دستور زیر استفاده کنیم:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-d</span> gholi
+</code></pre></div></div>
+
+<h3 id="merge">Merge</h3>
+<p>بعد از اتمام کار و نهایی شدن کد یک شاخه، لازم می‌شه که کدهای اون شاخه با یک شاخه‌ی دیگه (معمولاً master) ترکیب شه. گاهی اوقات هم می‌خوایم تغییراتی که در یک شاخه‌ی سومی وجود داره رو وارد شاخه‌ای که درحال کار روش هستیم کنیم. در این مواقع باید از دستور merge استفاده کنیم. برای merge اول باید وارد شاخه‌ی مقصد شیم (با دستور checkout) و سپس با دستور مناسب شاخه‌ی ثانویه رو با مقصد ترکیب کنیم.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout dest
+git merge <span class="nb">source</span>
+</code></pre></div></div>
+<p>یادتون باشه که <code class="highlighter-rouge">git merge X</code> شاخه‌ی <code class="highlighter-rouge">X</code> رو با شاخه‌ی فعلی ترکیب می‌کنه. برای اینکه متوجه شیم که شاخه‌ی فعلی چی هست می‌تونیم از <code class="highlighter-rouge">git status</code> کمک بگیریم.</p>
+
+<p>اگر خوش‌شانس باشیم مرج fast-forward هست. یعنی بدون هیچ کانفلیکتی انجام می‌شه. وگرنه باید کانفلیکت‌ها رو برطرف کنیم و بعد از تموم شدن یک کامیت merge انجام بدیم. با استفاده از پرچم ‎<code class="highlighter-rouge">--no-ff</code> می‌تونیم کاری کنیم که در هر صورت کامیت مرج ساخته بشه. چه مرج بتونه fast-forward و بدون کامیت اضافه انجام بشه و چه کانفلیکت داشته باشه و کامیت مرج ضروری باشه.</p>
+
+<h3 id="روشهای-پیشنهادی-استفاده-از-شاخهها">روش‌های پیشنهادی استفاده از شاخه‌ها</h3>
+<p>workflowهای پیشنهادی برای استفاده از git و مدل استفاده از branchها خیلی متنوع هستند و هرکدوم مزایا و معایبی دارن. هرتیم با توجه به سطح افراد، نوع کار، حجم کدها، متودولوژی مورد استفاده و بقیه‌ی عوامل مؤثر یک مدل رو انتخاب می‌کنه و طبق اون جلو می‌ره یا اینکه از ترکیبی از چند مدل استفاده می‌کنه. من اینجا دو مدلی که ازشون تو پروژه‌های مختلف استفاده کردم رو معرفی می‌کنم. چیزی که در هردو مدل مشترک هست اینه که شاخه‌ی master حاوی یک نسخه‌ی پایدار از برنامه‌س و تحت هیچ شرایطی نباید نسخه‌ی ناپایدار روی master بیاد. در هر لحظه که نیاز باشه باید بشه آخرین نسخه‌ی روی master رو بدون مشکل اجرا کرد.</p>
+
+<p><strong>مدل اول:</strong> این مدل تشابه زیادی با مدل github داره (<a href="http://scottchacon.com/2011/08/31/github-flow.html" target="_blank">اطلاعات بیشتر</a>). شاخه‌ی master حفاظت شده (protected)ه و بجز مدیر فنی پروژه کسی اجازه‌ی کامیت کردن روی master رو نداره. جز اینکه همه باید حواسشون باشه که روی master کامیت نکنند، خود git هم اجازه‌ی این کار رو نمی‌ده. هر عضو پروژه برای رفع باگ، اضافه کردن فیچر، آزمایش یک کد و هر تغییر دیگه‌ای که لازم داره، از آخرین نسخه‌ی روی master یک شاخه جدا می‌کنه و کارش رو انجام می‌ده. هروقت که کارش تموم شد و آماده‌ی ترکیب شدن با شاخه‌ی master بود به فردی که اجازه‌ی دسترسی به master داره خبر می‌ده تا کدش رو وارد master کنه. بعد از این شاخه‌ای که کارش تموم شده حذف می‌شه (با دستور <code class="highlighter-rouge">git branch -d gholi</code>). با همین روند دوباره یک شاخه‌ی جدید برای کارهای آینده ایجاد می‌شه و کار تکمیل میشه و merge و الخ.</p>
+
+<p>در این مدل هر فیچری به طور کاملا جدا و ایزوله از بخش‌های دیگه قابل آزمایش و تکمیله. این امکان وجود داره که ادامه‌ی کار روی یک فیچر موقتاً رها بشه و کار دیگه‌ای که پیش اومده انجام بشه و بعداً دوباره روی اون فیچر کار شه. در این مدل رفع conflictها همه با یک نفر (کسی که کدها رو با master مرج می‌کنه) هست و چون فردی برای این کار انتخاب می‌شه که تسلط بیشتری روی کد داره، احتمال خطا در merge کمتر می‌شه. اما اگر دوتا شاخه لازم باشه که با هم merge شن تا یک شاخه تغییرات شاخه‌ی دیگری رو داشته باشه کار یکم سخت می‌شه و رفع conflictها گیج کننده.</p>
+
+<p><strong>مدل دوم:</strong> شاخه‌ی master همچنان حفاظت شده‌ست، اما تمام کارها بجای اینکه branchهای جدا داشته باشند روی یک شاخه (مثلا به اسم dev) انجام می‌شن. همچنان کارهایی که معلوم نیست قراره روی کد اصلی بیان یا نه یا کارهایی که مدت طولانی کد رو ناپایدار و غیرقابل استفاده برای بقیه می‌کنه روی شاخه‌ی جداگانه انجام می‌شن با این تفاوت که این شاخه‌ها از dev منشعب می‌شن نه master.</p>
+
+<p>این مدل برای تیم‌های کوچیک بهتره. استفاده از git براشون سربار کمتری داره و هرکسی کارهای ناقص بقیه رو می‌تونه داشته باشه (هم ویژگی مثبتی هست هم منفی). چون تغییرات کم کم باهم ترکیب می‌شن و merge نمی‌مونه برای آخر احتمال conflict خوردن کمتر میشه و رفعشون هم ساده تر.</p>
+
+<p>توی این مدل پیشنهاد می‌شه که روی هر شاخه‌ی x برای اینکه تغییرات سرور با تغییرات خودمون ترکیب بشه (اصطلاحا ترکیب x با origin/x) بجای merge از rebase استفاده شه. این کار دو مرحله‌ی fetch و rebase رو داره.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch <span class="o">&amp;&amp;</span> git merge
+<span class="c"># is equal to</span>
+git pull
+
+git fetch <span class="o">&amp;&amp;</span> git rebase
+<span class="c"># is equal to</span>
+git pull <span class="nt">--rebase</span>
+</code></pre></div></div>
+
+<h3 id="تفاوت-rebase-و-merge">تفاوت Rebase و Merge</h3>
+<p>وقتی که دو شاخه با‌هم merge می‌شن همه‌ی تغییرات شاخه‌ی ثانویه با هم جمع می‌شن و به صورت یک commit به آخر شاخه‌ی مقصد اضافه می‌شن. در rebase، شاخه‌ی ثانویه از ریشه‌ش جدا می‌شه و به انتهای شاخه‌ی اولیه متصل میشه.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Initial:
+---A---B---C---D---E
+   |---X---Y
+
+After merge:
+---A---B---C---D---E--F
+   |---X---Y--------/
+
+After rebase:
+---A---B---C---D---E---X---Y
+</code></pre></div></div>
+<p>بعد از rebase اینطور <em>به نظر می‌رسه</em> که کامیت‌های X و Y بعد از E انجام شدن. یعنی کسی که اون‌ها رو کامیت کرده اول صبر کرده کار بقیه تموم شه و به E برسه بعد کار خودش رو شروع کرده، هرچند در واقعیت همه کارها رو به صورت موازی پیش می‌برن. به این صورت شاخه به شکل خطی جلو می‌ره و دنبال کردن تغییرات خیلی ساده‌تره.</p>
+
+<p>موقعی که rebase انجام می‌دیم چون کامیت‌هامون دونه دونه به آخر شاخه‌ی مقصد اعمال می‌شن به ازای هر کامیت احتمال یک بار conflict خوردن هست. یعنی در بدترین حالت به تعداد کامیت‌های روی شاخه‌ی ثانویه می‌شه کانفلیکت ایجاد شه. البته چون کامیت‌ها دونه دونه دارن اعمال میشن حجم تغییرات در هر کامیت کم هست و احتمال کانفلیکت خیلی کم میشه، به همین دلیل هم کانفلیکت‌ها هم معمولا جزئی و ساده هستن و اذیت خیلی خاصی ندارن.</p>
+
+<p>فرض کنید شاخه‌ی dev رو می‌خوایم با master مرج کنیم. اول باید وارد شاخه‌ی مقصد (master) بشیم و بعد:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout master
+git merge <span class="nt">--no-ff</span> dev
+</code></pre></div></div>
+<p>اگر کانفلیکتی وجود داشت رفع می‌کنیم و یک کامیت merge انجام می دیم.</p>
+
+<p>اینبار فرض کنید که میخوایم شاخه‌ی dev رو روی origin/dev ری‌بیس کنیم. برخلاف merge باید اول وارد شاخه‌ی مبدا شیم و:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout dev
+git rebase origin/dev 
+</code></pre></div></div>
+<p>گیت شروع می‌کنه کامیت‌های روی dev رو به آخر origin/dev اضافه کردن. اگر در این حین به کانفلیکتی برخورد کنه یک پیام خطا تولید می‌شه و وظیفه‌ی ماست که کانفلیکت رو برطرف کنیم. بعد از برطرف کردن کانفلیکت‌ها باید rebase رو ادامه بدیم</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">--continue</span>
+</code></pre></div></div>
+<p>بعضی اوقات در حین rebase یک کامیت عملا هیچ تغییری در مقصد ایجاد نمی‌کنه. این وقتی به وجود میاد که تمام تغییراتی که توی اون کامیت وجود داشتن قبلا یه جایی به یک طریقی روی مقصد داده شده باشند. تو این مواقع هم git ارور تولید می‌کنه و باید از روی اون کامیت بپریم.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">--skip</span>
+</code></pre></div></div>
+<p>اگر در حین rebase متوجه شدیم که دو شاخه‌ی اشتباه رو داریم با هم rebase می‌کنیم یا به هر دلیل دیگری از ادامه‌ی rebase منصرف شدیم میتونیم از دستور زیر استفاده کنیم:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">--abort</span> 
+</code></pre></div></div>
+<p>مشابه همین رو برای merge هم داریم.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git merge <span class="nt">--abort</span>
+</code></pre></div></div>
+
+<h3 id="ادامهی-مطالب">ادامه‌ی مطالب</h3>
+<p>گیت ابزار خیلی گسترده و گاهی پیچیده‌ای هست. استفاده ازش سرعت کار رو خیلی بالا می‌بره و وجود تاریخچه‌ی دقیق کد توی دیباگ کردن و مقایسه‌ی کد و خیلی کارهای جانبی دیگه مفیده، تا حدی که بعضی کارها رو بدون یک ورژن کنترل خوب (مثل گیت) نمی‌شه انجام داد. طبق تجربه، با توجه سرعتی که گیت نسبت به روش‌های سنتی ترکیب کد مثل استفاده از ایمیل و فلش و pastebin و… و مرج دستی کد به کار می‌ده به علاوه کم کردن احتمال خطای انسانی و حذف و اضافه شدن اشتباه کد؛ کاملا به صرفه‌ست که توی یک تیم (که باید به سرعت به یک محصول برسند) قبل از شروع کد زنی وقتی برای یاد گیری گیت گذاشته بشه. شخصاً منابع فارسی مناسبی برای گیت پیدا نکردم (البته یکی از دلایل اینه که کلا دنبال منابع فارسی نگشتم ‎:D) و روی تمام جزئیات git تسلط ندارم اما سعی می‌کنم که در حدی که توان دارم بر اساس خوانده‌ها و شنیده‌ها و تجربیات، راهنمای سریعی برای شروع کار با git بنویسم.</p>
+
+<p>همچنین بخوانید:
+<a href="/blog/2015/12/ssh-public-key-what-how-why/">SSH Public key چیه؟ به چه دردی می‌خوره؟ چطوری بسازم؟</a></p>
+
+<p><a href="http://hive.ir/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%B1%D9%88%D9%86%D8%AF%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-git/">معرفی روندهای کار با git</a></p>
+
+
+
+
+
+
+
+    <section class="author">
+    <div class="toleft">
+        <img class="selfie" src="https://mjafar.me/assets/images/mj.jpg" alt="Mohammad Jafar Mashhadi">
+    </div>
+
+    <div class="toright">
+        <h4 class="name">Mohammad Jafar Mashhadi</h4>
+        <p class="bio">Your average genius.</p>
+    </div>
 </section>
 
-<hr>
 
-<section class="tag-list">
-    
-    <h2 class="title" id="amend-commit">#amend commit</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="clone">#clone</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="commit">#commit</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="conflict">#conflict</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git">#git</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git-applications">#git applications</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="git-configuration">#git configuration</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="merge">#merge</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="pull">#pull</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="push">#push</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="resolving-conflicts">#resolving conflicts</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/blog/2015/08/how-to-use-git/">
-                            <aside class="date"><time datetime="04-08-2015">Aug 04 2015</time></aside>
-                            <h3 class="title">چگونه از git استفاده کنیم</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="publication">#publication</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/IST-2019-interactive-debugging.html">
-                            <aside class="date"><time datetime="24-04-2019">Apr 24 2019</time></aside>
-                            <h3 class="title">Interactive semi-automated specification mining for debugging: An experience report</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ICPC-2019-spec-mining-emperical-study.html">
-                            <aside class="date"><time datetime="24-05-2019">May 24 2019</time></aside>
-                            <h3 class="title">An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="software-engineering">#software engineering</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/IST-2019-interactive-debugging.html">
-                            <aside class="date"><time datetime="24-04-2019">Apr 24 2019</time></aside>
-                            <h3 class="title">Interactive semi-automated specification mining for debugging: An experience report</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ICPC-2019-spec-mining-emperical-study.html">
-                            <aside class="date"><time datetime="24-05-2019">May 24 2019</time></aside>
-                            <h3 class="title">An Empirical Study on Practicality of Specification Mining Algorithms on a Real-world Application</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="deep-learning">#deep learning</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">
-                            <aside class="date"><time datetime="22-08-2020">Aug 22 2020</time></aside>
-                            <h3 class="title">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-    <h2 class="title" id="thesis">#thesis</h2>
-
-    <ul class="list">
-        
-        
-            
-                
-                    <li class="item">
-                        <a class="url" href="https://mjafar.me/publications/UCalgary-graduate-thesis.html">
-                            <aside class="date"><time datetime="10-09-2020">Sep 10 2020</time></aside>
-                            <h3 class="title">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</h3>
-                        </a>
-                    </li>
-                
-            
-        
-        
-        
-    </ul>
-
-    <div class="breaker"></div>
-    
-</section>
 
 
 <footer class="footer-main">

