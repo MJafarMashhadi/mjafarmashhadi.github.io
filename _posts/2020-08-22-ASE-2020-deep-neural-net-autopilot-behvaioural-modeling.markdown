@@ -7,11 +7,12 @@ tag:
 - publication
 - deep learning
 - software engineering
-date: 2020-08-22 17:10
 
+date: 2020-08-22 17:10
+doi: 10.1145/3324884.3416559
 arxiv: 2008.11856
 poster: null
-venue: ASE 2020
+venue: ASE 2020 - 35th IEEE/ACM International Conference on Automated Software Engineering
 ---
 
 ## Abstract
