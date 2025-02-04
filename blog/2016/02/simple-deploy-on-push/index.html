@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>deploy کردن خودکار بعد از push در مخزن git | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="deploy کردن خودکار بعد از push در مخزن git" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2016-02-03T16:08:19+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="deploy کردن خودکار بعد از push در مخزن git" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2016/02/simple-deploy-on-push/","datePublished":"2016-02-03T16:08:19+00:00","description":"در آخر این نوشته قراره یک وب سایت کوچیک (مثل تجربه‌ی ئاوات) داشته باشیم که با پوش کردن روی git به صورت خودکار آپدیت میشه و لازم نیست فایل‌هاش رو با ssh یا ftp به سرور منتقل کنیم.","@type":"BlogPosting","dateModified":"2016-02-03T16:08:19+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2016/02/simple-deploy-on-push/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"deploy کردن خودکار بعد از push در مخزن git","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2016-02-03T16:08:19+00:00","datePublished":"2016-02-03T16:08:19+00:00","description":"در آخر این نوشته قراره یک وب سایت کوچیک (مثل تجربه‌ی ئاوات) داشته باشیم که با پوش کردن روی git به صورت خودکار آپدیت میشه و لازم نیست فایل‌هاش رو با ssh یا ftp به سرور منتقل کنیم.","headline":"deploy کردن خودکار بعد از push در مخزن git","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2016/02/simple-deploy-on-push/"},"url":"https://mjafar.me/blog/2016/02/simple-deploy-on-push/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1567,11 +1568,11 @@ li {
 
 <p>بعد از ssh کردن به سرور، یک پوشه به اسم git درست کنید و داخل اون پوشه با استفاده از git init مخزن گیت رو بسازید.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir git <span class="o">&amp;&amp;</span> <span class="nb">cd </span>git
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>git <span class="o">&amp;&amp;</span> <span class="nb">cd </span>git
 git init <span class="nt">--bare</span> awat.git
 </code></pre></div></div>
 
-<p>بعد از این دستور پوشه‌ای به اسم<code class="highlighter-rouge">awat.git</code> ساخته میشه. اگر محتویات این پوشه رو نگاه کنید با بقیه‌ی مخزن‌های git متفاوت هست. این مخزن شامل کدها نمیشه و فقط فایل‌های کنترلی خود مخزن git رو داره. آپشن ‎–bare باعث به وجود آمدن این ویژگی هست.</p>
+<p>بعد از این دستور پوشه‌ای به اسم<code class="language-plaintext highlighter-rouge">awat.git</code> ساخته میشه. اگر محتویات این پوشه رو نگاه کنید با بقیه‌ی مخزن‌های git متفاوت هست. این مخزن شامل کدها نمیشه و فقط فایل‌های کنترلی خود مخزن git رو داره. آپشن ‎–bare باعث به وجود آمدن این ویژگی هست.</p>
 
 <p>روی کامپیوتر خودتون طبق روال عادی <a href="http://mjafar.me/blog/2015/08/how-to-use-git/" target="_blank">مخزن گیت رو بسازید</a> و فایل‌ها رو اضافه کنید. وقتی قراره remote رو به مخزن لوکال معرفی کنید آدرس رو با چنین قالبی وارد کنید:</p>
 
@@ -1580,22 +1581,22 @@ git init <span class="nt">--bare</span> awat.git
 mjafar@ssh.mjafar.me:/home/mjafar/git/awat.git
 </code></pre></div></div>
 
-<p>برای مطمئن شدن از آدرس فولدر awat.git می‌تونید روی سرور به اون پوشه cd کنید و دستور <code class="highlighter-rouge">pwd</code> رو وارد کنید.</p>
+<p>برای مطمئن شدن از آدرس فولدر awat.git می‌تونید روی سرور به اون پوشه cd کنید و دستور <code class="language-plaintext highlighter-rouge">pwd</code> رو وارد کنید.</p>
 
 <h2 id="گام-۲-پیدا-کردن-hook-مناسب">گام ۲. پیدا کردن hook مناسب</h2>
 
-<p>کاری که قراره انجام شه سمت سرور هست و تو مخزن لوکال قرار نیست تغییر خاصی به  وجود بیاد. برای همین باید از hookهای سمت سرور استفاده کنیم. سه hook سمت سرور وجود داره: <code class="highlighter-rouge">pre-receive</code> قبل از وارد کردن کامیت‌های push شده به مخزن اجرا میشه. <code class="highlighter-rouge">update</code> هم مثل  <code class="highlighter-rouge">pre-receive</code> هست با این تفاوت که اگر چند شاخه به صورت همزمان push بشن، به ازای هر شاخه یک بار اجرا میشه. <code class="highlighter-rouge">post-receive</code> بعد از اتمام push اجرا میشه و برای دیپلوی کردن گزینه‌ی مناسبیه.</p>
+<p>کاری که قراره انجام شه سمت سرور هست و تو مخزن لوکال قرار نیست تغییر خاصی به  وجود بیاد. برای همین باید از hookهای سمت سرور استفاده کنیم. سه hook سمت سرور وجود داره: <code class="language-plaintext highlighter-rouge">pre-receive</code> قبل از وارد کردن کامیت‌های push شده به مخزن اجرا میشه. <code class="language-plaintext highlighter-rouge">update</code> هم مثل  <code class="language-plaintext highlighter-rouge">pre-receive</code> هست با این تفاوت که اگر چند شاخه به صورت همزمان push بشن، به ازای هر شاخه یک بار اجرا میشه. <code class="language-plaintext highlighter-rouge">post-receive</code> بعد از اتمام push اجرا میشه و برای دیپلوی کردن گزینه‌ی مناسبیه.</p>
 
 <p>برای استفاده از این hook باید داخل پوشه‌ی hooks یک فایل به همین اسم ایجاد کنیم و داخل فایل shell script مورد نیاز برای دیپلوی شدن سایت رو بنویسیم.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/git/awat.git/hooks
-touch post-receive
-chmod +x post-receive
+<span class="nb">touch </span>post-receive
+<span class="nb">chmod</span> +x post-receive
 vim post-receive
 </code></pre></div></div>
 
 <h2 id="گام-۳-نوشتن-hook">گام ۳. نوشتن hook</h2>
-<p>ساده ترین اسکریپتی که میشه برای دیپلوی استفاده کرد کپی کردن فایل‌ها در پوشه‌ی سایت (مثل www) هست. با یک checkout ساده این کار انجام شدنیه. با متغیر  محیطی (Environment variable)‏ <code class="highlighter-rouge">GIT_WORK_TREE</code> میشه پوشه‌ای که checkout توش انجام میشه رو مشخص کرد.</p>
+<p>ساده ترین اسکریپتی که میشه برای دیپلوی استفاده کرد کپی کردن فایل‌ها در پوشه‌ی سایت (مثل www) هست. با یک checkout ساده این کار انجام شدنیه. با متغیر  محیطی (Environment variable)‏ <code class="language-plaintext highlighter-rouge">GIT_WORK_TREE</code> میشه پوشه‌ای که checkout توش انجام میشه رو مشخص کرد.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">GIT_WORK_TREE</span><span class="o">=</span>/home/mjafar/mjafar.me/awat git checkout <span class="nt">-f</span>
 </code></pre></div></div>
@@ -1661,7 +1662,7 @@ vim post-receive
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2015-09-27T00:15:49+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2015/09/how-to-use-git-part2/","datePublished":"2015-09-27T00:15:49+00:00","description":"این مطلب در ادامه‌ی چگونه از git استفاده کنیم نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.","@type":"BlogPosting","dateModified":"2015-09-27T00:15:49+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/09/how-to-use-git-part2/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2015-09-27T00:15:49+00:00","datePublished":"2015-09-27T00:15:49+00:00","description":"این مطلب در ادامه‌ی چگونه از git استفاده کنیم نوشته شده. پیشنهاد می‌کنم قبل از مطالعه‌ی این مطلب به پست قبلی هم یک نگاه بندازید. در ادامه‌ی مطلب بر خلاف مطلب قبلی برای راحت تر شدن فهم موضوع فرض شده که از گیت برای مدیریت کد منبع یک نرم‌افزار استفاده می‌شه، هرچند بدیهتاً کاربرد گیت محدود به این موضوع نیست.","headline":"چگونه از git استفاده کنیم–بخش دوم–branch, merge و rebase","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/09/how-to-use-git-part2/"},"url":"https://mjafar.me/blog/2015/09/how-to-use-git-part2/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1593,14 +1594,14 @@ li {
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout dest
 git merge <span class="nb">source</span>
 </code></pre></div></div>
-<p>یادتون باشه که <code class="highlighter-rouge">git merge X</code> شاخه‌ی <code class="highlighter-rouge">X</code> رو با شاخه‌ی فعلی ترکیب می‌کنه. برای اینکه متوجه شیم که شاخه‌ی فعلی چی هست می‌تونیم از <code class="highlighter-rouge">git status</code> کمک بگیریم.</p>
+<p>یادتون باشه که <code class="language-plaintext highlighter-rouge">git merge X</code> شاخه‌ی <code class="language-plaintext highlighter-rouge">X</code> رو با شاخه‌ی فعلی ترکیب می‌کنه. برای اینکه متوجه شیم که شاخه‌ی فعلی چی هست می‌تونیم از <code class="language-plaintext highlighter-rouge">git status</code> کمک بگیریم.</p>
 
-<p>اگر خوش‌شانس باشیم مرج fast-forward هست. یعنی بدون هیچ کانفلیکتی انجام می‌شه. وگرنه باید کانفلیکت‌ها رو برطرف کنیم و بعد از تموم شدن یک کامیت merge انجام بدیم. با استفاده از پرچم ‎<code class="highlighter-rouge">--no-ff</code> می‌تونیم کاری کنیم که در هر صورت کامیت مرج ساخته بشه. چه مرج بتونه fast-forward و بدون کامیت اضافه انجام بشه و چه کانفلیکت داشته باشه و کامیت مرج ضروری باشه.</p>
+<p>اگر خوش‌شانس باشیم مرج fast-forward هست. یعنی بدون هیچ کانفلیکتی انجام می‌شه. وگرنه باید کانفلیکت‌ها رو برطرف کنیم و بعد از تموم شدن یک کامیت merge انجام بدیم. با استفاده از پرچم ‎<code class="language-plaintext highlighter-rouge">--no-ff</code> می‌تونیم کاری کنیم که در هر صورت کامیت مرج ساخته بشه. چه مرج بتونه fast-forward و بدون کامیت اضافه انجام بشه و چه کانفلیکت داشته باشه و کامیت مرج ضروری باشه.</p>
 
 <h3 id="روشهای-پیشنهادی-استفاده-از-شاخهها">روش‌های پیشنهادی استفاده از شاخه‌ها</h3>
 <p>workflowهای پیشنهادی برای استفاده از git و مدل استفاده از branchها خیلی متنوع هستند و هرکدوم مزایا و معایبی دارن. هرتیم با توجه به سطح افراد، نوع کار، حجم کدها، متودولوژی مورد استفاده و بقیه‌ی عوامل مؤثر یک مدل رو انتخاب می‌کنه و طبق اون جلو می‌ره یا اینکه از ترکیبی از چند مدل استفاده می‌کنه. من اینجا دو مدلی که ازشون تو پروژه‌های مختلف استفاده کردم رو معرفی می‌کنم. چیزی که در هردو مدل مشترک هست اینه که شاخه‌ی master حاوی یک نسخه‌ی پایدار از برنامه‌س و تحت هیچ شرایطی نباید نسخه‌ی ناپایدار روی master بیاد. در هر لحظه که نیاز باشه باید بشه آخرین نسخه‌ی روی master رو بدون مشکل اجرا کرد.</p>
 
-<p><strong>مدل اول:</strong> این مدل تشابه زیادی با مدل github داره (<a href="http://scottchacon.com/2011/08/31/github-flow.html" target="_blank">اطلاعات بیشتر</a>). شاخه‌ی master حفاظت شده (protected)ه و بجز مدیر فنی پروژه کسی اجازه‌ی کامیت کردن روی master رو نداره. جز اینکه همه باید حواسشون باشه که روی master کامیت نکنند، خود git هم اجازه‌ی این کار رو نمی‌ده. هر عضو پروژه برای رفع باگ، اضافه کردن فیچر، آزمایش یک کد و هر تغییر دیگه‌ای که لازم داره، از آخرین نسخه‌ی روی master یک شاخه جدا می‌کنه و کارش رو انجام می‌ده. هروقت که کارش تموم شد و آماده‌ی ترکیب شدن با شاخه‌ی master بود به فردی که اجازه‌ی دسترسی به master داره خبر می‌ده تا کدش رو وارد master کنه. بعد از این شاخه‌ای که کارش تموم شده حذف می‌شه (با دستور <code class="highlighter-rouge">git branch -d gholi</code>). با همین روند دوباره یک شاخه‌ی جدید برای کارهای آینده ایجاد می‌شه و کار تکمیل میشه و merge و الخ.</p>
+<p><strong>مدل اول:</strong> این مدل تشابه زیادی با مدل github داره (<a href="http://scottchacon.com/2011/08/31/github-flow.html" target="_blank">اطلاعات بیشتر</a>). شاخه‌ی master حفاظت شده (protected)ه و بجز مدیر فنی پروژه کسی اجازه‌ی کامیت کردن روی master رو نداره. جز اینکه همه باید حواسشون باشه که روی master کامیت نکنند، خود git هم اجازه‌ی این کار رو نمی‌ده. هر عضو پروژه برای رفع باگ، اضافه کردن فیچر، آزمایش یک کد و هر تغییر دیگه‌ای که لازم داره، از آخرین نسخه‌ی روی master یک شاخه جدا می‌کنه و کارش رو انجام می‌ده. هروقت که کارش تموم شد و آماده‌ی ترکیب شدن با شاخه‌ی master بود به فردی که اجازه‌ی دسترسی به master داره خبر می‌ده تا کدش رو وارد master کنه. بعد از این شاخه‌ای که کارش تموم شده حذف می‌شه (با دستور <code class="language-plaintext highlighter-rouge">git branch -d gholi</code>). با همین روند دوباره یک شاخه‌ی جدید برای کارهای آینده ایجاد می‌شه و کار تکمیل میشه و merge و الخ.</p>
 
 <p>در این مدل هر فیچری به طور کاملا جدا و ایزوله از بخش‌های دیگه قابل آزمایش و تکمیله. این امکان وجود داره که ادامه‌ی کار روی یک فیچر موقتاً رها بشه و کار دیگه‌ای که پیش اومده انجام بشه و بعداً دوباره روی اون فیچر کار شه. در این مدل رفع conflictها همه با یک نفر (کسی که کدها رو با master مرج می‌کنه) هست و چون فردی برای این کار انتخاب می‌شه که تسلط بیشتری روی کد داره، احتمال خطا در merge کمتر می‌شه. اما اگر دوتا شاخه لازم باشه که با هم merge شن تا یک شاخه تغییرات شاخه‌ی دیگری رو داشته باشه کار یکم سخت می‌شه و رفع conflictها گیج کننده.</p>
 
@@ -1622,7 +1623,7 @@ git pull <span class="nt">--rebase</span>
 <h3 id="تفاوت-rebase-و-merge">تفاوت Rebase و Merge</h3>
 <p>وقتی که دو شاخه با‌هم merge می‌شن همه‌ی تغییرات شاخه‌ی ثانویه با هم جمع می‌شن و به صورت یک commit به آخر شاخه‌ی مقصد اضافه می‌شن. در rebase، شاخه‌ی ثانویه از ریشه‌ش جدا می‌شه و به انتهای شاخه‌ی اولیه متصل میشه.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Initial:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Initial:
 ---A---B---C---D---E
    |---X---Y
 
@@ -1714,7 +1715,7 @@ git rebase origin/dev
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

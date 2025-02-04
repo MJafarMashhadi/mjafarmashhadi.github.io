@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>SU CTF 2014 – Rolling Hash Write up | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="SU CTF 2014 – Rolling Hash Write up" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2014-09-28T19:26:44+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SU CTF 2014 – Rolling Hash Write up" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up/","datePublished":"2014-09-28T19:26:44+00:00","description":"```python flag=”*****” def RabinKarpRollingHash( str, a, n ): result = 0 l = len(str) for i in range(0, l): result += ord(str[i]) * a ** (l - i - 1) % n print “result = “, result","@type":"BlogPosting","dateModified":"2014-09-28T19:26:44+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"SU CTF 2014 – Rolling Hash Write up","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2014-09-28T19:26:44+00:00","datePublished":"2014-09-28T19:26:44+00:00","description":"```python flag=”*****” def RabinKarpRollingHash( str, a, n ): result = 0 l = len(str) for i in range(0, l): result += ord(str[i]) * a ** (l - i - 1) % n print “result = “, result","headline":"SU CTF 2014 – Rolling Hash Write up","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up/"},"url":"https://mjafar.me/blog/2014/09/su-ctf-2014-rolling-hash-write-up/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1569,15 +1570,15 @@ What is the flag?</span></p>
 I used  <a href="http://www.onlineconversion.com/base.htm">this site</a> to convert this number to binary.</span></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">chars</span> <span class="o">=</span> <span class="p">[</span>
-  <span class="mi">0</span><span class="n">b01000111</span><span class="p">,</span>
-  <span class="mi">0</span><span class="n">b01101111</span><span class="p">,</span>
-  <span class="mi">0</span><span class="n">b01101111</span><span class="p">,</span>
-  <span class="mi">0</span><span class="n">b01100100</span><span class="p">,</span>
-  <span class="mi">0</span><span class="n">b00100000</span><span class="p">,</span>
-  <span class="mi">0</span><span class="n">b01001100</span><span class="p">,</span>
-  <span class="mi">0</span><span class="n">b01110100</span><span class="p">,</span>
-  <span class="mi">0</span><span class="n">b00000000</span><span class="p">,</span>
-  <span class="mi">0</span><span class="n">b00000000</span><span class="p">,</span>
+  <span class="mb">0b01000111</span><span class="p">,</span>
+  <span class="mb">0b01101111</span><span class="p">,</span>
+  <span class="mb">0b01101111</span><span class="p">,</span>
+  <span class="mb">0b01100100</span><span class="p">,</span>
+  <span class="mb">0b00100000</span><span class="p">,</span>
+  <span class="mb">0b01001100</span><span class="p">,</span>
+  <span class="mb">0b01110100</span><span class="p">,</span>
+  <span class="mb">0b00000000</span><span class="p">,</span>
+  <span class="mb">0b00000000</span><span class="p">,</span>
 <span class="p">]</span>
 <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
 <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">chars</span><span class="p">:</span>
@@ -1645,7 +1646,7 @@ I used  <a href="http://www.onlineconversion.com/base.htm">this site</a> to con
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

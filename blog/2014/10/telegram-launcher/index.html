@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Add Telegram messenger launcher to Gnome applications list | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Add Telegram messenger launcher to Gnome applications list" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2014-10-05T13:41:00+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Add Telegram messenger launcher to Gnome applications list" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2014/10/telegram-launcher/","datePublished":"2014-10-05T13:41:00+00:00","description":"Telegram is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, Telegram and Updater. There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell.","@type":"BlogPosting","dateModified":"2014-10-05T13:41:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/10/telegram-launcher/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"Add Telegram messenger launcher to Gnome applications list","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2014-10-05T13:41:00+00:00","datePublished":"2014-10-05T13:41:00+00:00","description":"Telegram is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, Telegram and Updater. There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell.","headline":"Add Telegram messenger launcher to Gnome applications list","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/10/telegram-launcher/"},"url":"https://mjafar.me/blog/2014/10/telegram-launcher/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1547,10 +1548,10 @@ pre {
 
 <p><a href="https://telegram.org/">Telegram</a> is a fast, open-source and secure messenger for mobile and desktop platforms. When you download telegram messenger for Linux, you just get two executables, <em>Telegram</em> and <em>Updater.</em> There is nothing to add these to gnome (or KDE or any other freedesktop.org-compliant desktops) applications list so you can not add this to your favorites or easily launch it with typing its name in gnome shell.</p>
 
-<p>Here’s where <em>desktop</em> files come in handy! Desktop files are standard way to <em>register</em> an application in desktop manager so they can be launched from the applications list, menus and whatever launcher the desktop uses. We build a desktop file for telegram and then put it in <code class="highlighter-rouge">/usr/share/applications</code> or <code class="highlighter-rouge">~/.local/applications</code>. If you put the file in first directory it will be accessible for all users (also you need root privileges to be able to add a file to that directory) but if you put the file in the second one, the file is accessible only for you.</p>
+<p>Here’s where <em>desktop</em> files come in handy! Desktop files are standard way to <em>register</em> an application in desktop manager so they can be launched from the applications list, menus and whatever launcher the desktop uses. We build a desktop file for telegram and then put it in <code class="language-plaintext highlighter-rouge">/usr/share/applications</code> or <code class="language-plaintext highlighter-rouge">~/.local/applications</code>. If you put the file in first directory it will be accessible for all users (also you need root privileges to be able to add a file to that directory) but if you put the file in the second one, the file is accessible only for you.</p>
 
-<p>Download <a href="https://telegram.org/img/t_logo.png">telegram logo</a> to be used as an icon for launcher. Create a file named <code class="highlighter-rouge">telegtam.desktop</code> with following contents in <code class="highlighter-rouge">/usr/share/applications</code> (or <code class="highlighter-rouge">~/.local/applications</code> as mentioned above). You may change ‘Exec’ and ‘Icon’ lines based on your own configurations and directories.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
+<p>Download <a href="https://telegram.org/img/t_logo.png">telegram logo</a> to be used as an icon for launcher. Create a file named <code class="language-plaintext highlighter-rouge">telegtam.desktop</code> with following contents in <code class="language-plaintext highlighter-rouge">/usr/share/applications</code> (or <code class="language-plaintext highlighter-rouge">~/.local/applications</code> as mentioned above). You may change ‘Exec’ and ‘Icon’ lines based on your own configurations and directories.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
 Version=1.0
 Name=Telegram
 Exec=/path/to/telegram/executable/Telegram
@@ -1605,7 +1606,7 @@ and start using Telegram <a href="https://telegram.org/dl/webogram">now</a> if y
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

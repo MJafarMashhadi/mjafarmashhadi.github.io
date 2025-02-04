@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>جراحی Serializerهای Django Rest Framework | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="جراحی Serializerهای Django Rest Framework" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -39,10 +39,12 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-07-21T16:15:38+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://mjafar.me/assets/images/2017/07/rest.png" />
+<meta property="twitter:title" content="جراحی Serializerهای Django Rest Framework" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2017/07/customizing-drf-serializers/","datePublished":"2017-07-21T16:15:38+00:00","description":"برای ساخت یک API مبتنی بر استانداردهای REST در Django دو راه‌حل [زندهٔ] معروف به نام‌های Tastypie و Django Rest Framework ساخته شده‌اند که هر یک نکات مثبت و منفی‌شان را دارند و در مجموع استفاده از DRF علیرغم ضعف مستنداتش فراگیرتر است.","image":"https://mjafar.me/assets/images/2017/07/rest.png","@type":"BlogPosting","dateModified":"2017-07-21T16:15:38+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2017/07/customizing-drf-serializers/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"جراحی Serializerهای Django Rest Framework","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2017-07-21T16:15:38+00:00","datePublished":"2017-07-21T16:15:38+00:00","description":"برای ساخت یک API مبتنی بر استانداردهای REST در Django دو راه‌حل [زندهٔ] معروف به نام‌های Tastypie و Django Rest Framework ساخته شده‌اند که هر یک نکات مثبت و منفی‌شان را دارند و در مجموع استفاده از DRF علیرغم ضعف مستنداتش فراگیرتر است.","headline":"جراحی Serializerهای Django Rest Framework","image":"https://mjafar.me/assets/images/2017/07/rest.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2017/07/customizing-drf-serializers/"},"url":"https://mjafar.me/blog/2017/07/customizing-drf-serializers/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1520,7 +1522,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1560,178 +1562,178 @@ li {
 
 <p>برای ساخت یک API مبتنی بر استانداردهای REST در Django دو راه‌حل [زندهٔ] معروف به نام‌های <a href="https://django-tastypie.readthedocs.io/" target="_blank">Tastypie</a> و <a href="http://www.django-rest-framework.org" target="_blank">Django Rest Framework</a> ساخته شده‌اند که هر یک نکات مثبت و منفی‌شان را دارند و در مجموع استفاده از DRF علیرغم ضعف مستنداتش فراگیرتر است.</p>
 
-<p>در DRF کلاس‌هایی به نام <code class="highlighter-rouge">Serializer</code>  وجود دارند که وظیفهٔ تبدیل داده‌ها به فرمت JSON یا XML یا… برای ارسال به مصرف‌کننده (Consumer) به علاوه وظیفهٔ validation و تبدیل داده‌های ارسال شده از طرف مصرف کننده به کلاس‌های مورد استفاده در پروژه را دارند. وظیفهٔ دوم بسیار شبیه به وظیفهٔ <code class="highlighter-rouge">Form</code> های جنگو است.</p>
+<p>در DRF کلاس‌هایی به نام <code class="language-plaintext highlighter-rouge">Serializer</code>  وجود دارند که وظیفهٔ تبدیل داده‌ها به فرمت JSON یا XML یا… برای ارسال به مصرف‌کننده (Consumer) به علاوه وظیفهٔ validation و تبدیل داده‌های ارسال شده از طرف مصرف کننده به کلاس‌های مورد استفاده در پروژه را دارند. وظیفهٔ دوم بسیار شبیه به وظیفهٔ <code class="language-plaintext highlighter-rouge">Form</code> های جنگو است.</p>
 
-<p>DRF این امکان را فراهم می‌کند که با ارث بری از کلاس <code class="highlighter-rouge">Serializer</code> ، سریالایزرهای کاملاً شخصی شده و متناسب با نیازتان را بنویسید، البته چون در خیلی از موارد endpointهایی که برای مصرف‌کننده expose می‌کنید رابطهٔ تنگاتنگی با مدل‌های پایگاه‌داده دارند، شبیه به <code class="highlighter-rouge">ModelForm</code>  کلاسی به اسم <code class="highlighter-rouge">ModelSerializer</code>  در DRF تعبیه شده. در کاربردهای خیلی ساده با مدل‌های ساده بدون Foreign Keyهای خاص و روابط پیچیده این کلاس کاملا کار راه انداز و سریع است ولی وقتی کار اندکی پیچیده‌تر بشود نیاز به customizationهای مختلفی به وجود می‌آید که متأسفانه اغلب به خوبی مستند نشده‌اند.</p>
+<p>DRF این امکان را فراهم می‌کند که با ارث بری از کلاس <code class="language-plaintext highlighter-rouge">Serializer</code> ، سریالایزرهای کاملاً شخصی شده و متناسب با نیازتان را بنویسید، البته چون در خیلی از موارد endpointهایی که برای مصرف‌کننده expose می‌کنید رابطهٔ تنگاتنگی با مدل‌های پایگاه‌داده دارند، شبیه به <code class="language-plaintext highlighter-rouge">ModelForm</code>  کلاسی به اسم <code class="language-plaintext highlighter-rouge">ModelSerializer</code>  در DRF تعبیه شده. در کاربردهای خیلی ساده با مدل‌های ساده بدون Foreign Keyهای خاص و روابط پیچیده این کلاس کاملا کار راه انداز و سریع است ولی وقتی کار اندکی پیچیده‌تر بشود نیاز به customizationهای مختلفی به وجود می‌آید که متأسفانه اغلب به خوبی مستند نشده‌اند.</p>
 
 <p>در بعضی موارد شاید مجبور شوید کدهای DRF را بخوانید و از نحوهٔ کار آن مطلع شوید تا بتوانید ساده‌ترین تغییرات را اعمال کنید. در ادامه چند مورد که ممکن است مفید باشد را بررسی می‌کنم.</p>
 <h2 id="مقداردهی-دستی-fkها">مقداردهی دستی FKها</h2>
-<p>یکی از مواردی که مقداردهی FK لازم می‌شود ذخیرهٔ کاربر login شده در مدل است. مثلاً در یک شبکه اجتماعی فرضی برای ارسال کامنت یک FK به کاربری که کامنت را نوشته ذخیره می‌کنید. بدیهی است که دریافت username یا id کاربر از طرف client و اعتماد به آن اشتباه است. کد زیر به دو شیوهٔ استفاده از <code class="highlighter-rouge">ModelForm</code>  جنگو و <code class="highlighter-rouge">ModelSerializer</code>  تعبیه شده در DRF نوشته شده تا بتوانید مقایسه و معادل سازی کنید:</p>
+<p>یکی از مواردی که مقداردهی FK لازم می‌شود ذخیرهٔ کاربر login شده در مدل است. مثلاً در یک شبکه اجتماعی فرضی برای ارسال کامنت یک FK به کاربری که کامنت را نوشته ذخیره می‌کنید. بدیهی است که دریافت username یا id کاربر از طرف client و اعتماد به آن اشتباه است. کد زیر به دو شیوهٔ استفاده از <code class="language-plaintext highlighter-rouge">ModelForm</code>  جنگو و <code class="language-plaintext highlighter-rouge">ModelSerializer</code>  تعبیه شده در DRF نوشته شده تا بتوانید مقایسه و معادل سازی کنید:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Django forms:</span>
-<span class="c"># https://docs.djangoproject.com/en/1.11/topics/forms/modelforms/#the-save-method</span>
-<span class="k">if</span> <span class="n">comment_form</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
-    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment_form</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">commit</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-    <span class="n">comment</span><span class="o">.</span><span class="n">commenter</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span>
-    <span class="n">comment</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Django forms:
+# https://docs.djangoproject.com/en/1.11/topics/forms/modelforms/#the-save-method
+</span><span class="k">if</span> <span class="n">comment_form</span><span class="p">.</span><span class="n">is_valid</span><span class="p">():</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment_form</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">commit</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">comment</span><span class="p">.</span><span class="n">commenter</span> <span class="o">=</span> <span class="n">request</span><span class="p">.</span><span class="n">user</span>
+    <span class="n">comment</span><span class="p">.</span><span class="n">save</span><span class="p">()</span>
 
-<span class="c"># DRF Serializers:</span>
-<span class="k">if</span> <span class="n">comment_serizlier</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
-    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment_serizlier</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">commenter</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+<span class="c1"># DRF Serializers:
+</span><span class="k">if</span> <span class="n">comment_serizlier</span><span class="p">.</span><span class="n">is_valid</span><span class="p">():</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="n">comment_serizlier</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">commenter</span><span class="o">=</span><span class="n">request</span><span class="p">.</span><span class="n">user</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>فیلد Foreign Key در مثال بالا <code class="highlighter-rouge">commenter</code>  است که با کلاس <code class="highlighter-rouge">User</code>  ارتباط ایجاد می‌کند.</p>
+<p>فیلد Foreign Key در مثال بالا <code class="language-plaintext highlighter-rouge">commenter</code>  است که با کلاس <code class="language-plaintext highlighter-rouge">User</code>  ارتباط ایجاد می‌کند.</p>
 
-<p>البته برای مثال خاص <code class="highlighter-rouge">request.user</code> <a href="http://www.django-rest-framework.org/api-guide/validators/#currentuserdefault" target="_blank">یک راه ساده‌تر</a> برای مقداردهی وجود دارد اما کاربرد مقداردهی دستی FKها طبیعتاً محدود به این مورد نیست.</p>
+<p>البته برای مثال خاص <code class="language-plaintext highlighter-rouge">request.user</code> <a href="http://www.django-rest-framework.org/api-guide/validators/#currentuserdefault" target="_blank">یک راه ساده‌تر</a> برای مقداردهی وجود دارد اما کاربرد مقداردهی دستی FKها طبیعتاً محدود به این مورد نیست.</p>
 <h2 id="تغییر-در-مقدار-فیلدها-و-اجرای-validationهای-خاص">تغییر در مقدار فیلدها و اجرای validationهای خاص</h2>
-<p>در <code class="highlighter-rouge">ModelSerializer</code>  تابع <code class="highlighter-rouge">validate</code> و به ازای هر فیلدی <code class="highlighter-rouge">‎validate_&amp;lt;field name&amp;gt;</code>‎‎  وجود دارد که کارکرد مشابه با <code class="highlighter-rouge">clean</code> در <code class="highlighter-rouge">ModelForm</code>  دارند. وقتی داده‌ای از طرف مصرف کننده به API فرستاده می‌شود و متد <code class="highlighter-rouge">is_valid</code> روی سریالایزر اجرا می‌شود علاوه بر validationها و تبدیلات پیش فرض تعریف شده، در صورت وجود متد  <code class="highlighter-rouge">‎validate_&amp;lt;field name&amp;gt;</code>‎‎ هم اجرا می‌شود که مقدار دریافت شده را در آرگومان دریافت می‌کند و یا یک <code class="highlighter-rouge">serializers.ValidationError</code> را raise می‌کند یا مقدار validate شده را return. متد <code class="highlighter-rouge">validate</code>  در پایان اجرای validationهای مختص فیلدها اجرا می‌شود و روابط بین فیلدها را بررسی می‌کند. (مثلا در یک اندپوینت ثبت‌نام می‌تواند چک کند که password و confirm password حاوی مقادیر یکسان باشند)</p>
+<p>در <code class="language-plaintext highlighter-rouge">ModelSerializer</code>  تابع <code class="language-plaintext highlighter-rouge">validate</code> و به ازای هر فیلدی <code class="language-plaintext highlighter-rouge">‎validate_&amp;lt;field name&amp;gt;</code>‎‎  وجود دارد که کارکرد مشابه با <code class="language-plaintext highlighter-rouge">clean</code> در <code class="language-plaintext highlighter-rouge">ModelForm</code>  دارند. وقتی داده‌ای از طرف مصرف کننده به API فرستاده می‌شود و متد <code class="language-plaintext highlighter-rouge">is_valid</code> روی سریالایزر اجرا می‌شود علاوه بر validationها و تبدیلات پیش فرض تعریف شده، در صورت وجود متد  <code class="language-plaintext highlighter-rouge">‎validate_&amp;lt;field name&amp;gt;</code>‎‎ هم اجرا می‌شود که مقدار دریافت شده را در آرگومان دریافت می‌کند و یا یک <code class="language-plaintext highlighter-rouge">serializers.ValidationError</code> را raise می‌کند یا مقدار validate شده را return. متد <code class="language-plaintext highlighter-rouge">validate</code>  در پایان اجرای validationهای مختص فیلدها اجرا می‌شود و روابط بین فیلدها را بررسی می‌کند. (مثلا در یک اندپوینت ثبت‌نام می‌تواند چک کند که password و confirm password حاوی مقادیر یکسان باشند)</p>
 
-<p>یک <code class="highlighter-rouge">ModelSerializer</code> برای ارسال کامنت زیر پست‌های شبکه اجتماعی فرضی‌مان درست می‌کنیم و متدهای validator مناسب را به آن اضافه می‌کنیم:</p>
+<p>یک <code class="language-plaintext highlighter-rouge">ModelSerializer</code> برای ارسال کامنت زیر پست‌های شبکه اجتماعی فرضی‌مان درست می‌کنیم و متدهای validator مناسب را به آن اضافه می‌کنیم:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="p">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
     <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
         <span class="n">model</span> <span class="o">=</span> <span class="n">Comment</span>
         <span class="n">fields</span> <span class="o">=</span> <span class="p">[</span><span class="s">'user'</span><span class="p">,</span> <span class="s">'comment_text'</span><span class="p">,</span> <span class="s">'reply_to'</span><span class="p">,</span> <span class="s">'post'</span><span class="p">]</span>
 </code></pre></div></div>
-<p>متد <code class="highlighter-rouge">validate_comment_text</code> چک می‌کند که در متن کامنت الفاظ نامناسب استفاده نشده باشد.</p>
+<p>متد <code class="language-plaintext highlighter-rouge">validate_comment_text</code> چک می‌کند که در متن کامنت الفاظ نامناسب استفاده نشده باشد.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate_comment_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">contains_profanity</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Please be polite!'</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Please be polite!'</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">text</span>
 </code></pre></div></div>
 
-<p>حاصل <code class="highlighter-rouge">ValidationError</code> چنین خروجی‌ای خواهد بود:</p>
+<p>حاصل <code class="language-plaintext highlighter-rouge">ValidationError</code> چنین خروجی‌ای خواهد بود:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
-    <span class="s2">"comment_text"</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">"Please be polite!"</span>
+    <span class="dl">"</span><span class="s2">comment_text</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="dl">"</span><span class="s2">Please be polite!</span><span class="dl">"</span>
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<p>متد <code class="highlighter-rouge">validate_user</code> کاری به مقدار ورودی ندارد و همیشه یک مقدار ثابت که کاربر login شدهٔ فعلی است را بر می‌گرداند. یکی از (و نه لزوما بهترین) راه‌های read only کردن یک فیلد همین کار است.</p>
+<p>متد <code class="language-plaintext highlighter-rouge">validate_user</code> کاری به مقدار ورودی ندارد و همیشه یک مقدار ثابت که کاربر login شدهٔ فعلی است را بر می‌گرداند. یکی از (و نه لزوما بهترین) راه‌های read only کردن یک فیلد همین کار است.</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate_user</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">):</span>
-    <span class="c"># Ignore the value that is sent by the API consumer</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">[</span><span class="s">'request'</span><span class="p">]</span><span class="o">.</span><span class="n">user</span>
+    <span class="c1"># Ignore the value that is sent by the API consumer
+</span>    <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">context</span><span class="p">[</span><span class="s">'request'</span><span class="p">].</span><span class="n">user</span>
 </code></pre></div></div>
 
-<p>متد <code class="highlighter-rouge">validate_reply_to</code> از ورودی ID کامنتی که به آن پاسخ می‌دهد را می‌گیرد. این فیلد اختیاری است (یک کامنت می‌تواند مستقیماً زیر پست نوشته شود و پاسخ به کامنت دیگری نباشد) اما اگر در آن مقداری وجود داشت چک می‌کند که ID معتبر باشد و شیٔ کامنت مرتبط به آن را از پایگاه‌داده دریافت می‌کند و بر می‌گرداند. این متد مثالی از کاربرد تغییر کلی ماهیت داده در حین validation است. (البته راه تمیزتر آن تعریف یک <code class="highlighter-rouge">Field</code>  جدید و override کردن متد <code class="highlighter-rouge">to_internal_value</code>  است)</p>
+<p>متد <code class="language-plaintext highlighter-rouge">validate_reply_to</code> از ورودی ID کامنتی که به آن پاسخ می‌دهد را می‌گیرد. این فیلد اختیاری است (یک کامنت می‌تواند مستقیماً زیر پست نوشته شود و پاسخ به کامنت دیگری نباشد) اما اگر در آن مقداری وجود داشت چک می‌کند که ID معتبر باشد و شیٔ کامنت مرتبط به آن را از پایگاه‌داده دریافت می‌کند و بر می‌گرداند. این متد مثالی از کاربرد تغییر کلی ماهیت داده در حین validation است. (البته راه تمیزتر آن تعریف یک <code class="language-plaintext highlighter-rouge">Field</code>  جدید و override کردن متد <code class="language-plaintext highlighter-rouge">to_internal_value</code>  است)</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate_reply_to</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pk</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">pk</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">None</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">parent_comment</span> <span class="o">=</span> <span class="n">Comment</span><span class="o">.</span><span class="nb">object</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">pk</span><span class="p">)</span>
-    <span class="k">except</span> <span class="n">Comment</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The comment you</span><span class="se">\'</span><span class="s">re replying to does not exist. It</span><span class="se">\'</span><span class="s">s probably deleted.'</span><span class="p">)</span>
+        <span class="n">parent_comment</span> <span class="o">=</span> <span class="n">Comment</span><span class="p">.</span><span class="nb">object</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">pk</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">Comment</span><span class="p">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The comment you</span><span class="se">\'</span><span class="s">re replying to does not exist. It</span><span class="se">\'</span><span class="s">s probably deleted.'</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">parent_comment</span>
 </code></pre></div></div>
 
-<p>متد <code class="highlighter-rouge">validate_post</code> هم مشابه متد بالاست با این تفاوت که علاوه بر معتبر بودن ID دریافت شده چک می‌کند که پست امکان دریافت کامنت را دارد یا خیر. (شبیه به فیچر allow comments در گوگل پلاس و یوتیوب)</p>
+<p>متد <code class="language-plaintext highlighter-rouge">validate_post</code> هم مشابه متد بالاست با این تفاوت که علاوه بر معتبر بودن ID دریافت شده چک می‌کند که پست امکان دریافت کامنت را دارد یا خیر. (شبیه به فیچر allow comments در گوگل پلاس و یوتیوب)</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate_post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">post</span> <span class="o">=</span> <span class="n">Post</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
-    <span class="k">except</span> <span class="n">Post</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The post you</span><span class="se">\'</span><span class="s">re commenting on does not exist.'</span><span class="p">)</span>
+        <span class="n">post</span> <span class="o">=</span> <span class="n">Post</span><span class="p">.</span><span class="n">objects</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">Post</span><span class="p">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The post you</span><span class="se">\'</span><span class="s">re commenting on does not exist.'</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="o">.</span><span class="n">commentable</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Cannot comment on this post.'</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="p">.</span><span class="n">commentable</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Cannot comment on this post.'</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">post</span>
 </code></pre></div></div>
 
-<p>متد <code class="highlighter-rouge">validate</code> هم برای چک کردن دو مورد که بیش از یک فیلد در آن درگیر هستند استفاده شده:</p>
+<p>متد <code class="language-plaintext highlighter-rouge">validate</code> هم برای چک کردن دو مورد که بیش از یک فیلد در آن درگیر هستند استفاده شده:</p>
 
 <ol>
   <li>کاربر اجازهٔ دیدن و کامنت گذاشتن روی آن پست را داشته باشد</li>
-  <li>اگر فیلد <code class="highlighter-rouge">reply_to</code>  مقدار دارد؛ کامنتی که به آن پاسخ می‌دهد متعلق به همان پست باشد</li>
+  <li>اگر فیلد <code class="language-plaintext highlighter-rouge">reply_to</code>  مقدار دارد؛ کامنتی که به آن پاسخ می‌دهد متعلق به همان پست باشد</li>
 </ol>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
-    <span class="n">user</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'user'</span><span class="p">)</span>
-    <span class="n">post</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'post'</span><span class="p">)</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'user'</span><span class="p">)</span>
+    <span class="n">post</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'post'</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="o">.</span><span class="n">user_has_permission</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="p">[</span><span class="s">'view'</span><span class="p">,</span> <span class="s">'comment'</span><span class="p">]):</span>
-        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'You are not allowed to comment on this post.'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="p">.</span><span class="n">user_has_permission</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="p">[</span><span class="s">'view'</span><span class="p">,</span> <span class="s">'comment'</span><span class="p">]):</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'You are not allowed to comment on this post.'</span><span class="p">)</span>
     
-    <span class="n">reply_to</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'reply_to'</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+    <span class="n">reply_to</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'reply_to'</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">reply_to</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">reply_to</span><span class="o">.</span><span class="n">post_id</span> <span class="o">!=</span> <span class="n">post</span><span class="o">.</span><span class="n">pk</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Gotcha! Are you tampering with the data? The comment that you</span><span class="se">\'</span><span class="s">re replying to does not belong to the post.'</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">reply_to</span><span class="p">.</span><span class="n">post_id</span> <span class="o">!=</span> <span class="n">post</span><span class="p">.</span><span class="n">pk</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Gotcha! Are you tampering with the data? The comment that you</span><span class="se">\'</span><span class="s">re replying to does not belong to the post.'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h2 id="to_representation-و-to_internal_value-برای-فیلدها">to_representation و to_internal_value برای فیلدها</h2>
 <p>در مثال قبلی در متدهای validation تغییراتی روی ماهیت داده‌ها دادیم که به کار “validate” کردن اطلاعات ارتباط چندانی نداشت؛ علاوه‌ بر این، این تغییرات فقط در یک جهت بودند –تبدیل داده‌های دریافت شده از طرف کاربر به مدل‌ها. در ضمن اگر validationهای مشابهی در جای دیگر لازم باشد راه‌حل خیلی reusableای نیست (البته با استفاده از mixinها و factory methodها می‌توان workaroundای درست کرد)</p>
 
-<p>راه بهتر ایجاد یک فیلد است که با متدهای <code class="highlighter-rouge">to_representation</code>  و <code class="highlighter-rouge">to_internal_value</code>  هر دو جهت تبدیل اطلاعات را انجام می‌دهد. متد <code class="highlighter-rouge">to_representation</code>  داده‌های دلخواه ما را به نوع داده‌ای که در خروجی API مشاهده می‌شود تبدیل می‌کند و <code class="highlighter-rouge">to_internal_value</code>  اطلاعاتی که از مصرف‌کنندهٔ API دریافت شده را به اطلاعات مورد نظر سایر بخش‌های اپ تبدیل می‌کند. برای مثال برای <code class="highlighter-rouge">Post</code>  در نمونه کد بالا یک فیلد درست می‌کنیم:</p>
+<p>راه بهتر ایجاد یک فیلد است که با متدهای <code class="language-plaintext highlighter-rouge">to_representation</code>  و <code class="language-plaintext highlighter-rouge">to_internal_value</code>  هر دو جهت تبدیل اطلاعات را انجام می‌دهد. متد <code class="language-plaintext highlighter-rouge">to_representation</code>  داده‌های دلخواه ما را به نوع داده‌ای که در خروجی API مشاهده می‌شود تبدیل می‌کند و <code class="language-plaintext highlighter-rouge">to_internal_value</code>  اطلاعاتی که از مصرف‌کنندهٔ API دریافت شده را به اطلاعات مورد نظر سایر بخش‌های اپ تبدیل می‌کند. برای مثال برای <code class="language-plaintext highlighter-rouge">Post</code>  در نمونه کد بالا یک فیلد درست می‌کنیم:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">PostField</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">Field</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">PostField</span><span class="p">(</span><span class="n">serializers</span><span class="p">.</span><span class="n">Field</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">to_representation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pk</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">pk</span>
 
     <span class="k">def</span> <span class="nf">to_internal_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">post</span> <span class="o">=</span> <span class="n">Post</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
-        <span class="k">except</span> <span class="n">Post</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The post does not exist.'</span><span class="p">)</span>
+            <span class="n">post</span> <span class="o">=</span> <span class="n">Post</span><span class="p">.</span><span class="n">objects</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">Post</span><span class="p">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'The post does not exist.'</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">post</span>
 
 
-<span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="p">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
     <span class="n">post</span> <span class="o">=</span> <span class="n">PostField</span><span class="p">()</span>
-    <span class="o">...</span>
+    <span class="p">...</span>
      <span class="k">def</span> <span class="nf">validate_post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">post</span><span class="p">):</span>
-         <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="o">.</span><span class="n">commentable</span><span class="p">:</span>
-             <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Cannot comment on this post.'</span><span class="p">)</span>
+         <span class="k">if</span> <span class="ow">not</span> <span class="n">post</span><span class="p">.</span><span class="n">commentable</span><span class="p">:</span>
+             <span class="k">raise</span> <span class="n">serializers</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">'Cannot comment on this post.'</span><span class="p">)</span>
          <span class="k">else</span><span class="p">:</span>
              <span class="k">return</span> <span class="n">post</span>
-    <span class="o">...</span>
+    <span class="p">...</span>
 </code></pre></div></div>
 <p>ذکر دو نکته خالی از لطف نیست:</p>
 
 <ol>
-  <li>کد مربوط به چک کردن commentable بودن پست هنوز در متد validate هستند؛ چون در جاهای دیگری که از <code class="highlighter-rouge">PostField</code>  استفاده می‌شود لزوما commentable بودن آن مدنظر نیست. متن ارور هم با توجه به این موضوع تغییر کرده.
-2.در متد <code class="highlighter-rouge">vaidate_post</code> آرگومانی که پاس داده شده دیگر id پست نیست و خود شیٔ <code class="highlighter-rouge">Post</code> است که متد <code class="highlighter-rouge">to_internal_value</code> برگردانده.</li>
+  <li>کد مربوط به چک کردن commentable بودن پست هنوز در متد validate هستند؛ چون در جاهای دیگری که از <code class="language-plaintext highlighter-rouge">PostField</code>  استفاده می‌شود لزوما commentable بودن آن مدنظر نیست. متن ارور هم با توجه به این موضوع تغییر کرده.
+2.در متد <code class="language-plaintext highlighter-rouge">vaidate_post</code> آرگومانی که پاس داده شده دیگر id پست نیست و خود شیٔ <code class="language-plaintext highlighter-rouge">Post</code> است که متد <code class="language-plaintext highlighter-rouge">to_internal_value</code> برگردانده.</li>
 </ol>
 
-<p>توجه کنید که این دو متد با تعریف و کارکردی مشابه برای <code class="highlighter-rouge">Serializer</code>ها هم قابل override کردن هستند.</p>
+<p>توجه کنید که این دو متد با تعریف و کارکردی مشابه برای <code class="language-plaintext highlighter-rouge">Serializer</code>ها هم قابل override کردن هستند.</p>
 
 <h2 id="مشخص-کردن-منبع-دریافت-اطلاعات-یک-فیلد">مشخص کردن منبع دریافت اطلاعات یک فیلد</h2>
-<p>یک محدودیت که <code class="highlighter-rouge">ModelSerializer</code> تحمیل می‌کند همنام بودن و نگاشت یک‌به‌یک فیلدهای <code class="highlighter-rouge">Serializer</code> با فیلدهای مدل مربوط به آن است. برای رفع این مشکل دو راه‌حل وجود دارد که هرکدام اثرات جانبی مثبت و منفی خود را دارند.</p>
+<p>یک محدودیت که <code class="language-plaintext highlighter-rouge">ModelSerializer</code> تحمیل می‌کند همنام بودن و نگاشت یک‌به‌یک فیلدهای <code class="language-plaintext highlighter-rouge">Serializer</code> با فیلدهای مدل مربوط به آن است. برای رفع این مشکل دو راه‌حل وجود دارد که هرکدام اثرات جانبی مثبت و منفی خود را دارند.</p>
 
-<h3 id="استفاده-ازserializermethodfield">استفاده از <code class="highlighter-rouge">SerializerMethodField</code>
+<h3 id="استفاده-ازserializermethodfield">استفاده از <code class="language-plaintext highlighter-rouge">SerializerMethodField</code>
 </h3>
-<p>به کمک این فیلد می‌توان مقداری که در خروجی به یک فیلد نسبت داده می‌شود را بجای اینکه مستقیماً از attribute همنام آن در شیٔ مدل دریافت کنید از یک متد در <code class="highlighter-rouge">Serializer</code> دریافت کنید. ماهیتاً فیلدی که با این روش مقداردهی می‌شود read only می‌شود.</p>
+<p>به کمک این فیلد می‌توان مقداری که در خروجی به یک فیلد نسبت داده می‌شود را بجای اینکه مستقیماً از attribute همنام آن در شیٔ مدل دریافت کنید از یک متد در <code class="language-plaintext highlighter-rouge">Serializer</code> دریافت کنید. ماهیتاً فیلدی که با این روش مقداردهی می‌شود read only می‌شود.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
-   <span class="n">days_past</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">SerializerMethodField</span><span class="p">(</span><span class="n">read_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-   <span class="o">...</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CommentSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="p">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+   <span class="n">days_past</span> <span class="o">=</span> <span class="n">serializers</span><span class="p">.</span><span class="n">SerializerMethodField</span><span class="p">(</span><span class="n">read_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+   <span class="p">...</span>
    <span class="k">def</span> <span class="nf">get_days_past</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">):</span>
-       <span class="n">n</span> <span class="o">=</span> <span class="p">(</span><span class="n">timezone</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">instance</span><span class="o">.</span><span class="n">created</span><span class="p">)</span><span class="o">.</span><span class="n">days</span>
+       <span class="n">n</span> <span class="o">=</span> <span class="p">(</span><span class="n">timezone</span><span class="p">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">instance</span><span class="p">.</span><span class="n">created</span><span class="p">).</span><span class="n">days</span>
        <span class="k">return</span> <span class="p">{</span>
           <span class="mi">0</span><span class="p">:</span> <span class="s">'Zero days'</span><span class="p">,</span>
           <span class="mi">1</span><span class="p">:</span> <span class="s">'A day'</span><span class="p">,</span>
-       <span class="p">}</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s">'</span><span class="si">%</span><span class="s">d days'</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
-   <span class="o">...</span>
+       <span class="p">}.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s">'%d days'</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
+   <span class="p">...</span>
 </code></pre></div></div>
 
-<p>نام متد همان نام فیلد است که در ابتدای آن ‎‎‎<code class="highlighter-rouge">‎get_</code>‎ اضافه شده. اگر می‌خواهید از متد دیگری استفاده کنید نام آن را در قالب یک رشته به عنوان آرگومان اول به <code class="highlighter-rouge">SerializerMethodField</code> پاس دهید.</p>
+<p>نام متد همان نام فیلد است که در ابتدای آن ‎‎‎<code class="language-plaintext highlighter-rouge">‎get_</code>‎ اضافه شده. اگر می‌خواهید از متد دیگری استفاده کنید نام آن را در قالب یک رشته به عنوان آرگومان اول به <code class="language-plaintext highlighter-rouge">SerializerMethodField</code> پاس دهید.</p>
 
-<h3 id="پارامترهایsource-و-extra_kwargs">پارامترهای <code class="highlighter-rouge">source</code> و <code class="highlighter-rouge">extra_kwargs</code>
+<h3 id="پارامترهایsource-و-extra_kwargs">پارامترهای <code class="language-plaintext highlighter-rouge">source</code> و <code class="language-plaintext highlighter-rouge">extra_kwargs</code>
 </h3>
-<p>با پاس دادن این پارامتر به فیلدها منبع دریافت دیتا را می‌توان تغییر داد. مقدار پارامتر می‌تواند اسم یک فیلد، یک متد یا حتا شامل <code class="highlighter-rouge">.</code>  باشد. اگر مقدار پارامتر برابر <code class="highlighter-rouge">'*'</code>  باشد کل instance مدل پاس داده می‌شود.</p>
+<p>با پاس دادن این پارامتر به فیلدها منبع دریافت دیتا را می‌توان تغییر داد. مقدار پارامتر می‌تواند اسم یک فیلد، یک متد یا حتا شامل <code class="language-plaintext highlighter-rouge">.</code>  باشد. اگر مقدار پارامتر برابر <code class="language-plaintext highlighter-rouge">'*'</code>  باشد کل instance مدل پاس داده می‌شود.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Comment</span><span class="p">(</span><span class="n">TimeStampedModel</span><span class="p">):</span>
-    <span class="o">...</span>
+    <span class="p">...</span>
     <span class="k">def</span> <span class="nf">get_replies</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">Comment</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">reply_to_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pk</span><span class="p">)</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">Comment</span><span class="p">.</span><span class="n">objects</span><span class="p">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">reply_to_id</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">pk</span><span class="p">).</span><span class="nb">all</span><span class="p">()</span>
 
 
-<span class="k">class</span> <span class="nc">CommentWORepliesSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">CommentWORepliesSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="p">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
     <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
         <span class="n">model</span> <span class="o">=</span> <span class="n">Comment</span>
         <span class="n">fields</span> <span class="o">=</span> <span class="p">(</span><span class="s">'user'</span><span class="p">,</span> <span class="s">'comment_text'</span><span class="p">,</span> <span class="s">'post'</span><span class="p">,</span> <span class="s">'time'</span><span class="p">)</span>
@@ -1747,14 +1749,14 @@ li {
                    <span class="n">many</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> 
                    <span class="n">read_only</span><span class="o">=</span><span class="bp">True</span>
               <span class="p">)</span>
-    <span class="k">class</span> <span class="nc">Meta</span><span class="p">(</span><span class="n">CommentWORepliesSerializer</span><span class="o">.</span><span class="n">Meta</span><span class="p">):</span>
-         <span class="n">fields</span> <span class="o">=</span> <span class="n">CommentWORepliesSerializer</span><span class="o">.</span><span class="n">Meta</span><span class="o">.</span><span class="n">fields</span> <span class="o">+</span> <span class="p">(</span><span class="s">'replies'</span><span class="p">,</span> <span class="p">)</span>
-         <span class="n">read_only_fields</span> <span class="o">=</span> <span class="n">CommentWORepliesSerializer</span><span class="o">.</span><span class="n">Meta</span><span class="o">.</span><span class="n">read_only_fields</span> <span class="o">+</span> <span class="p">(</span><span class="s">'replies'</span><span class="p">,</span> <span class="p">)</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">(</span><span class="n">CommentWORepliesSerializer</span><span class="p">.</span><span class="n">Meta</span><span class="p">):</span>
+         <span class="n">fields</span> <span class="o">=</span> <span class="n">CommentWORepliesSerializer</span><span class="p">.</span><span class="n">Meta</span><span class="p">.</span><span class="n">fields</span> <span class="o">+</span> <span class="p">(</span><span class="s">'replies'</span><span class="p">,</span> <span class="p">)</span>
+         <span class="n">read_only_fields</span> <span class="o">=</span> <span class="n">CommentWORepliesSerializer</span><span class="p">.</span><span class="n">Meta</span><span class="p">.</span><span class="n">read_only_fields</span> <span class="o">+</span> <span class="p">(</span><span class="s">'replies'</span><span class="p">,</span> <span class="p">)</span>
 </code></pre></div></div>
 
-<p>در مثال بالا به کاربرد <code class="highlighter-rouge">extra_kwargs</code> برای پاس دادن پارامترهای اضافه به فیلدهایی که صریحاً نوع آن‌ها را مشخص نمی‌کنیم توجه کنید.</p>
+<p>در مثال بالا به کاربرد <code class="language-plaintext highlighter-rouge">extra_kwargs</code> برای پاس دادن پارامترهای اضافه به فیلدهایی که صریحاً نوع آن‌ها را مشخص نمی‌کنیم توجه کنید.</p>
 
-<p>اتفاقی که برای فیلد <code class="highlighter-rouge">time</code> افتاده عملاً تغییر نام فیلد <code class="highlighter-rouge">created</code> است.</p>
+<p>اتفاقی که برای فیلد <code class="language-plaintext highlighter-rouge">time</code> افتاده عملاً تغییر نام فیلد <code class="language-plaintext highlighter-rouge">created</code> است.</p>
 
 
 
@@ -1799,7 +1801,7 @@ li {
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

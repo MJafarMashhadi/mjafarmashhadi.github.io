@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>چگونه از git استفاده کنیم | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="چگونه از git استفاده کنیم" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2015-08-04T14:14:16+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="چگونه از git استفاده کنیم" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2015/08/how-to-use-git/","datePublished":"2015-08-04T14:14:16+00:00","description":"گیت چیه؟","@type":"BlogPosting","dateModified":"2015-08-04T14:14:16+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/08/how-to-use-git/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"چگونه از git استفاده کنیم","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2015-08-04T14:14:16+00:00","datePublished":"2015-08-04T14:14:16+00:00","description":"گیت چیه؟","headline":"چگونه از git استفاده کنیم","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/08/how-to-use-git/"},"url":"https://mjafar.me/blog/2015/08/how-to-use-git/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1572,7 +1573,7 @@ li {
 <p>چون گیت بر اساس ذخیره کردن تغییرات کار می‌کنه (و نه کپی گرفتن از کل فایل‌ها) در جاهایی که حجم انتقال یا ذخیره سازی اطلاعات برامون هزینه بره می‌تونه کمک کنه. مثلا میشه یک وب‌سایت رو روی گیت قرار داد و وقتی خواستیم تغییری تو سایت ایجاد کنیم اون رو با گیت آپلود کنیم که بجای کل فایل‌های سایت فقط فایل‌هایی که تغییرکردن آپلود شن.</p>
 
 <h3 id="چطوری-نصب-میشه">چطوری نصب میشه؟</h3>
-<p>اگه از گنو/لینوکس استفاده می‌کنید احتمالا از قبل روی دستگاهتون نصب هست. با وارد کردن <code class="highlighter-rouge">git --version</code> در ترمینال می‌تونید چک کنید که نصب شده یا نه. اگر نصب نشده بود بسته‌ی <code class="highlighter-rouge">git</code> رو با package manager سیستم‌عاملتون نصب کنید (همون apt-get یا yum و pacman و…) .</p>
+<p>اگه از گنو/لینوکس استفاده می‌کنید احتمالا از قبل روی دستگاهتون نصب هست. با وارد کردن <code class="language-plaintext highlighter-rouge">git --version</code> در ترمینال می‌تونید چک کنید که نصب شده یا نه. اگر نصب نشده بود بسته‌ی <code class="language-plaintext highlighter-rouge">git</code> رو با package manager سیستم‌عاملتون نصب کنید (همون apt-get یا yum و pacman و…) .</p>
 
 <p>اگر از ویندوز استفاده می‌کنید پیشنهاد من و ماکروسافت 
 <a href="https://msysgit.github.io/">Git for windows</a>
@@ -1609,7 +1610,7 @@ git init
 </code></pre></div></div>
 
 <p>بعد از اینکه کارتون تموم شد باید مجموعه تغییراتی که ایجاد کردید رو به عنوان یه نسخه ثبت (commit) کنید.
-برای کامیت باید اول به گیت بگید که کدوم فایل‌ها رو می‌خواید داخل کامیتتون داشته باشید. اول یک بار <code class="highlighter-rouge">git status</code> بزنید تا یادتون بیاد چه فایل‌هایی تغییر کردند و بعد با <code class="highlighter-rouge">git add</code> فایل‌ها رو به کامیت اضافه کنید.</p>
+برای کامیت باید اول به گیت بگید که کدوم فایل‌ها رو می‌خواید داخل کامیتتون داشته باشید. اول یک بار <code class="language-plaintext highlighter-rouge">git status</code> بزنید تا یادتون بیاد چه فایل‌هایی تغییر کردند و بعد با <code class="language-plaintext highlighter-rouge">git add</code> فایل‌ها رو به کامیت اضافه کنید.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add /path/to/file <span class="c"># Add one file to commit</span>
 git add /a/directory/
@@ -1617,22 +1618,22 @@ git add <span class="nb">.</span> <span class="c"># Add all modified and new fil
 </code></pre></div></div>
 
 <p>برای اضافه کردن یک تک فایل از دستور اول استفاده کنید، اگر همه‌ی فایل‌های داخل یک پوشه رو میخواید اضافه کنید از دستور دوم و اگر همه‌ی فایل‌هایی که تغییر کردند رو می‌خواید وارد کامیت کنید از دستور سوم استفاده کنید.
-اگر فایلی رو حذف کردید و می‌خواید این عمل حذف وارد کامیت بشه بجای <code class="highlighter-rouge">git add</code> از <code class="highlighter-rouge">git rm</code> استفاده کنید.
+اگر فایلی رو حذف کردید و می‌خواید این عمل حذف وارد کامیت بشه بجای <code class="language-plaintext highlighter-rouge">git add</code> از <code class="language-plaintext highlighter-rouge">git rm</code> استفاده کنید.
 اگر فایلی رو اشتباهی به کامیت اضافه کردید از دستور زیر استفاده کنید تا از کامیت خارج شه:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rm <span class="nt">--cached</span> /path/to/file
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nb">rm</span> <span class="nt">--cached</span> /path/to/file
 </code></pre></div></div>
 <p>بعد از اینکه همه‌ی فایل‌ها رو اضافه کردید با دستور زیر کامیت رو تموم کنید.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"توضیحات مربوط به این کامیت، چه چیزی رو اضافه کردید؟ چه چیزی رو اصلاح کردید؟ تو یه خط توضیح بدید"</span>
 </code></pre></div></div>
-<p>اگر توضیحاتتون توی یه خط جا نمی‌شه فقط بنویسید <code class="highlighter-rouge">git commit .</code> یک ادیتور (معمولا vi) باز می‌شه که میتونید توضیحات چندخطی رو داخلش وارد کنید.</p>
+<p>اگر توضیحاتتون توی یه خط جا نمی‌شه فقط بنویسید <code class="language-plaintext highlighter-rouge">git commit .</code> یک ادیتور (معمولا vi) باز می‌شه که میتونید توضیحات چندخطی رو داخلش وارد کنید.</p>
 
 <p>هر کامیت یه رشته‌ی یکتایی به اسم hash داره که به طور خودکار ساخته میشه و برای ارجاع دادن به اون کامیت استفاده میشه. معمولا ۷ حرف اول  hash هر کامیت برای ارجاع دادن کافیه.</p>
 
 <p><img src="/assets/images/2015/08/telegram-git-log.png" alt="Git log on Telegram Android" border="0"></p>
 
-<p>توی این شکل خروجی دستور <code class="highlighter-rouge">git log</code> روی <a href="https://github.com/drklo/telegram" target="_blank">سورس کد پیام رسان تلگرام</a> رو می‌بینید. عبارت زرد رنگی که جلوی کلمه‌ی commit نوشته شده hash کامیت است. در ادامه مشخصات فرد کامیت کننده، تاریخ کامیت کردن و توضیح کامیت (commit message) رو می‌بینید.</p>
+<p>توی این شکل خروجی دستور <code class="language-plaintext highlighter-rouge">git log</code> روی <a href="https://github.com/drklo/telegram" target="_blank">سورس کد پیام رسان تلگرام</a> رو می‌بینید. عبارت زرد رنگی که جلوی کلمه‌ی commit نوشته شده hash کامیت است. در ادامه مشخصات فرد کامیت کننده، تاریخ کامیت کردن و توضیح کامیت (commit message) رو می‌بینید.</p>
 
 <h3 id="چطوری-قراره-گروهی-کد-زدن-با-گیت-راحت-تر-بشه">چطوری قراره گروهی کد زدن با گیت راحت تر بشه؟</h3>
 <p>تا اینجا هر کاری که کردیم به صورت محلی روی رایانه‌ی خودمون ذخیره شد. می‌شه تا انتهای پروژه هم همین روند رو پیش گرفت و هیچ ارتباطی هم با اینترنت نداشت. تمام قابلیت‌های مدیریت نسخه‌ی گیت همچنان قابل دسترسن. ولی اگر قصد داشته باشیم که به صورت گروهی (دو نفر به بالا) روی یک مجموعه فایل کار کنیم باید کامیت‌هامون رو یک جای قابل دسترس برای هم‌گروهی‌هامون (مثلا سایت <a href="http://github.com/" target="_blank">گیت‌هاب</a>) قرار بدیم تا بتونن اونا رو دانلود کنن و روی فایل‌هاشون اعمال کنن. همچنین اونا هم کامیت‌هاشون رو از این طریق به ما بدن و در نهایت به یک مجموعه کد یکسان که حاصل ترکیب کامیت‌های همه‌ی اعضای گروهه برسیم.</p>
@@ -1646,14 +1647,14 @@ git push origin master
 <p>خط اول مخزن روی سرور رو به مخزن محلی معرفی می‌کنه؛ آدرسش رو می‌ده و براش یه اسم میزاره (origin). خط دوم هم فایل‌ها رو روی مخزن remote ای به اسم origin آپلود می‌کنه. (بله، میشه یک مخزن محلی بیش از یک remote داشته باشه!)</p>
 
 <p class="r" align="center"><img src="http://assets.dockstreetmedia.com/uploads/2012/10/git_bash_5-600x360.jpg" alt=""></p>
-<p>اگر صحنه‌ای شبیه عکس بالا دیدید یعنی push موفق بوده. برای مطمئن شدن می‌تونید دستور ‎<code class="highlighter-rouge">echo‎ ‎$?‎</code> رو وارد کنید و اگر عدد 0 نوشته شد یعنی push موفق بوده. اگر پوش به ارور بخوره ممکنه مشکل از قطع بودن اینترنت باشه ولی مشکل (؟) معروف‌تری که معمولا با اون مواجه می‌شید ارور non fast-forward هست و عبارت fetch first در متن ارورها قابل مشاهده‌س. اگر به non fast-forward برخورد کردید نگران نباشید، معنیش اینه که افراد دیگه‌ای کامیت‌هاشون رو روی سرور push کردند و شما اون‌ها رو ندارید. همونطور که احتمالا حدس زدید باید کامیت‌های بقیه رو از سرور دریافت کنیم (fetch)، با کامیت‌های خودمون ترکیب کنیم(merge) و دوباره سعی کنیم push کنیم.</p>
+<p>اگر صحنه‌ای شبیه عکس بالا دیدید یعنی push موفق بوده. برای مطمئن شدن می‌تونید دستور ‎<code class="language-plaintext highlighter-rouge">echo‎ ‎$?‎</code> رو وارد کنید و اگر عدد 0 نوشته شد یعنی push موفق بوده. اگر پوش به ارور بخوره ممکنه مشکل از قطع بودن اینترنت باشه ولی مشکل (؟) معروف‌تری که معمولا با اون مواجه می‌شید ارور non fast-forward هست و عبارت fetch first در متن ارورها قابل مشاهده‌س. اگر به non fast-forward برخورد کردید نگران نباشید، معنیش اینه که افراد دیگه‌ای کامیت‌هاشون رو روی سرور push کردند و شما اون‌ها رو ندارید. همونطور که احتمالا حدس زدید باید کامیت‌های بقیه رو از سرور دریافت کنیم (fetch)، با کامیت‌های خودمون ترکیب کنیم(merge) و دوباره سعی کنیم push کنیم.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch
 git merge
 </code></pre></div></div>
-<p>چون <code class="highlighter-rouge">fetch</code> و <code class="highlighter-rouge">merge</code> زیاد پشت سر هم استفاده می‌شن دستور دیگه‌ای تعبیه شده که کارش دقیقا ترکیب این دو تا دستوره. <code class="highlighter-rouge">git pull.</code></p>
+<p>چون <code class="language-plaintext highlighter-rouge">fetch</code> و <code class="language-plaintext highlighter-rouge">merge</code> زیاد پشت سر هم استفاده می‌شن دستور دیگه‌ای تعبیه شده که کارش دقیقا ترکیب این دو تا دستوره. <code class="language-plaintext highlighter-rouge">git pull.</code></p>
 
 <h3 id="pull-کردم-و-به-conflict-خوردم-بعضی-از-فایلها-خراب-شدن-باید-چه-کنم">pull کردم و به conflict خوردم، بعضی از فایل‌ها خراب شدن، باید چه کنم؟</h3>
-<p>گیت تا جایی که ممکنه تغییرات همه رو با هم ترکیب می‌کنه اما یه جاهایی هست که چند نفر همزمان روی یک خط تغییر ایجاد کردن و گیت بین این تغییرات اولویتی قائل نیست. فکر کنم نیازی به توضیح نیست که چرا اولویت زمانی درست نیست (یعنی نمیشه کامیت جدیدتر رو به کامیت قدیمی‌تر ترجیح داد) به این شرایط می‌گن conflict و خروج از این شرایط باید به صورت دستی انجام شه. بعد از <code class="highlighter-rouge">merge</code> با <code class="highlighter-rouge">git status</code> می‌تونید چک کنید که آیا conflict به وجود اومده و اگر اومده کدوم فایل‌ها به conflict برخوردند. ابزارهایی مثل Meld یا git extensions برای رفع conflict وجود دارند. شخصا چون معمولا از IDE های <a href="http://jetbrains.org" target="_blank">JetBrains</a> استفاده می‌کنم از ابزار رفع کانفلیکت خود IDE استفاده می‌کنم و واقعا راضیم! بعد از رفع کانفلیکت باید فایل‌هایی که مشکل داشتن رو با git add علامت‌گذاری و کامیت کنید. کامیت‌های مربوط به رفع Conflict کامیت‌های خاصی هستن که لازم نیست براشون Commit message تعریف کنید، گیت به طور خودکار messageشون رو ایجاد می‌کنه.</p>
+<p>گیت تا جایی که ممکنه تغییرات همه رو با هم ترکیب می‌کنه اما یه جاهایی هست که چند نفر همزمان روی یک خط تغییر ایجاد کردن و گیت بین این تغییرات اولویتی قائل نیست. فکر کنم نیازی به توضیح نیست که چرا اولویت زمانی درست نیست (یعنی نمیشه کامیت جدیدتر رو به کامیت قدیمی‌تر ترجیح داد) به این شرایط می‌گن conflict و خروج از این شرایط باید به صورت دستی انجام شه. بعد از <code class="language-plaintext highlighter-rouge">merge</code> با <code class="language-plaintext highlighter-rouge">git status</code> می‌تونید چک کنید که آیا conflict به وجود اومده و اگر اومده کدوم فایل‌ها به conflict برخوردند. ابزارهایی مثل Meld یا git extensions برای رفع conflict وجود دارند. شخصا چون معمولا از IDE های <a href="http://jetbrains.org" target="_blank">JetBrains</a> استفاده می‌کنم از ابزار رفع کانفلیکت خود IDE استفاده می‌کنم و واقعا راضیم! بعد از رفع کانفلیکت باید فایل‌هایی که مشکل داشتن رو با git add علامت‌گذاری و کامیت کنید. کامیت‌های مربوط به رفع Conflict کامیت‌های خاصی هستن که لازم نیست براشون Commit message تعریف کنید، گیت به طور خودکار messageشون رو ایجاد می‌کنه.</p>
 
 <h3 id="خلاصهای-از-مراحل-آپلود-کامیتها">خلاصه‌ای از مراحل آپلود کامیت‌ها</h3>
 
@@ -1668,13 +1669,13 @@ git merge
 <h3 id="سوالات-متدوال">سوالات متدوال</h3>
 <h4 id="اگر-بخوایم-یه-کدی-رو-از-یه-مخزن-remote-مثلا-گیتهاب-دانلود-کنیم-و-روش-کار-کنیم-باید-چه-کار-کنیم-سعی-کردم-pull-و-fetch-کنم-ولی-نشد">اگر بخوایم یه کدی رو از یه مخزن remote، مثلا گیت‌هاب، دانلود کنیم و روش کار کنیم باید چه کار کنیم؟ سعی کردم pull و fetch کنم ولی نشد!</h4>
 
-<p>برای دانلود اولیه باید از دستور <code class="highlighter-rouge">clone</code> استفاده کنید. مثلاً:</p>
+<p>برای دانلود اولیه باید از دستور <code class="language-plaintext highlighter-rouge">clone</code> استفاده کنید. مثلاً:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/MJafarMashhadi/AndroidDrawableFactory
 </code></pre></div></div>
-<h4 id="من-یه-کامیت-کردم-بعد-git-status-زدم-دیدم-یه-فایل-رو-جا-انداختم-چی-کار-کنم">من یه کامیت کردم بعد <code class="highlighter-rouge">git status</code> زدم دیدم یه فایل رو جا انداختم چی کار کنم؟</h4>
+<h4 id="من-یه-کامیت-کردم-بعد-git-status-زدم-دیدم-یه-فایل-رو-جا-انداختم-چی-کار-کنم">من یه کامیت کردم بعد <code class="language-plaintext highlighter-rouge">git status</code> زدم دیدم یه فایل رو جا انداختم چی کار کنم؟</h4>
 
-<p>اگر کامیت رو پوش کردید کاری نمیشه کرد. باید این فایل رو در یک کامیت جدا اضافه کنید وگرنه با آپشن ‎<code class="highlighter-rouge">--amend</code> میشه یه فایل رو به آخرین کامیت اضافه کرد.</p>
+<p>اگر کامیت رو پوش کردید کاری نمیشه کرد. باید این فایل رو در یک کامیت جدا اضافه کنید وگرنه با آپشن ‎<code class="language-plaintext highlighter-rouge">--amend</code> میشه یه فایل رو به آخرین کامیت اضافه کرد.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add /path/to/the/forgotten/file
 git commit —-amend
@@ -1695,9 +1696,9 @@ git commit —-amend
 
 <p>فایل‌های کامپایل شده و فایل‌های مربوط به IDE نمونه‌های این فایل‌ها هستند. این‌ها اگه وارد git بشن با فایل‌های مشابه بقیه هم گروهی‌ها قاطی می‌شن و اون‌ها دیگه نمی‌تونن  پروژه رو باز کنن. یا مثلا آپلود فایل‌های کامپایل شده کار بیهوده‌ای هست چون از روی سورس‌ها قابل ساخته شدن هستند و حجم مخرن گیت رو بالا می‌برند.</p>
 
-<p>باید فایلی بسازید به اسم <code class="highlighter-rouge">.gitignore</code> توی این فایل اسم فایل و پوشه‌هایی که میخواید گیت تغییراتشون رو در نظر نگیره اضافه می‌کنین. مثلاً برای یک پروژه‌ی جاوا احتمالاً می‌نویسید:</p>
+<p>باید فایلی بسازید به اسم <code class="language-plaintext highlighter-rouge">.gitignore</code> توی این فایل اسم فایل و پوشه‌هایی که میخواید گیت تغییراتشون رو در نظر نگیره اضافه می‌کنین. مثلاً برای یک پروژه‌ی جاوا احتمالاً می‌نویسید:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*.class
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*.class
 *.jar
 </code></pre></div></div>
 
@@ -1757,7 +1758,7 @@ git commit —-amend
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

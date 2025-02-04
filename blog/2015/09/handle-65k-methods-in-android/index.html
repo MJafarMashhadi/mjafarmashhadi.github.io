@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>رهایی از محدودیت ۶۵هزار متد در اندروید | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="رهایی از محدودیت ۶۵هزار متد در اندروید" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2015-09-28T00:08:12+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="رهایی از محدودیت ۶۵هزار متد در اندروید" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2015/09/handle-65k-methods-in-android/","datePublished":"2015-09-28T00:08:12+00:00","description":"ماهیت شی گرایی زبان جاوا و فراهم کردن ساده‌ی امکان code reuse در کنار محبوبیت و قدمت این زبان باعث شده که کتابخانه‌ها و نمونه کدهای خیلی زیادی برای تسریع روند توسعه با جاوا به وجود بیان. محبوبیت اندروید در بین توسعه دهنده‌ها هم باعث شده که کتابخانه‌های این پلتفرم انقدر زیاد و متنوع بشن که تقریبا برای هر کاری یک کتابخانه‌ی آماده وجود داشته باشه. با مهاجرت گوگل هم به سیستم gradle استفاده از کتابخانه‌ها به سادگی آب خوردن شده. فقط یک خط اسم کتابخونه و ورژنش رو توی dependency فایل گریدل اضافه می‌کنیم! این نیمه‌ی پر لیوان بود، معمولا هیچ منفعتی به صورت خالص به دست نمیاد و همیشه به اصطلاح trade-off ای هست.","@type":"BlogPosting","dateModified":"2015-09-28T00:08:12+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/09/handle-65k-methods-in-android/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"رهایی از محدودیت ۶۵هزار متد در اندروید","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2015-09-28T00:08:12+00:00","datePublished":"2015-09-28T00:08:12+00:00","description":"ماهیت شی گرایی زبان جاوا و فراهم کردن ساده‌ی امکان code reuse در کنار محبوبیت و قدمت این زبان باعث شده که کتابخانه‌ها و نمونه کدهای خیلی زیادی برای تسریع روند توسعه با جاوا به وجود بیان. محبوبیت اندروید در بین توسعه دهنده‌ها هم باعث شده که کتابخانه‌های این پلتفرم انقدر زیاد و متنوع بشن که تقریبا برای هر کاری یک کتابخانه‌ی آماده وجود داشته باشه. با مهاجرت گوگل هم به سیستم gradle استفاده از کتابخانه‌ها به سادگی آب خوردن شده. فقط یک خط اسم کتابخونه و ورژنش رو توی dependency فایل گریدل اضافه می‌کنیم! این نیمه‌ی پر لیوان بود، معمولا هیچ منفعتی به صورت خالص به دست نمیاد و همیشه به اصطلاح trade-off ای هست.","headline":"رهایی از محدودیت ۶۵هزار متد در اندروید","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2015/09/handle-65k-methods-in-android/"},"url":"https://mjafar.me/blog/2015/09/handle-65k-methods-in-android/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1587,12 +1588,12 @@ li {
 
 <p>مهم‌ترین کتابخانه‌ای که تعداد زیادی متد اضافه می‌کنه Google Play Services هست. این کتابخانه امکانات خیلی خوبی رو مثل Push Notification، Google Maps و حتا تشخیص حالت چهره برای برنامه فراهم می‌کنه، این امکانات نزدیک به ۳۰ هزار متد مصرف می‌کنند (تقریبا نصف تعداد متدهای قابل استفاده). در اکثر مواقع ما به تعداد محدودی از این امکانات نیاز داریم. خوشبختانه گوگل از نسخه‌ی ۶.۵ به بعد این امکان رو گذاشته که از اجزای مختلف این کتابخانه به صورت مجزا استفاده کنیم. مثلا برای اپی که از Google Analytics, Google Cloud Messaging و Google Maps استفاده می‌کنه کافیه بجای این خط:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compile 'com.google.android.gms:play-services:8.1.0'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compile 'com.google.android.gms:play-services:8.1.0'
 </code></pre></div></div>
 
 <p>این خط‌ها در dependencyهای پروژه باشند:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compile 'com.google.android.gms:play-services-analytics:8.1.0'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compile 'com.google.android.gms:play-services-analytics:8.1.0'
 compile 'com.google.android.gms:play-services-maps:8.1.0'
 compile 'com.google.android.gms:play-services-gcm:8.1.0'
 </code></pre></div></div>
@@ -1605,7 +1606,7 @@ compile 'com.google.android.gms:play-services-gcm:8.1.0'
 
 <p>۱. کتابخانه‌ی multidex به dependency ها اضافه بشه، multidex روی اپ فعال شه و گریدل یک بار Sync بشه.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaultConfig {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaultConfig {
     ...
     multiDexEnabled true
 }
@@ -1616,14 +1617,14 @@ dependencies {
 }
 </code></pre></div></div>
 
-<p>۲. کلاس اصلی برنامه (Application) بجای <code class="highlighter-rouge">android.os.application</code>از <code class="highlighter-rouge">android.support.multidex.MultiDexApplication </code>ارث‌بری کنه یا اینکه کد زیر به این کلاس اضافه شه:</p>
+<p>۲. کلاس اصلی برنامه (Application) بجای <code class="language-plaintext highlighter-rouge">android.os.application</code>از <code class="language-plaintext highlighter-rouge">android.support.multidex.MultiDexApplication </code>ارث‌بری کنه یا اینکه کد زیر به این کلاس اضافه شه:</p>
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Overrid</span>
-<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">attachBaseContext</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">attachBaseContext</span><span class="o">(</span><span class="nc">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
     <span class="kd">super</span><span class="o">.</span><span class="na">attachBaseContext</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
-    <span class="n">MultiDex</span><span class="o">.</span><span class="na">install</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="nc">MultiDex</span><span class="o">.</span><span class="na">install</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
 <span class="o">}</span>
 </code></pre></div></div>
-<p>اگر کلاس Application ندارید میتونید مستقیما از کلاس <code class="highlighter-rouge">android.support.multidex.MultiDexApplication</code> به عنوان کلاس اصلی استفاده کنید.</p>
+<p>اگر کلاس Application ندارید میتونید مستقیما از کلاس <code class="language-plaintext highlighter-rouge">android.support.multidex.MultiDexApplication</code> به عنوان کلاس اصلی استفاده کنید.</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Manifest.xml:
 <span class="nt">&lt;application</span> <span class="na">android:name=</span><span class="s">"android.support.multidex.MultiDexApplication"</span> <span class="err">...</span><span class="nt">&gt;</span>
@@ -1675,7 +1676,7 @@ dependencies {
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>

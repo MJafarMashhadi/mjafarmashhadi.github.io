@@ -24,9 +24,9 @@
     <meta property="og:image" content="https://mjafar.me/assets/images/mj.jpg">
     <meta property="og:type" content="profile">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>SU CTF 2014 – Huge key write up | Mohammad Jafar Mashhadi</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="SU CTF 2014 – Huge key write up" />
 <meta name="author" content="mashhadimj" />
 <meta property="og:locale" content="en_US" />
@@ -38,10 +38,11 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2014-09-28T21:16:39+00:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SU CTF 2014 – Huge key write up" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@mashhadimj" />
 <script type="application/ld+json">
-{"url":"https://mjafar.me/blog/2014/09/huge-key-write-up/","datePublished":"2014-09-28T21:16:39+00:00","description":"Given a php file as coder and an encoded file, Find the flag.","@type":"BlogPosting","dateModified":"2014-09-28T21:16:39+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/09/huge-key-write-up/"},"author":{"@type":"Person","name":"mashhadimj"},"headline":"SU CTF 2014 – Huge key write up","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mashhadimj"},"dateModified":"2014-09-28T21:16:39+00:00","datePublished":"2014-09-28T21:16:39+00:00","description":"Given a php file as coder and an encoded file, Find the flag.","headline":"SU CTF 2014 – Huge key write up","mainEntityOfPage":{"@type":"WebPage","@id":"https://mjafar.me/blog/2014/09/huge-key-write-up/"},"url":"https://mjafar.me/blog/2014/09/huge-key-write-up/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -1519,7 +1520,7 @@ pre {
 
         
             <li class="item">
-                <a class="link" href="https://www.linkedin.com/in/mjafarmashhadi/">Résumé</a>
+                <a class="link" href="https://linkedin.com/in/mjmashhadi">Résumé</a>
             </li>
         
     </ul>
@@ -1549,19 +1550,19 @@ pre {
 
 <hr>
 
-<p>In encipher code the $key is initially [0, 0]. After reading <code class="highlighter-rouge">Huge Key</code> file and the nested fors, the key will become (using python notation):</p>
+<p>In encipher code the $key is initially [0, 0]. After reading <code class="language-plaintext highlighter-rouge">Huge Key</code> file and the nested fors, the key will become (using python notation):</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># hk = huge key</span>
-
-<span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">hk</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">**</span> <span class="n">hk</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">**</span> <span class="o">...</span> <span class="o">**</span> <span class="n">hk</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">**</span> <span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">hk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">**</span> <span class="n">hk</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span> <span class="o">**</span> <span class="o">...</span> <span class="o">**</span> <span class="n">hk</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">**</span> <span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># hk = huge key
+</span>
+<span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">hk</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">**</span> <span class="n">hk</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">**</span> <span class="p">...</span> <span class="o">**</span> <span class="n">hk</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">**</span> <span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">hk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">**</span> <span class="n">hk</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span> <span class="o">**</span> <span class="p">...</span> <span class="o">**</span> <span class="n">hk</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">**</span> <span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div></div>
 
 <p>Well, looks like neither key nor hk are not recoverable. But to decode the input we don’t need the huge key, only key is enough.
 With running this piece of php code we can find out the size of initialization vector:</p>
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$iv_size</span> <span class="o">=</span> <span class="nb">mcrypt_get_iv_size</span><span class="p">(</span><span class="nx">MCRYPT_RIJNDAEL_128</span><span class="p">,</span> <span class="nx">MCRYPT_MODE_CBC</span><span class="p">);</span>
+<span class="nv">$iv_size</span> <span class="o">=</span> <span class="nb">mcrypt_get_iv_size</span><span class="p">(</span><span class="no">MCRYPT_RIJNDAEL_128</span><span class="p">,</span> <span class="no">MCRYPT_MODE_CBC</span><span class="p">);</span>
 <span class="k">echo</span> <span class="s2">"</span><span class="nv">$iv_size</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
 </code></pre></div></div>
 
@@ -1575,18 +1576,18 @@ With running this piece of php code we can find out the size of initialization v
 <span class="nv">$iv</span> <span class="o">=</span> <span class="nv">$blocks</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
 <span class="nv">$message</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
 <span class="k">for</span><span class="p">(</span><span class="nv">$i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="nv">$i</span><span class="o">&lt;</span><span class="nb">count</span><span class="p">(</span><span class="nv">$blocks</span><span class="p">);</span> <span class="o">++</span><span class="nv">$i</span><span class="p">)</span> <span class="p">{</span>
-   <span class="nv">$message</span> <span class="o">.=</span> <span class="nv">$blocks</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+   <span class="nv">$message</span> <span class="mf">.</span><span class="o">=</span> <span class="nv">$blocks</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
 <span class="p">}</span>
-<span class="c1">// I know this way of slicing input is inefficient
-// and a little stupid, but come on! :D
-</span>
+<span class="c1">// I know this way of slicing input is inefficient</span>
+<span class="c1">// and a little stupid, but come on! :D</span>
+
 <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">255</span><span class="p">;</span> <span class="o">++</span><span class="nv">$i</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">for</span> <span class="p">(</span><span class="nv">$j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$j</span> <span class="o">&lt;</span> <span class="mi">255</span><span class="p">;</span> <span class="o">++</span><span class="nv">$j</span><span class="p">)</span> <span class="p">{</span>
     <span class="nv">$key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="nv">$i</span><span class="p">);</span>
     <span class="nv">$key</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="nv">$j</span><span class="p">);</span>
-    <span class="nv">$decypher</span> <span class="o">=</span> <span class="nb">mcrypt_decrypt</span><span class="p">(</span><span class="nx">MCRYPT_RIJNDAEL_128</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nv">$message</span><span class="p">,</span> <span class="nx">MCRYPT_MODE_CBC</span><span class="p">,</span> <span class="nv">$iv</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$decypher</span><span class="p">,</span> <span class="s2">"flag"</span><span class="p">)</span> <span class="o">!==</span> <span class="k">FALSE</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"key = "</span><span class="o">.</span><span class="nb">ord</span><span class="p">(</span><span class="nv">$key</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="s2">","</span><span class="o">.</span><span class="nb">ord</span><span class="p">(</span><span class="nv">$key</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="s2">" = </span><span class="nv">$key</span><span class="se">\n\"</span><span class="nv">$decypher</span><span class="se">\"\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="nv">$decypher</span> <span class="o">=</span> <span class="nb">mcrypt_decrypt</span><span class="p">(</span><span class="no">MCRYPT_RIJNDAEL_128</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nv">$message</span><span class="p">,</span> <span class="no">MCRYPT_MODE_CBC</span><span class="p">,</span> <span class="nv">$iv</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$decypher</span><span class="p">,</span> <span class="s2">"flag"</span><span class="p">)</span> <span class="o">!==</span> <span class="kc">FALSE</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"key = "</span><span class="mf">.</span><span class="nb">ord</span><span class="p">(</span><span class="nv">$key</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="mf">.</span><span class="s2">","</span><span class="mf">.</span><span class="nb">ord</span><span class="p">(</span><span class="nv">$key</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="mf">.</span><span class="s2">" = </span><span class="nv">$key</span><span class="se">\n\"</span><span class="nv">$decypher</span><span class="se">\"\n</span><span class="s2">"</span><span class="p">;</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span>
@@ -1641,7 +1642,7 @@ With running this piece of php code we can find out the size of initialization v
 
 
 <footer class="footer-main">
-    Mohammad Jafar Mashhadi © 2021
+    Mohammad Jafar Mashhadi © 2025
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>
