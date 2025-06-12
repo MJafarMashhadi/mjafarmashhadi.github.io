@@ -1,9 +1,9 @@
 # main text of home
 name: MJ Mashhadi
-bio: A spiky generalist engineer
+bio: Software Engineer at @Stripe, former VC, Founder, and Researcher
 
 # twitter summary info
-description: Software Engineer at @Stripe, former VC, Founder, and Researcher
+description: A spiky generalist engineer
 
 # if it's an external image, update below for true
 # better with square images
@@ -52,7 +52,7 @@ email: me@mjafar.me
 
 authors:
     mashhadimj:
-        name: Mohammad Jafar Mashhadi
+        name: MJ Mashhadi
         bio: Your average genius.
         external-image: false
         picture: assets/images/mj.jpg
