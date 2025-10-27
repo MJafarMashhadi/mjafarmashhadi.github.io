@@ -35,7 +35,7 @@ jobs:
           SHA=$(git rev-parse $(git log -1 --pretty=format:%h))
           echo Updating to mjafarmashhadi/mjafarmashhadi.github.io@$SHA. > build/COMMIT_MESSAGE
       - name: Store build files
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: website-artifacts
           path: build/
