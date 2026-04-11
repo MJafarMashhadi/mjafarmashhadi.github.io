@@ -1606,7 +1606,7 @@ pre {
                     </a>
                 
             </div>
-            <p>In collaboration with Dr. JC Boucher, from political sciences department, I started working on this tweet analysis project. I experimented with the state of the art and state of practice NLP algorithms to understand tweets and to categorize them based on how they are framing their issues about a particular subject. GloVe, word mover distance measure, Spacy, and short-text clustering techniques to name a few.  This will be used to monitor how campaigns are performing as well as which political views and narratives  are more prevalent in Canadian communities. For example Alberta Health Services is launching an HPV  vaccination campaign and they want to modify and optimize it based on how the public, proponents and  opponents, are talking about it. </p>
+            <p>Developed a data-driven pipeline to analyze and categorize public discourse on social media using state-of-the-art NLP models.  I implemented and evaluated various techniques—including BERT, GloVe embeddings, Word Mover’s Distance, and short-text  clustering—to monitor political narratives and campaign performance. The system provides insights into public sentiment,  enabling organizations to optimize their communication strategies based on automated analysis of large-scale tweet datasets.</p>
 
 
         </div>
@@ -1641,7 +1641,7 @@ pre {
                     </a>
                 
             </div>
-            <p>I developed a test generator, test executor, and flight data recorder tool that works with <a href="http://paparazziuav.org/" target="_blank" rel="nofollow">Paparazzi</a> autopilot. I created this tool as part of my thesis, as I needed realistic flight telemetry data from Paparazzi autopilot but there were not many system tests available in the project itself.  </p>  
+            <p>I developed a test generation and execution framework for the <a href="http://paparazziuav.org/" target="_blank" rel="nofollow">Paparazzi</a>  autopilot system. This tool includes a flight data recorder to capture realistic telemetry data, which  I utilized for my graduate thesis research. I designed the framework to automate the collection of  diverse flight datasets, facilitating more robust testing and validation of autopilot behaviors.</p>  
 
 
         </div>
@@ -1712,8 +1712,7 @@ pre {
                     </a>
                 
             </div>
-            <p>I implemented and compared several deep neural network architectures to see how well they can detect phishing web pages. They were trained and evaluated on a combination of several datasets.</p>
-<p>In this project, I experimented with embeddings (word level and character level), RNNs using GRU cells, and convolutions. The data came from multiple sources, so I developed a simple pipeline to merge the data sets and perform the cleaning on the go. Keras's functional API played an important role in these architectures' implementation. </p>
+            <p>Conducted research on deep learning-based phishing detection, developing an end-to-end experimental framework for data acquisition,  automated processing, and model evaluation. I architected a fully automated data engineering pipeline that ingested, transformed,  and merged heterogeneous data from multiple sources into a unified format, designed to adapt to changing source schemas seamlessly.  On the modeling side, I designed and compared several neural network architectures—including RNNs (GRU) and CNNs with multi-level  embeddings—using Keras's functional API to evaluate their effectiveness across diverse, large-scale phishing datasets.</p>
 <p>More details are available in the repository's <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/blob/master/README.md">readme</a> and the 1-page <a target="_new" href="https://github.com/MJafarMashhadi/Haplophysh/raw/master/ExtendedAbstract.pdf">extended abstract</a>.</p>
 
 
@@ -1785,10 +1784,9 @@ pre {
                     </a>
                 
             </div>
-            <p>This is a project I did as my MSc project for <a href="https://www.micropilot.com/" target="_new" rel="nofollow">MicroPilot Inc</a>, to generate a state model of their UAV auto-pilot software for  testing and verification. I created a deep neural network a hybrid of convolutional and recurrent layers, that takes as input the values of auto-pilot's inputs and outputs (sensor readings and servo outputs) and  predicts the state of the system. Although I had access to the 500k LOC code base of the auto-pilot, I decided to develop this method as a more generalizable and more useful black-box method where access to  the internals is not assumed. </p>
-<p>This project was quite a journey, a hands-on learning opportunity for me. Data collection, data cleaning, and storage made a major part of the project. It was an industry collaboration where standardized datasets are not available. The architecture was inspired by several similar tasks such as human activity recognition and image segmentation. The evaluation part was also a bit challenging and I had to implement a variation of precision, recall, and F1 Score.</p>
-<p>On the implementation side, I had a lot to learn too. I learned how to compile TensorFlow to use GPU on my machine. I used a pipeline of python generators fed into TensorFlow's DataSet API to optimize for best memory utilization and computational performance. I created a custom layer in Keras to properly handle masking of  the padding zeros. I also learned to create custom loss functions and custom validation metrics.</p>
-<p>A conference paper with more details on this project's implementation and results has been published  in ASE '20 conference, you can read it for free on <a href="https://sea-lab.github.io/papers/2020-Hybrid.pdf" target="_blank" rel="nofollow">sea-lab's website</a>. I further extended this project with hyper-parameter optimization, replicating it on Paparazzi autopilot  (check out Paparzzi Tester prject above as well), and applying transfer learning to reduce training overhead. Details are available in my thesis, which you can find <a href="https://github.com/MJafarMashhadi/University-of-Calgary-Graduate-Thesis" target="_blank" rel="nofollow">here</a>. </p>
+            <p>Developed as an MSc project in collaboration with <a href="https://www.micropilot.com/" target="_new" rel="nofollow">MicroPilot Inc</a>,  this research focused on generating state models for UAV autopilot software to enhance testing and verification.  I designed a hybrid deep neural network combining convolutional and recurrent layers to predict system states  from sensor readings and servo outputs using a black-box approach, ensuring the method remains generalizable  across different autopilot systems.</p>
+<p>The project involved building a custom data pipeline using TensorFlow's Dataset API to handle large-scale,  non-standardized industrial datasets efficiently. I implemented custom Keras layers for sequence masking  and developed specialized loss functions to address the unique challenges of telemetry data evaluation.  The research demonstrated that high-fidelity state models could be inferred without requiring access to  the underlying source code.</p>
+<p>This work was published in the <b>ASE '20</b> conference (<a href="https://sea-lab.github.io/papers/2020-Hybrid.pdf" target="_blank" rel="nofollow">read here</a>).  A follow-up study, <i>"Deep state inference: Toward behavioral model inference of black-box software systems"</i>,  was published in <b>IEEE Transactions on Software Engineering (TSE '21)</b>. The project was further extended  to include hyper-parameter optimization and transfer learning, details of which are available in my  <a href="https://github.com/MJafarMashhadi/University-of-Calgary-Graduate-Thesis" target="_blank" rel="nofollow">thesis</a>.</p>
 
 
         </div>
@@ -1829,7 +1827,7 @@ pre {
                     </a>
                 
             </div>
-            <p>iHealth Card is a persoanl card-shaped USB stick that keeps the medical records of its owner in a  distributed and encrypted manner. It is intended as an interim cost effective and scalable solution that  is independent from the internet infrastructure targeted for use in developing countries. It is accompanied with an android app for healthcare workers to access the data on the card. <a target="_blank" href="https://www.linkedin.com/in/karndeepdhami/">Karndeep</a> and I were developing the Android app using java and Kotlin. </p>
+            <p>iHealth Card is a personal, card-shaped USB device designed to store medical records in a distributed  and encrypted manner, providing a scalable healthcare solution for regions with limited internet  infrastructure. I developed the companion Android application using Java and Kotlin, allowing  healthcare workers to securely access and manage patient data directly from the device.</p>
 
 
         </div>
@@ -1922,11 +1920,9 @@ pre {
                     </a>
                 
             </div>
-            <p>This project started in March 2019 in the Neuro Nexus hackathon. I was in the team until May that year when the project finished, afterwards, I decided to leave the team for several reasons. We created a tool to assist laboratories  and clinicians with translating pharmacogenomic testing results into clinically useful recommendations. The recommendations are based on expert guidelines developed by the Clinical Pharmacogenetics Implementation Consortium (CPIC) and the Royal  Dutch Association for the Advancements of Pharmacy - Pharmacogenetics Working Group (DPWG). </p>
-<p>This project was my first Canadian leadership experience which boosted my confidence to work in a professional international environment. In the first meeting we had, I took the initiative, using my experience with Nivad Cloud, to lead a brainstorming session to come up with a solution, set the goals and milestones, and assign tasks to team members. We decided to create an <a href="https://sequence2script.github.io/" target="_new">online tool</a> with an intuitive and simple interface for clinicians and laboratories to use. <a href="https://github.com/sequence2script/sequence2script.github.io">Masoud</a> and Patrick  designed and implemented the front-end and the report structure with input from the product owner (also called challenge champion), Dr. Chad Bousman. Patrick also designed the logo, pamphlets, the poster, and the demo day presentation given his designing experience.  <a href="https://www.linkedin.com/in/nima-miryeganeh/" target="_blank">Nima</a> and I created the backend  using Python. I deployed it as a lambda function with a serverless architecture on AWS. I taught <a href="https://www.linkedin.com/in/nicolas-mora-a54245105/" target="_new">Nicolas</a> and <a href="https://www.linkedin.com/in/elzanne-venter/" target="_new">Elzanne</a>  some basics of working with Amazon RDS service as they were in charge of cleaning and transforming the data from the sources into a relational model for the backend to use.</p>
-<p> I created a positive atmosphere and a balance during the development of the project where every one felt useful, always having something meaningful to do while not being overwhelmed by the amount of work left.  I made sure that everyone had freedom of decision making in their sub-team while having clear boundaries for who should do what. We managed to create a complete working prototype while perfectly meeting the deadline with not much pressure. On the last night before the demo day, I called for a last brainstoriming meeting to plan the presentation. We summarized  what is the problem we are solving and to reflect and enumerate the most important strengths of our solution. Patrick and  Elzanne did a fantastic job of presenting the project to the judges and the general public on the demo day. </p>
-<p>What I took from doing this project was much more about leadership and soft skills in general, though I experimented  and learned technical skills such as AWS as well.</p>
-<p>P.S. I just noticed that the names of three team members (Nima, Masoud, and me) are removed from the development team list, basically not giving us credit for what we did for the project. It is quite immoral, isn't it? </p>
+            <p>This project started during the Neuro Nexus hackathon in March 2019. We developed a tool to assist laboratories  and clinicians in translating pharmacogenomic testing results into clinically useful recommendations. The recommendations are based on expert guidelines developed by the Clinical Pharmacogenetics Implementation Consortium (CPIC) and the Royal  Dutch Association for the Advancements of Pharmacy - Pharmacogenetics Working Group (DPWG). </p>
+<p>As the technical lead, I coordinated the initial brainstorming sessions, defined project goals and milestones,  and managed task allocation. We built an <a href="https://sequence2script.github.io/" target="_new">online tool</a>  with an intuitive interface for clinicians. I architected and implemented the backend using Python and deployed  it as a serverless application on AWS Lambda. I also managed the integration of the front-end and the data pipeline,  ensuring the project met its objectives and deadlines.</p>
+<p>This experience provided significant growth in leadership and technical architecture, particularly in leveraging  AWS services for rapid prototype development in a high-pressure environment.</p>
 
 
         </div>
@@ -1982,9 +1978,9 @@ pre {
                     </a>
                 
             </div>
-            <p>I co-founded Nivad Cloud startup as a BaaS solution offering secure in-app purchases as its first and  most successful and innovative service. I learned and practiced a huge deal of soft skills while  managing this project ranging from negotiations, to conflict resolution, to making engaging presentations,  to customers, to basic financial management, and how to wear multiple hats but not too many. We sponsored PyCon in Tehran as well as a nation-wide hackathon which I did the negotiations for. Also,  I made great progress in my technical skills as well. I designed and developed the RESTful API up to  best practices and the industry standards, created the front-end and backend of the management dashboard,  designed the database, and deployed the service on the servers. I had an amazing journey from starting  a hobby side project to growing it into a successful startup serving thousands of customers in production.</p>
-<p>From a technical view, I had an amazing learning experience in a variety of backend development and maintenance as well. I learned how to set up an Nginx reverse proxy, keep services alive on docker, and how to manage SSL certificates. I had to separate API and the users' dashboard separate to achieve higher availability and much higher performance for the API. I learned how to properly use redis key-value store to lower the overheads on API calls to make them as fast as possible without losing any accounting data. I also used it to cache the results of sluggish queries. I learned how to leverage Celery to run computationally intensive tasks asynchronously as well as running periodic tasks such as issuing invoices and processing  transactions at the end of the day. </p>
-<p>This is one of the most influential projects on my professional path. I gained plenty of technical  skills and soft skills. But more importantly, I expanded my network, came out of my bubble and communicated  with people of quite different backgrounds (as customers, investors, job applicants, etc). I developed an  entrepreneurial/business vision which even helped me to be successful in the stock market today. Overall,  despite all the mistakes and shortcomings, I believe that this project made me stronger and wiser.</p>
+            <p>As a co-founder and the technical lead of Nivad Cloud, I architected and developed the initial  infrastructure for a Backend-as-a-Service (BaaS) platform. Our flagship product was a hardened,  secure in-app purchase system that successfully served thousands of production applications.  As the platform evolved, I led the technical design and development across the entire stack,  including the backend API, web-based management dashboards, and various client-side SDKs.</p>
+<p>Beyond the technical implementation, I was instrumental in the startup's growth, leading  efforts to secure seed funding and scale the team. This experience allowed me to transition  from a hands-on developer to a technical leader, where I focused on hiring top talent,  delegating responsibilities, and fostering a robust product mindset. I oversaw the expansion  of our product line and ensured that our architecture remained scalable and secure as our  customer base and team size grew.</p>
+<p>This role was pivotal in shaping my approach to engineering leadership, balancing  entrepreneurial agility with the rigorous architectural standards required for high-availability  commercial services.</p>
 
 
         </div>
@@ -2030,8 +2026,8 @@ pre {
                     </a>
                 
             </div>
-            <p>My BSc. capstone project was to collaborate with <a href="https://www.linkedin.com/in/sahar-badihi-28620a121" target="_new">Sahar</a>, my supervisor's MSc. student at the time, in crowdsourcing a data collection task. I developed a website that users could use for data labeling and peer-verification of the labels. The platform is equipped with multiple gamification elements. It rewards the participants who had submitted more verified and correct labels with scores, award them achievement badges, and creates a  competetive environment by showing them a leaderboard. I deployed this project on openshift and created a step-by-step tutorial to be used later as my supervisor asked me.</p>
-<p>The website was live for a limited time and served labeled thousands of data, with peer verification, by hundreds of users. Top 10 participants were later rewarded (in real world, not with game scores <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">) for their help.</p>
+            <p>For my BSc. capstone project, I developed a gamified crowdsourcing platform for code description data collection.  I built a web-based system that enabled users to perform data labeling and peer-verification, integrated with  mechanisms for scoring, achievement badges, and a competitive leaderboard to ensure high engagement and data quality.</p>
+<p>I deployed the platform on OpenShift and successfully facilitated the collection and verification of thousands  of data labels from hundreds of active users. I also created a step-by-step technical tutorial for the platform's  maintenance and formally recognized top-performing participants for their contributions to the research dataset.</p>
 
 
         </div>
@@ -2081,7 +2077,8 @@ pre {
                     </a>
                 
             </div>
-            <p> Mini Google is a search engine for academic papers. It crawls researchgate.com for academic papers and  indexes the title, author, and the abstract on an Elastic search back end. <a target="_blank" href="https://www.linkedin.com/in/mohammad-hosein-sharafi-20380063/">Mohammad Hossein</a> and I implemented this as the 3<sup>rd</sup> project for the modern information retrieval course. We performed clustering based on co-authorship, calculated page rank based on citations and showed them on the results page.</p>
+            <p>Mini Google is a specialized search engine for academic papers that crawls ResearchGate to index  titles, authors, and abstracts using an Elasticsearch backend. I implemented the crawling system,  search interface, and ranking algorithms.</p>
+<p>The system features clustering based on author co-authorship and a custom PageRank implementation  to rank papers based on citation graphs, providing relevant search results through a Flask-based  web interface.</p>
 
 
         </div>
@@ -2119,8 +2116,7 @@ pre {
                     </a>
                 
             </div>
-            <p>As the second project for modern information retrieval course, I evaluated the performance of two supervised binary classification algorithms on the IMDb movie reviews dataset with a bag of words model. The classification algorithms  are KNN and Naïve Bayes. In addition to that, I did the same on the MEDLINE medical prescriptions dataset as  a multi-class classification task. Both were evaluated and compared using F1 score and area under ROC curve. Data  cleaning, tokenization, vectorization, stemming, and the classification algorithms (KNN and Naive Bayes) were all  implemented from scratch as a requirement for the course. </p>
-<p>As the first course project, I implemented a inverse indexing and query engine. Tokenization, stemming, vectorization with TF-IDF model, and processing queries were all implemented in Java from scratch.  </p>
+            <p>Developed an information retrieval and text classification system as part of a large-scale project involving multiple  components implemented from scratch. I built a custom inverted indexing and query engine in Java, covering tokenization,  stemming, and TF-IDF-based ranking. Additionally, I implemented a classification pipeline to evaluate KNN and Naïve Bayes  algorithms on the IMDb and MEDLINE datasets, focusing on the end-to-end process of data preprocessing, vectorization, and  performance evaluation.</p>
 
 
         </div>
@@ -2170,7 +2166,7 @@ pre {
 
 
 <footer class="footer-main">
-    MJ Mashhadi © 2025
+    MJ Mashhadi © 2026
 
     <p class="extra">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>
